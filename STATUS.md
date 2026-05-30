@@ -16,12 +16,14 @@ Brett attended Rhetoricon at the University of Waterloo on 2026-05-29. Gini Fahn
 
 The project should test a production-side textual-function claim, not a reader-side causal claim:
 
-> Isocolon is preferentially associated with comparative construal in production, beyond what is predicted by general parallel syntax.
+> Formal balance is preferentially associated with comparable-set construals in production; the analysis must report isocolonic length balance and parison-like syntactic parallelism separately.
 
 ## Immediate Next Actions
 
 - Wait for library/LDC access to the RST Signalling Corpus data (`LDC2015T10`); all other high-priority library articles/books have been copied into the shared literature folder.
+- Code `outputs/audit/adversative_antithesis_classical_audit.tsv` for classical antithesis, semantic opposition, and parallel opposition; this is the next cheap test of whether `adversative-antithesis` is a label-mismatch problem or an instrument-blindness problem.
 - Next manuscript pass: decide whether the genre-varying summary needs a table or figure, or whether the prose summary is enough.
+- Decide whether to seek a second blind human coder. The manuscript now treats the 80-row audit as single-author, non-blind qualitative validation rather than interrater reliability evidence.
 - Add the RST Signalling Corpus data comparison when library/LDC access comes through.
 
 ## Design Guardrails
@@ -50,4 +52,8 @@ The project should test a production-side textual-function claim, not a reader-s
 - Folded the literature frame and current empirical results into `main.tex`: form-function figure theory, false-positive/ranking problem, GUM/eRST corpus basis, validation, preliminary effects, and restrained interpretation.
 - Added compact validation and relation-effect tables to `main.tex`, backed by the derived TSVs.
 - Added the exact isocolonicity scoring formula and adjusted-effect model specification to `main.tex`.
+- Reframed the manuscript to report formal balance, isocolonic length balance, parison-like syntactic parallelism, and lexical echo separately; updated the title, abstract, methods, results table, interpretation, and conclusion.
+- Added document-clustered robustness checks, a no-length-controls length-balance model, joint-only and adversative-only matched comparisons, and a regenerated robustness script.
+- Added a qualitative-audit summary table, illustrative audit examples, a data/code availability section, and a verified ACL proceedings citation for Kühn and Mitrović's FigLang challenge paper.
+- Revised the length-balance analysis after reviewer feedback: the isocolon component now uses mean-length control without maximum-length control, AUC validation reports approximate intervals, score-weight sensitivity is summarized, and an adversative-antithesis decomposition worksheet has been generated.
 - Rebuilt `main.pdf` with `make` using XeLaTeX/Biber. Citations resolve; no overfull boxes remain. The only remaining LaTeX warnings are standing preamble warnings from `fancyhdr` and `microtype`.

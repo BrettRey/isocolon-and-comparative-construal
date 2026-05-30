@@ -99,6 +99,14 @@ prose:
     rule: "Keep paragraphs under 100 words on average; aim for ~60"
     note: "Dense 200+ word paragraphs should be broken into 2-4 shorter units"
 
+  initialisms:
+    rule: "Spell out every initialism at first use in the abstract and again at first use in the main text"
+    note: "If a corpus, dataset, or software name is a fixed label rather than a transparent initialism, define it with a short appositive instead of inventing an expansion"
+    examples:
+      - "Georgetown University Multilayer corpus (GUM)"
+      - "area under the receiver-operating characteristic curve (AUC)"
+      - "collection label GENTLE, the out-of-domain challenge set"
+
   avoid:
     throat_clearers:
       - "It is important to note that"

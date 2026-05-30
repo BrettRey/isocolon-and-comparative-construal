@@ -26,6 +26,10 @@ Generated local inventories:
   - Command: `scripts/extract_gum_erst_relation_pairs.py`
   - Source: `data/raw/gum-erst/rst/disrpt/eng.erst.*.rels`.
   - Contents: subset of `gum_erst_relation_pairs.tsv` whose relation arguments are strictly adjacent, excluding overlapping or interleaved discontinuous spans.
+- `extraction_diagnostics.tsv`
+  - Command: `scripts/extraction_diagnostics.py`
+  - Source: `data/derived/gum_erst_relation_pairs.tsv` and `data/derived/gum_erst_adjacent_relation_pairs.tsv`.
+  - Contents: interval-level extraction counts for valid rows, adjacent rows, non-adjacent exclusions, discontinuous spans, duplicate adjacent span-pair keys, and selected target labels.
 - `gum_erst_adjacent_isocolon_scores.tsv`
   - Command: `scripts/score_gum_isocolon.py`
   - Source: `data/derived/gum_erst_adjacent_relation_pairs.tsv` and `data/raw/gum-erst/dep/*.conllu`.
@@ -61,7 +65,7 @@ Generated local inventories:
 - `isocolon_score_validation_summary.tsv`
   - Command: `scripts/validate_isocolon_score.py`
   - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
-  - Contents: AUC and distribution summaries for score components against gold eRST `syn-prl` flags.
+  - Contents: AUC, approximate Hanley--McNeil AUC intervals, and distribution summaries for score components against gold eRST `syn-prl` flags.
 - `isocolon_score_thresholds.tsv`
   - Command: `scripts/validate_isocolon_score.py`
   - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
@@ -90,3 +94,11 @@ Generated local inventories:
   - Command: `scripts/score_weight_sensitivity.py`
   - Source: `data/derived/score_weight_sensitivity.tsv`.
   - Contents: target-level stability summaries, including min/median/max effects and the share of weight specifications giving positive intervals.
+- `robustness_checks.tsv`
+  - Command: `scripts/fit_robustness_checks.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: document-clustered uncertainty estimates, mean-only and no-length-control length-balance models, joint-only matched comparisons, and adversative-only matched comparisons.
+- `stratified_nulls.tsv`
+  - Command: `scripts/fit_stratified_nulls.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: document/length/punctuation-stratified permutation nulls for broad, list/disjunction, and adversative-contrast target labels.

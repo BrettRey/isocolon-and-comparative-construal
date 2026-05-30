@@ -50,6 +50,20 @@ def auc_from_scores(labels: np.ndarray, scores: np.ndarray) -> float:
     return (rank_sum_pos - n_pos * (n_pos + 1) / 2) / (n_pos * n_neg)
 
 
+def auc_se_hanley_mcneil(auc: float, n_pos: int, n_neg: int) -> float:
+    """Approximate AUC standard error from Hanley and McNeil (1982)."""
+    if n_pos <= 0 or n_neg <= 0 or np.isnan(auc):
+        return float("nan")
+    q1 = auc / (2 - auc)
+    q2 = (2 * auc * auc) / (1 + auc)
+    variance = (
+        auc * (1 - auc)
+        + (n_pos - 1) * (q1 - auc * auc)
+        + (n_neg - 1) * (q2 - auc * auc)
+    ) / (n_pos * n_neg)
+    return float(np.sqrt(max(variance, 0.0)))
+
+
 def write_tsv(path: Path, rows: list[dict[str, object]]) -> None:
     if not rows:
         return
@@ -62,18 +76,25 @@ def write_tsv(path: Path, rows: list[dict[str, object]]) -> None:
 
 def score_summary(frame: pd.DataFrame) -> list[dict[str, object]]:
     labels = frame["has_gold_syn_prl"].astype(int).to_numpy()
+    n_pos = int(labels.sum())
+    n_neg = int(len(labels) - n_pos)
     rows = []
     for score_col in SCORE_COLUMNS:
         scores = frame[score_col].astype(float).to_numpy()
         pos = frame.loc[frame["has_gold_syn_prl"].eq(1), score_col].astype(float)
         neg = frame.loc[frame["has_gold_syn_prl"].eq(0), score_col].astype(float)
+        auc = auc_from_scores(labels, scores)
+        auc_se = auc_se_hanley_mcneil(auc, n_pos, n_neg)
         rows.append(
             {
                 "score": score_col,
                 "n": len(frame),
-                "gold_syn_prl_n": int(labels.sum()),
+                "gold_syn_prl_n": n_pos,
                 "gold_syn_prl_prevalence": float(labels.mean()),
-                "auc": auc_from_scores(labels, scores),
+                "auc": auc,
+                "auc_se": auc_se,
+                "auc_ci_low": auc - 1.96 * auc_se,
+                "auc_ci_high": auc + 1.96 * auc_se,
                 "mean_gold": float(pos.mean()),
                 "mean_non_gold": float(neg.mean()),
                 "mean_difference": float(pos.mean() - neg.mean()),

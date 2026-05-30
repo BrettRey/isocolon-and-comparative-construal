@@ -82,7 +82,7 @@ Third, discourse-relation work gives the corpus basis. Taboada and Das show that
 
 This frame has now been folded into `main.tex` as a first paper-facing draft. The current manuscript uses four linked moves: figures as form-function pairings; formal figure detection as an overgenerating ranking problem; GUM/eRST as the corpus basis; and the current empirical result as evidence for a restricted textual-function claim. The draft deliberately treats RST-SC as a robustness/comparison resource rather than as a prerequisite for the main eRST/GUM test.
 
-Compact tables for score validation and selected relation effects are now in the manuscript, along with the exact scoring formula and adjusted-effect model specification. The next writing pass should decide whether the genre-varying summary needs a table or can stay in prose.
+Compact tables for score validation and selected relation effects are now in the manuscript, along with the exact scoring formula and adjusted-effect model specification. The results now separate composite formal balance, isocolonic length balance, parison-like syntactic parallelism, and lexical echo. Review-response passes added audit examples, an audit summary, document-clustered uncertainty, mean-only length-balance estimates, score-weight sensitivity, and matched joint-only/adversative-only comparisons. The next empirical pass should code the adversative-antithesis decomposition worksheet, then decide whether the genre-varying summary needs a table or can stay in prose.
 
 ## What not to claim yet
 
