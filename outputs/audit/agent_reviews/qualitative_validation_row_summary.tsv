@@ -1,0 +1,81 @@
+batch	audit_id	stratum	human_isocolonic	agent_yes	agent_no	agent_uncertain	agent_majority	agent_majority_n	n_agent_disagreements	agent_codes	unit1_text	unit2_text
+batch1	QA001	high_broad_non_narrow	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Anything <*> occupies your attention.	Anything <*> occupies your attention.
+batch1	QA002	high_broad_non_narrow	yes	4	0	0	yes	4	0	codex_1:yes; codex_2:yes; opus_1:yes; opus_2:yes	You can use this on twist outs.	You can use this on braid outs.
+batch1	QA003	high_broad_non_narrow	yes	4	0	0	yes	4	0	codex_1:yes; codex_2:yes; opus_1:yes; opus_2:yes	They made their case with intellect.	They made their case with evidence
+batch1	QA004	high_broad_non_narrow	yes	4	0	0	yes	4	0	codex_1:yes; codex_2:yes; opus_1:yes; opus_2:yes	Somebody can manage to be a teacher.	Somebody can manage to be a cop.
+batch1	QA005	high_broad_non_narrow	yes	4	0	0	yes	4	0	codex_1:yes; codex_2:yes; opus_1:yes; opus_2:yes	“Matter tells spacetime how to curve;	spacetime tells matter how to move.”
+batch1	QA006	high_broad_non_narrow	no	1	3	0	no	3	1	codex_1:no; codex_2:no; opus_1:yes; opus_2:no	or: X ∩ S is non-empty	and X ∩ T is non-empty.
+batch1	QA007	high_broad_non_narrow	yes	0	2	2	no/uncertain	2	4	codex_1:no; codex_2:no; opus_1:uncertain; opus_2:uncertain	Three days.	Four days.
+batch1	QA008	high_broad_non_narrow	yes	4	0	0	yes	4	0	codex_1:yes; codex_2:yes; opus_1:yes; opus_2:yes	I am the master of my fate,	I am the captain of my soul.
+batch1	QA009	high_broad_non_narrow	yes	4	0	0	yes	4	0	codex_1:yes; codex_2:yes; opus_1:yes; opus_2:yes	They'll talk about the party,	they'll talk about the crash,
+batch1	QA010	high_broad_non_narrow	yes	4	0	0	yes	4	0	codex_1:yes; codex_2:yes; opus_1:yes; opus_2:yes	They're bringing drugs.	They're bringing crime.
+batch1	QA011	typical_broad_non_narrow	yes	0	1	3	uncertain	3	4	codex_1:uncertain; codex_2:uncertain; opus_1:uncertain; opus_2:no	who don't have access to legal advice	"and don't speak English."""
+batch1	QA012	typical_broad_non_narrow	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Interesting load, that gold combat very early.	That's a very solid pickup
+batch1	QA013	typical_broad_non_narrow	uncertain	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Both teams start from the edges	and attempt to obtain the quaffle and bludgers.
+batch1	QA014	typical_broad_non_narrow	yes	1	2	1	no	2	3	codex_1:no; codex_2:no; opus_1:yes; opus_2:uncertain	The state must protect property rights,	provide public services,
+batch1	QA015	typical_broad_non_narrow	yes	2	0	2	uncertain/yes	2	2	codex_1:uncertain; codex_2:uncertain; opus_1:yes; opus_2:yes	having not only aesthetic value,	but also acoustic.
+batch1	QA016	typical_broad_non_narrow	yes	1	3	0	no	3	3	codex_1:yes; codex_2:no; opus_1:no; opus_2:no	The Master plan <*> will completely transform government processes, services and management,	and make information access and service delivery more efficient.
+batch1	QA017	narrow_mixed	no	0	0	4	uncertain	4	4	codex_1:uncertain; codex_2:uncertain; opus_1:uncertain; opus_2:uncertain	____ _____ ______ ___ __ _____ _______ ___ ____	___ ________ _____ __ _____ _______ ___ ___ __ _ ____________ ______
+batch1	QA018	narrow_mixed	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	knowing how to blink;	nobody has to teach us.
+batch1	QA019	narrow_mixed	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	The ultimate result of workers <*> is that society as a whole can produce and consume far more	than if each person tried to produce all of his or her own goods and services.
+batch1	QA020	narrow_mixed	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	and unlawfully forced T. W.'s remote appearance at trial by Zoom through an unmuted and video on connection,	despite T. W.'s request
+batch1	QA021	narrow_mixed	yes	0	0	4	uncertain	4	4	codex_1:uncertain; codex_2:uncertain; opus_1:uncertain; opus_2:uncertain	It's like our modern thing	but in a medieval way.
+batch1	QA022	narrow_mixed	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	so it's often easiest to start the seeds indoors	instead of risking that they'll get damaged by frost.
+batch1	QA023	high_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	stop.	Stop
+batch1	QA024	high_non_target	no	0	3	1	no	3	1	codex_1:no; codex_2:no; opus_1:uncertain; opus_2:no	Basil lime blackberry?	Blackberry basil lime.
+batch1	QA025	high_non_target	yes	2	1	1	yes	2	2	codex_1:yes; codex_2:yes; opus_1:no; opus_2:uncertain	Getting the Material Right	Getting the Delivery Right
+batch1	QA026	high_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	No!	No?
+batch1	QA027	high_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	I'll —	I will.
+batch1	QA028	high_non_target	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	You ever do?	I only do
+batch1	QA029	high_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Rajiva Wijesinha.	Secretary General
+batch1	QA030	high_non_target	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Did I make him aggressive?	Yeah, you made him aggressive,
+batch1	QA031	restatement_high_control	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Four.	Four.
+batch1	QA032	restatement_high_control	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Neutron stars --	Neutron stars.
+batch1	QA033	restatement_high_control	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Cheers!	Cheers!
+batch1	QA034	restatement_high_control	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Nelson Mandela	NELSON MANDELA
+batch1	QA035	restatement_high_control	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Thank you.	Thank you.
+batch1	QA036	baseline_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	that you exercise	before you leave your house in the morning
+batch1	QA037	baseline_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Jesus turned to his disciples,	you remember,
+batch1	QA038	baseline_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	that our experimental approach, <*> was effective	in displacing the CoM
+batch1	QA039	baseline_non_target	no	0	4	0	no	4	0	codex_1:no; codex_2:no; opus_1:no; opus_2:no	And finally, what do we call something	that's loose,
+batch1	QA040	baseline_non_target	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Most prolific during the 1960s,	Moreau continued to appear in films into her 80s.
+batch2	QB001	high_broad_target	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	There was no lobbying.	There was no pressure.
+batch2	QB002	high_broad_target	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	Scientific Computing	Statistical Computing
+batch2	QB003	high_broad_target	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	Who's buying the paper,	who's selling the paper.
+batch2	QB004	high_broad_target	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	without thinking,	without looking
+batch2	QB005	high_broad_target	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	“If you want sex,	if you want drugs,
+batch2	QB006	high_broad_target	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	The starting materials consist of four green spheres and two purple spheres.	The products consist of four green spheres and two purple spheres.
+batch2	QB007	mid_broad_target	yes	2	0	2	uncertain/yes	2	2	codex_batch2_1:uncertain; codex_batch2_2:yes; opus_batch2_1:uncertain; opus_batch2_2:yes	I heard a noise like paper.	My father heard it, too,
+batch2	QB008	mid_broad_target	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Uh, Caleb, is a film student and, uh, writer,	and, uh, his dad's a friend of mine,
+batch2	QB009	mid_broad_target	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Mohamed was a VIP guest at the Google Science Fair this weekend,	and was able to meet finalists at the event
+batch2	QB010	mid_broad_target	yes	0	0	4	uncertain	4	4	codex_batch2_1:uncertain; codex_batch2_2:uncertain; opus_batch2_1:uncertain; opus_batch2_2:uncertain	Aren’t they supposed to have a pot of gold or something?	And they have to tell you where it is
+batch2	QB011	mid_broad_target	yes	0	0	4	uncertain	4	4	codex_batch2_1:uncertain; codex_batch2_2:uncertain; opus_batch2_1:uncertain; opus_batch2_2:uncertain	it fits three people quite comfortably,	and <*> it opens up into a full double bed.
+batch2	QB012	mid_broad_target	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	to create that consensus	and move towards a more equal future
+batch2	QB013	narrow_antithesis_contrast	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Daily 08:00 - 20:00,	Su 08:00 - 14:00.
+batch2	QB014	narrow_antithesis_contrast	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	so that the broad sides of the cuttings face east and west	while the slim sides face north and south.
+batch2	QB015	narrow_antithesis_contrast	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	We are not setting out to turn them into programmers or data crunchers,	but want to boost their knowledge level
+batch2	QB016	narrow_antithesis_contrast	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Unlike major cities in the Northeast, the city bus is not a major form of transportation in the city.	It is usually a means of travel for those
+batch2	QB017	narrow_antithesis_contrast	yes	1	0	3	uncertain	3	3	codex_batch2_1:uncertain; codex_batch2_2:yes; opus_batch2_1:uncertain; opus_batch2_2:uncertain	Tåsinge, Langeland and a few of the smaller islands are connected with bridges,	but to most of the islands transportation is done with tiny ferries
+batch2	QB018	narrow_antithesis_contrast	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	The puppets <*> were picked specifically for this task with careful attention to their appearance.	Upon arrival at the school, however, it became clear that the children were not accustomed to playing with puppets
+batch2	QB019	narrow_antithesis_contrast	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	Where we had shelves of plastic dinosaurs and superhero figurines from cornflake boxes,	Steven had plaster casts of jawbones, gums and teeth
+batch2	QB020	narrow_antithesis_contrast	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	naming the brother Petronios as his successor	rather than the clearly qualified Theodorus.
+batch2	QB021	dialogue_echo_candidate	uncertain	0	2	2	no/uncertain	2	2	codex_batch2_1:uncertain; codex_batch2_2:no; opus_batch2_1:uncertain; opus_batch2_2:no	I kn- —	Oh oh I know.
+batch2	QB022	dialogue_echo_candidate	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Cool?	Okay.
+batch2	QB023	dialogue_echo_candidate	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	and a horse has this little white line,	and you clean it out with the — with the hoof knife.
+batch2	QB024	dialogue_echo_candidate	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Alright what is this?	Oh this is Ofra!
+batch2	QB025	dialogue_echo_candidate	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	was this last year?	Am I correct
+batch2	QB026	dialogue_echo_candidate	uncertain	0	2	2	no/uncertain	2	2	codex_batch2_1:uncertain; codex_batch2_2:no; opus_batch2_1:uncertain; opus_batch2_2:no	There's a hole in it.	Well, there's a hole,
+batch2	QB027	comparative_concession	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	that I'm reading it,	this is not evidence,
+batch2	QB028	comparative_concession	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	The origin of the city's name is unknown,	"however, the word łódź translates to ""boat"" in English."
+batch2	QB029	comparative_concession	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	and just let you know how I've been feeling.	But in terms <*> I'm not gonna vlog
+batch2	QB030	comparative_concession	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	One of us needs to change.	Well I got this from you
+batch2	QB031	comparative_concession	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	Plastic-type twist ties will hold up in the wash,	but may or may not melt in your dryer.
+batch2	QB032	high_non_target_artifact	uncertain	0	0	4	uncertain	4	0	codex_batch2_1:uncertain; codex_batch2_2:uncertain; opus_batch2_1:uncertain; opus_batch2_2:uncertain	Born 23 January 1928 Paris, France	Died 31 July 2017 <*> Paris, France
+batch2	QB033	high_non_target_artifact	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Naqsh-e Jahan Square	1 Naqsh-e Jahan Square.
+batch2	QB034	high_non_target_artifact	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Disney	Belle
+batch2	QB035	high_non_target_artifact	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Mhm.	Yeah.
+batch2	QB036	high_non_target_artifact	yes	4	0	0	yes	4	0	codex_batch2_1:yes; codex_batch2_2:yes; opus_batch2_1:yes; opus_batch2_2:yes	And it's got to stop	and it's got to stop fast.
+batch2	QB037	restatement_repetition_control	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Get your feet off of there.	Get your feet off of there.
+batch2	QB038	restatement_repetition_control	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Two.	Two.
+batch2	QB039	restatement_repetition_control	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	these three?	These three,
+batch2	QB040	restatement_repetition_control	no	0	4	0	no	4	0	codex_batch2_1:no; codex_batch2_2:no; opus_batch2_1:no; opus_batch2_2:no	Was there a finding?	Was there a finding

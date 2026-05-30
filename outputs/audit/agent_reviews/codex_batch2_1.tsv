@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QB001	codex_batch2_1	yes	strong	yes	yes	none	no	0.96	Shared negative existential frame with lobbying/pressure slot contrast.
+QB002	codex_batch2_1	yes	strong	yes	yes	none	no	0.82	Matched computing noun phrase pair with meaningful topic coordination.
+QB003	codex_batch2_1	yes	strong	yes	yes	none	no	0.96	Parallel who is buying/selling frame creates direct contrast.
+QB004	codex_batch2_1	yes	strong	yes	yes	none	no	0.93	Matched without plus gerund phrases form a balanced pair.
+QB005	codex_batch2_1	yes	strong	yes	yes	none	no	0.96	Repeated if you want frame with sex/drugs slot substitution.
+QB006	codex_batch2_1	yes	strong	yes	yes	none	no	0.91	Starting materials/products contrast in the same consist-of frame.
+QB007	codex_batch2_1	uncertain	weak	yes	yes	none	no	0.62	Heard echo is meaningful but the two clauses are uneven.
+QB008	codex_batch2_1	no	weak	no	no	none	no	0.88	Only a loose NP copula similarity; no rhetorical pairing.
+QB009	codex_batch2_1	no	weak	no	no	none	no	0.91	Shared subject continuation, not a balanced parallel pair.
+QB010	codex_batch2_1	uncertain	weak	yes	no	none	no	0.63	They plus obligation frame is present but VP structures diverge.
+QB011	codex_batch2_1	uncertain	weak	yes	yes	none	no	0.66	Shared it plus VP feature listing, but weak formal balance.
+QB012	codex_batch2_1	no	weak	yes	yes	none	no	0.76	Coordinated infinitival goals, but too generic for isocolon.
+QB013	codex_batch2_1	no	strong	no	yes	list_formatting	no	0.9	Schedule entries are parallel because of tabular/list formatting.
+QB014	codex_batch2_1	yes	strong	yes	yes	none	no	0.96	Broad/slim sides and compass-pair slots are strongly balanced.
+QB015	codex_batch2_1	no	weak	yes	yes	none	no	0.84	Real contrast, but formal structure and length are too uneven.
+QB016	codex_batch2_1	no	weak	yes	no	none	no	0.83	It-is continuation explains the claim rather than forming a pair.
+QB017	codex_batch2_1	uncertain	weak	yes	yes	none	no	0.62	Bridges/ferries contrast is clear but active/passive frames mismatch.
+QB018	codex_batch2_1	no	weak	uncertain	no	none	no	0.88	However relation lacks a matched paired construction.
+QB019	codex_batch2_1	yes	moderate	yes	yes	none	no	0.88	Where we had X, Steven had Y creates a contrastive pair.
+QB020	codex_batch2_1	no	none	yes	yes	none	no	0.93	Rather-than contrast without formal parallelism.
+QB021	codex_batch2_1	uncertain	moderate	uncertain	no	dialogue_formula	no	0.58	Truncated I know repair may be echo, but dialogue context dominates.
+QB022	codex_batch2_1	no	none	no	no	dialogue_formula	no	0.94	Short phatic dialogue turns do not form a rhetorical pair.
+QB023	codex_batch2_1	no	weak	yes	no	none	no	0.86	Procedural continuation with only weak and repetition.
+QB024	codex_batch2_1	no	weak	no	no	dialogue_formula	no	0.9	Question-answer dialogue repeats this is but remains formulaic.
+QB025	codex_batch2_1	no	weak	yes	no	dialogue_formula	no	0.84	Conversational checking/restatement, not a parallel construction.
+QB026	codex_batch2_1	uncertain	moderate	uncertain	no	repetition;dialogue_formula	no	0.6	Near repetition of there is a hole may be repair or echo.
+QB027	codex_batch2_1	no	none	no	no	none	no	0.92	Fragments do not form a formal or rhetorical pair.
+QB028	codex_batch2_1	no	weak	yes	yes	none	no	0.82	Concession contrasts unknown origin with known meaning, but not isocolon.
+QB029	codex_batch2_1	no	weak	no	no	none	no	0.89	But relation is broken and lacks parallel construction.
+QB030	codex_batch2_1	no	none	yes	no	none	no	0.9	Dialogic reply is rhetorically relevant but not formally paired.
+QB031	codex_batch2_1	yes	moderate	yes	yes	none	no	0.86	Will hold up/may melt in parallel laundry-context contrast.
+QB032	codex_batch2_1	uncertain	strong	uncertain	yes	list_formatting;template_or_quote	no	0.56	Born/died template is strongly paired but context-dependent.
+QB033	codex_batch2_1	no	strong	no	no	repetition;list_formatting	no	0.95	Indexed place-name repetition is an artifact, not isocolon.
+QB034	codex_batch2_1	no	none	no	no	list_formatting	no	0.94	One-word labels lack formal rhetorical pairing.
+QB035	codex_batch2_1	no	weak	no	no	dialogue_formula	no	0.95	Backchannel pair is formulaic dialogue.
+QB036	codex_batch2_1	yes	strong	yes	no	none	no	0.9	Repeated frame with fast creates intensifying repetition.
+QB037	codex_batch2_1	no	strong	no	no	repetition	no	0.99	Exact repetition of the same command.
+QB038	codex_batch2_1	no	strong	no	no	repetition	no	0.99	Exact one-word repetition.
+QB039	codex_batch2_1	no	strong	no	no	repetition	no	0.98	Near exact repetition with punctuation/case variation.
+QB040	codex_batch2_1	no	strong	no	no	repetition	no	0.98	Exact question repetition with punctuation difference.

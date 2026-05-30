@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QC001	codex_batch3_1	yes	moderate	yes	yes	none	no	0.82	Matched imperative task frame with shared object supports coordinated objectives.
+QC002	codex_batch3_1	yes	strong	yes	yes	none	no	0.95	Balanced adjective pairs with repeated and-frame and sound patterning.
+QC003	codex_batch3_1	yes	strong	yes	yes	none	no	0.96	Clear quartile-percentile slot substitution in matched clauses.
+QC004	codex_batch3_1	yes	strong	yes	yes	none	no	0.76	Short roster items use matched number-role slots in a coordinated set.
+QC005	codex_batch3_1	no	weak	no	no	dialogue_formula	no	0.95	One-word phatic dialogue turns have no meaningful parallel relation.
+QC006	codex_batch3_1	no	moderate	yes	no	list_formatting;template_or_quote	no	0.82	Dictionary synonym entries show morphology but function as identity/list artifact.
+QC007	codex_batch3_1	no	weak	yes	yes	none	no	0.75	Coordinated actions, but the forms are too uneven for isocolon.
+QC008	codex_batch3_1	yes	moderate	yes	yes	none	no	0.72	Coordinated infinitival predicates form a balanced purpose pair.
+QC009	codex_batch3_1	no	weak	yes	yes	none	no	0.80	Coordinated institutional actions lack a repeated formal frame.
+QC010	codex_batch3_1	yes	moderate	yes	yes	none	no	0.70	Coordinated technical actions share an infinitival verb-object construction.
+QC011	codex_batch3_1	no	weak	yes	yes	none	no	0.78	Two facts about samples are coordinated, but syntax and predicates diverge.
+QC012	codex_batch3_1	no	weak	no	yes	list_formatting	no	0.90	Single-word list items are formatting rather than a rhetorical pair.
+QC013	codex_batch3_1	yes	strong	yes	yes	none	no	0.93	One thing/the other contrast creates a compact parallel predication.
+QC014	codex_batch3_1	no	none	yes	no	none	no	0.87	Warning and consequence relation has no matched form.
+QC015	codex_batch3_1	no	weak	yes	yes	none	no	0.82	Biographical contrast is present, but the clauses are not formally parallel.
+QC016	codex_batch3_1	no	weak	yes	yes	none	no	0.84	Repeated city topic supports contrast, not an isocolonic frame.
+QC017	codex_batch3_1	no	weak	yes	yes	none	no	0.80	Temporal contrast is clear, but predicate structure is uneven.
+QC018	codex_batch3_1	no	weak	no	no	none	no	0.85	Shared don't is local and the turns do different discourse work.
+QC019	codex_batch3_1	uncertain	strong	uncertain	uncertain	none	no	0.55	Two number words may form a contrast, but context is too thin.
+QC020	codex_batch3_1	no	none	no	no	none	yes	0.92	Subordinate complement and incomplete question are badly split.
+QC021	codex_batch3_1	no	weak	no	no	template_or_quote	yes	0.94	Attribution and quoted fragment are segmentation residue.
+QC022	codex_batch3_1	no	strong	no	no	repetition;dialogue_formula	no	0.90	Question-answer echo is near repetition, not a parallel figure.
+QC023	codex_batch3_1	no	strong	yes	no	repetition	no	0.76	Repeated clause adds an elaborating PP rather than a paired comparison.
+QC024	codex_batch3_1	no	moderate	no	no	dialogue_formula	no	0.82	I don't frame reflects repair/qualification, not rhetorical isocolon.
+QC025	codex_batch3_1	no	weak	no	no	dialogue_formula	no	0.96	Phatic interjection and response are ordinary turn-taking.
+QC026	codex_batch3_1	yes	moderate	yes	no	none	no	0.72	Dialogic echo reuses the event-horizon metaphor in a meaningful frame.
+QC027	codex_batch3_1	no	none	yes	yes	none	no	0.85	Concession contrasts two facts but lacks formal parallelism.
+QC028	codex_batch3_1	no	weak	yes	yes	none	no	0.84	Accessible again versus slow loading is contrast without matched syntax.
+QC029	codex_batch3_1	yes	strong	yes	yes	none	no	0.95	Mask clauses create direct contrast with strong slot substitution.
+QC030	codex_batch3_1	uncertain	weak	uncertain	uncertain	none	uncertain	0.50	Heavy redaction leaves the relation and possible form uncodable.
+QC031	codex_batch3_1	no	weak	yes	yes	none	no	0.82	Concessive timing contrast is interpretable but not formally balanced.
+QC032	codex_batch3_1	yes	strong	yes	yes	none	no	0.86	Repeated Then we frame coordinates sequential policy actions.
+QC033	codex_batch3_1	yes	strong	yes	yes	none	no	0.91	Matched player scoring number slots form a clear coordinated pair.
+QC034	codex_batch3_1	no	weak	no	no	none	yes	0.92	Prepositional fragments are stray complements, not a pair.
+QC035	codex_batch3_1	no	strong	no	yes	list_formatting;template_or_quote	no	0.95	Syllabus schedule template drives the similarity.
+QC036	codex_batch3_1	no	weak	no	no	dialogue_formula	no	0.96	Short phatic turns are formulaic dialogue.
+QC037	codex_batch3_1	no	strong	no	no	repetition	no	0.99	Exact repetition, not a paired construction.
+QC038	codex_batch3_1	no	strong	no	no	repetition;dialogue_formula	no	0.98	Exact repeated number in dialogue is not isocolon.
+QC039	codex_batch3_1	no	strong	no	no	repetition	no	0.98	Exact repeated clause without slot substitution.
+QC040	codex_batch3_1	no	strong	no	no	repetition	no	0.98	Exact repeated name phrase.

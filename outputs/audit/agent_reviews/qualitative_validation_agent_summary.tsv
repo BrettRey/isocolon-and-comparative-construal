@@ -1,0 +1,9 @@
+batch	agent	n_rows	agent_yes	agent_no	agent_uncertain	mean_confidence
+batch1	codex_1	40	9	27	4	0.8408
+batch1	codex_2	40	8	28	4	0.8562
+batch1	opus_1	40	10	25	5	0.7775
+batch1	opus_2	40	8	27	5	0.8138
+batch2	codex_batch2_1	40	10	23	7	0.8547
+batch2	codex_batch2_2	40	12	25	3	0.8622
+batch2	opus_batch2_1	40	10	23	7	0.8
+batch2	opus_batch2_2	40	11	25	4	0.8375

@@ -1,0 +1,41 @@
+audit_id	stratum	source_row	doc	collection	genre	orig_label	rel_type	same_sentence	unit1_ends_colon	unit1_ends_semicolon	isocolon_score	length_score	syntax_score	lexical_score	word_len_1	word_len_2	unit1_text	unit2_text	human_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_repetition	false_positive_list_formatting	false_positive_dialogue_formula	false_positive_template_or_quote	bad_segmentation	notes
+QA001	high_broad_non_narrow	8085	GUM_essay_distraction	GUM	essay	joint-list	implicit	0	0	0	1.0	1.0	1.0	1.0	4	4	Anything <*> occupies your attention.	Anything <*> occupies your attention.										
+QA002	high_broad_non_narrow	15367	GUM_vlog_hair	GUM	vlog	joint-list	implicit	0	0	0	0.9518	1.0	1.0	0.6786	7	7	You can use this on twist outs.	You can use this on braid outs.										
+QA003	high_broad_non_narrow	2487	GUM_speech_impeachment	GUM	speech	joint-list	implicit	0	0	0	0.9456	0.9889	1.0	0.6667	6	6	They made their case with intellect.	They made their case with evidence										
+QA004	high_broad_non_narrow	11932	GUM_podcast_addiction	GUM	podcast	joint-disjunction	implicit	0	0	0	0.9098	0.9262	1.0	0.5952	7	7	Somebody can manage to be a teacher.	Somebody can manage to be a cop.										
+QA005	high_broad_non_narrow	14840	GUM_textbook_spacetime	GUM	textbook	joint-list	implicit	1	0	1	0.9081	0.9889	0.9444	0.5833	6	6	“Matter tells spacetime how to curve;	spacetime tells matter how to move.”										
+QA006	high_broad_non_narrow	835	GENTLE_proof_wosets	GENTLE	proof	joint-list	explicit	1	0	0	0.9036	0.9778	0.9444	0.5833	6	6	or: X ∩ S is non-empty	and X ∩ T is non-empty.										
+QA007	high_broad_non_narrow	2248	GUM_podcast_wrestling	GUM	podcast	joint-disjunction	implicit	0	0	0	0.8977	0.963	1.0	0.4167	2	2	Three days.	Four days.										
+QA008	high_broad_non_narrow	6578	GUM_conversation_erasmus	GUM	conversation	joint-list	implicit	0	0	0	0.8972	0.9841	1.0	0.3571	7	7	I am the master of my fate,	I am the captain of my soul.										
+QA009	high_broad_non_narrow	7368	GUM_court_crash	GUM	court	joint-list	implicit	1	0	0	0.8958	0.9583	0.9444	0.5833	6	6	They'll talk about the party,	they'll talk about the crash,										
+QA010	high_broad_non_narrow	14177	GUM_speech_trump	GUM	speech	joint-list	implicit	0	0	0	0.8938	1.0	0.9167	0.5417	4	4	They're bringing drugs.	They're bringing crime.										
+QA011	typical_broad_non_narrow	11743	GUM_news_questionnaire	GUM	news	joint-list	explicit	1	0	0	0.428	0.6013	0.375	0.125	8	5	who don't have access to legal advice	"and don't speak English."""										
+QA012	typical_broad_non_narrow	263	GENTLE_esports_fortnite	GENTLE	esports	joint-list	implicit	0	0	0	0.3874	0.7007	0.1905	0.1429	7	6	Interesting load, that gold combat very early.	That's a very solid pickup										
+QA013	typical_broad_non_narrow	17261	GUM_whow_quidditch	GUM	whow	joint-list	explicit	1	0	0	0.3698	0.6667	0.2083	0.0625	6	8	Both teams start from the edges	and attempt to obtain the quaffle and bludgers.										
+QA014	typical_broad_non_narrow	4801	GUM_academic_economics	GUM	academic	joint-list	implicit	1	0	0	0.3802	0.638	0.2778	0.0	6	3	The state must protect property rights,	provide public services,										
+QA015	typical_broad_non_narrow	16214	GUM_voyage_isfahan	GUM	voyage	joint-list	explicit	1	0	0	0.393	0.6074	0.3333	0.0	5	3	having not only aesthetic value,	but also acoustic.										
+QA016	typical_broad_non_narrow	13995	GUM_speech_open	GUM	speech	joint-list	explicit	1	0	0	0.4077	0.7673	0.2121	0.0357	11	9	The Master plan <*> will completely transform government processes, services and management,	and make information access and service delivery more efficient.										
+QA017	narrow_mixed	4140	GUM_reddit_monsters	GUM	reddit	adversative-antithesis	implicit	0	0	0	0.3787	0.4446	0.3333	0.3393	9	14	____ _____ ______ ___ __ _____ _______ ___ ____	___ ________ _____ __ _____ _______ ___ ___ __ _ ____________ ______										
+QA018	narrow_mixed	14313	GUM_textbook_anthropology	GUM	textbook	adversative-antithesis	implicit	1	0	1	0.4928	0.8196	0.3333	0.1	4	5	knowing how to blink;	nobody has to teach us.										
+QA019	narrow_mixed	2633	GUM_textbook_labor	GUM	textbook	adversative-antithesis	implicit	1	0	0	0.3804	0.8494	0.0784	0.0357	17	16	The ultimate result of workers <*> is that society as a whole can produce and consume far more	than if each person tried to produce all of his or her own goods and services.										
+QA020	narrow_mixed	7577	GUM_court_mental	GUM	court	adversative-antithesis	explicit	1	0	0	0.2094	0.2281	0.2105	0.1559	19	5	and unlawfully forced T. W.'s remote appearance at trial by Zoom through an unmuted and video on connection,	despite T. W.'s request										
+QA021	narrow_mixed	12078	GUM_podcast_brave	GUM	podcast	adversative-contrast	explicit	1	0	0	0.5524	0.881	0.4444	0.0	6	5	It's like our modern thing	but in a medieval way.										
+QA022	narrow_mixed	16767	GUM_whow_basil	GUM	whow	adversative-antithesis	explicit	1	0	0	0.4381	0.9452	0.1333	0.0	10	10	so it's often easiest to start the seeds indoors	instead of risking that they'll get damaged by frost.										
+QA023	high_non_target	8070	GUM_essay_distraction	GUM	essay	elaboration-additional	implicit	0	0	0	1.0	1.0	1.0	1.0	1	1	stop.	Stop										
+QA024	high_non_target	15301	GUM_vlog_exams	GUM	vlog	topic-question	implicit	0	0	0	0.95	1.0	1.0	0.6667	3	3	Basil lime blackberry?	Blackberry basil lime.										
+QA025	high_non_target	2844	GUM_whow_joke	GUM	whow	joint-sequence	implicit	0	0	0	0.9271	0.9583	1.0	0.625	4	4	Getting the Material Right	Getting the Delivery Right										
+QA026	high_non_target	15713	GUM_vlog_pizzeria	GUM	vlog	restatement-partial	implicit	0	0	0	0.925	1.0	1.0	0.5	1	1	No!	No?										
+QA027	high_non_target	6492	GUM_conversation_christmas	GUM	conversation	organization-phatic	implicit	0	0	0	0.8717	0.8667	1.0	0.5	2	2	I'll —	I will.										
+QA028	high_non_target	6715	GUM_conversation_family	GUM	conversation	topic-question	implicit	0	0	0	0.8454	0.9259	1.0	0.1667	3	3	You ever do?	I only do										
+QA029	high_non_target	11111	GUM_letter_srilanka	GUM	letter	elaboration-additional	implicit	0	0	0	0.8417	0.9792	1.0	0.0	2	2	Rajiva Wijesinha.	Secretary General										
+QA030	high_non_target	1473	GUM_conversation_risk	GUM	conversation	topic-question	implicit	0	0	0	0.8333	0.9583	0.7333	0.8	5	5	Did I make him aggressive?	Yeah, you made him aggressive,										
+QA031	restatement_high_control	6285	GUM_conversation_atoms	GUM	conversation	restatement-repetition	implicit	1	0	0	1.0	1.0	1.0	1.0	1	1	Four.	Four.										
+QA032	restatement_high_control	12032	GUM_podcast_blackholes	GUM	podcast	restatement-repetition	implicit	0	0	0	1.0	1.0	1.0	1.0	2	2	Neutron stars --	Neutron stars.										
+QA033	restatement_high_control	15650	GUM_vlog_mermaid	GUM	vlog	restatement-repetition	implicit	1	0	0	1.0	1.0	1.0	1.0	1	1	Cheers!	Cheers!										
+QA034	restatement_high_control	3868	GUM_letter_mandela	GUM	letter	restatement-repetition	implicit	0	0	0	1.0	1.0	1.0	1.0	2	2	Nelson Mandela	NELSON MANDELA										
+QA035	restatement_high_control	14089	GUM_speech_telescope	GUM	speech	restatement-repetition	implicit	1	0	0	1.0	1.0	1.0	1.0	2	2	Thank you.	Thank you.										
+QA036	baseline_non_target	3529	GUM_essay_system	GUM	essay	context-circumstance	explicit	1	0	0	0.3332	0.4345	0.3333	0.0625	3	8	that you exercise	before you leave your house in the morning										
+QA037	baseline_non_target	6625	GUM_conversation_erasmus	GUM	conversation	attribution-positive	implicit	1	0	0	0.2313	0.4281	0.1333	0.0	5	2	Jesus turned to his disciples,	you remember,										
+QA038	baseline_non_target	5320	GUM_academic_theropod	GUM	academic	elaboration-additional	implicit	1	0	0	0.337	0.5299	0.2778	0.0	6	4	that our experimental approach, <*> was effective	in displacing the CoM										
+QA039	baseline_non_target	6250	GUM_conversation_atoms	GUM	conversation	elaboration-attribute	implicit	1	0	0	0.2008	0.3413	0.1429	0.0	7	3	And finally, what do we call something	that's loose,										
+QA040	baseline_non_target	5937	GUM_bio_moreau	GUM	bio	adversative-concession	implicit	1	0	0	0.3369	0.5923	0.2222	0.0	5	9	Most prolific during the 1960s,	Moreau continued to appear in films into her 80s.										

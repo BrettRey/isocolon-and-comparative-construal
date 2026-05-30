@@ -1,0 +1,53 @@
+You are Opus targeted adjudicator 1 for Brett Reynolds's isocolon audit.
+
+Working directory:
+/Users/brettreynolds/Documents/LLM-CLI-projects/papers/Isocolon_and_Comparative_Construal
+
+Read these files first:
+- outputs/audit/qualitative_audit_codebook.md
+- outputs/audit/qualitative_audit_dictionary.tsv
+- outputs/audit/agent_reviews/targeted_adjudication_rows.tsv
+
+Task:
+Do not recode all 40 rows. Review only the rows in `targeted_adjudication_rows.tsv`.
+The human coding is the proposed primary annotation. Your job is to stress-test
+it under the revised codebook.
+
+Important revised rules:
+- A colon need not be an independent clause. It can be a phrase, predicate,
+  fragment, short answer, or dialogue turn if it functions as a member of the
+  figure.
+- Formal parallelism can be phonological, morphological, syntactic, lexical, or
+  constructional.
+- Dialogic echo can count as isocolonic if the turn pair creates a meaningful
+  parallel or contrastive structure. Dialogue is not automatically a false
+  positive.
+- Apposition/identity can be rhetorically relevant clarification, but it is not
+  comparison and not isocolon for this study.
+- Comparison/coordination can be yes while human_isocolonic is no.
+
+Write exactly one TSV file:
+outputs/audit/agent_reviews/opus_adjudicator_1.tsv
+
+Use exactly these columns:
+audit_id,agent,agree_with_human,preferred_human_isocolonic,preferred_formal_parallelism,preferred_rhetorically_relevant,preferred_comparison_or_coordination,key_reason,what_would_change_my_mind
+
+Allowed values:
+- `agent`: opus_adjudicator_1
+- `agree_with_human`: yes / no / uncertain
+- `preferred_human_isocolonic`: yes / no / uncertain
+- `preferred_formal_parallelism`: none / weak / moderate / strong
+- `preferred_rhetorically_relevant`: yes / no / uncertain
+- `preferred_comparison_or_coordination`: yes / no / uncertain
+
+Focus on the real borderline issues:
+- QA007: very short cola, context dependence
+- QA013: what counts as cola in a coordinated predicate
+- QA018: phonological + to-infinitival patterning
+- QA019: whether a comparative `than if...` standard can be a second colon
+- QA021: loose contrast with partial form matching
+- QA028 and QA030: dialogic echo
+- QA040: temporal contrast/concession
+
+When finished, report only the path written and the rows where you disagree
+with the human code.

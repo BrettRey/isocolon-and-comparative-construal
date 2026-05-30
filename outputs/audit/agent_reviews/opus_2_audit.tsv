@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QA001	opus_2	no	strong	no	no	exact_repetition	no	0.97	identical units, mere repetition
+QA002	opus_2	yes	strong	yes	yes	none	no	0.95	shared frame, twist/braid slot substitution
+QA003	opus_2	yes	strong	yes	yes	none	no	0.92	shared frame, intellect/evidence slot sub
+QA004	opus_2	yes	strong	yes	yes	none	no	0.9	shared frame, teacher/cop disjunction
+QA005	opus_2	yes	strong	yes	yes	none	no	0.92	quoted chiasmus is itself the figure
+QA006	opus_2	no	moderate	no	no	list_formatting	no	0.78	math proof bullets, rhetorically inert
+QA007	opus_2	uncertain	strong	yes	yes	dialogue_formula	no	0.6	short number contrast, podcast turn
+QA008	opus_2	yes	strong	yes	yes	none	no	0.92	quoted Invictus parallel is the figure
+QA009	opus_2	yes	strong	yes	yes	none	no	0.92	shared frame, party/crash slot sub
+QA010	opus_2	yes	strong	yes	yes	none	no	0.93	shared frame, drugs/crime accumulation
+QA011	opus_2	no	weak	no	no	none	no	0.72	uneven coordinated relatives, no balance
+QA012	opus_2	no	weak	no	no	none	no	0.85	esports commentary, no shared frame
+QA013	opus_2	no	weak	no	uncertain	none	no	0.78	coordinated VPs, unbalanced length
+QA014	opus_2	uncertain	moderate	uncertain	yes	none	no	0.62	VP coordination list, length uneven
+QA015	opus_2	yes	moderate	yes	yes	none	no	0.72	not-only-but-also correlative, elided second
+QA016	opus_2	no	weak	no	uncertain	none	no	0.78	long coordinated VPs, no balance
+QA017	opus_2	uncertain	none	uncertain	uncertain	none	uncertain	0.55	fully redacted, uncodable
+QA018	opus_2	no	weak	no	no	none	yes	0.72	construction split, units do not match
+QA019	opus_2	no	weak	no	yes	none	no	0.7	comparative more-than, not balanced isocolon
+QA020	opus_2	no	none	no	no	none	yes	0.75	concession, args split, not parallel
+QA021	opus_2	uncertain	moderate	uncertain	yes	none	no	0.6	modern/medieval contrast, frames not matched
+QA022	opus_2	no	weak	no	no	none	no	0.75	instead-of contrast, no formal parallel
+QA023	opus_2	no	strong	no	no	exact_repetition	no	0.95	stop/Stop capitalization repeat
+QA024	opus_2	no	moderate	no	no	exact_repetition	no	0.8	same words reordered, echo not isocolon
+QA025	opus_2	uncertain	strong	uncertain	uncertain	list_formatting	no	0.6	parallel section headings, formatting pattern
+QA026	opus_2	no	strong	no	no	exact_repetition	no	0.92	No!/No? punctuation variant
+QA027	opus_2	no	weak	no	no	dialogue_formula	uncertain	0.85	I'll/I will repair, phatic
+QA028	opus_2	no	moderate	no	no	dialogue_formula	no	0.82	question-answer dialogue residue
+QA029	opus_2	no	none	no	no	template_or_quote	yes	0.82	name then title, signature fragment
+QA030	opus_2	no	moderate	no	no	dialogue_formula	no	0.82	Q-A echo, made-aggressive repeated
+QA031	opus_2	no	strong	no	no	exact_repetition;dialogue_formula	no	0.95	Four/Four exact repetition
+QA032	opus_2	no	strong	no	no	exact_repetition	no	0.93	Neutron stars restated, repetition
+QA033	opus_2	no	strong	no	no	exact_repetition;dialogue_formula	no	0.95	Cheers/Cheers exact repetition
+QA034	opus_2	no	strong	no	no	exact_repetition	no	0.95	name repeated, caps variant
+QA035	opus_2	no	strong	no	no	exact_repetition;dialogue_formula	no	0.97	Thank-you exact repetition
+QA036	opus_2	no	none	no	no	none	yes	0.75	circumstance clause, args split
+QA037	opus_2	no	none	no	no	dialogue_formula	yes	0.78	attribution plus aside, not parallel
+QA038	opus_2	no	none	no	no	none	yes	0.78	elaboration, complement split off
+QA039	opus_2	no	none	no	no	none	yes	0.78	question plus relative, args split
+QA040	opus_2	no	weak	no	no	none	no	0.78	concession, no formal parallel

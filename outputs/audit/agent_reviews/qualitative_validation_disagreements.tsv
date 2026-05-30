@@ -1,0 +1,23 @@
+batch	audit_id	stratum	human_isocolonic	agent_yes	agent_no	agent_uncertain	agent_majority	agent_majority_n	n_agent_disagreements	agent_codes	unit1_text	unit2_text
+batch1	QA006	high_broad_non_narrow	no	1	3	0	no	3	1	codex_1:no; codex_2:no; opus_1:yes; opus_2:no	or: X ∩ S is non-empty	and X ∩ T is non-empty.
+batch1	QA007	high_broad_non_narrow	yes	0	2	2	no/uncertain	2	4	codex_1:no; codex_2:no; opus_1:uncertain; opus_2:uncertain	Three days.	Four days.
+batch1	QA011	typical_broad_non_narrow	yes	0	1	3	uncertain	3	4	codex_1:uncertain; codex_2:uncertain; opus_1:uncertain; opus_2:no	who don't have access to legal advice	"and don't speak English."""
+batch1	QA013	typical_broad_non_narrow	uncertain	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Both teams start from the edges	and attempt to obtain the quaffle and bludgers.
+batch1	QA014	typical_broad_non_narrow	yes	1	2	1	no	2	3	codex_1:no; codex_2:no; opus_1:yes; opus_2:uncertain	The state must protect property rights,	provide public services,
+batch1	QA015	typical_broad_non_narrow	yes	2	0	2	uncertain/yes	2	2	codex_1:uncertain; codex_2:uncertain; opus_1:yes; opus_2:yes	having not only aesthetic value,	but also acoustic.
+batch1	QA016	typical_broad_non_narrow	yes	1	3	0	no	3	3	codex_1:yes; codex_2:no; opus_1:no; opus_2:no	The Master plan <*> will completely transform government processes, services and management,	and make information access and service delivery more efficient.
+batch1	QA017	narrow_mixed	no	0	0	4	uncertain	4	4	codex_1:uncertain; codex_2:uncertain; opus_1:uncertain; opus_2:uncertain	____ _____ ______ ___ __ _____ _______ ___ ____	___ ________ _____ __ _____ _______ ___ ___ __ _ ____________ ______
+batch1	QA018	narrow_mixed	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	knowing how to blink;	nobody has to teach us.
+batch1	QA019	narrow_mixed	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	The ultimate result of workers <*> is that society as a whole can produce and consume far more	than if each person tried to produce all of his or her own goods and services.
+batch1	QA021	narrow_mixed	yes	0	0	4	uncertain	4	4	codex_1:uncertain; codex_2:uncertain; opus_1:uncertain; opus_2:uncertain	It's like our modern thing	but in a medieval way.
+batch1	QA024	high_non_target	no	0	3	1	no	3	1	codex_1:no; codex_2:no; opus_1:uncertain; opus_2:no	Basil lime blackberry?	Blackberry basil lime.
+batch1	QA025	high_non_target	yes	2	1	1	yes	2	2	codex_1:yes; codex_2:yes; opus_1:no; opus_2:uncertain	Getting the Material Right	Getting the Delivery Right
+batch1	QA028	high_non_target	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	You ever do?	I only do
+batch1	QA030	high_non_target	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Did I make him aggressive?	Yeah, you made him aggressive,
+batch1	QA040	baseline_non_target	yes	0	4	0	no	4	4	codex_1:no; codex_2:no; opus_1:no; opus_2:no	Most prolific during the 1960s,	Moreau continued to appear in films into her 80s.
+batch2	QB007	mid_broad_target	yes	2	0	2	uncertain/yes	2	2	codex_batch2_1:uncertain; codex_batch2_2:yes; opus_batch2_1:uncertain; opus_batch2_2:yes	I heard a noise like paper.	My father heard it, too,
+batch2	QB010	mid_broad_target	yes	0	0	4	uncertain	4	4	codex_batch2_1:uncertain; codex_batch2_2:uncertain; opus_batch2_1:uncertain; opus_batch2_2:uncertain	Aren’t they supposed to have a pot of gold or something?	And they have to tell you where it is
+batch2	QB011	mid_broad_target	yes	0	0	4	uncertain	4	4	codex_batch2_1:uncertain; codex_batch2_2:uncertain; opus_batch2_1:uncertain; opus_batch2_2:uncertain	it fits three people quite comfortably,	and <*> it opens up into a full double bed.
+batch2	QB017	narrow_antithesis_contrast	yes	1	0	3	uncertain	3	3	codex_batch2_1:uncertain; codex_batch2_2:yes; opus_batch2_1:uncertain; opus_batch2_2:uncertain	Tåsinge, Langeland and a few of the smaller islands are connected with bridges,	but to most of the islands transportation is done with tiny ferries
+batch2	QB021	dialogue_echo_candidate	uncertain	0	2	2	no/uncertain	2	2	codex_batch2_1:uncertain; codex_batch2_2:no; opus_batch2_1:uncertain; opus_batch2_2:no	I kn- —	Oh oh I know.
+batch2	QB026	dialogue_echo_candidate	uncertain	0	2	2	no/uncertain	2	2	codex_batch2_1:uncertain; codex_batch2_2:no; opus_batch2_1:uncertain; opus_batch2_2:no	There's a hole in it.	Well, there's a hole,

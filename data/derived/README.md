@@ -3,3 +3,90 @@
 Derived, shareable tables belong here.
 
 Document the source corpus, extraction command, coding fields, and license status for every derived file.
+
+Generated local inventories:
+
+- `gum_erst_manifest.tsv`
+  - Command: `scripts/inspect_gum_erst.py`
+  - Source: `data/raw/gum-erst`, a local symlink to the central GUM V12.1.0 checkout.
+  - Contents: source path, Git tag/commit, file counts, and RST Signalling Corpus availability status.
+- `gum_erst_relation_inventory.tsv`
+  - Command: `scripts/inspect_gum_erst.py`
+  - Source: `data/raw/gum-erst/rst/disrpt/*.rels`.
+  - Contents: counts by DISRPT file, framework, partition, coarse label, original label, and explicit/implicit relation type.
+- `gum_erst_signal_inventory.tsv`
+  - Command: `scripts/inspect_gum_erst.py`
+  - Source: `data/raw/gum-erst/rst/rstweb/*.rs4`.
+  - Contents: counts by collection, genre, source relation, signal type, signal subtype, status, and source file.
+- `gum_erst_relation_pairs.tsv`
+  - Command: `scripts/extract_gum_erst_relation_pairs.py`
+  - Source: `data/raw/gum-erst/rst/disrpt/eng.erst.*.rels`.
+  - Contents: valid eRST relation rows with token spans, genre, labels, adjacency status, token gap, same-sentence status, punctuation flags, token counts, token-balance scores, and normalized unit text.
+- `gum_erst_adjacent_relation_pairs.tsv`
+  - Command: `scripts/extract_gum_erst_relation_pairs.py`
+  - Source: `data/raw/gum-erst/rst/disrpt/eng.erst.*.rels`.
+  - Contents: subset of `gum_erst_relation_pairs.tsv` whose relation arguments are strictly adjacent, excluding overlapping or interleaved discontinuous spans.
+- `gum_erst_adjacent_isocolon_scores.tsv`
+  - Command: `scripts/score_gum_isocolon.py`
+  - Source: `data/derived/gum_erst_adjacent_relation_pairs.tsv` and `data/raw/gum-erst/dep/*.conllu`.
+  - Contents: adjacent relation pairs with word/character/syllable length balance, POS/dependency sequence similarity, lexical similarity, a composite isocolonicity score, and a separate eRST `syn-prl` diagnostic flag.
+- `fake_data_simulation_design.tsv`
+  - Command: `scripts/fake_data_simulation.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: row counts, document/genre counts, target prevalence, observed score moments, noise setting, and adjustment set for fake-data simulations.
+- `fake_data_simulation_draws.tsv`
+  - Command: `scripts/fake_data_simulation.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: per-simulation estimates, standard errors, intervals, coverage, sign recovery, and clipping diagnostics.
+- `fake_data_simulation_summary.tsv`
+  - Command: `scripts/fake_data_simulation.py`
+  - Source: `data/derived/fake_data_simulation_draws.tsv`.
+  - Contents: scenario-level recovery summaries by target definition, label-error rate, and true effect size.
+- `observed_isocolon_effects.tsv`
+  - Command: `scripts/fit_observed_isocolon.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: document-adjusted observed associations for broad, narrow, and individual target definitions across composite and subscale outcomes, with sensitivity subsets.
+- `observed_relation_effect_atlas.tsv`
+  - Command: `scripts/relation_effect_atlas.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: document-adjusted one-vs-rest estimates for each sufficiently frequent eRST original relation label across composite and subscale outcomes.
+- `relation_shrinkage_effects.tsv`
+  - Command: `scripts/fit_relation_shrinkage.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: document-adjusted ridge/shrinkage estimates for all sufficiently frequent eRST original relation labels across composite and subscale outcomes.
+- `relation_shrinkage_summary.tsv`
+  - Command: `scripts/fit_relation_shrinkage.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: selected ridge penalty, effective degrees of freedom, residual scale, relation-group count, and row count by outcome.
+- `isocolon_score_validation_summary.tsv`
+  - Command: `scripts/validate_isocolon_score.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: AUC and distribution summaries for score components against gold eRST `syn-prl` flags.
+- `isocolon_score_thresholds.tsv`
+  - Command: `scripts/validate_isocolon_score.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: precision, recall, and lift for percentile thresholds on the composite score.
+- `isocolon_score_validation_examples.tsv`
+  - Command: `scripts/validate_isocolon_score.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: qualitative examples for top gold `syn-prl`, top non-gold high scores, low-scoring gold rows, and high-scoring project-label rows.
+- `genre_sensitivity_effects.tsv`
+  - Command: `scripts/genre_sensitivity.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: within-genre adjusted target effects for broad, narrow, joint-list, and adversative-contrast definitions where cell counts are sufficient.
+- `genre_varying_effects.tsv`
+  - Command: `scripts/fit_genre_varying_effects.py`
+  - Source: `data/derived/genre_sensitivity_effects.tsv`.
+  - Contents: empirical-Bayes genre-varying target effects, including shrunk estimates, posterior standard deviations, intervals, probability of a positive effect, and shrinkage weights.
+- `genre_varying_summary.tsv`
+  - Command: `scripts/fit_genre_varying_effects.py`
+  - Source: `data/derived/genre_sensitivity_effects.tsv`.
+  - Contents: corpus-level empirical-Bayes mean and between-genre variation for each target definition.
+- `score_weight_sensitivity.tsv`
+  - Command: `scripts/score_weight_sensitivity.py`
+  - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
+  - Contents: document-adjusted target effects under named and grid-based nonnegative weightings of length, syntax, and lexical isocolonicity components.
+- `score_weight_sensitivity_summary.tsv`
+  - Command: `scripts/score_weight_sensitivity.py`
+  - Source: `data/derived/score_weight_sensitivity.tsv`.
+  - Contents: target-level stability summaries, including min/median/max effects and the share of weight specifications giving positive intervals.

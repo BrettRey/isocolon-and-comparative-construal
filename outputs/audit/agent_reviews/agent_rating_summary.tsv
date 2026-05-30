@@ -1,0 +1,5 @@
+agent	n_rows	yes	no	uncertain	mean_confidence	top_failure_modes
+codex_1	40	9	27	4	0.8407500000000001	bad_segmentation:13; repetition:10; dialogue_formula:7; list_formatting:3; template_or_quote:2
+codex_2	40	8	28	4	0.85625	repetition:10; dialogue_formula:7; bad_segmentation:6; list_formatting:4; template_or_quote:3
+opus_1	40	10	25	5	0.7775	dialogue_formula:9; repetition:8; bad_segmentation:8; template_or_quote:4; list_formatting:2
+opus_2	40	8	27	5	0.8137500000000001	repetition:9; dialogue_formula:8; bad_segmentation:7; list_formatting:2; template_or_quote:1

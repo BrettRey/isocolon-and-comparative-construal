@@ -1,0 +1,161 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QA001	codex_1	no	strong	no	no	repetition	no	0.96	Exact duplicate sentence.
+QA002	codex_1	yes	strong	yes	yes	none	no	0.74	Same frame, meaningful lexical contrast.
+QA003	codex_1	yes	strong	yes	yes	none	no	0.82	Balanced clauses with contrasting nouns.
+QA004	codex_1	yes	strong	yes	yes	none	no	0.72	"Parallel ""manage to be"" contrast."
+QA005	codex_1	yes	strong	yes	yes	none	no	0.99	Canonical rhetorical parallelism.
+QA006	codex_1	no	strong	no	yes	list_formatting	no	0.8	Formal logic list, low rhetoric.
+QA007	codex_1	no	weak	no	uncertain	none	yes	0.78	Bare fragments, likely clipped context.
+QA008	codex_1	yes	strong	yes	yes	none	no	0.88	Strong balanced biclausal line.
+QA009	codex_1	yes	strong	yes	yes	none	no	0.8	Anaphoric repetition with new object.
+QA010	codex_1	yes	strong	yes	yes	none	no	0.93	Parallel accusations for rhetorical punch.
+QA011	codex_1	uncertain	moderate	uncertain	yes	none	yes	0.56	Coordinated negatives but noisy split.
+QA012	codex_1	no	weak	no	no	none	no	0.91	Utterances not structurally parallel.
+QA013	codex_1	no	weak	no	yes	none	yes	0.78	Single clause split at coordinator.
+QA014	codex_1	no	weak	no	yes	list_formatting	no	0.86	Policy list, not rhetorical pairing.
+QA015	codex_1	uncertain	weak	uncertain	yes	none	yes	0.52	Not-only/but-also but truncated second.
+QA016	codex_1	yes	moderate	yes	yes	none	no	0.79	Coordinated predicates with balanced scope.
+QA017	codex_1	uncertain	weak	uncertain	uncertain	none	yes	0.22	Redacted text blocks prevent judgment.
+QA018	codex_1	no	none	no	no	none	no	0.78	No clear bilateral structural match.
+QA019	codex_1	no	none	no	yes	none	yes	0.9	Comparative clause, not isocolonic pair.
+QA020	codex_1	no	none	no	no	none	yes	0.94	Long legal clause plus adjunct.
+QA021	codex_1	uncertain	weak	uncertain	yes	none	no	0.55	Contrast present, little formal balance.
+QA022	codex_1	no	weak	no	yes	none	no	0.83	Alternative framing without tight parallelism.
+QA023	codex_1	no	strong	no	no	repetition	no	0.98	Case-shifted exact repetition.
+QA024	codex_1	no	moderate	no	no	list_formatting;dialogue_formula	no	0.89	Reordered list in Q/A echo.
+QA025	codex_1	yes	strong	yes	yes	none	no	0.74	Matched heading frame, meaningful contrast.
+QA026	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.96	Same token with punctuation change.
+QA027	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.95	Contraction expansion, same proposition.
+QA028	codex_1	no	weak	no	no	dialogue_formula	no	0.86	Conversational exchange, no balanced pair.
+QA029	codex_1	no	none	no	no	template_or_quote	yes	0.87	Signature/name formatting artifact.
+QA030	codex_1	no	moderate	no	no	repetition;dialogue_formula	no	0.95	Question-answer echo repetition.
+QA031	codex_1	no	strong	no	no	repetition	no	0.99	Exact one-word repetition.
+QA032	codex_1	no	strong	no	no	repetition	no	0.99	Same noun phrase restated.
+QA033	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.99	Repeated toast formula.
+QA034	codex_1	no	strong	no	no	repetition;template_or_quote	no	0.98	Name duplicated with capitalization change.
+QA035	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.99	Repeated courtesy formula.
+QA036	codex_1	no	none	no	no	none	yes	0.88	Subordinate fragments, asymmetrical split.
+QA037	codex_1	no	none	no	no	none	yes	0.91	Attribution clause plus discourse tag.
+QA038	codex_1	no	none	no	no	none	yes	0.9	Main clause versus complement phrase.
+QA039	codex_1	no	none	no	no	none	yes	0.89	Question stem split before descriptor.
+QA040	codex_1	no	none	no	no	none	yes	0.85	Temporal fragment plus full clause.
+QA001	codex_2	no	strong	no	no	repetition	no	0.98	Exact sentence repetition only.
+QA002	codex_2	yes	strong	yes	yes	none	no	0.89	Same frame with meaningful lexical contrast.
+QA003	codex_2	yes	strong	yes	yes	none	no	0.88	Balanced clauses contrast means of argument.
+QA004	codex_2	yes	strong	yes	yes	none	no	0.84	Parallel predicate frame with contrasted roles.
+QA005	codex_2	yes	strong	yes	yes	none	no	0.93	Canonical mirrored semicolon pair.
+QA006	codex_2	no	strong	no	yes	template_or_quote	no	0.78	Logical proof template, not rhetorical styling.
+QA007	codex_2	no	weak	no	yes	list_formatting	no	0.66	Bare duration listing without rhetorical build.
+QA008	codex_2	yes	strong	yes	yes	none	no	0.95	Famous balanced couplet with clear parallelism.
+QA009	codex_2	yes	strong	yes	yes	none	no	0.86	Repeated clause frame with contrasted nouns.
+QA010	codex_2	yes	strong	yes	yes	none	no	0.9	Anaphoric accusation pair is rhetorically marked.
+QA011	codex_2	uncertain	weak	uncertain	yes	bad_segmentation	yes	0.42	Truncated/quoted split obscures true structure.
+QA012	codex_2	no	none	no	no	none	no	0.95	Two different utterance shapes, not parallel.
+QA013	codex_2	no	moderate	no	yes	list_formatting	no	0.73	Coordinated exposition, weak rhetorical isocolon.
+QA014	codex_2	no	moderate	no	yes	list_formatting	no	0.8	Policy list syntax, not a marked couplet.
+QA015	codex_2	uncertain	weak	uncertain	yes	template_or_quote	no	0.52	Not-only/but-also fragment is underspecified.
+QA016	codex_2	no	weak	no	yes	none	no	0.82	Asymmetric clause plus extension, not balanced.
+QA017	codex_2	uncertain	weak	uncertain	uncertain	bad_segmentation	yes	0.2	Redacted tokens prevent reliable judgment.
+QA018	codex_2	no	weak	no	no	none	no	0.83	Gerund phrase plus clause lacks pairing.
+QA019	codex_2	no	none	no	no	none	no	0.89	Comparative prose, not parallel units.
+QA020	codex_2	no	none	no	no	bad_segmentation	yes	0.93	Second unit is truncated request fragment.
+QA021	codex_2	uncertain	weak	uncertain	yes	none	no	0.55	Loose contrast but little formal parallelism.
+QA022	codex_2	no	weak	no	yes	none	no	0.88	Infinitival plan vs risk clause mismatch.
+QA023	codex_2	no	strong	no	no	repetition	no	0.99	Case-only repetition, no rhetorical comparison.
+QA024	codex_2	no	moderate	no	no	repetition;dialogue_formula	no	0.9	Question-answer echo via word reordering.
+QA025	codex_2	yes	strong	yes	yes	none	no	0.87	Parallel gerund headings with meaningful contrast.
+QA026	codex_2	no	strong	no	no	repetition;dialogue_formula	no	0.98	Same token with punctuation change only.
+QA027	codex_2	no	weak	no	no	dialogue_formula	no	0.95	Contraction restatement, not comparative couplet.
+QA028	codex_2	no	none	no	no	dialogue_formula	no	0.91	Turn-taking exchange lacks structural parallelism.
+QA029	codex_2	no	none	no	no	list_formatting	no	0.96	Signature/name line, not coordinated pair.
+QA030	codex_2	no	moderate	no	no	repetition;dialogue_formula	no	0.94	Answer repeats question wording formulaically.
+QA031	codex_2	no	strong	no	no	repetition	no	0.99	Exact numeric repetition.
+QA032	codex_2	no	strong	no	no	repetition	no	0.99	Exact lexical repetition with punctuation.
+QA033	codex_2	no	strong	no	no	repetition;dialogue_formula	no	0.99	Formulaic toast repetition.
+QA034	codex_2	no	strong	no	no	repetition;template_or_quote	no	0.99	Case-variant name repetition only.
+QA035	codex_2	no	strong	no	no	repetition;dialogue_formula	no	0.99	Formulaic thanks repeated verbatim.
+QA036	codex_2	no	none	no	no	none	no	0.97	Single clause continuation, no pairing.
+QA037	codex_2	no	none	no	no	bad_segmentation	yes	0.92	Attribution plus parenthetical aside split.
+QA038	codex_2	no	none	no	no	bad_segmentation	yes	0.92	Clause split leaves nonparallel fragment pair.
+QA039	codex_2	no	none	no	no	bad_segmentation	yes	0.9	Question stem split from modifier clause.
+QA040	codex_2	no	none	no	no	none	no	0.9	Temporal phrase plus main clause, unpaired.
+QA001	opus_1	no	strong	no	no	exact_repetition	no	0.9	identical strings with redaction, not a paired construction
+QA002	opus_1	yes	strong	yes	yes	none	no	0.95	shared frame with slot substitution twist/braid outs
+QA003	opus_1	yes	strong	yes	yes	none	no	0.9	shared frame made their case with intellect/evidence
+QA004	opus_1	yes	strong	yes	yes	none	no	0.88	disjunction with matched frame teacher/cop
+QA005	opus_1	yes	strong	yes	yes	template_or_quote	no	0.9	quoted chiasmus matter/spacetime, quote is the figure
+QA006	opus_1	yes	moderate	yes	yes	list_formatting	no	0.7	parallel proof clauses non-empty, mild bullet flavor but coordinated
+QA007	opus_1	uncertain	moderate	no	yes	none	no	0.6	bare numeral disjunction three/four days, thin rhetoric
+QA008	opus_1	yes	strong	yes	yes	template_or_quote	no	0.92	quoted Invictus couplet, quote is the parallel figure
+QA009	opus_1	yes	strong	yes	yes	none	no	0.9	matched frame they'll talk about the party/crash
+QA010	opus_1	yes	strong	yes	yes	none	no	0.95	repeated frame they're bringing drugs/crime, accumulation
+QA011	opus_1	uncertain	weak	uncertain	yes	none	uncertain	0.55	stray relative-clause fragments, segmentation unclear
+QA012	opus_1	no	weak	no	no	dialogue_formula	no	0.75	esports commentary turns, no parallel frame
+QA013	opus_1	no	weak	no	uncertain	none	no	0.7	uneven coordinated clauses, no matched frame
+QA014	opus_1	yes	moderate	yes	yes	none	no	0.7	coordinated verb-phrase list protect/provide, uneven length
+QA015	opus_1	yes	moderate	yes	yes	none	no	0.72	not only...but also correlative, gapped second colon
+QA016	opus_1	no	weak	no	uncertain	none	no	0.65	long uneven coordinated clauses, no balanced frame
+QA017	opus_1	uncertain	none	uncertain	uncertain	template_or_quote	uncertain	0.5	fully redacted text, uninterpretable
+QA018	opus_1	no	weak	no	no	none	yes	0.7	split antithesis fragments, construction broken
+QA019	opus_1	no	weak	uncertain	uncertain	none	no	0.62	than-comparison but no matched syntactic frame
+QA020	opus_1	no	none	no	no	none	yes	0.7	stray complement clauses, no parallelism
+QA021	opus_1	uncertain	moderate	uncertain	yes	none	no	0.6	contrast modern/medieval, short and uneven frame
+QA022	opus_1	no	weak	no	uncertain	none	no	0.65	instead-of contrast but mismatched structure
+QA023	opus_1	no	strong	no	no	exact_repetition	no	0.9	stop./Stop capitalization repetition artifact
+QA024	opus_1	uncertain	moderate	uncertain	no	dialogue_formula	no	0.6	reordered flavor terms, restatement not contrast
+QA025	opus_1	no	strong	no	no	list_formatting	no	0.85	parallel section headings getting X right
+QA026	opus_1	no	strong	no	no	dialogue_formula;exact_repetition	no	0.88	No!/No? punctuation variant of one word
+QA027	opus_1	no	moderate	no	no	dialogue_formula	yes	0.75	self-repair I'll/I will, broken turn
+QA028	opus_1	no	weak	no	no	dialogue_formula	no	0.75	question and answer residue, not parallel
+QA029	opus_1	no	none	no	no	template_or_quote	yes	0.8	name then title from signature block, broken units
+QA030	opus_1	no	moderate	no	no	dialogue_formula	no	0.75	question echoed in answer, Q-A repetition
+QA031	opus_1	no	strong	no	no	exact_repetition;dialogue_formula	no	0.92	Four./Four. exact repetition in dialogue
+QA032	opus_1	no	strong	no	no	exact_repetition	no	0.92	neutron stars repeated, restatement not pair
+QA033	opus_1	no	strong	no	no	exact_repetition;dialogue_formula	no	0.92	Cheers!/Cheers! exact repetition
+QA034	opus_1	no	strong	no	no	exact_repetition	no	0.92	Nelson Mandela repeated, capitalization variant
+QA035	opus_1	no	strong	no	no	exact_repetition;dialogue_formula	no	0.92	Thank you./Thank you. exact repetition
+QA036	opus_1	no	none	no	no	none	yes	0.75	stray adverbial then temporal clause, no pairing
+QA037	opus_1	no	none	no	no	none	yes	0.8	attribution plus parenthetical aside, no parallel
+QA038	opus_1	no	none	no	no	none	yes	0.75	split clause and complement, broken construction
+QA039	opus_1	no	none	no	no	none	yes	0.78	question plus stray relative clause, no pairing
+QA040	opus_1	no	weak	no	no	none	no	0.7	concession with fronted modifier, no matched frame
+QA001	opus_2	no	strong	no	no	exact_repetition	no	0.97	identical units, mere repetition
+QA002	opus_2	yes	strong	yes	yes	none	no	0.95	shared frame, twist/braid slot substitution
+QA003	opus_2	yes	strong	yes	yes	none	no	0.92	shared frame, intellect/evidence slot sub
+QA004	opus_2	yes	strong	yes	yes	none	no	0.9	shared frame, teacher/cop disjunction
+QA005	opus_2	yes	strong	yes	yes	none	no	0.92	quoted chiasmus is itself the figure
+QA006	opus_2	no	moderate	no	no	list_formatting	no	0.78	math proof bullets, rhetorically inert
+QA007	opus_2	uncertain	strong	yes	yes	dialogue_formula	no	0.6	short number contrast, podcast turn
+QA008	opus_2	yes	strong	yes	yes	none	no	0.92	quoted Invictus parallel is the figure
+QA009	opus_2	yes	strong	yes	yes	none	no	0.92	shared frame, party/crash slot sub
+QA010	opus_2	yes	strong	yes	yes	none	no	0.93	shared frame, drugs/crime accumulation
+QA011	opus_2	no	weak	no	no	none	no	0.72	uneven coordinated relatives, no balance
+QA012	opus_2	no	weak	no	no	none	no	0.85	esports commentary, no shared frame
+QA013	opus_2	no	weak	no	uncertain	none	no	0.78	coordinated VPs, unbalanced length
+QA014	opus_2	uncertain	moderate	uncertain	yes	none	no	0.62	VP coordination list, length uneven
+QA015	opus_2	yes	moderate	yes	yes	none	no	0.72	not-only-but-also correlative, elided second
+QA016	opus_2	no	weak	no	uncertain	none	no	0.78	long coordinated VPs, no balance
+QA017	opus_2	uncertain	none	uncertain	uncertain	none	uncertain	0.55	fully redacted, uncodable
+QA018	opus_2	no	weak	no	no	none	yes	0.72	construction split, units do not match
+QA019	opus_2	no	weak	no	yes	none	no	0.7	comparative more-than, not balanced isocolon
+QA020	opus_2	no	none	no	no	none	yes	0.75	concession, args split, not parallel
+QA021	opus_2	uncertain	moderate	uncertain	yes	none	no	0.6	modern/medieval contrast, frames not matched
+QA022	opus_2	no	weak	no	no	none	no	0.75	instead-of contrast, no formal parallel
+QA023	opus_2	no	strong	no	no	exact_repetition	no	0.95	stop/Stop capitalization repeat
+QA024	opus_2	no	moderate	no	no	exact_repetition	no	0.8	same words reordered, echo not isocolon
+QA025	opus_2	uncertain	strong	uncertain	uncertain	list_formatting	no	0.6	parallel section headings, formatting pattern
+QA026	opus_2	no	strong	no	no	exact_repetition	no	0.92	No!/No? punctuation variant
+QA027	opus_2	no	weak	no	no	dialogue_formula	uncertain	0.85	I'll/I will repair, phatic
+QA028	opus_2	no	moderate	no	no	dialogue_formula	no	0.82	question-answer dialogue residue
+QA029	opus_2	no	none	no	no	template_or_quote	yes	0.82	name then title, signature fragment
+QA030	opus_2	no	moderate	no	no	dialogue_formula	no	0.82	Q-A echo, made-aggressive repeated
+QA031	opus_2	no	strong	no	no	exact_repetition;dialogue_formula	no	0.95	Four/Four exact repetition
+QA032	opus_2	no	strong	no	no	exact_repetition	no	0.93	Neutron stars restated, repetition
+QA033	opus_2	no	strong	no	no	exact_repetition;dialogue_formula	no	0.95	Cheers/Cheers exact repetition
+QA034	opus_2	no	strong	no	no	exact_repetition	no	0.95	name repeated, caps variant
+QA035	opus_2	no	strong	no	no	exact_repetition;dialogue_formula	no	0.97	Thank-you exact repetition
+QA036	opus_2	no	none	no	no	none	yes	0.75	circumstance clause, args split
+QA037	opus_2	no	none	no	no	dialogue_formula	yes	0.78	attribution plus aside, not parallel
+QA038	opus_2	no	none	no	no	none	yes	0.78	elaboration, complement split off
+QA039	opus_2	no	none	no	no	none	yes	0.78	question plus relative, args split
+QA040	opus_2	no	weak	no	no	none	no	0.78	concession, no formal parallel

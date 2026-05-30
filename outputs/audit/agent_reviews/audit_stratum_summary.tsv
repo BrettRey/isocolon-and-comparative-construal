@@ -1,0 +1,7 @@
+stratum	n_rows	majority_yes	majority_no	majority_uncertain	split_or_tied	mean_yes_votes	mean_no_votes	mean_uncertain_votes
+high_broad_non_narrow	10	7	2	0	1	2.9	0.9	0.2
+typical_broad_non_narrow	6	0	4	1	1	0.6666666666666666	2.3333333333333335	1.0
+narrow_mixed	6	0	4	2	0	0.0	2.6666666666666665	1.3333333333333333
+high_non_target	8	1	7	0	0	0.25	3.5	0.25
+restatement_high_control	5	0	5	0	0	0.0	4.0	0.0
+baseline_non_target	5	0	5	0	0	0.0	4.0	0.0

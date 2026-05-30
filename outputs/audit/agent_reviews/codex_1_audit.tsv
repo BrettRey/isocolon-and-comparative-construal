@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QA001	codex_1	no	strong	no	no	repetition	no	0.96	Exact duplicate sentence.
+QA002	codex_1	yes	strong	yes	yes	none	no	0.74	Same frame, meaningful lexical contrast.
+QA003	codex_1	yes	strong	yes	yes	none	no	0.82	Balanced clauses with contrasting nouns.
+QA004	codex_1	yes	strong	yes	yes	none	no	0.72	Parallel "manage to be" contrast.
+QA005	codex_1	yes	strong	yes	yes	none	no	0.99	Canonical rhetorical parallelism.
+QA006	codex_1	no	strong	no	yes	list_formatting	no	0.80	Formal logic list, low rhetoric.
+QA007	codex_1	no	weak	no	uncertain	none	yes	0.78	Bare fragments, likely clipped context.
+QA008	codex_1	yes	strong	yes	yes	none	no	0.88	Strong balanced biclausal line.
+QA009	codex_1	yes	strong	yes	yes	none	no	0.80	Anaphoric repetition with new object.
+QA010	codex_1	yes	strong	yes	yes	none	no	0.93	Parallel accusations for rhetorical punch.
+QA011	codex_1	uncertain	moderate	uncertain	yes	none	yes	0.56	Coordinated negatives but noisy split.
+QA012	codex_1	no	weak	no	no	none	no	0.91	Utterances not structurally parallel.
+QA013	codex_1	no	weak	no	yes	none	yes	0.78	Single clause split at coordinator.
+QA014	codex_1	no	weak	no	yes	list_formatting	no	0.86	Policy list, not rhetorical pairing.
+QA015	codex_1	uncertain	weak	uncertain	yes	none	yes	0.52	Not-only/but-also but truncated second.
+QA016	codex_1	yes	moderate	yes	yes	none	no	0.79	Coordinated predicates with balanced scope.
+QA017	codex_1	uncertain	weak	uncertain	uncertain	none	yes	0.22	Redacted text blocks prevent judgment.
+QA018	codex_1	no	none	no	no	none	no	0.78	No clear bilateral structural match.
+QA019	codex_1	no	none	no	yes	none	yes	0.90	Comparative clause, not isocolonic pair.
+QA020	codex_1	no	none	no	no	none	yes	0.94	Long legal clause plus adjunct.
+QA021	codex_1	uncertain	weak	uncertain	yes	none	no	0.55	Contrast present, little formal balance.
+QA022	codex_1	no	weak	no	yes	none	no	0.83	Alternative framing without tight parallelism.
+QA023	codex_1	no	strong	no	no	repetition	no	0.98	Case-shifted exact repetition.
+QA024	codex_1	no	moderate	no	no	list_formatting;dialogue_formula	no	0.89	Reordered list in Q/A echo.
+QA025	codex_1	yes	strong	yes	yes	none	no	0.74	Matched heading frame, meaningful contrast.
+QA026	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.96	Same token with punctuation change.
+QA027	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.95	Contraction expansion, same proposition.
+QA028	codex_1	no	weak	no	no	dialogue_formula	no	0.86	Conversational exchange, no balanced pair.
+QA029	codex_1	no	none	no	no	template_or_quote	yes	0.87	Signature/name formatting artifact.
+QA030	codex_1	no	moderate	no	no	repetition;dialogue_formula	no	0.95	Question-answer echo repetition.
+QA031	codex_1	no	strong	no	no	repetition	no	0.99	Exact one-word repetition.
+QA032	codex_1	no	strong	no	no	repetition	no	0.99	Same noun phrase restated.
+QA033	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.99	Repeated toast formula.
+QA034	codex_1	no	strong	no	no	repetition;template_or_quote	no	0.98	Name duplicated with capitalization change.
+QA035	codex_1	no	strong	no	no	repetition;dialogue_formula	no	0.99	Repeated courtesy formula.
+QA036	codex_1	no	none	no	no	none	yes	0.88	Subordinate fragments, asymmetrical split.
+QA037	codex_1	no	none	no	no	none	yes	0.91	Attribution clause plus discourse tag.
+QA038	codex_1	no	none	no	no	none	yes	0.90	Main clause versus complement phrase.
+QA039	codex_1	no	none	no	no	none	yes	0.89	Question stem split before descriptor.
+QA040	codex_1	no	none	no	no	none	yes	0.85	Temporal fragment plus full clause.

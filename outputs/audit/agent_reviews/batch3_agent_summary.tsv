@@ -1,0 +1,5 @@
+agent	n_rows	yes	no	uncertain	mean_confidence
+codex_batch3_1	40	11	27	2	0.852
+codex_batch3_2	40	12	26	2	0.858
+opus_batch3_1	40	10	26	4	0.7508
+opus_batch3_2	40	8	29	3	0.7025

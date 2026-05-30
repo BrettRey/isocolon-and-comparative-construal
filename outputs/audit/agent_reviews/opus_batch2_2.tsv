@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QB001	opus_batch2_2	yes	strong	yes	yes	none	no	0.95	Clear shared frame "There was no [N]" with slot substitution
+QB002	opus_batch2_2	yes	strong	yes	yes	none	no	0.85	Two-word NPs sharing head "Computing" with contrastive modifier; genuine parallel list items
+QB003	opus_batch2_2	yes	strong	yes	yes	none	no	0.95	Shared frame "who's [V]-ing the paper" with antithetical verb substitution (buying/selling)
+QB004	opus_batch2_2	yes	strong	yes	yes	none	no	0.95	Shared frame "without [V]-ing" with slot substitution
+QB005	opus_batch2_2	yes	strong	yes	yes	none	no	0.95	Shared frame "if you want [N]" with slot substitution; rhetorical accumulation
+QB006	opus_batch2_2	yes	strong	yes	yes	none	no	0.80	Shared frame "[NP] consist of [NP]" with subject substitution; complements identical, making it near-repetition, but subjects contrast meaningfully
+QB007	opus_batch2_2	yes	weak	yes	yes	none	no	0.60	Both use "[NP] heard [NP]" frame; weak but recognizable parallel coordination of perceptions
+QB008	opus_batch2_2	no	weak	no	no	none	no	0.85	Loose "NP is a NP" but filled with disfluency; no clear parallel frame
+QB009	opus_batch2_2	no	none	no	no	none	no	0.90	No systematic parallelism; coordinate VP but unmatched structure
+QB010	opus_batch2_2	uncertain	weak	yes	no	none	no	0.55	Both have "they + obligation + infinitive" but frames differ substantially; borderline
+QB011	opus_batch2_2	uncertain	weak	uncertain	uncertain	none	no	0.55	"it + VP" coordination but VP structures diverge; borderline parallel
+QB012	opus_batch2_2	no	none	yes	yes	none	no	0.85	Infinitival coordination but no matched syntactic frame
+QB013	opus_batch2_2	no	strong	no	no	list_formatting	no	0.90	Template hours formatting; strong surface match but purely schematic
+QB014	opus_batch2_2	yes	strong	yes	yes	none	no	0.95	Clear antithetical parallelism: "[Adj] sides face [directions]" with contrastive slots
+QB015	opus_batch2_2	no	weak	yes	yes	none	no	0.80	Antithesis present but unbalanced length and no matched syntactic frame
+QB016	opus_batch2_2	no	weak	no	no	none	no	0.90	No parallel structure; different clause types and lengths
+QB017	opus_batch2_2	uncertain	weak	yes	yes	none	no	0.55	Contrastive "with bridges" / "with ferries" but frames differ (active-passive mismatch); borderline
+QB018	opus_batch2_2	no	weak	uncertain	no	none	no	0.85	No matched frame; antithesis is semantic, not structural
+QB019	opus_batch2_2	yes	moderate	yes	yes	none	no	0.80	Contrastive parallel: "[NP] had [NP] of [NP]" with rhetorical contrast (toys vs. dental casts)
+QB020	opus_batch2_2	no	none	yes	yes	none	no	0.85	"rather than" creates antithesis but gerund phrase vs. bare NP; no matched frame
+QB021	opus_batch2_2	no	weak	no	no	dialogue_formula	no	0.70	Dialogue repair/overlap of "I know"; not a rhetorical parallel pair
+QB022	opus_batch2_2	no	none	no	no	dialogue_formula	no	0.95	Single-word phatic exchanges; no parallelism
+QB023	opus_batch2_2	no	weak	no	no	none	no	0.85	Elaboration, "and" coordination but different VP frames; no parallel structure
+QB024	opus_batch2_2	no	weak	no	no	dialogue_formula	no	0.85	Question-answer pair; "this is" appears in both but in different syntactic functions
+QB025	opus_batch2_2	no	weak	no	no	dialogue_formula	no	0.85	Two questions but entirely different frames; dialogue checking, not parallel
+QB026	opus_batch2_2	no	moderate	no	no	repetition	no	0.70	Truncated repetition of "There's a hole"; not a rhetorical parallel pair
+QB027	opus_batch2_2	no	none	no	no	none	no	0.90	No parallelism; unrelated clause types
+QB028	opus_batch2_2	no	weak	yes	yes	none	no	0.80	Concession with genuine antithesis but no matched syntactic frame
+QB029	opus_batch2_2	no	weak	no	no	none	no	0.85	No matched frame; different clause types
+QB030	opus_batch2_2	no	none	no	no	none	no	0.90	No parallelism; unrelated clauses
+QB031	opus_batch2_2	yes	moderate	yes	yes	none	no	0.80	Shared subject (elided) with parallel locative PPs "in the wash" / "in your dryer"; concessive antithesis
+QB032	opus_batch2_2	uncertain	strong	uncertain	yes	template_or_quote	no	0.55	Strong "[V-ed] [date] [place]" frame but biographical template; Born/Died antithesis is genuine but formulaic
+QB033	opus_batch2_2	no	strong	no	no	repetition	no	0.95	Near-exact repetition; second adds number prefix
+QB034	opus_batch2_2	no	none	no	no	none	no	0.95	Single-word headings with no structural or semantic parallel
+QB035	opus_batch2_2	no	strong	no	no	dialogue_formula	no	0.90	Backchannel tokens; formally matched (single-word affirmatives) but no rhetorical parallel
+QB036	opus_batch2_2	yes	strong	yes	no	none	no	0.85	Intensifying repetition with added "fast"; rhetorical amplification, not mere repetition
+QB037	opus_batch2_2	no	strong	no	no	repetition	no	0.95	Exact verbatim repetition; not a paired construction
+QB038	opus_batch2_2	no	strong	no	no	repetition	no	0.95	Exact repetition of single word
+QB039	opus_batch2_2	no	strong	no	no	repetition	no	0.95	Exact repetition with capitalization variant
+QB040	opus_batch2_2	no	strong	no	no	repetition	no	0.95	Exact repetition with punctuation variant

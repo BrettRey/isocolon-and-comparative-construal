@@ -20,11 +20,9 @@ The project should test a production-side textual-function claim, not a reader-s
 
 ## Immediate Next Actions
 
-- Choose one starting corpus or genre rather than collecting broadly.
-- Define a graded isocolon score before looking at results.
-- Create a small hand-coded pilot set of adjacent clause pairs.
-- Run a fake-data simulation before scaling the corpus.
-- Expand the bibliography beyond the two verified Fahnestock anchors.
+- Wait for library/LDC access to the RST Signalling Corpus data (`LDC2015T10`); all other high-priority library articles/books have been copied into the shared literature folder.
+- Next manuscript pass: decide whether the genre-varying summary needs a table or figure, or whether the prose summary is enough.
+- Add the RST Signalling Corpus data comparison when library/LDC access comes through.
 
 ## Design Guardrails
 
@@ -43,3 +41,13 @@ The project should test a production-side textual-function claim, not a reader-s
 - Added notes, data, scripts, and output scaffolding.
 - Added verified Fahnestock bibliography anchors.
 - Added CC BY 4.0 license.
+- Built the initial GUM/eRST analysis pipeline, fake-data simulation, scoring sensitivity checks, and qualitative audit batches.
+- Completed primary human validation for the first 80 audit rows and targeted adjudication for batch 3 disagreement rows.
+- Added 17 open PDFs to the shared literature folder under `literature/isocolon-rhetoric/`.
+- Added verified bibliography entries for rhetorical-figure theory, computational figure detection, RST/eRST, RST-SC, PDTB, and advertising-rhetoric precedents.
+- Wrote `notes/literature-acquisition.md`, `notes/library-request-list.md`, and `notes/literature-working-map.md`.
+- Ingested Brett's library downloads for Fahnestock 1999, Fahnestock 2011, Fahnestock 2004 "Preserving the Figure," Harris & Di Marco 2017, Harris et al. 2018, and the two Das & Taboada 2018 signalling articles.
+- Folded the literature frame and current empirical results into `main.tex`: form-function figure theory, false-positive/ranking problem, GUM/eRST corpus basis, validation, preliminary effects, and restrained interpretation.
+- Added compact validation and relation-effect tables to `main.tex`, backed by the derived TSVs.
+- Added the exact isocolonicity scoring formula and adjusted-effect model specification to `main.tex`.
+- Rebuilt `main.pdf` with `make` using XeLaTeX/Biber. Citations resolve; no overfull boxes remain. The only remaining LaTeX warnings are standing preamble warnings from `fancyhdr` and `microtype`.

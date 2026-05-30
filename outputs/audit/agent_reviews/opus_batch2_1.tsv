@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QB001	opus_batch2_1	yes	strong	yes	yes	none	no	0.95	Shared frame "There was no X" with slot substitution; clear rhetorical accumulation.
+QB002	opus_batch2_1	yes	strong	uncertain	uncertain	none	no	0.70	"X Computing" frame; formally strong but syllabus list items, rhetorical relevance unclear.
+QB003	opus_batch2_1	yes	strong	yes	yes	none	no	0.95	"Who's Xing the paper" antithesis; buying vs selling, clear contrastive parallelism.
+QB004	opus_batch2_1	yes	strong	yes	yes	none	no	0.95	"Without Xing" frame; slot substitution in coordinated PPs.
+QB005	opus_batch2_1	yes	strong	yes	yes	none	no	0.95	"If you want X" frame; rhetorical accumulation in quoted speech.
+QB006	opus_batch2_1	yes	strong	uncertain	yes	none	no	0.75	"The X consist of ..." frame; slot substitution (starting materials vs products) but textbook exposition, rhetorically uncertain.
+QB007	opus_batch2_1	uncertain	weak	yes	yes	none	no	0.55	Both use "heard" with S-V-O but frames diverge (different subjects, objects, complements).
+QB008	opus_batch2_1	no	weak	no	no	none	no	0.80	Loose NP-is-NP but different frames, fillers break any parallelism.
+QB009	opus_batch2_1	no	none	no	no	none	no	0.85	Conjoined VPs with no matched structure.
+QB010	opus_batch2_1	uncertain	weak	yes	yes	none	no	0.50	Both have "they + have/obligation verb" loosely; rhetorical listing of leprechaun obligations but weak formal match.
+QB011	opus_batch2_1	uncertain	weak	uncertain	yes	none	no	0.55	Shared "it + VP" subject but different VP structures; feature-listing context.
+QB012	opus_batch2_1	no	weak	yes	yes	none	no	0.75	Conjoined infinitival VPs but no matched frame or balanced length.
+QB013	opus_batch2_1	no	strong	no	no	list_formatting	no	0.90	Matched time-range template (Daily/Su HH:MM–HH:MM) but formatting artifact, not rhetorical.
+QB014	opus_batch2_1	yes	strong	yes	yes	none	no	0.95	"The X sides ... face Y and Z" antithesis; broad/slim, east-west/north-south.
+QB015	opus_batch2_1	no	weak	yes	yes	none	no	0.80	Not-X-but-Y antithesis in content but frames are unbalanced (13 vs 7 words, different structure).
+QB016	opus_batch2_1	no	none	no	no	none	no	0.90	No structural parallelism; different sentence types and lengths.
+QB017	opus_batch2_1	uncertain	weak	yes	yes	none	no	0.55	Genuine contrast (bridges vs ferries) but frames don't match (active vs passive, different word order).
+QB018	opus_batch2_1	no	weak	no	no	none	no	0.80	Content contrast but no formal parallelism; different clause structures and lengths.
+QB019	opus_batch2_1	yes	moderate	yes	yes	none	no	0.75	Both "X had Y of Z" with antithetical content (toys vs dental casts).
+QB020	opus_batch2_1	no	none	yes	yes	none	no	0.80	"Rather than" contrast but second unit is elliptical NP, no matched frame.
+QB021	opus_batch2_1	uncertain	moderate	uncertain	no	dialogue_formula	no	0.50	Interrupted speech and repair overlap; possible dialogic echo but too fragmentary.
+QB022	opus_batch2_1	no	none	no	no	dialogue_formula	no	0.90	One-word phatic turns; no parallelism.
+QB023	opus_batch2_1	no	weak	no	no	none	no	0.80	Conjoined clauses in elaboration sequence; different structures.
+QB024	opus_batch2_1	no	weak	no	no	dialogue_formula	no	0.80	Q&A inversion (what is this / this is X); standard question-answer, not rhetorical parallel.
+QB025	opus_batch2_1	no	weak	no	no	dialogue_formula	no	0.75	Two questions but different frames and functions; confirmatory dialogue.
+QB026	opus_batch2_1	uncertain	moderate	uncertain	no	repetition	no	0.55	Near-repetition of "there's a hole"; dialogic restatement, not clear rhetorical parallel.
+QB027	opus_batch2_1	no	none	no	no	none	no	0.85	Unrelated clause structures; no parallelism.
+QB028	opus_batch2_1	no	weak	yes	yes	none	no	0.80	Content contrast (unknown origin but translation known) but no formal parallelism.
+QB029	opus_batch2_1	no	weak	no	no	none	no	0.85	No parallel structure; different clause types and fragmented.
+QB030	opus_batch2_1	no	none	no	no	none	no	0.85	No parallel structure; humorous concession with different frames.
+QB031	opus_batch2_1	yes	moderate	yes	yes	none	no	0.80	Shared ellipsed subject, "VP in the X" frame; wash vs dryer antithesis.
+QB032	opus_batch2_1	uncertain	strong	uncertain	yes	template_or_quote	no	0.55	"Born/Died date place" biographical template; genuine antithesis but driven by template format.
+QB033	opus_batch2_1	no	strong	no	no	repetition	no	0.90	Near-exact repetition with prepended number; no rhetorical parallel.
+QB034	opus_batch2_1	no	none	no	no	none	no	0.90	Single proper nouns as headings; no parallelism.
+QB035	opus_batch2_1	no	none	no	no	dialogue_formula	no	0.95	Backchannel tokens; no rhetorical parallelism.
+QB036	opus_batch2_1	yes	strong	yes	no	none	no	0.75	Intensifying repetition with added "fast"; rhetorical escalation, not mere repetition.
+QB037	opus_batch2_1	no	strong	no	no	repetition	no	0.95	Exact repetition; no rhetorical parallel construction.
+QB038	opus_batch2_1	no	strong	no	no	repetition	no	0.95	Exact repetition of single word.
+QB039	opus_batch2_1	no	strong	no	no	repetition	no	0.95	Exact repetition with capitalization variant.
+QB040	opus_batch2_1	no	strong	no	no	repetition	no	0.95	Exact repetition with punctuation variant.

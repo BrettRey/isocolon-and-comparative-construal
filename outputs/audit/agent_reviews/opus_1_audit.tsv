@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QA001	opus_1	no	strong	no	no	exact_repetition	no	0.9	identical strings with redaction, not a paired construction
+QA002	opus_1	yes	strong	yes	yes	none	no	0.95	shared frame with slot substitution twist/braid outs
+QA003	opus_1	yes	strong	yes	yes	none	no	0.9	shared frame made their case with intellect/evidence
+QA004	opus_1	yes	strong	yes	yes	none	no	0.88	disjunction with matched frame teacher/cop
+QA005	opus_1	yes	strong	yes	yes	template_or_quote	no	0.9	quoted chiasmus matter/spacetime, quote is the figure
+QA006	opus_1	yes	moderate	yes	yes	list_formatting	no	0.7	parallel proof clauses non-empty, mild bullet flavor but coordinated
+QA007	opus_1	uncertain	moderate	no	yes	none	no	0.6	bare numeral disjunction three/four days, thin rhetoric
+QA008	opus_1	yes	strong	yes	yes	template_or_quote	no	0.92	quoted Invictus couplet, quote is the parallel figure
+QA009	opus_1	yes	strong	yes	yes	none	no	0.9	matched frame they'll talk about the party/crash
+QA010	opus_1	yes	strong	yes	yes	none	no	0.95	repeated frame they're bringing drugs/crime, accumulation
+QA011	opus_1	uncertain	weak	uncertain	yes	none	uncertain	0.55	stray relative-clause fragments, segmentation unclear
+QA012	opus_1	no	weak	no	no	dialogue_formula	no	0.75	esports commentary turns, no parallel frame
+QA013	opus_1	no	weak	no	uncertain	none	no	0.7	uneven coordinated clauses, no matched frame
+QA014	opus_1	yes	moderate	yes	yes	none	no	0.7	coordinated verb-phrase list protect/provide, uneven length
+QA015	opus_1	yes	moderate	yes	yes	none	no	0.72	not only...but also correlative, gapped second colon
+QA016	opus_1	no	weak	no	uncertain	none	no	0.65	long uneven coordinated clauses, no balanced frame
+QA017	opus_1	uncertain	none	uncertain	uncertain	template_or_quote	uncertain	0.5	fully redacted text, uninterpretable
+QA018	opus_1	no	weak	no	no	none	yes	0.7	split antithesis fragments, construction broken
+QA019	opus_1	no	weak	uncertain	uncertain	none	no	0.62	than-comparison but no matched syntactic frame
+QA020	opus_1	no	none	no	no	none	yes	0.7	stray complement clauses, no parallelism
+QA021	opus_1	uncertain	moderate	uncertain	yes	none	no	0.6	contrast modern/medieval, short and uneven frame
+QA022	opus_1	no	weak	no	uncertain	none	no	0.65	instead-of contrast but mismatched structure
+QA023	opus_1	no	strong	no	no	exact_repetition	no	0.9	stop./Stop capitalization repetition artifact
+QA024	opus_1	uncertain	moderate	uncertain	no	dialogue_formula	no	0.6	reordered flavor terms, restatement not contrast
+QA025	opus_1	no	strong	no	no	list_formatting	no	0.85	parallel section headings getting X right
+QA026	opus_1	no	strong	no	no	dialogue_formula;exact_repetition	no	0.88	No!/No? punctuation variant of one word
+QA027	opus_1	no	moderate	no	no	dialogue_formula	yes	0.75	self-repair I'll/I will, broken turn
+QA028	opus_1	no	weak	no	no	dialogue_formula	no	0.75	question and answer residue, not parallel
+QA029	opus_1	no	none	no	no	template_or_quote	yes	0.8	name then title from signature block, broken units
+QA030	opus_1	no	moderate	no	no	dialogue_formula	no	0.75	question echoed in answer, Q-A repetition
+QA031	opus_1	no	strong	no	no	exact_repetition;dialogue_formula	no	0.92	Four./Four. exact repetition in dialogue
+QA032	opus_1	no	strong	no	no	exact_repetition	no	0.92	neutron stars repeated, restatement not pair
+QA033	opus_1	no	strong	no	no	exact_repetition;dialogue_formula	no	0.92	Cheers!/Cheers! exact repetition
+QA034	opus_1	no	strong	no	no	exact_repetition	no	0.92	Nelson Mandela repeated, capitalization variant
+QA035	opus_1	no	strong	no	no	exact_repetition;dialogue_formula	no	0.92	Thank you./Thank you. exact repetition
+QA036	opus_1	no	none	no	no	none	yes	0.75	stray adverbial then temporal clause, no pairing
+QA037	opus_1	no	none	no	no	none	yes	0.8	attribution plus parenthetical aside, no parallel
+QA038	opus_1	no	none	no	no	none	yes	0.75	split clause and complement, broken construction
+QA039	opus_1	no	none	no	no	none	yes	0.78	question plus stray relative clause, no pairing
+QA040	opus_1	no	weak	no	no	none	no	0.7	concession with fronted modifier, no matched frame

@@ -1,0 +1,8 @@
+stratum	n_rows	majority_yes	majority_no	majority_uncertain	split_or_tied	mean_agent_yes_votes	mean_agent_no_votes	mean_agent_uncertain_votes
+high_broad_target	6	4	2	0	0	2.1667	1.6667	0.1667
+mid_broad_target	6	0	4	0	2	1.0	3.0	0.0
+narrow_antithesis_contrast	8	1	5	1	1	0.75	2.75	0.5
+dialogue_echo_candidate	6	1	5	0	0	0.6667	3.0	0.3333
+comparative_concession	5	1	3	1	0	0.8	2.4	0.8
+high_non_target_artifact	5	2	3	0	0	1.6	2.4	0.0
+restatement_repetition_control	4	0	4	0	0	0.0	4.0	0.0

@@ -1,0 +1,44 @@
+You are Opus qualitative-audit reviewer 1 for Brett Reynolds's third isocolon audit batch.
+
+Working directory:
+/Users/brettreynolds/Documents/LLM-CLI-projects/papers/Isocolon_and_Comparative_Construal
+
+Read these files first:
+- outputs/audit/qualitative_audit_codebook.md
+- outputs/audit/qualitative_audit_dictionary.tsv
+- outputs/audit/isocolon_qualitative_audit_batch3_40.csv
+
+Task:
+Review all 40 rows in `isocolon_qualitative_audit_batch3_40.csv` independently under the current codebook. The CSV has blank human-coding fields. Do not overwrite or edit that CSV. Your job is to provide an independent machine-coding pass so we can compare agreement and disagreement across model families.
+
+Important rules:
+- A colon need not be an independent clause. It can be a phrase, predicate, fragment, short answer, or dialogue turn if it functions as a member of the figure.
+- Formal parallelism can be phonological, morphological, syntactic, lexical, or constructional.
+- Dialogic echo can count as isocolonic if the turn pair creates a meaningful parallel or contrastive structure. Dialogue is not automatically a false positive.
+- Apposition/identity can be rhetorically relevant clarification, but it is not comparison and not isocolon for this study.
+- Comparison/coordination can be yes while is_isocolonic is no.
+- Exact repetition is normally strong formal parallelism but not necessarily isocolon; distinguish mere repetition from intensifying repetition.
+- Do not infer an answer from the stratum name or score alone. Code the text pair under the codebook.
+
+Write exactly one TSV file:
+outputs/audit/agent_reviews/opus_batch3_1.tsv
+
+Use exactly these columns:
+audit_id,agent,is_isocolonic,formal_parallelism,rhetorically_relevant,genuine_comparison_or_coordination,false_positive_flags,bad_segmentation,confidence,short_reason
+
+Allowed values:
+- `agent`: opus_batch3_1
+- `is_isocolonic`: yes / no / uncertain
+- `formal_parallelism`: none / weak / moderate / strong
+- `rhetorically_relevant`: yes / no / uncertain
+- `genuine_comparison_or_coordination`: yes / no / uncertain
+- `bad_segmentation`: yes / no / uncertain
+- `confidence`: number from 0 to 1
+- `false_positive_flags`: semicolon-separated list from repetition, list_formatting, dialogue_formula, template_or_quote, or `none`
+
+Include all 40 audit_id rows in input order. Keep `short_reason` brief.
+
+When finished, report only:
+1. the path written;
+2. yes/no/uncertain counts for `is_isocolonic`;
+3. rows you marked `uncertain`.

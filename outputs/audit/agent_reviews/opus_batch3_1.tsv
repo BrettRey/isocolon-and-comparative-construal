@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QC001	opus_batch3_1	yes	strong	yes	yes	none	no	0.75	Imperative + shared NP postulates of Dalton with State/Use slot substitution; parallel exercise pair.
+QC002	opus_batch3_1	yes	strong	yes	yes	none	no	0.85	Two balanced coordinate adjective pairs (silent/sparkling, bright/baleful) with alliteration; vivid parallel description.
+QC003	opus_batch3_1	yes	strong	yes	yes	none	no	0.92	Matched clause frame with slot substitution first/third, Q1/Q3, 25th/75th percentile.
+QC004	opus_batch3_1	uncertain	moderate	no	yes	list_formatting	no	0.55	Num+role roster items (3 Chasers/2 Beaters); matched frame but reads as enumeration not figure.
+QC005	opus_batch3_1	no	weak	no	no	dialogue_formula	no	0.85	Two fillers Um./Oh.; backchannel residue, no rhetorical parallel.
+QC006	opus_batch3_1	no	moderate	no	no	list_formatting	no	0.8	Dictionary list of related single words (distrust/mistrust); morphological echo but not a figure.
+QC007	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Coordinated VPs (use X / change Y) but uneven structure; coordination without isocolon.
+QC008	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Coordinated infinitival purpose clauses; weak parallel, not balanced.
+QC009	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Coordinated VPs welcomed/committed; different structures, weak parallelism.
+QC010	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Coordinated infinitival VPs overload/crash; coordination but weak form.
+QC011	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Coordinated clauses about samples; different predicates, weak parallelism.
+QC012	opus_batch3_1	no	weak	no	uncertain	list_formatting	no	0.7	Two single-noun list items (drawing/electronics); list residue, no contrast.
+QC013	opus_batch3_1	yes	moderate	yes	yes	none	no	0.78	Antithesis One thing X / The other Y; contrastive subject+predicate frame.
+QC014	opus_batch3_1	no	weak	yes	yes	none	no	0.75	Negative imperative + consequence (don't pinch or it grows reedy); disjunction, not parallel.
+QC015	opus_batch3_1	yes	moderate	yes	yes	none	no	0.6	Balanced contrast began appearing X but continued active Y; roughly parallel VPs.
+QC016	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Cross-sentence contrast (lost population vs comeback); different structures, not parallel.
+QC017	opus_batch3_1	no	moderate	yes	yes	none	no	0.65	Temporal contrast with fronted time frames; partial parallel but uneven clauses.
+QC018	opus_batch3_1	no	weak	no	no	none	no	0.75	Two unrelated imperatives/statements; no parallel frame.
+QC019	opus_batch3_1	uncertain	moderate	uncertain	uncertain	dialogue_formula	no	0.5	Two numerals Ocho/Seis; could be counting or contrastive answer, no context.
+QC020	opus_batch3_1	no	weak	yes	yes	none	no	0.75	Statement + But question; contrastive turn, not formally parallel.
+QC021	opus_batch3_1	no	weak	no	no	template_or_quote	yes	0.7	that read is stray attribution fragment leading into quote We Know; not a pair.
+QC022	opus_batch3_1	no	moderate	no	no	dialogue_formula;repetition	no	0.65	Q-A confirmation echo (are you a righty/You're a righty); near-repeat turn-taking.
+QC023	opus_batch3_1	yes	moderate	yes	no	none	no	0.65	Intensifying repetition they're doing it + slot addition with mathematics; anadiplosis-like emphasis.
+QC024	opus_batch3_1	yes	moderate	yes	yes	none	no	0.68	Shared negative frame I don't have / I don't know with slot substitution; accumulation.
+QC025	opus_batch3_1	no	weak	no	no	dialogue_formula	no	0.85	Interjection + backchannel question Oh./Hunh?; turn-taking residue.
+QC026	opus_batch3_1	uncertain	moderate	uncertain	no	none	no	0.55	Dialogic echo of metaphor event horizon across turns; echo/elaboration more than parallel figure.
+QC027	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Concessive Although X, Y; clauses not parallel.
+QC028	opus_batch3_1	no	weak	yes	yes	none	no	0.78	Contrast accessible but slow; not formally parallel.
+QC029	opus_batch3_1	yes	strong	yes	yes	none	no	0.85	Shared frame [subj] was/wasn't wearing a mask with subject and polarity flip; clear antithesis.
+QC030	opus_batch3_1	uncertain	none	uncertain	uncertain	none	uncertain	0.5	Fully redacted underscores; uninterpretable.
+QC031	opus_batch3_1	no	weak	yes	yes	none	no	0.75	Contrast trying to go but won't hear; not formally parallel.
+QC032	opus_batch3_1	yes	strong	yes	yes	none	no	0.78	Anaphoric frame Then we encourage / Then we make with slot substitution; parallel sequence.
+QC033	opus_batch3_1	yes	strong	yes	yes	none	no	0.7	Matched frame [Name] scoring [num] with slot substitution and numeric contrast.
+QC034	opus_batch3_1	no	weak	no	no	none	uncertain	0.6	Two stray PPs of disgorgement/for wrongdoing; different heads, likely split complements.
+QC035	opus_batch3_1	no	moderate	no	yes	list_formatting	no	0.8	Syllabus schedule entries Quiz N Date; formatting-driven list, not figure.
+QC036	opus_batch3_1	no	weak	no	no	dialogue_formula	no	0.85	Interjection + discourse marker Oh./Well; turn-taking residue.
+QC037	opus_batch3_1	no	strong	no	no	repetition	no	0.92	Exact repetition Belgian dark chocolate; not a paired construction.
+QC038	opus_batch3_1	no	strong	no	no	repetition	no	0.92	Exact repetition One./One.; pure repeat.
+QC039	opus_batch3_1	no	strong	no	no	repetition	no	0.92	Exact repetition I'm trying.; pure repeat.
+QC040	opus_batch3_1	no	strong	no	no	repetition	no	0.92	Exact repetition of name Doctor Spock; not a figure.

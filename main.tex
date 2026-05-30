@@ -2,6 +2,8 @@
 
 % House style preamble
 \input{.house-style/preamble.tex}
+\usepackage{float}
+\usepackage{placeins}
 
 % Update PDF metadata
 \hypersetup{
@@ -19,97 +21,374 @@ Humber Polytechnic \& University of Toronto}
 
 \begin{abstract}
 Rhetorical theory often treats \term{isocolon} as more than ornamental
-balance. A balanced pair of clauses can make a comparison feel more
-explicit, pointed, or forceful. A reader-side causal claim would need
-experimental evidence, but a production-side claim can be tested in
-corpus data. This paper proposes a narrow test: among adjacent clause
-pairs with comparable syntactic opportunity for parallelism, are
-comparison relations more isocolonic than contrast, cause, condition,
-sequence, or elaboration relations? The design treats isocolon as a
-graded textual property rather than a binary label, models clause pairs
-within texts and genres, and separates comparative relation from the
-parallel syntax that comparison often invites. If the association
-survives those controls, the result would support a textual-function
-claim: isocolon is preferentially selected where writers construe two
-units as comparable.
+balance. A balanced pair of cola can make two units feel more explicitly
+comparable. A reader-side causal claim would need experimental evidence,
+but a production-side textual claim can be tested in corpus data. This
+paper tests whether adjacent discourse-relation pairs in GUM/eRST are
+more isocolonic when they construe two units as comparable. The outcome
+is a continuous score combining length balance, syntactic parallelism,
+and lexical parallelism, rather than a binary figure label. In 17,456
+adjacent relation pairs from 299 documents across 24 genres, a broad
+comparison and co-ordination family shows a clear adjusted increase in
+isocolonicity, especially for lists, disjunctions, and adversative
+contrast. A narrow adversative family is smaller, antithesis alone is
+near zero, and concession is negative. The result supports a restrained
+textual claim: formal balance is part of the profile of some comparative
+construals, but it is not a general property of every relation that
+could be called contrastive.
 \end{abstract}
 
 \section{Introduction}
 
-At Rhetoricon, held at the University of Waterloo on 2026-05-29, Gini
-Fahnestock proposed that \term{isocolon} makes comparison more salient,
-pointed, explicit, or forceful. The question for this project is how far
-a corpus study can test that claim without turning into a reader
-experiment.
+Rhetorical theory has long treated figures as patterned forms with
+argumentative force, not as detachable ornaments. In that tradition,
+\term{isocolon} is interesting because it joins two kinds of evidence
+that are easy to confuse: formal balance between adjacent units and a
+reader's sense that the units invite comparison. The motivating claim is
+simple. When writers place two clauses or phrases in balanced form, they
+may make the comparison between them more explicit, pointed, or forceful.
 
-Fahnestock's broader work treats rhetorical figures as forms that do
-argumentative work rather than as detachable ornament
-\citep{fahnestock1999RhetoricalFiguresScience,fahnestock2011RhetoricalStyle}.
-That makes the corpus question worth asking, but it also makes
-overclaiming easy.
+This paper asks how much of that claim can be tested without a reader
+experiment. The answer depends on the explanatory level. At the
+reader-response level, the claim is causal: isocolon changes what readers
+notice or how forcefully they construe a relation. Corpus evidence alone
+can't show that. At the textual level, the claim is distributional:
+writers may preferentially use balanced form where they construe two
+units as comparable. That claim is testable.
 
-The answer has to be level-specific. At the reader-response level, the
-claim is causal: isocolon changes how a comparison is perceived. A
-corpus study can't establish that. At the corpus level, the claim is
-different: writers may preferentially use balanced clauses when
-construing two units as comparable. That claim is testable.
+I therefore test a narrower hypothesis. When a relation places two
+adjacent units in a comparison-like configuration, the pair should be more
+isocolonic than pairs expressing cause, condition, elaboration, sequence,
+or other non-comparative relations. The study uses the GUM corpus and
+eRST annotations because they provide genre-diverse texts,
+discourse-relation labels, and signal annotation
+\citep{zeldes2017GUMCorpus,zeldesEtAl2025eRST}.
+The current analysis is preliminary because the RST Signalling Corpus
+data are still pending, but the design already gives a useful first test.
 
-\section{Target Claim}
+The results are mixed in the informative sense. Broadly comparative and
+co-ordinative relations are more formally balanced than matched
+non-target relations. The effect is clearest for \mention{joint-list},
+\mention{joint-disjunction}, and \mention{adversative-contrast}. It is
+much weaker for a narrow adversative set, near zero for
+\mention{adversative-antithesis} alone, and negative for
+\mention{adversative-concession}. The pattern refines the rhetorical
+claim: isocolonicity tracks some acts of comparative construal better
+than it tracks the inherited relation name
+\term{antithesis}.
 
-The first target is deliberately narrow. In naturally occurring
-rhetorical prose, isocolon should be more frequent in comparison
-relations than in matched non-comparison relations, once genre, text,
-clause length, syntactic frame, connective type, and general parallelism
-are controlled.
+\section{Rhetorical figures as form-function pairings}
 
-That would not show that readers experience the comparison as more
-forceful. The result would show that formal balance is part of the
-textual profile of comparative construal. The rhetorical-function claim
-would then rest on production-side textual evidence rather than
-psychometric response data.
+The theoretical starting point is Fahnestock's account of rhetorical
+figures as form-function pairings. In her work on scientific argument and
+rhetorical style, figures are not decorative additions to an argument;
+they are recurrent formal arrangements that can epitomize lines of
+reasoning \citep{fahnestock1999RhetoricalFiguresScience,fahnestock2011RhetoricalStyle}.
+That view matters here because it makes a corpus prediction. If a figure
+is tied to an argumentative operation, then the figure should be
+distributed unevenly across the discourse contexts where that operation
+is being performed.
 
-\section{Design}
+Fahnestock's discussion of the figures of argument is especially direct
+for this project. \term{Isocolon} concerns approximate equality in the
+length of adjacent cola, while \term{parison} concerns similarity of
+grammatical structure. The two often co-occur, but they are not the same
+property. A pair can be close in length without being syntactically
+parallel, and it can be syntactically parallel without being closely
+balanced in length. The classical tradition links both to comparison and
+contrast because similar form can make two units cohere as an
+argumentative set \citep{fahnestock2011RhetoricalStyle}.
 
-The unit of analysis is the adjacent clause pair or colon pair. Each pair
-receives a discourse-relation label, with comparison contrasted against
-contrast, cause, condition, temporal sequence, and elaboration. Each pair
-also receives a graded isocolon score, combining token-length balance,
-syllable or stress balance where feasible, syntactic parallelism, and
-lexical parallelism.
+The same point motivates computational work on rhetorical figures.
+\textcite{harrisDimarco2017RhetoricalFiguresComputation} argue that
+figural form is often iconically related to discourse function, so
+surface patterning can provide evidence about pragmatic and argumentative
+actions. \textcite{harrisEtAl2018AnnotationSchemeRhetoricalFigures}
+develop an annotation scheme for figures in part because figure
+identification requires attention to both formal regularity and
+rhetorical role. \textcite{lawrenceEtAl2017HarnessingRhetoricalFigures}
+make the parallel point for argument mining: rhetorical figures can
+identify regions where argumentative work is being done, but only if
+formal detection is connected to the content and relation being advanced.
 
-The main model should estimate whether comparison predicts higher
-isocolon scores after partial pooling by text, author or speaker where
-known, genre, and period. The analysis should treat the isocolon measure
-and the discourse-relation labels as noisy. A fake-data simulation should
-come first, to check whether a realistically sized hand-coded corpus
-could recover an effect if one existed.
+This literature supports the central assumption of the present study.
+The relevant object is the co-occurrence of surface balance with a
+discourse relation that makes two units available for comparison. The
+operational question is whether a graded measure of balance is higher in
+the relations where rhetorical theory predicts that balance should be
+useful.
 
-\section{Second Test}
+\section{From candidate form to rhetorical function}
 
-A second non-experimental test would strengthen the inference. Revision
-data, where available, can ask whether writers add or preserve isocolon
-when sharpening comparison. If draft-to-final changes increase balance
-specifically in comparative pairs, then isocolon is not merely a
-by-product of comparison syntax. It's a selected feature of rhetorical
-shaping.
+The main methodological risk is false positives. Repetition and
+parallelism are common in ordinary text, and only some instances have the
+rhetorical force that figure theory cares about. Work on automatic
+chiasmus detection makes the problem vivid. \textcite{dubremetzNivre2018FigureDetection}
+show that trivial repetition patterns are easy to find, but repetitions
+with rhetorical effect are much harder to separate from accidental or
+irrelevant patterns. They therefore treat figure detection as a ranking
+problem rather than a clean binary classification problem.
 
-The two tests would converge on different parts of the claim. The
-matched corpus study asks whether isocolon is associated with comparison
-relations. The revision study asks whether writers select isocolon while
-making a comparison rhetorically sharper.
+That lesson carries over to isocolon. Exact repetition, list formatting,
+dialogue formulas, quoted slogans, and segmentation artifacts can all
+look formally balanced. Some are rhetorically relevant, but many are not
+instances of the target phenomenon. Recent survey work makes the broader
+point: rhetorical figure detection remains limited by small datasets,
+inconsistent definitions, and over-reliance on rule-based surface cues
+\citep{kuehnEtAl2024LesserKnownRhetoricalFigures}. A credible corpus
+test should therefore use surface scores cautiously, validate them
+against human judgment, and avoid treating high balance as equivalent to
+a gold figure label.
+
+The analysis below follows that strategy. The isocolonicity score is a
+continuous predictor-like outcome: it ranks adjacent relation pairs by
+how much balance they display. The qualitative audit then asks whether
+high-scoring examples are plausibly isocolonic after excluding exact
+repetition, dialogue formulas, and other false-positive types. This is a
+more modest target than automatic figure recognition, but it is the
+right target for a first rhetorical-function test.
+
+\section{Corpus and measurement}
+
+The corpus is the English GUM/eRST dataset. GUM is a genre-diverse
+corpus with richly annotated English texts
+\citep{zeldes2017GUMCorpus}. eRST extends RST-style discourse annotation
+with graph structures and explicit signal annotation across spoken and
+written genres \citep{zeldesEtAl2025eRST}. This matters because the
+project needs discourse relations rather than only adjacent sentences. It
+also needs enough genre variation to separate a rhetorical effect from a
+register-specific habit.
+
+The unit of analysis is an adjacent discourse-relation pair. The current
+dataset contains 17,456 such pairs from 299 documents across 24 genres.
+For each pair, I computed a composite isocolonicity score from three
+families of surface evidence. The first is length balance, using token
+length and related measures of how similar the two units are in size. The
+second is syntactic parallelism, based on how similar their dependency
+and part-of-speech profiles are. The third is lexical parallelism, based
+on repeated or closely corresponding lexical material. The composite
+should be read as a graded measure of formal balance, rather than as a
+claim that the pair is an isocolon.
+
+The score is deliberately simple. For any two units with positive length,
+a balance component is \(1 - |n_1 - n_2|/\max(n_1,n_2)\). The length
+score averages this quantity over word tokens, characters, and estimated
+syllables. The syntax score averages normalized edit similarity over
+UPOS, XPOS, and dependency-relation sequences. The lexical score averages
+lemma-sequence edit similarity and Jaccard overlap over content lemmas.
+The composite is
+\[
+0.40 \times \text{length} +
+0.45 \times \text{syntax} +
+0.15 \times \text{lexical}.
+\]
+These weights give syntax slightly more influence than length, with
+lexical overlap included as a weaker cue.
+
+The target relations were defined in two ways. The broad target family
+includes \mention{adversative-antithesis},
+\mention{adversative-contrast}, \mention{joint-disjunction}, and
+\mention{joint-list}. This family tests whether formal balance rises in
+relations that place units in a comparable or co-ordinated frame. The
+narrow target family includes only \mention{adversative-antithesis} and
+\mention{adversative-contrast}. Individual-relation analyses then separate
+the broad effect into its component labels.
+
+The main comparisons adjust for the most obvious structural confounds.
+Where possible, pairs are compared within documents. The models also
+include controls for explicit signalling, sentence adjacency,
+punctuation, mean length, and maximum length. A genre-varying analysis
+then checks whether the effect is concentrated in one or two genres or
+survives partial pooling across genres.
+
+The adjusted estimates are ordinary least-squares target coefficients
+computed by residualizing both the target indicator and the outcome
+against the controls. The controls are an intercept, explicit relation
+status, same-sentence adjacency, colon punctuation, semicolon
+punctuation, standardized log mean length, standardized log maximum
+length, and document fixed effects. The genre-varying analysis first fits
+the same adjusted effect within each genre, then uses a normal
+empirical-Bayes model with genre effects distributed around a shared mean
+and between-genre standard deviation.
+
+\section{Validation}
+
+The score behaves as a useful ranking measure, not as a binary detector.
+Against the small number of eRST \mention{syn-prl} signal labels in the
+dataset, the composite score has an AUC of 0.731. The syntax subscore is
+slightly higher at 0.754, the lexical subscore is 0.719, and the length
+subscore is 0.646 (Table~\ref{tab:score-validation}). At the 95th percentile,
+precision is only 3.1\%, but
+recall is 37.0\%, a lift of 7.4 over prevalence. At the 97.5th
+percentile, precision rises to 5.5\%, recall is 32.9\%, and lift is
+13.1. Those numbers are poor for automatic labelling but useful for
+ranking rare candidates for audit.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Score & AUC & Gold mean & Non-gold mean\\
+\midrule
+Composite & 0.731 & 0.502 & 0.327\\
+Length & 0.646 & 0.683 & 0.560\\
+Syntax & 0.754 & 0.441 & 0.209\\
+Lexical & 0.719 & 0.202 & 0.057\\
+\bottomrule
+\end{tabular}
+\caption{Score validation against the 73 eRST \mention{syn-prl} signal labels
+in 17,456 adjacent relation pairs.}
+\label{tab:score-validation}
+\end{table}
+
+The qualitative audit is therefore central. Eighty candidate pairs were
+human-coded, with independent model-assisted reviews used only to surface
+borderline cases. The combined human coding yielded 33 yes, 43 no, and 4
+uncertain judgments. High-scoring broad-target candidates performed well:
+the first batch had 8 yes judgments out of 10 high broad-but-not-narrow
+items, and the second had 6 yes judgments out of 6 high broad-target
+items. By contrast, the restatement/repetition controls had 0 yes
+judgments out of 9. This contrast is important because exact repetition
+is the strongest surface correlate of formal balance, while also being a
+separate false-positive class for the purposes of this study.
+
+The audit also clarified the boundary of the category. Bare identity,
+apposition, dialogue repair, and exact repetition can be rhetorically
+relevant without being isocolon. Conversely, weak length balance can
+still matter when the two cola share a frame strongly enough to invite
+slot substitution. The coding decisions therefore treat isocolon as a
+graded rhetorical judgment with false-positive classes rather than a
+mechanically recoverable surface pattern.
+
+\FloatBarrier
+
+\section{Preliminary results}
+
+The broad target family shows a clear adjusted increase in composite
+isocolonicity. Across all adjacent pairs, the adjusted effect is 0.0415
+with a confidence interval from 0.0375 to 0.0455. The subscales show that
+the effect is driven most strongly by syntax: the adjusted syntax effect
+is 0.0770, compared with 0.0244 for lexical parallelism and 0.0080 for
+length balance. That pattern is theoretically useful. The corpus effect
+reflects shared formal frames more than similar size. Table~\ref{tab:relation-effects}
+summarizes the main adjusted effects and the restatement positive control.
+
+The narrow adversative family is smaller. For
+\mention{adversative-antithesis} plus \mention{adversative-contrast}, the
+adjusted composite effect is 0.0130, with a confidence interval from
+0.0058 to 0.0202. The individual labels explain the difference.
+\mention{joint-disjunction} has an adjusted effect of 0.0482,
+\mention{joint-list} has an adjusted effect of 0.0439, and
+\mention{adversative-contrast} has an adjusted effect of 0.0241.
+\mention{adversative-antithesis}, despite its rhetorical name, is near
+zero at 0.0039, with an interval that crosses zero.
+\mention{adversative-concession} is negative at -0.0131.
+
+The relation atlas also identifies an important positive control.
+\mention{restatement-repetition} has the strongest adjusted composite
+effect, 0.1902. That is exactly what a surface score should find: repeated
+material is highly balanced. But the human audit shows why this can't be
+the target effect. Repetition can signal clarification, identity,
+repair, emphasis, or other rhetorical work; exact repetition remains
+distinct from balanced comparison. The main analysis therefore
+treats restatement/repetition as a control and diagnostic, not as
+evidence for the comparison hypothesis.
+
+Genre-varying estimates point in the same direction. The broad target
+has a partially pooled mean effect of 0.0390 across 20 genres. The
+\mention{joint-list} estimate is 0.0398 across 17 genres, and
+\mention{adversative-contrast} is 0.0291 across the genres where there
+is enough evidence to estimate it. The narrow adversative estimate is
+0.0118. These estimates are not identical across genres, but the broad
+effect isn't confined to a single genre.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Target & Target n & Target mean & Adjusted effect [95\% CI]\\
+\midrule
+Broad family & 2,462 & 0.401 & 0.041 [0.038, 0.045]\\
+Narrow adversative & 605 & 0.382 & 0.013 [0.006, 0.020]\\
+\mention{joint-list} & 1,690 & 0.407 & 0.044 [0.039, 0.049]\\
+\mention{joint-disjunction} & 167 & 0.409 & 0.048 [0.035, 0.062]\\
+\mention{adversative-contrast} & 262 & 0.408 & 0.024 [0.013, 0.035]\\
+\mention{adversative-antithesis} & 343 & 0.363 & 0.004 [-0.006, 0.013]\\
+\mention{adversative-concession} & 679 & 0.342 & -0.013 [-0.020, -0.006]\\
+\mention{restatement-repetition} & 321 & 0.580 & 0.190 [0.181, 0.200]\\
+\bottomrule
+\end{tabular}
+\caption{Selected adjusted effects on composite isocolonicity. Estimates use
+document fixed effects and controls for explicitness, sentence adjacency,
+punctuation, and length. The restatement row is a positive control rather than
+a comparison target.}
+\label{tab:relation-effects}
+\end{table}
+
+\FloatBarrier
+
+\section{Interpretation}
+
+The findings support a restricted version of the rhetorical-function
+claim. Formal balance is elevated where writers construe adjacent units
+as members of a comparable set, especially in lists, disjunctions, and
+ordinary adversative contrast. The evidence is weaker for labels that
+look rhetorically relevant in the taxonomy but don't necessarily require
+balanced presentation in the text. In particular,
+\mention{adversative-antithesis} as an eRST relation label only partly
+overlaps with antithesis in the classical theory of figures.
+
+This distinction matters. If the analysis had simply shown that
+\mention{adversative-antithesis} was high, the result would have been
+easy to summarize but theoretically shallow. The actual pattern is more
+useful. Isocolonicity appears to be associated with a broader act of
+placing units into a comparable frame. That frame can be contrastive, but
+it can also be co-ordinative, disjunctive, or list-like. Conversely, some
+adversative relations are not especially isocolonic because their
+function is concession, qualification, or discourse management rather
+than balanced comparison.
+
+The result also clarifies the scope of the corpus study. The evidence is
+textual and distributional, rather than psycholinguistic: it concerns
+where balanced form occurs, not how readers experience those pairs. Nor
+does a high score by itself establish a rhetorical figure. The result
+shows instead that a graded measure of balance is systematically higher
+in particular discourse-relation contexts, and that human audit supports
+the rhetorical relevance of many high-scoring broad-target cases.
+
+The next robustness step is to add the RST Signalling Corpus once the
+data are available. Work on discourse signalling has shown that coherence
+relations are often signalled by more than discourse markers, including
+lexical, syntactic, graphical, semantic, and genre-based cues. That point
+is developed in the original signalling annotation work and in later
+studies of RST signals and multiple signals
+\citep{taboadaDas2013AnnotationUponAnnotation,dasTaboada2018RSTSignallingCorpus,dasTaboada2018SignallingBeyondMarkers,dasTaboada2019MultipleSignals}.
+This literature gives the project a stronger comparative baseline.
+If formal balance behaves like a discourse signal, then it should be
+testable alongside other signal types, not only as an isolated figure
+score.
 
 \section{Conclusion}
 
-The project should not claim that isocolon causes readers to perceive
-comparison as more forceful. It can make a stronger and cleaner textual
-claim: isocolon is a conventional formal resource for marking comparative
-construal. If that claim holds under matched corpus and revision tests,
-the production-side evidence would be substantial.
+A corpus study can't prove that isocolon makes readers perceive
+comparison as more forceful. It can test a cleaner textual claim:
+writers use formal balance unevenly across discourse relations, and the
+relations most associated with comparable construals should show more of
+it. The present results support that claim for a broad family of
+comparison-like and co-ordinative relations, with the strongest evidence
+coming from lists, disjunctions, and adversative contrast.
+
+The result gives only limited support to the inherited figure label
+\term{antithesis}. The narrow adversative effect is small, and antithesis
+as a discourse-relation label is close to zero. That negative finding
+helps sharpen the theory. Isocolon is a formal resource that writers can
+use when two units are presented as comparable members of an
+argumentative or expository set.
 
 \section*{Acknowledgements}
 
-% TODO: Replace with the actual models used on this project and their current versions.
-% Check model names: frontier models change frequently (e.g., GPT-4 → GPT-4o → o3).
 This paper was drafted with the assistance of large language models. All
 content has been reviewed and revised by the author, who takes full
 responsibility for the final text.

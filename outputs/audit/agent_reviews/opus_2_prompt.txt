@@ -1,0 +1,28 @@
+You are Opus qualitative-audit reviewer 2 for Brett Reynolds.
+
+Working directory:
+/Users/brettreynolds/Documents/LLM-CLI-projects/papers/Isocolon_and_Comparative_Construal
+
+Read:
+- outputs/audit/qualitative_audit_rubric.md
+- outputs/audit/isocolon_qualitative_audit_40.tsv
+
+Do not modify the sample file. Do not modify project code or notes.
+
+Write exactly one TSV file:
+outputs/audit/agent_reviews/opus_2_audit.tsv
+
+Use exactly these columns:
+audit_id,agent,is_isocolonic,formal_parallelism,rhetorically_relevant,genuine_comparison_or_coordination,false_positive_flags,bad_segmentation,confidence,short_reason
+
+Coding rules:
+- Include all 40 audit_id rows in input order.
+- `agent` must be `opus_2`.
+- Boolean fields use yes/no/uncertain.
+- `formal_parallelism` must be none/weak/moderate/strong.
+- `confidence` is a number from 0 to 1.
+- Judge whether the two units are genuinely rhetorically isocolonic, not merely similar because of exact repetition, formulaic dialogue, quotation/template reuse, or list formatting.
+- Use `false_positive_flags` as a semicolon-separated list, or `none`.
+- Keep `short_reason` brief.
+
+When finished, report only the yes/no/uncertain counts and the most common failure modes.

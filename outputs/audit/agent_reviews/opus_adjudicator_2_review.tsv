@@ -1,0 +1,12 @@
+audit_id	final_is_isocolonic	final_formal_parallelism	final_rhetorically_relevant	adjudicated_false_positive_flags	resolution_reason	confidence
+QA007	uncertain	strong	uncertain	dialogue_formula	short two-word numeric quibble: clean Number+days slot substitution but dialogic disjunction not a deployed figure	0.5
+QA011	yes	moderate	yes	none	coordinated dont+VP relative clauses form a balanced two-member list doing accumulative work; panel under-rated as uncertain	0.6
+QA013	no	weak	no	list_formatting	procedural coordination with mismatched VP length, rhetorically inert	0.8
+QA014	yes	strong	yes	none	matched V+NP tricolon members (protect property rights / provide public services); Rule 5 list with parallel wording counts	0.65
+QA016	no	moderate	no	list_formatting	coordinated promises differ in internal structure (transform NPs vs make NP more efficient), loose and rhetorically inert listing	0.6
+QA018	no	weak	no	bad_segmentation	gerund fragment vs full clause, no matched frame and unit1 truncated from Humans are born	0.8
+QA019	no	weak	no	bad_segmentation	single more...than comparative split across the relation boundary, not two balanced cola	0.85
+QA021	uncertain	moderate	uncertain	none	modern/medieval antithesis present but unit2 is a stripped PP fragment, judgment unstable	0.5
+QA028	no	weak	no	dialogue_formula	question-answer residue sharing only do, high score from short turns	0.85
+QA030	no	strong	no	dialogue_formula;repetition	near-repetition confirming echo (Did I make him aggressive / you made him aggressive), Q-A repair not a deployed figure	0.8
+QA040	no	weak	no	none	fronted concessive AdjP adjunct plus main clause; only a semantic 1960s/80s temporal contrast, no formal parallelism	0.8

@@ -1,0 +1,81 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QA001	gemini_pro_80	no	strong	no	no	repetition;template_or_quote	no	1.00	Exact repetition of redacted template text.
+QA002	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Perfect syntactic frame with slot substitution.
+QA003	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Parallel structure with slot substitution.
+QA004	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Classic parallel structures with slot substitution.
+QA005	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Chiasmus with strong syntactic and lexical parallelism.
+QA006	gemini_pro_80	no	strong	no	yes	list_formatting;template_or_quote	no	0.95	Mathematical proof syntax, formulaic rather than rhetorical.
+QA007	gemini_pro_80	yes	strong	yes	yes	none	no	0.90	Short units with clear parallel structure and numerical contrast.
+QA008	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Famous parallel poetic lines (Invictus).
+QA009	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Strong syntactic frame with contrastive slot substitution.
+QA010	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Classic parallel structure with slot substitution.
+QA011	gemini_pro_80	yes	moderate	yes	yes	none	no	0.90	Parallel coordinated verb phrases modifying the same referent.
+QA012	gemini_pro_80	no	weak	no	yes	none	no	0.95	Weak formal similarity; conversational comments without parallel syntax.
+QA013	gemini_pro_80	no	weak	no	yes	none	no	0.85	Coordinated VPs with weak syntactic parallelism and uneven length.
+QA014	gemini_pro_80	yes	strong	yes	yes	none	no	0.95	Parallel bare infinitives in a list under 'must'.
+QA015	gemini_pro_80	yes	moderate	yes	yes	none	no	0.90	Correlative coordination with ellipsis in the second member.
+QA016	gemini_pro_80	yes	moderate	yes	yes	none	no	0.85	Coordinated VPs with similar length and function, though internal syntax varies.
+QA017	gemini_pro_80	no	none	no	no	list_formatting	no	1.00	Redacted text representing formatting layout.
+QA018	gemini_pro_80	no	weak	no	yes	none	no	0.90	Semantic contrast but lacks syntactic or formal parallelism.
+QA019	gemini_pro_80	no	weak	yes	yes	none	no	0.90	Standard comparative subclause without parallel syntactic styling.
+QA020	gemini_pro_80	no	weak	yes	yes	none	no	0.95	Concessive clause; no syntactic parallelism.
+QA021	gemini_pro_80	yes	moderate	yes	yes	none	no	0.90	Contrasting prepositional phrases with slot substitution (modern thing vs medieval way).
+QA022	gemini_pro_80	no	weak	yes	yes	none	no	0.95	Alternative coordination with weak formal parallelism.
+QA023	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Exact repetition of a single word.
+QA024	gemini_pro_80	no	moderate	no	no	repetition	no	0.90	Repetition/permutation of the same word list.
+QA025	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Highly parallel gerund headings with slot substitution.
+QA026	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Direct repetition of a single word in dialogue.
+QA027	gemini_pro_80	no	moderate	no	no	repetition;dialogue_formula	no	0.95	Dialogue self-correction/repair.
+QA028	gemini_pro_80	yes	strong	yes	yes	none	no	0.90	Parallel structure in dialogue turn with matched slots (You ever do / I only do).
+QA029	gemini_pro_80	no	none	yes	no	none	no	1.00	Appositive relation (Name and Title) with no formal parallelism.
+QA030	gemini_pro_80	no	strong	no	no	repetition;dialogue_formula	no	0.85	Question-answer dialogic repetition of the predicate.
+QA031	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Exact repetition of a single number word.
+QA032	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Exact repetition of a noun phrase.
+QA033	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Exact repetition of a greeting/exclamation.
+QA034	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Case-variant repetition of a name.
+QA035	gemini_pro_80	no	strong	no	no	repetition;dialogue_formula	no	1.00	Exact repetition of polite dialogue formula.
+QA036	gemini_pro_80	no	weak	no	no	none	no	0.95	Non-parallel subordinate clauses.
+QA037	gemini_pro_80	no	none	no	no	none	no	1.00	Parenthetical clause with no formal parallelism.
+QA038	gemini_pro_80	no	none	no	no	none	yes	0.95	Bad segmentation; second unit is a complement of the first.
+QA039	gemini_pro_80	no	none	no	no	none	yes	1.00	Bad segmentation; relative clause split from its head.
+QA040	gemini_pro_80	no	weak	yes	yes	none	no	0.95	Syntactically asymmetrical modifier and main clause; not an isocolon.
+QB001	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Classic parallel structures with slot substitution.
+QB002	gemini_pro_80	yes	strong	yes	yes	none	no	0.90	Parallel academic subject names in a syllabus with slot substitution.
+QB003	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Highly balanced parallel clauses with antonymous slot substitution.
+QB004	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Syntactically matched adverbial phrases with slot substitution.
+QB005	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Syntactically matched conditional clauses with slot substitution.
+QB006	gemini_pro_80	yes	strong	yes	yes	none	no	0.95	Strong parallel frames contrasting chemical inputs and products.
+QB007	gemini_pro_80	no	weak	no	yes	none	no	0.90	Narrative progression with some lexical overlap, but lacks a balanced parallel frame.
+QB008	gemini_pro_80	no	weak	no	no	dialogue_formula	no	0.95	Spoken dialogue clause coordination without rhetorical parallel structure.
+QB009	gemini_pro_80	no	none	no	no	none	no	1.00	Sequential VPs with no formal parallelism.
+QB010	gemini_pro_80	no	weak	no	no	dialogue_formula	no	0.90	Narrative/dialogic continuation with weak syntactic similarity.
+QB011	gemini_pro_80	no	weak	no	yes	none	no	0.85	Sequential descriptive clauses about an object; lacks parallel styling.
+QB012	gemini_pro_80	no	weak	yes	yes	none	no	0.95	Coordinated VPs with different syntactic configurations and uneven length.
+QB013	gemini_pro_80	no	strong	no	yes	list_formatting	no	1.00	Formatting pattern for opening hours in a list.
+QB014	gemini_pro_80	yes	strong	yes	yes	none	no	1.00	Highly parallel contrasting clauses with multiple slot substitutions.
+QB015	gemini_pro_80	no	weak	yes	yes	none	no	0.95	Syntactically unbalanced adversative verb phrase coordination.
+QB016	gemini_pro_80	no	weak	no	no	none	yes	0.95	Bad segmentation; second unit is incomplete, no parallel structure.
+QB017	gemini_pro_80	no	weak	yes	yes	none	no	0.90	Semantic contrast of transportation methods, but lacks a parallel syntactic frame.
+QB018	gemini_pro_80	no	weak	no	no	none	no	1.00	Standard narrative transition; no formal parallelism.
+QB019	gemini_pro_80	yes	moderate	yes	yes	none	no	0.95	Parallel comparative clauses with matched verbs and objects.
+QB020	gemini_pro_80	no	none	yes	yes	none	no	0.95	Alternative prepositional phrase without parallel clause structure.
+QB021	gemini_pro_80	no	weak	no	no	repetition;dialogue_formula	no	0.90	Dialogue self-repair and echo; not a rhetorical figure.
+QB022	gemini_pro_80	no	none	no	no	dialogue_formula	no	1.00	Conversational backchannel/turn-taking with no formal parallelism.
+QB023	gemini_pro_80	no	weak	no	no	none	no	0.95	Coordinated narrative clauses with different structures.
+QB024	gemini_pro_80	no	weak	no	no	dialogue_formula	no	0.95	Standard dialogue question and answer.
+QB025	gemini_pro_80	no	weak	no	no	dialogue_formula	no	0.95	Sequential conversational questions with no parallel structure.
+QB026	gemini_pro_80	no	moderate	no	no	repetition;dialogue_formula	no	0.90	Dialogic repetition/clarification of a statement.
+QB027	gemini_pro_80	no	none	no	no	none	no	1.00	Syntactically unrelated clauses.
+QB028	gemini_pro_80	no	weak	yes	yes	none	no	0.95	Contrastive clauses without syntactic parallelism.
+QB029	gemini_pro_80	no	weak	no	no	none	yes	0.95	Unrelated clauses with redaction and no parallel structure.
+QB030	gemini_pro_80	no	none	no	no	dialogue_formula	no	0.95	Dialogue exchange; no formal parallelism.
+QB031	gemini_pro_80	yes	moderate	yes	yes	none	no	0.95	Coordinated contrasting VPs with parallel prepositional phrases (wash vs dryer).
+QB032	gemini_pro_80	yes	strong	yes	yes	template_or_quote	no	0.80	Highly parallel biographical formulas framing a lifespan.
+QB033	gemini_pro_80	no	strong	no	no	repetition;list_formatting	no	1.00	Repetition of place name in list/address formatting.
+QB034	gemini_pro_80	no	none	no	no	list_formatting	no	1.00	Unrelated list words with no formal parallelism.
+QB035	gemini_pro_80	no	none	no	no	dialogue_formula	no	1.00	Conversational backchannels with no formal parallelism.
+QB036	gemini_pro_80	yes	strong	yes	no	none	no	0.95	Parallel structure used for rhetorical intensification.
+QB037	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Exact repetition of imperative sentence.
+QB038	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Exact repetition of a single number word.
+QB039	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Case-variant repetition of noun phrase.
+QB040	gemini_pro_80	no	strong	no	no	repetition	no	1.00	Exact lexical repetition of a question.

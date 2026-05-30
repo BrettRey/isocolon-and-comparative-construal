@@ -1,0 +1,2 @@
+left_file	right_file	left_agent	right_agent	n_rows	label_differences	non_agent_field_differences	interpretation
+outputs/audit/agent_reviews/gemini_80.tsv	outputs/audit/agent_reviews/gemini_pro_80.tsv	gemini_80	gemini_pro_80	80	0	0	identical substantive coding; do not count as independent rater

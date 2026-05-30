@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QA001	codex_2	no	strong	no	no	repetition	no	0.98	Exact sentence repetition only.
+QA002	codex_2	yes	strong	yes	yes	none	no	0.89	Same frame with meaningful lexical contrast.
+QA003	codex_2	yes	strong	yes	yes	none	no	0.88	Balanced clauses contrast means of argument.
+QA004	codex_2	yes	strong	yes	yes	none	no	0.84	Parallel predicate frame with contrasted roles.
+QA005	codex_2	yes	strong	yes	yes	none	no	0.93	Canonical mirrored semicolon pair.
+QA006	codex_2	no	strong	no	yes	template_or_quote	no	0.78	Logical proof template, not rhetorical styling.
+QA007	codex_2	no	weak	no	yes	list_formatting	no	0.66	Bare duration listing without rhetorical build.
+QA008	codex_2	yes	strong	yes	yes	none	no	0.95	Famous balanced couplet with clear parallelism.
+QA009	codex_2	yes	strong	yes	yes	none	no	0.86	Repeated clause frame with contrasted nouns.
+QA010	codex_2	yes	strong	yes	yes	none	no	0.90	Anaphoric accusation pair is rhetorically marked.
+QA011	codex_2	uncertain	weak	uncertain	yes	bad_segmentation	yes	0.42	Truncated/quoted split obscures true structure.
+QA012	codex_2	no	none	no	no	none	no	0.95	Two different utterance shapes, not parallel.
+QA013	codex_2	no	moderate	no	yes	list_formatting	no	0.73	Coordinated exposition, weak rhetorical isocolon.
+QA014	codex_2	no	moderate	no	yes	list_formatting	no	0.80	Policy list syntax, not a marked couplet.
+QA015	codex_2	uncertain	weak	uncertain	yes	template_or_quote	no	0.52	Not-only/but-also fragment is underspecified.
+QA016	codex_2	no	weak	no	yes	none	no	0.82	Asymmetric clause plus extension, not balanced.
+QA017	codex_2	uncertain	weak	uncertain	uncertain	bad_segmentation	yes	0.20	Redacted tokens prevent reliable judgment.
+QA018	codex_2	no	weak	no	no	none	no	0.83	Gerund phrase plus clause lacks pairing.
+QA019	codex_2	no	none	no	no	none	no	0.89	Comparative prose, not parallel units.
+QA020	codex_2	no	none	no	no	bad_segmentation	yes	0.93	Second unit is truncated request fragment.
+QA021	codex_2	uncertain	weak	uncertain	yes	none	no	0.55	Loose contrast but little formal parallelism.
+QA022	codex_2	no	weak	no	yes	none	no	0.88	Infinitival plan vs risk clause mismatch.
+QA023	codex_2	no	strong	no	no	repetition	no	0.99	Case-only repetition, no rhetorical comparison.
+QA024	codex_2	no	moderate	no	no	repetition;dialogue_formula	no	0.90	Question-answer echo via word reordering.
+QA025	codex_2	yes	strong	yes	yes	none	no	0.87	Parallel gerund headings with meaningful contrast.
+QA026	codex_2	no	strong	no	no	repetition;dialogue_formula	no	0.98	Same token with punctuation change only.
+QA027	codex_2	no	weak	no	no	dialogue_formula	no	0.95	Contraction restatement, not comparative couplet.
+QA028	codex_2	no	none	no	no	dialogue_formula	no	0.91	Turn-taking exchange lacks structural parallelism.
+QA029	codex_2	no	none	no	no	list_formatting	no	0.96	Signature/name line, not coordinated pair.
+QA030	codex_2	no	moderate	no	no	repetition;dialogue_formula	no	0.94	Answer repeats question wording formulaically.
+QA031	codex_2	no	strong	no	no	repetition	no	0.99	Exact numeric repetition.
+QA032	codex_2	no	strong	no	no	repetition	no	0.99	Exact lexical repetition with punctuation.
+QA033	codex_2	no	strong	no	no	repetition;dialogue_formula	no	0.99	Formulaic toast repetition.
+QA034	codex_2	no	strong	no	no	repetition;template_or_quote	no	0.99	Case-variant name repetition only.
+QA035	codex_2	no	strong	no	no	repetition;dialogue_formula	no	0.99	Formulaic thanks repeated verbatim.
+QA036	codex_2	no	none	no	no	none	no	0.97	Single clause continuation, no pairing.
+QA037	codex_2	no	none	no	no	bad_segmentation	yes	0.92	Attribution plus parenthetical aside split.
+QA038	codex_2	no	none	no	no	bad_segmentation	yes	0.92	Clause split leaves nonparallel fragment pair.
+QA039	codex_2	no	none	no	no	bad_segmentation	yes	0.90	Question stem split from modifier clause.
+QA040	codex_2	no	none	no	no	none	no	0.90	Temporal phrase plus main clause, unpaired.

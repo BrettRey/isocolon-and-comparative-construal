@@ -1,0 +1,12 @@
+audit_id	final_is_isocolonic	final_formal_parallelism	final_rhetorically_relevant	adjudicated_false_positive_flags	resolution_reason	confidence
+QA007	uncertain	weak	uncertain	dialogue_formula	matched X-days frame but bare enumeration in a counting argument, not a crafted figure	0.55
+QA011	uncertain	moderate	uncertain	none	shared dont-V coordinated frame is real but second unit is truncated and segmentation unstable	0.55
+QA013	no	weak	no	list_formatting	one clause with coordinated predicates and dropped subject, procedural and uneven not a balanced pair	0.72
+QA014	yes	strong	yes	none	bare-verb coordination under shared must with clean VP slot substitution protect/provide/ensure	0.78
+QA016	uncertain	moderate	uncertain	none	shared will-frame gives constructional parallelism but the two units are too uneven for a confident yes	0.6
+QA018	no	weak	no	none	gerund-participle fragment versus full clause, antithesis present but formal pairing is broken	0.74
+QA019	no	weak	no	none	than-if comparative standard is ordinary comparison, not a balanced two-colon parallel	0.82
+QA021	uncertain	moderate	uncertain	none	modern/medieval contrast is real but the clause-versus-PP-fragment match is loose	0.6
+QA028	no	weak	no	dialogue_formula	ordinary Q/A turn-taking with minimal do echo, parallel only because the turns are short	0.82
+QA030	no	moderate	no	dialogue_formula;repetition	confirmatory answer echoes the question, formulaic repetition rather than isocolonic pairing	0.88
+QA040	no	weak	no	none	fronted phrase versus full clause, temporal concession meaningful but units asymmetrical	0.8

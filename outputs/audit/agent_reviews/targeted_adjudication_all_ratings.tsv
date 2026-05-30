@@ -1,0 +1,45 @@
+audit_id	agent	preferred_is_isocolonic	preferred_formal_parallelism	preferred_rhetorically_relevant	preferred_comparison_or_coordination	reason
+QA007	codex_adjudicator_1	uncertain	strong	uncertain	uncertain	Strong minimal lexical frame but likely a repair or self-correction rather than a stable two-member rhetorical contrast.
+QA011	codex_adjudicator_1	yes	moderate	yes	yes	Coordinated negative predicates under a shared head create a recognizable parallel list of vulnerable groups.
+QA013	codex_adjudicator_1	no	weak	no	yes	This is mainly a single clause with coordinated predicates and omitted subject in unit2, not a marked balanced pair.
+QA014	codex_adjudicator_1	yes	strong	yes	yes	Shared governing frame with VP slot substitution supports strong formal parallelism in a policy-duty list.
+QA016	codex_adjudicator_1	yes	strong	yes	yes	Two coordinated predicate members under one subject and modal produce clear constructional parallelism with rhetorical accumulation.
+QA018	codex_adjudicator_1	yes	weak	yes	yes	The semicolon pair contrasts innate capacity and absence of instruction, with light formal echo through to-infinitival patterning.
+QA019	codex_adjudicator_1	no	weak	yes	yes	The than-if segment is a comparative standard dependent on far more, rhetorically comparative but not a balanced parallel colon pair.
+QA021	codex_adjudicator_1	uncertain	weak	yes	yes	There is meaningful modern versus medieval contrast but only loose partial form matching between an it is like clause and a PP fragment.
+QA028	codex_adjudicator_1	no	weak	no	no	This looks like ordinary question-answer exchange with minimal do echo, not a rhetorically shaped parallel construction.
+QA030	codex_adjudicator_1	no	strong	no	no	High overlap is largely confirmatory dialogic repetition of the question in the answer, not isocolonic rhetorical pairing.
+QA040	codex_adjudicator_1	no	weak	yes	yes	Temporal concession is rhetorically meaningful but the units are asymmetrical phrase versus clause without strong parallel form.
+QA007	codex_adjudicator_2	uncertain	strong	uncertain	yes	Very short numeric fragments are formally matched, but this could be repair/counting residue rather than a stable two-colon figure.
+QA011	codex_adjudicator_2	yes	moderate	yes	yes	Coordinated negative predicates share a frame (don't + V + complement) and jointly profile two access barriers.
+QA013	codex_adjudicator_2	uncertain	moderate	uncertain	yes	This is coordinated predicate structure with partial frame matching, but it may be routine procedural sequencing rather than clear stylistic pairing.
+QA014	codex_adjudicator_2	yes	strong	yes	yes	Bare-verb coordination under a shared modal (must protect / provide) is a clean parallel list with policy force.
+QA016	codex_adjudicator_2	yes	moderate	yes	yes	A shared matrix frame (will X and Y) gives clear constructional parallelism, though the two units are structurally uneven.
+QA018	codex_adjudicator_2	yes	moderate	yes	yes	Nonfinite-vs-finite mismatch is offset by aligned learnability semantics and repeated to-infinitival patterning (to blink / to teach).
+QA019	codex_adjudicator_2	no	weak	yes	yes	The than-if segment is a valid comparative standard, so comparison is real, but the pair is asymmetrical and not a balanced two-colon parallel.
+QA021	codex_adjudicator_2	uncertain	weak	yes	yes	There is meaningful modern-versus-medieval contrast, but formal matching is loose and the second unit is only a prepositional fragment.
+QA028	codex_adjudicator_2	uncertain	weak	uncertain	uncertain	Dialogic echo (do/do) is present, but this may be ordinary Q/A residue rather than a deliberate parallel contrast.
+QA030	codex_adjudicator_2	no	strong	no	no	The answer mostly repeats the question with affirmation, which is formulaic confirmation echo rather than comparison or a two-colon figure.
+QA040	codex_adjudicator_2	no	weak	yes	yes	The temporal-concessive relation is rhetorically meaningful, but form is not sufficiently parallel (fragment versus full clause).
+QA007	opus_adjudicator_1	uncertain	weak	uncertain		matched X-days frame but bare enumeration in a counting argument, not a crafted figure
+QA011	opus_adjudicator_1	uncertain	moderate	uncertain		shared dont-V coordinated frame is real but second unit is truncated and segmentation unstable
+QA013	opus_adjudicator_1	no	weak	no		one clause with coordinated predicates and dropped subject, procedural and uneven not a balanced pair
+QA014	opus_adjudicator_1	yes	strong	yes		bare-verb coordination under shared must with clean VP slot substitution protect/provide/ensure
+QA016	opus_adjudicator_1	uncertain	moderate	uncertain		shared will-frame gives constructional parallelism but the two units are too uneven for a confident yes
+QA018	opus_adjudicator_1	no	weak	no		gerund-participle fragment versus full clause, antithesis present but formal pairing is broken
+QA019	opus_adjudicator_1	no	weak	no		than-if comparative standard is ordinary comparison, not a balanced two-colon parallel
+QA021	opus_adjudicator_1	uncertain	moderate	uncertain		modern/medieval contrast is real but the clause-versus-PP-fragment match is loose
+QA028	opus_adjudicator_1	no	weak	no		ordinary Q/A turn-taking with minimal do echo, parallel only because the turns are short
+QA030	opus_adjudicator_1	no	moderate	no		confirmatory answer echoes the question, formulaic repetition rather than isocolonic pairing
+QA040	opus_adjudicator_1	no	weak	no		fronted phrase versus full clause, temporal concession meaningful but units asymmetrical
+QA007	opus_adjudicator_2	uncertain	strong	uncertain		short two-word numeric quibble: clean Number+days slot substitution but dialogic disjunction not a deployed figure
+QA011	opus_adjudicator_2	yes	moderate	yes		coordinated dont+VP relative clauses form a balanced two-member list doing accumulative work; panel under-rated as uncertain
+QA013	opus_adjudicator_2	no	weak	no		procedural coordination with mismatched VP length, rhetorically inert
+QA014	opus_adjudicator_2	yes	strong	yes		matched V+NP tricolon members (protect property rights / provide public services); Rule 5 list with parallel wording counts
+QA016	opus_adjudicator_2	no	moderate	no		coordinated promises differ in internal structure (transform NPs vs make NP more efficient), loose and rhetorically inert listing
+QA018	opus_adjudicator_2	no	weak	no		gerund fragment vs full clause, no matched frame and unit1 truncated from Humans are born
+QA019	opus_adjudicator_2	no	weak	no		single more...than comparative split across the relation boundary, not two balanced cola
+QA021	opus_adjudicator_2	uncertain	moderate	uncertain		modern/medieval antithesis present but unit2 is a stripped PP fragment, judgment unstable
+QA028	opus_adjudicator_2	no	weak	no		question-answer residue sharing only do, high score from short turns
+QA030	opus_adjudicator_2	no	strong	no		near-repetition confirming echo (Did I make him aggressive / you made him aggressive), Q-A repair not a deployed figure
+QA040	opus_adjudicator_2	no	weak	no		fronted concessive AdjP adjunct plus main clause; only a semantic 1960s/80s temporal contrast, no formal parallelism

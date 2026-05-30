@@ -1,0 +1,41 @@
+audit_id	agent	is_isocolonic	formal_parallelism	rhetorically_relevant	genuine_comparison_or_coordination	false_positive_flags	bad_segmentation	confidence	short_reason
+QB001	codex_batch2_2	yes	strong	yes	yes	none	no	0.96	Clear repeated no-X frame with slot substitution.
+QB002	codex_batch2_2	yes	strong	yes	yes	none	no	0.84	Matched adjective-plus-Computing list pair.
+QB003	codex_batch2_2	yes	strong	yes	yes	none	no	0.95	Buying/selling slot substitution in same question frame.
+QB004	codex_batch2_2	yes	strong	yes	yes	none	no	0.93	Matched without-plus-gerund fragments.
+QB005	codex_batch2_2	yes	strong	yes	yes	none	no	0.95	Repeated if-you-want frame with contrasted objects.
+QB006	codex_batch2_2	yes	strong	yes	yes	none	no	0.88	Starting-materials/products frame compares reaction sides.
+QB007	codex_batch2_2	yes	moderate	yes	yes	none	no	0.72	Heard frame recurs with subject and object substitution.
+QB008	codex_batch2_2	no	weak	no	no	none	no	0.90	Loose appositional facts, not a rhetorical pair.
+QB009	codex_batch2_2	no	weak	no	no	none	no	0.85	Shared subject continuation, not a parallel construction.
+QB010	codex_batch2_2	uncertain	weak	yes	yes	none	no	0.62	They-plus-have pattern is real but roles diverge.
+QB011	codex_batch2_2	uncertain	weak	yes	yes	none	no	0.62	Two it-plus-VP features, but frame is thin.
+QB012	codex_batch2_2	no	weak	yes	yes	none	no	0.78	Coordinated purpose VPs without enough matched form.
+QB013	codex_batch2_2	no	strong	no	yes	list_formatting	no	0.91	Schedule-template contrast, not rhetorical isocolon.
+QB014	codex_batch2_2	yes	strong	yes	yes	none	no	0.96	Broad/slim sides and compass-pair slots match.
+QB015	codex_batch2_2	no	weak	yes	yes	none	no	0.82	Contrast is clear but forms are unbalanced.
+QB016	codex_batch2_2	no	weak	no	no	none	uncertain	0.82	Elaboration fragment lacks a matched paired frame.
+QB017	codex_batch2_2	yes	moderate	yes	yes	none	no	0.70	Bridges/ferries contrast with partly matched island-transport frame.
+QB018	codex_batch2_2	no	weak	yes	yes	none	no	0.86	Contrast in content, but no sustained formal pairing.
+QB019	codex_batch2_2	yes	strong	yes	yes	none	no	0.88	We had/Steven had contrast with matched object inventories.
+QB020	codex_batch2_2	no	none	yes	yes	none	no	0.95	Rather-than contrast without formal parallelism.
+QB021	codex_batch2_2	no	moderate	no	no	dialogue_formula	no	0.76	Truncated repair echo, not a rhetorical pair.
+QB022	codex_batch2_2	no	none	no	no	dialogue_formula	no	0.90	Formulaic short dialogue exchange.
+QB023	codex_batch2_2	no	weak	yes	no	none	no	0.86	Instructional continuation, not comparison or isocolon.
+QB024	codex_batch2_2	no	weak	no	no	dialogue_formula	no	0.90	Question-answer formula with only local this-is echo.
+QB025	codex_batch2_2	no	weak	no	no	dialogue_formula	no	0.85	Conversational checking formula, not a paired figure.
+QB026	codex_batch2_2	no	strong	uncertain	no	repetition;dialogue_formula	no	0.82	Near-repetition in dialogue repair/restatement.
+QB027	codex_batch2_2	no	none	no	no	none	no	0.90	Fragment plus evidential claim lack matched form.
+QB028	codex_batch2_2	no	weak	yes	yes	none	no	0.88	Clarifying contrast, but not formally parallel.
+QB029	codex_batch2_2	no	weak	no	no	none	yes	0.90	Incomplete vlog fragment blocks a parallel reading.
+QB030	codex_batch2_2	no	none	yes	no	none	no	0.90	Rhetorical exchange, but no isocolonic form.
+QB031	codex_batch2_2	yes	moderate	yes	yes	none	no	0.76	Contrasted product outcomes in partially matched clauses.
+QB032	codex_batch2_2	uncertain	strong	yes	yes	list_formatting;template_or_quote	no	0.62	Born/died template is formally strong but artifact-like.
+QB033	codex_batch2_2	no	strong	no	no	repetition;list_formatting	no	0.95	Indexed place-name repetition.
+QB034	codex_batch2_2	no	none	no	no	list_formatting	no	0.90	Adjacent labels without formal or rhetorical pairing.
+QB035	codex_batch2_2	no	weak	no	no	dialogue_formula	no	0.95	Phatic backchannel exchange.
+QB036	codex_batch2_2	yes	strong	yes	no	none	no	0.82	Repeated clause adds intensifying fast.
+QB037	codex_batch2_2	no	strong	no	no	repetition	no	0.98	Exact repeated command.
+QB038	codex_batch2_2	no	strong	no	no	repetition;dialogue_formula	no	0.98	Exact one-word repetition.
+QB039	codex_batch2_2	no	strong	no	no	repetition	no	0.98	Capitalization/punctuation repetition.
+QB040	codex_batch2_2	no	strong	no	no	repetition	no	0.98	Exact repeated question.

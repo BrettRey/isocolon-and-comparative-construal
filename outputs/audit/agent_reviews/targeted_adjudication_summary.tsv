@@ -1,0 +1,12 @@
+audit_id	human_isocolonic	adjudicator_yes	adjudicator_no	adjudicator_uncertain	adjudicator_majority	codex_1	codex_2	opus_1	opus_2	unit1_text	unit2_text
+QA007	yes	0	0	4	uncertain	uncertain	uncertain	uncertain	uncertain	Three days.	Four days.
+QA011	yes	3	0	1	yes	yes	yes	uncertain	yes	who don't have access to legal advice	"and don't speak English."""
+QA013	uncertain	0	3	1	no	no	uncertain	no	no	Both teams start from the edges	and attempt to obtain the quaffle and bludgers.
+QA014	yes	4	0	0	yes	yes	yes	yes	yes	The state must protect property rights,	provide public services,
+QA016	yes	2	1	1	yes	yes	yes	uncertain	no	The Master plan <*> will completely transform government processes, services and management,	and make information access and service delivery more efficient.
+QA018	yes	2	2	0	yes/no	yes	yes	no	no	knowing how to blink;	nobody has to teach us.
+QA019	yes	0	4	0	no	no	no	no	no	The ultimate result of workers <*> is that society as a whole can produce and consume far more	than if each person tried to produce all of his or her own goods and services.
+QA021	yes	0	0	4	uncertain	uncertain	uncertain	uncertain	uncertain	It's like our modern thing	but in a medieval way.
+QA028	yes	0	3	1	no	no	uncertain	no	no	You ever do?	I only do
+QA030	yes	0	4	0	no	no	no	no	no	Did I make him aggressive?	Yeah, you made him aggressive,
+QA040	yes	0	4	0	no	no	no	no	no	Most prolific during the 1960s,	Moreau continued to appear in films into her 80s.
