@@ -13,3 +13,13 @@
 
 # macOS
 .DS_Store
+
+# Corpus and analysis outputs
+data/raw/*
+!data/raw/README.md
+data/derived/*
+!data/derived/README.md
+outputs/figures/*
+!outputs/figures/README.md
+outputs/tables/*
+!outputs/tables/README.md
