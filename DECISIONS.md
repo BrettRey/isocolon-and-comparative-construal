@@ -27,3 +27,7 @@
 2026-05-30 -- Run the antithesis decomposition only after coding the full 343-row `adversative-antithesis` worksheet. Reason: the eight audited rows are useful examples but too sparse for the reviewer-critical subset test; the decisive contrast is whether hand-marked classical antitheses inside the full eRST label set show elevated parison.
 
 2026-05-30 -- State the language scope explicitly as English-only. Reason: the corpus evidence comes from English GUM/eRST and GENTLE rows, and does not license claims about how isocolon, parison, prosody, segmentation, or rhetorical training behave in Ancient Greek, Modern Japanese, or other languages.
+
+2026-05-30 -- Target venue: Language and Literature (SAGE) first. Reason: it covers corpus and computational stylistics of literary and non-literary language, which matches the paper's rhetorical-figure-plus-corpus shape.
+
+2026-05-30 -- Easify the four densest spots for a stylistics (non-statistical) audience. Reason: the prose was carrying too much statistical load per sentence for Language and Literature readers. Split Corpus and measurement into four subsections; added a worked balance-formula example and inline glosses for edit similarity, Jaccard, AUC, and precision/recall/lift (one worked example per metric); added a plain-language Length-vs-Isocolon paragraph at Table 6; reframed each robustness check as "one explanation removed." Easify not shorten (877 to 952 lines), no aphoristic phrasing, all statistics unchanged.

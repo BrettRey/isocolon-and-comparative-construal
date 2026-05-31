@@ -11,6 +11,7 @@ import pandas as pd
 
 
 FIG_DIR = Path("outputs/figures")
+SCORES_PATH = Path("data/derived/gum_erst_adjacent_isocolon_scores.tsv")
 ROBUSTNESS_PATH = Path("data/derived/robustness_checks.tsv")
 NULLS_PATH = Path("data/derived/stratified_nulls.tsv")
 
@@ -22,6 +23,13 @@ TARGET_LABELS = {
     "adversative_contrast": "adversative-contrast",
     "adversative_antithesis": "adversative-antithesis",
     "adversative_concession": "adversative-concession",
+}
+
+BROAD_LABELS = {
+    "adversative-antithesis",
+    "adversative-contrast",
+    "joint-disjunction",
+    "joint-list",
 }
 
 COMPONENT_LABELS = {
@@ -58,6 +66,55 @@ def save_figure(fig: plt.Figure, stem: str) -> None:
     fig.savefig(FIG_DIR / f"{stem}.pdf", bbox_inches="tight")
     fig.savefig(FIG_DIR / f"{stem}.png", bbox_inches="tight")
     plt.close(fig)
+
+
+def plot_score_distribution(scores: pd.DataFrame) -> None:
+    frame = scores[["orig_label", "isocolon_score"]].copy()
+    frame["score"] = 100 * frame["isocolon_score"].astype(float)
+    frame["is_broad_target"] = frame["orig_label"].isin(BROAD_LABELS)
+    groups = [
+        ("Broad target family", frame[frame["is_broad_target"]], "#0072B2"),
+        ("Non-target baseline", frame[~frame["is_broad_target"]], "0.62"),
+    ]
+
+    bins = np.linspace(0, 100, 31)
+    max_share = 0.0
+    for _, group, _ in groups:
+        counts, _ = np.histogram(group["score"], bins=bins)
+        max_share = max(max_share, (counts / len(group) * 100).max())
+
+    fig, axes = plt.subplots(2, 1, figsize=(7.1, 3.25), sharex=True, sharey=True)
+    for ax, (label, group, color) in zip(axes, groups):
+        values = group["score"]
+        weights = np.full(len(values), 100 / len(values))
+        median = values.median()
+        mean = values.mean()
+        ax.hist(
+            values,
+            bins=bins,
+            weights=weights,
+            color=color,
+            alpha=0.55,
+            edgecolor="white",
+            linewidth=0.45,
+        )
+        ax.axvline(median, color=color, linewidth=1.5)
+        ax.text(
+            0.985,
+            0.82,
+            f"{label}\n$n$={len(group):,}; mean={mean:.1f}; median={median:.1f}",
+            transform=ax.transAxes,
+            ha="right",
+            va="top",
+            fontsize=8,
+        )
+        ax.grid(axis="y", color="0.90", linewidth=0.8)
+        ax.set_ylabel("Share of group (%)")
+
+    axes[-1].set_xlim(0, 100)
+    axes[-1].set_xlabel("Composite formal-balance score")
+    axes[0].set_ylim(0, max_share * 1.28)
+    save_figure(fig, "paper_score_distribution")
 
 
 def component_rows(robustness: pd.DataFrame) -> pd.DataFrame:
@@ -297,8 +354,10 @@ def plot_robustness_and_nulls(robustness: pd.DataFrame, nulls: pd.DataFrame) -> 
 
 def main() -> None:
     setup_matplotlib()
+    scores = pd.read_csv(SCORES_PATH, sep="\t")
     robustness = pd.read_csv(ROBUSTNESS_PATH, sep="\t")
     nulls = pd.read_csv(NULLS_PATH, sep="\t")
+    plot_score_distribution(scores)
     plot_component_effects(robustness)
     plot_robustness_and_nulls(robustness, nulls)
 
