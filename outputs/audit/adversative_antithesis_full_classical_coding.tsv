@@ -1,0 +1,344 @@
+code_id	source_row	doc	collection	genre	rel_type	same_sentence	word_len_1	word_len_2	unit1_text	unit2_text	classical_antithesis	semantic_opposition	parallel_opposition	antithesis_notes
+AA012	1044	GENTLE_threat_bolin	GENTLE	threat	implicit	1	6	2	you got 1500 for the truck	not 1300	uncoded	uncoded	uncoded	needs_human_decomposition
+AA044	2613	GUM_textbook_labor	GUM	textbook	implicit	1	9	4	but easier to run a tourist hotel in Florida	than in North Dakota.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA329	16986	GUM_whow_glowstick	GUM	whow	implicit	1	5	9	Don't use your hands --	use a metal or plastic utensil of some sort.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA251	13155	GUM_reddit_polygraph	GUM	reddit	implicit	1	4	6	_____ __ ___	____ __ ______ _______ ___ ________	uncoded	uncoded	uncoded	needs_human_decomposition
+AA188	9630	GUM_interview_brotherhood	GUM	interview	explicit	1	14	6	The magician behind the counter was wise enough not to sell it to me,	but instead sold me two books	uncoded	uncoded	uncoded	needs_human_decomposition
+AA163	8369	GUM_essay_ghost	GUM	essay	explicit	1	7	3	these trends don’t cause more problems	than they resolve,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA220	11909	GUM_news_warming	GUM	news	explicit	1	13	12	dicot species, such as soybean, cotton, and peanut, lose more yield from ozone	than do monocot species such as sorghum, field corn, and winter wheat.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA036	2096	GUM_news_homeopathic	GUM	news	explicit	1	5	6	and giving her homeopathic drops	instead of using the prescription creams	uncoded	uncoded	uncoded	needs_human_decomposition
+AA198	10043	GUM_interview_licen	GUM	interview	explicit	1	16	3	So showing the Paralympics live on United States television might turn out to be less glamorous	than it appears.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA255	13300	GUM_reddit_social	GUM	reddit	explicit	1	9	7	___ _____ ____ __ __ _______ ____ ________	___ ___ ______ ________ ____ __ ______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA113	6173	GUM_conversation_artist	GUM	conversation	implicit	0	4	1	there was a connection.	No.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA077	3963	GUM_podcast_bezos	GUM	podcast	explicit	0	8	9	you're talking about welfare and everything else.	Yet at the same token, you ignore these stances	uncoded	uncoded	uncoded	needs_human_decomposition
+AA311	16656	GUM_whow_arrogant	GUM	whow	explicit	1	10	10	They may also give themselves undue credit for positive achievements	instead of acknowledging the input of others or of circumstances.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA192	9849	GUM_interview_dungeon	GUM	interview	implicit	0	7	5	I do wear a lot of black.	It's anything but that.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA140	7457	GUM_court_equality	GUM	court	implicit	1	13	8	And by the way, our universities don't consist of only urban kids;	they also come from the smaller, smaller areas.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA238	12762	GUM_reddit_bobby	GUM	reddit	implicit	1	7	13	__ ____ _____ _ __________ _________ ____	___ _____ __ _ _________ _______ __ ________ __ ___ ________ __ _____	uncoded	uncoded	uncoded	needs_human_decomposition
+AA239	12791	GUM_reddit_callout	GUM	reddit	implicit	1	9	5	___ ____ _ _______ ___ __ _ _______	________ __ ___ _____ _______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA245	12896	GUM_reddit_conspiracy	GUM	reddit	explicit	1	8	5	____ ____ __ ___ __ ___ ________ ____	______ ____ _ __________ <*> ______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA157	8165	GUM_essay_food	GUM	essay	explicit	1	5	3	not widgets or knick knacks,	but the stuff	uncoded	uncoded	uncoded	needs_human_decomposition
+AA102	5147	GUM_academic_mutation	GUM	academic	explicit	1	10	2	that, in most cases, will lead to a behaviour different	than expected.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA234	12536	GUM_podcast_movie	GUM	podcast	explicit	1	8	4	so that they can go out the door	instead of releasing one	uncoded	uncoded	uncoded	needs_human_decomposition
+AA151	7941	GUM_court_property	GUM	court	implicit	0	11	10	Because <*> on whether any ofthe cases <*> actually draws that distinction .	They seem to be primarily based on occupation <*> or occupation	uncoded	uncoded	uncoded	needs_human_decomposition
+AA242	12828	GUM_reddit_callout	GUM	reddit	explicit	1	7	3	_______ ____ ___ ____ ____ ___________	____ __________ _________	uncoded	uncoded	uncoded	needs_human_decomposition
+AA091	4636	GUM_whow_cactus	GUM	whow	explicit	1	5	9	but wait before harvesting them	or you might affect the size of future harvests.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA182	9403	GUM_fiction_time	GUM	fiction	implicit	1	7	3	for the sun had ceased to set	—it simply rose	uncoded	uncoded	uncoded	needs_human_decomposition
+AA117	6328	GUM_conversation_blacksmithing	GUM	conversation	implicit	1	9	11	We're not gonna do the feet today,	I'm gonna wait till like, early in the morning,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA189	9663	GUM_interview_chomsky	GUM	interview	explicit	0	8	6	the obvious question is why should NATO exist?	In fact you can ask questions	uncoded	uncoded	uncoded	needs_human_decomposition
+AA083	4139	GUM_reddit_monsters	GUM	reddit	implicit	0	9	14	____ _____ ______ ___ __ _____ _______ ___ ____	___ ________ _____ __ _____ _______ ___ ___ __ _ ____________ ______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA138	7417	GUM_court_equality	GUM	court	explicit	1	11	13	in also going about our interpretative task in an incremental manner	because otherwise, do we then confine ourselves only to the Hindu Marriage Act?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA283	14845	GUM_textbook_spacetime	GUM	textbook	explicit	1	15	9	A white dwarf, with its stronger surface gravity, produces more distortion just above its surface	than does a red giant with the same mass.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA209	10722	GUM_letter_flood	GUM	letter	implicit	1	11	7	that to have done this would have simply raised false hopes	where real help is what is needed.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA217	11201	GUM_letter_travel	GUM	letter	explicit	1	11	5	so I prefer to write of the play as a reader,	rather than as a spectator.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA041	2532	GUM_speech_inauguration	GUM	speech	implicit	1	12	4	In this present crisis, government is not the solution to our problem;	government is the problem.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA216	11127	GUM_letter_trade	GUM	letter	explicit	1	8	6	This authority is not intended for major negotiations,	but rather to permit minor adjustments,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA215	11063	GUM_letter_srilanka	GUM	letter	explicit	1	7	5	and suggests a greater care about civilians	than is common in countries	uncoded	uncoded	uncoded	needs_human_decomposition
+AA094	4747	GUM_academic_census	GUM	academic	explicit	1	12	19	Most fields, on the other hand, <*> lack a single all-encompassing organization	and membership information is instead distributed across many disjoint lists, such as web-based faculty directories for individual departments.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA132	6987	GUM_conversation_toys	GUM	conversation	implicit	0	7	9	You're just a swinging kid Steve.	Yeah, you don't know the half of it.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA280	14798	GUM_textbook_sociology	GUM	textbook	explicit	1	13	2	Trying hard and working together, two nonmaterial values, were indeed much more important	than winning.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA079	4026	GUM_podcast_multitasking	GUM	podcast	explicit	1	17	2	Do you know anything, or think much about, multitasking and multitasking failures in other high-stakes settings	beyond driving,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA326	16944	GUM_whow_flirt	GUM	whow	implicit	0	15	4	For instance, you'll want to avoid making lots of jokes at your own expense.	Just one is plenty —	uncoded	uncoded	uncoded	needs_human_decomposition
+AA013	1061	GENTLE_threat_bolin	GENTLE	threat	explicit	1	11	8	Your game playing is eventually going to get you in more	than a poo butt game player can handle.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA154	8145	GUM_essay_dividends	GUM	essay	explicit	1	6	10	Instead of plutocracy and climate change,	our market economy would generate widely-shared, earth-friendly prosperity.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA331	17064	GUM_whow_languages	GUM	whow	implicit	1	12	10	Try not to make your words sound like utter and complete gibberish	just add a little extra than our regular English language.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA175	9167	GUM_fiction_oversite	GUM	fiction	implicit	0	11	6	The last two nights I have dreamed of dogs in trouble.	I don’t dream about Renata,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA112	6098	GUM_bio_theodorus	GUM	bio	explicit	1	7	6	naming the brother Petronios as his successor	rather than the clearly qualified Theodorus.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA168	8571	GUM_essay_sexlife	GUM	essay	implicit	0	7	17	that aging is responsible for this difference?	What if instead the apparent age difference is because people <*> have different attitudes toward sex than people	uncoded	uncoded	uncoded	needs_human_decomposition
+AA197	10032	GUM_interview_licen	GUM	interview	explicit	1	8	3	Even though legislative support may be less strong	than the one	uncoded	uncoded	uncoded	needs_human_decomposition
+AA285	14914	GUM_textbook_stats	GUM	textbook	implicit	0	13	4	but it does not actually have to be one of the observed values.	It is a number	uncoded	uncoded	uncoded	needs_human_decomposition
+AA339	17244	GUM_whow_procrastinating	GUM	whow	explicit	1	9	4	Just be sure to follow through with your deadline	rather than ignoring it	uncoded	uncoded	uncoded	needs_human_decomposition
+AA037	2276	GUM_podcast_wrestling	GUM	podcast	explicit	1	7	3	This would have been … not last week,	but the week –	uncoded	uncoded	uncoded	needs_human_decomposition
+AA108	5518	GUM_bio_fillmore	GUM	bio	explicit	1	13	6	This theory built on the notion of construction from traditional and pedagogical grammars	rather than the rule-based formalisms	uncoded	uncoded	uncoded	needs_human_decomposition
+AA126	6718	GUM_conversation_family	GUM	conversation	implicit	0	9	5	Now you won't be able to touch Jonathan.	Just don't tell him.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA222	12000	GUM_podcast_addiction	GUM	podcast	implicit	0	6	6	Cause cats can't lick themselves.	Cats most certainly can lick themselves.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA193	9945	GUM_interview_herrick	GUM	interview	implicit	1	7	8	The English wikiHow has only 60 admins,	compared to the 1000 + on English Wikipedia.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA167	8565	GUM_essay_sexlife	GUM	essay	implicit	1	9	6	most at least two to three times per month	(more often than many younger adults).	uncoded	uncoded	uncoded	needs_human_decomposition
+AA025	1689	GUM_essay_tools	GUM	essay	explicit	1	4	4	that bears more scrutiny	than it has received.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA011	949	GENTLE_syllabus_techtonica	GENTLE	syllabus	explicit	1	8	8	to make the transition into the industry better	—instead of having an instructor constantly guiding you	uncoded	uncoded	uncoded	needs_human_decomposition
+AA307	16417	GUM_voyage_sydfynske	GUM	voyage	explicit	1	9	10	Bringing a car to the islands serves little point	but to rob your wallet of your hard earned cash,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA122	6593	GUM_conversation_erasmus	GUM	conversation	implicit	0	8	7	Man can do nothing against the divine prerogative.	Man can only accept the divine judgment.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA021	1464	GUM_conversation_risk	GUM	conversation	implicit	0	3	5	That's right.	There you go thinking again.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA213	10982	GUM_letter_sacco	GUM	letter	explicit	1	3	16	they were innocent,	and have never expressed a different thought or feeling, privately or publicly, anywhere at any time.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA099	5027	GUM_academic_huh	GUM	academic	explicit	1	11	5	repair is initiated not by the speaker of the first turn	but by the other participant	uncoded	uncoded	uncoded	needs_human_decomposition
+AA165	8447	GUM_essay_privatization	GUM	essay	explicit	1	9	12	Instead of carefully balancing private interests and public needs,	copyrights and patents are becoming crude, anti-social instruments of control and avarice.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA221	11969	GUM_podcast_addiction	GUM	podcast	implicit	0	7	5	Yeah, yeah, it's not just gambling.	It's problem gambling, yeah.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA236	12558	GUM_podcast_muskoka	GUM	podcast	implicit	0	3	4	Embarrassing you, man.	Mine is right now.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA225	12131	GUM_podcast_brave	GUM	podcast	explicit	1	10	3	and you've read much more in depth about it	than I have,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA289	15178	GUM_vlog_covid	GUM	vlog	implicit	0	7	11	It was no longer a headache anymore.	It was more like my like congestion like right up here,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA152	8050	GUM_essay_distraction	GUM	essay	explicit	1	7	11	I’d no sooner give it up	than I’d give up fiction or any other pleasurable vice.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA293	15563	GUM_vlog_lipstick	GUM	vlog	explicit	1	4	3	Guys this is harder	than I thought.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA194	9950	GUM_interview_herrick	GUM	interview	explicit	1	8	5	We show opt-out advertising to anonymous visitors	rather than ask for donations.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA042	2553	GUM_textbook_governments	GUM	textbook	implicit	0	11	4	In a representative democracy, however, the citizens do not govern directly.	Instead, they elect representatives	uncoded	uncoded	uncoded	needs_human_decomposition
+AA219	11788	GUM_news_soccer	GUM	news	explicit	0	9	14	it would have been an excellent result for us.	"But hopefully this will lead to higher levels of concentration in the coming games."""	uncoded	uncoded	uncoded	needs_human_decomposition
+AA313	16682	GUM_whow_arrogant	GUM	whow	explicit	1	8	8	This isn't meant to begin a conflict,	but to gauge their rivalries, annoyances and enmities.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA158	8179	GUM_essay_food	GUM	essay	explicit	1	7	5	offering them outlets for far more food	than they can sell fresh.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA342	17378	GUM_whow_quinoa	GUM	whow	explicit	1	4	3	until they are translucent,	but not burned.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA153	8141	GUM_essay_dividends	GUM	essay	implicit	1	3	3	— simple, transparent, direct	(not trickle down),	uncoded	uncoded	uncoded	needs_human_decomposition
+AA069	3626	GUM_fiction_teeth	GUM	fiction	implicit	1	5	3	well, technically, not your teeth,	just the plaque,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA092	4651	GUM_whow_mice	GUM	whow	implicit	1	8	9	It also gives the house a lovely smell,	and is not toxic, unlike many synthetic chemical treatments.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA120	6406	GUM_conversation_blacksmithing	GUM	conversation	implicit	0	10	5	But, these shoes we never did put on a horse.	We just put the shoes	uncoded	uncoded	uncoded	needs_human_decomposition
+AA250	13136	GUM_reddit_polygraph	GUM	reddit	implicit	0	10	10	___ ______ <*> __ _______ <*> _______ ____ ______ _____ _	__ _____ ____ _____ __ _______ ____ __ ____ ______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA005	576	GENTLE_poetry_annabel	GENTLE	poetry	explicit	1	9	3	And this maiden she lived with no other thought	Than to love	uncoded	uncoded	uncoded	needs_human_decomposition
+AA121	6529	GUM_conversation_christmas	GUM	conversation	implicit	0	3	4	It's perfect.	Is it too big?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA325	16943	GUM_whow_flirt	GUM	whow	explicit	1	8	4	This is more true for real-life situations	than it is online,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA281	14801	GUM_textbook_sociology	GUM	textbook	explicit	1	8	12	of assessing a culture by its own standards	rather than viewing it through the lens of one’s own culture.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA277	14573	GUM_textbook_evoethics	GUM	textbook	explicit	0	10	9	that such a coincidence would be too much to believe.	But what is the problem, exactly, with having beliefs	uncoded	uncoded	uncoded	needs_human_decomposition
+AA172	8982	GUM_fiction_giants	GUM	fiction	explicit	1	7	3	Finding someone even more vulnerable and foolish	than we were,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA164	8403	GUM_essay_merit	GUM	essay	explicit	1	8	8	even if holistic evaluation does a better job	than looking at test scores and grades alone,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA279	14666	GUM_textbook_grit	GUM	textbook	explicit	1	7	6	After this, you still do not stop,	but instead you change your approach	uncoded	uncoded	uncoded	needs_human_decomposition
+AA093	4711	GUM_academic_art	GUM	academic	implicit	0	15	13	no work has been completed on the aesthetic appreciation of collections or of devotional themes.	In this paper, we report upon the novel insights <*> into the unconscious processes	uncoded	uncoded	uncoded	needs_human_decomposition
+AA146	7728	GUM_court_nullification	GUM	court	implicit	0	6	5	What's the judge to do?	Just let it go forward?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA292	15463	GUM_vlog_hiking	GUM	vlog	implicit	1	5	5	it's not three - two,	it's like real good.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA181	9362	GUM_fiction_sneeze	GUM	fiction	implicit	0	8	6	“Anyway, I don’t want it in exams.	I just want it to go.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA204	10420	GUM_interview_shalev	GUM	interview	explicit	1	6	4	Sometimes I make them more pretty	then they were actually.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA043	2612	GUM_textbook_labor	GUM	textbook	implicit	1	13	3	For example, it is easier to be a wheat farmer in North Dakota	than in Florida,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA269	14136	GUM_speech_telescope	GUM	speech	explicit	1	7	6	—must invest in science and technology, more	than we have in the past.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA015	1126	GENTLE_threat_kelly	GENTLE	threat	explicit	1	6	8	So you will be better off	or I will do what ever it takes	uncoded	uncoded	uncoded	needs_human_decomposition
+AA129	6809	GUM_conversation_gossip	GUM	conversation	implicit	0	5	6	He doesn't look that –	He's o- he's three.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA312	16657	GUM_whow_arrogant	GUM	whow	explicit	1	6	14	Don't be nosy or gossipy,	but <*> that's a sign of them having a lot of fair weather friends.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA323	16924	GUM_whow_flirt	GUM	whow	explicit	1	5	10	Rather than asking a question,	you can also simply offer your comments on these things.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA183	9433	GUM_fiction_time	GUM	fiction	explicit	1	11	4	and from that I judged the air to be more rarefied	than it is now.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA237	12654	GUM_podcast_pandemic	GUM	podcast	explicit	1	7	5	that puts us in a better position	than we were in 1918.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA115	6288	GUM_conversation_atoms	GUM	conversation	implicit	0	1	3	Seven.	It's four.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA159	8191	GUM_essay_food	GUM	essay	explicit	1	5	11	not simply access to calories,	but community-wide access to healthy, real food from trusted producers	uncoded	uncoded	uncoded	needs_human_decomposition
+AA076	3959	GUM_podcast_bezos	GUM	podcast	explicit	1	8	8	how is that putting these billions into space	instead of improving the conditions of the workers	uncoded	uncoded	uncoded	needs_human_decomposition
+AA114	6283	GUM_conversation_atoms	GUM	conversation	implicit	0	1	1	Eight.	Four.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA288	15118	GUM_vlog_college	GUM	vlog	implicit	0	10	5	Oh so you don't even like, emotionally like them.	You just physically like them.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA143	7576	GUM_court_mental	GUM	court	explicit	1	19	5	and unlawfully forced T. W.'s remote appearance at trial by Zoom through an unmuted and video on connection,	despite T. W.'s request	uncoded	uncoded	uncoded	needs_human_decomposition
+AA110	5833	GUM_bio_jerome	GUM	bio	explicit	1	5	7	not entering in through windows,	but filtering down from above through shafts,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA191	9840	GUM_interview_daly	GUM	interview	implicit	1	2	7	produced asexually	rather than the result of sexual reproduction.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA173	9018	GUM_fiction_honour	GUM	fiction	explicit	1	9	3	that he had already been flying straight for longer	than was advisable,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA004	497	GENTLE_medical_hiv	GENTLE	medical	explicit	1	3	4	Soft and nontender	without organomegaly or mass.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA062	3499	GUM_essay_system	GUM	essay	implicit	1	9	7	An organization is not just a pile of people,	it's also a set of structures.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA246	12950	GUM_reddit_conspiracy	GUM	reddit	explicit	1	7	6	_____ _____ ___ _______ __ ______	___ __ _________ ____ _ _____	uncoded	uncoded	uncoded	needs_human_decomposition
+AA231	12372	GUM_podcast_llms	GUM	podcast	explicit	0	17	7	that that, that people <*> should have to declare where they got all the data from, from it.	And <*> then they can stop doing that.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA150	7870	GUM_court_prince	GUM	court	implicit	0	9	14	Because that's not just up to the author.	That's up to what was made, what use was made of Orange Prince.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA029	1766	GUM_fiction_beast	GUM	fiction	implicit	1	9	10	I could not help arching my back a little,	I wanted to push against his hand like a cat	uncoded	uncoded	uncoded	needs_human_decomposition
+AA166	8501	GUM_essay_privatization	GUM	essay	explicit	1	7	4	“Special Olympics” for disabled kids is OK,	but not “Gay Olympics.”	uncoded	uncoded	uncoded	needs_human_decomposition
+AA023	1505	GUM_conversation_risk	GUM	conversation	implicit	0	4	7	I wanna fortify.	You can't move those to there,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA296	15745	GUM_vlog_pizzeria	GUM	vlog	implicit	0	1	3	No!	It looks beautiful!	uncoded	uncoded	uncoded	needs_human_decomposition
+AA186	9503	GUM_fiction_wedding	GUM	fiction	implicit	0	8	3	which suggests <*> that the wedding is Christian’s .	It’s not;	uncoded	uncoded	uncoded	needs_human_decomposition
+AA048	2892	GUM_whow_joke	GUM	whow	explicit	1	7	9	"— in fact, you ""shouldn’t "" memorize it —"	but you need to be really comfortable with it,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA343	17445	GUM_whow_skittles	GUM	whow	implicit	1	14	6	be sure fabric softener or a dryer sheet had not been used with it,	lets you get some extra <*> flavoring	uncoded	uncoded	uncoded	needs_human_decomposition
+AA127	6735	GUM_conversation_family	GUM	conversation	implicit	0	2	4	I'd –	Well what was it?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA256	13475	GUM_reddit_stroke	GUM	reddit	implicit	1	4	6	________ __ ____ ____	__ ______ ___ ___ __ _______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA261	13787	GUM_speech_humanitarian	GUM	speech	explicit	1	5	7	not in gilded meeting rooms	but where they live, work and dream.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA252	13176	GUM_reddit_racial	GUM	reddit	explicit	1	14	10	__ __ _________ __ _________ _____ _____ __ _______ __ _ ____ _______ ______	____ _ _______ ___ __ ___ ____ _____ __ _______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA118	6331	GUM_conversation_blacksmithing	GUM	conversation	implicit	1	4	3	it takes me longer	than most people,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA179	9277	GUM_fiction_rose	GUM	fiction	explicit	1	6	15	that they never left the farm;	instead, the world came to them in the shape of weekend picnickers and driveby tourists.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA133	7037	GUM_conversation_toys	GUM	conversation	implicit	0	3	2	Look for it.	Research it.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA195	10019	GUM_interview_licen	GUM	interview	implicit	1	10	12	the Paralympic movement has so little visibility in the US	compared to other countries like Australia, the United Kingdom and even Canada?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA008	875	GENTLE_syllabus_opensource	GENTLE	syllabus	implicit	0	2	3	Wesley Turner	Amos Eaton 207	uncoded	uncoded	uncoded	needs_human_decomposition
+AA119	6333	GUM_conversation_blacksmithing	GUM	conversation	implicit	1	7	3	and, and I'm not as good,	as like somebody	uncoded	uncoded	uncoded	needs_human_decomposition
+AA035	2089	GUM_news_homeopathic	GUM	news	explicit	1	9	8	However, <*> the Sams continued to shun conventional medical treatment,	instead seeking help from other homeopaths and naturopaths.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA185	9492	GUM_fiction_veronique	GUM	fiction	explicit	1	9	5	but no one was taking care of the stabros,	and they were all glad,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA016	1232	GUM_academic_librarians	GUM	academic	explicit	1	13	7	We are not setting out to turn them into programmers or data crunchers,	but want to boost their knowledge level	uncoded	uncoded	uncoded	needs_human_decomposition
+AA286	15092	GUM_vlog_college	GUM	vlog	explicit	1	7	5	I'm in a much better mood	than I was this morning.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA136	7362	GUM_court_crash	GUM	court	implicit	0	10	10	I don't particularly like long and winding opening statements.	I like to give the jury what I would want	uncoded	uncoded	uncoded	needs_human_decomposition
+AA014	1095	GENTLE_threat_dillard	GENTLE	threat	explicit	1	2	3	to heal	instead of kill,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA224	12103	GUM_podcast_brave	GUM	podcast	implicit	1	10	7	as opposed to there's a bear in my castle,	I'm going to go kill it.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA169	8630	GUM_essay_walking	GUM	essay	explicit	1	5	5	Even driving is more fun	than it used to be	uncoded	uncoded	uncoded	needs_human_decomposition
+AA287	15115	GUM_vlog_college	GUM	vlog	implicit	0	8	3	Yeah, he doesn't watch my videos though.	I like them.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA003	224	GENTLE_esports_fifa	GENTLE	esports	explicit	1	6	8	we're down to 4th place	and who the next is in 14th place,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA295	15628	GUM_vlog_mermaid	GUM	vlog	implicit	1	5	4	It was not a bird,	it was a crocodile.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA244	12873	GUM_reddit_card	GUM	reddit	implicit	0	16	12	____ ____ _______ ____ ______ ________ _______ ____ ______ __ ___ _____ ______ ____ ____________	__ ___ ________ _______ ___________ ___ _________ _ _____ ________ ______ ____________	uncoded	uncoded	uncoded	needs_human_decomposition
+AA196	10030	GUM_interview_licen	GUM	interview	explicit	1	10	8	by displaying dedication, hard work and perseverance in different contexts	than those most sports fans are accustomed to.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA054	3293	GUM_court_insanity	GUM	court	explicit	1	4	3	had he been convicted	rather than acquitted.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA210	10824	GUM_letter_gorbachev	GUM	letter	explicit	1	14	5	Finally, the future rent of land can more justly be claimed by future generations	than by today's citizens.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA320	16830	GUM_whow_basil	GUM	whow	explicit	1	6	6	You'll probably have more basil	than you could possibly eat fresh,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA208	10668	GUM_letter_critique	GUM	letter	explicit	1	7	6	to make the rest good for nothing,	but an expense to the Nation.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA106	5380	GUM_bio_bernoulli	GUM	bio	explicit	1	6	8	Despite Daniel's attempts at reconciliation,	his father carried the grudge until his death.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA034	2077	GUM_news_homeopathic	GUM	news	explicit	0	13	12	and the parents were advised to send the child to a skin specialist.	Thomas Sam, a practising homeopath, instead decided to treat his daughter himself.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA226	12141	GUM_podcast_brave	GUM	podcast	implicit	0	6	13	he was involved from the beginning.	They didn't just, like, bring him in from, from out of nowhere.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA061	3498	GUM_essay_system	GUM	essay	implicit	1	9	4	It wasn’t the workers who were the problem;	it was the system.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA304	15924	GUM_vlog_wine	GUM	vlog	implicit	0	9	10	and actually none of us liked it the most.	We all liked the inexpensive version of the Pinotage more.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA257	13511	GUM_reddit_stroke	GUM	reddit	explicit	1	4	3	_ _______ ______ ____	____ _ ____	uncoded	uncoded	uncoded	needs_human_decomposition
+AA141	7504	GUM_court_fire	GUM	court	explicit	1	12	6	that we should ignore four out of five of these intervening causes	and instead just focus on one,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA050	2933	GUM_whow_overalls	GUM	whow	explicit	1	11	6	You’ve probably got them just the way you like them,	but <*> the straps will last longer.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA032	1856	GUM_fiction_lunre	GUM	fiction	implicit	1	7	17	He was not the leaf-collecting doctor,	but an altogether strange man, with silver eyebrows in his smooth face and long fine-knuckled hands.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA039	2344	GUM_reddit_macroeconomics	GUM	reddit	explicit	1	3	4	____ _____ _______	______ ____ <*> __ ______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA332	17086	GUM_whow_packing	GUM	whow	explicit	1	4	5	Never fill a box	until it is so heavy	uncoded	uncoded	uncoded	needs_human_decomposition
+AA338	17207	GUM_whow_procrastinating	GUM	whow	explicit	1	8	4	Don’t worry about completing the entire thing,	but take steps now	uncoded	uncoded	uncoded	needs_human_decomposition
+AA031	1852	GUM_fiction_lunre	GUM	fiction	explicit	1	4	9	He was not yellow,	but very pale brown, the color of raw cashews;	uncoded	uncoded	uncoded	needs_human_decomposition
+AA259	13637	GUM_speech_data	GUM	speech	explicit	1	5	8	Instead of a job description,	I just wrote them a poem, a prayer,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA162	8342	GUM_essay_ghost	GUM	essay	explicit	1	7	13	not because they get the tech right,	but because they reveal oftenhidden aspects of how people and technologies interact.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA232	12398	GUM_podcast_mealprep	GUM	podcast	implicit	1	8	13	So <*> obviously you don't need one onion,	you need several onions or potatoes or whatever you use for that meal.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA241	12819	GUM_reddit_callout	GUM	reddit	implicit	1	7	13	___ ___ ___ ____ ____ ______ _____	____ _______ ____ ____ ____ __ __ ________ __ __ ___ ___________	uncoded	uncoded	uncoded	needs_human_decomposition
+AA049	2899	GUM_whow_joke	GUM	whow	explicit	1	8	8	like they are being read off a script	instead of relayed by a friend or entertainer.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA063	3503	GUM_essay_system	GUM	essay	explicit	0	6	7	it’d probably be a disaster.	Instead, a careful structure has been built:	uncoded	uncoded	uncoded	needs_human_decomposition
+AA284	14901	GUM_textbook_stats	GUM	textbook	implicit	0	8	17	that you received 90 percent on a test.	It means that 90 percent of test scores are the same as or less than your score	uncoded	uncoded	uncoded	needs_human_decomposition
+AA202	10361	GUM_interview_peres	GUM	interview	implicit	1	8	5	because the world is not built on repetition;	it’s built on mutation.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA218	11210	GUM_letter_travel	GUM	letter	explicit	1	21	20	All your little touches of description, of characterization, of local colour in the good sense, would gain immensely, <*> in a story,	whereas they are effaced, in the play, by the need of stage-fare-shortening, and compression, and by the fact	uncoded	uncoded	uncoded	needs_human_decomposition
+AA137	7400	GUM_court_crash	GUM	court	implicit	1	8	5	So it's not always just a .08,	that's the legal limit	uncoded	uncoded	uncoded	needs_human_decomposition
+AA010	930	GENTLE_syllabus_opensource	GENTLE	syllabus	implicit	0	4	11	Do not copy blindly.	Labs and Quizzes should be solved and written by individuals alone.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA128	6742	GUM_conversation_family	GUM	conversation	implicit	1	5	4	that's not potty training,	that's mother training.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA075	3852	GUM_letter_mandela	GUM	letter	explicit	1	12	7	But the need now is not for debate about differences of detail,	but for clarity of principle and purpose.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA335	17171	GUM_whow_parachute	GUM	whow	explicit	1	9	9	it is possible that instead of being killed outright,	you may be permanently paralyzed due to spinal injury.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA178	9244	GUM_fiction_pixies	GUM	fiction	explicit	1	14	3	She got the brunt of the pixies’ odd sense of humor much more	than I did,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA056	3300	GUM_court_insanity	GUM	court	implicit	0	10	12	Mr. Wasserstrom, you're not challenging, <*> the -- the initial commitment.	The only question, <*> is whether he must be released at the time	uncoded	uncoded	uncoded	needs_human_decomposition
+AA095	4830	GUM_academic_economics	GUM	academic	implicit	1	17	8	Achieving political order would require the government to limit its actions and guarantee the rights of citizens	—neither of which has yet occurred in Argentina.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA020	1450	GUM_conversation_risk	GUM	conversation	implicit	0	1	1	No.	Keys?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA266	13897	GUM_speech_maiden	GUM	speech	explicit	1	4	8	We have no choice	but to try to work together every day	uncoded	uncoded	uncoded	needs_human_decomposition
+AA017	1338	GUM_conversation_grounded	GUM	conversation	implicit	0	4	5	I spent the night.	I came home last night	uncoded	uncoded	uncoded	needs_human_decomposition
+AA026	1718	GUM_essay_tools	GUM	essay	implicit	0	23	18	Why would General Motors want to put more capacity and control into the hands of independent garages like the one in my town?	Wouldn’t it want to lock a customer into its own repair and dealer network, much the way	uncoded	uncoded	uncoded	needs_human_decomposition
+AA130	6903	GUM_conversation_scientist	GUM	conversation	implicit	0	10	10	and <*> they have to do it in a straight line.	They can't do it in all directions at once.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA125	6694	GUM_conversation_family	GUM	conversation	implicit	0	7	4	I will go get you another one.	N- that's alright.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA145	7682	GUM_court_mountain	GUM	court	explicit	1	15	6	Well, so the definitions <*> and the set of covenants in Meyers v Kleinhans were different	than they are in this case.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA028	1760	GUM_fiction_beast	GUM	fiction	implicit	1	8	5	My father and I were going to mass —	my mother did not go;	uncoded	uncoded	uncoded	needs_human_decomposition
+AA233	12442	GUM_podcast_mealprep	GUM	podcast	implicit	0	3	3	I don't .	Some people might.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA227	12177	GUM_podcast_collaboration	GUM	podcast	implicit	1	11	5	Now, Jimmy had kind of not been doing that much road	was really just an actor.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA086	4310	GUM_textbook_chemistry	GUM	textbook	explicit	1	11	7	5. Atoms are neither created nor destroyed during a chemical change,	but are instead rearranged to yield substances	uncoded	uncoded	uncoded	needs_human_decomposition
+AA301	15880	GUM_vlog_wine	GUM	vlog	implicit	1	22	7	So the reason behind that shorter period of time is for you to get more of the original flavors from the grapes,	not so much of the secondary flavor	uncoded	uncoded	uncoded	needs_human_decomposition
+AA131	6911	GUM_conversation_scientist	GUM	conversation	implicit	1	2	8	I mean,	cause, f- the stuff can be understand, understood.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA073	3830	GUM_letter_mandela	GUM	letter	explicit	1	9	32	We can see no workable alternative to this proposal,	except that the Nationalist Government proceeds to enforce a minority decision on all of us, with the certain consequence of still deeper crisis, and a continuing period of strife and disaster ahead.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA177	9189	GUM_fiction_pag	GUM	fiction	implicit	0	4	5	It's not real.	"It's just a dream."""	uncoded	uncoded	uncoded	needs_human_decomposition
+AA268	14081	GUM_speech_remarks	GUM	speech	explicit	1	16	6	But one fact is that 2 1/2 million people more are working in the United States	than were working 33 months ago.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA084	4166	GUM_reddit_monsters	GUM	reddit	implicit	0	7	3	___ _____ ________ __ ______ __ _________	____ ________ ___	uncoded	uncoded	uncoded	needs_human_decomposition
+AA180	9339	GUM_fiction_sneeze	GUM	fiction	implicit	0	5	8	“It’s not a joke.	I’ve really got something stuck up there.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA170	8727	GUM_fiction_claus	GUM	fiction	explicit	1	5	5	“Santa can’t reach it,	and it’s probably Ginny.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA022	1478	GUM_conversation_risk	GUM	conversation	implicit	0	6	6	What else can we do tomorrow?	Besides go to the movies, t-?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA315	16750	GUM_whow_basil	GUM	whow	implicit	1	4	9	it actually tastes different,	almost as if it were not the same herb.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA207	10654	GUM_letter_critique	GUM	letter	explicit	1	6	10	I say this in no disparagement,	but merely to show the dissimilarity of the two people.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA027	1740	GUM_essay_tools	GUM	essay	explicit	1	12	4	Open technologies and open systems are less inclined to the unvirtuous cycle	than closed ones are.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA087	4329	GUM_textbook_chemistry	GUM	textbook	explicit	1	11	4	that atoms are neither created nor destroyed during a chemical change,	but are merely redistributed.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA247	12962	GUM_reddit_conspiracy	GUM	reddit	implicit	0	9	8	_______ _____ ____ ______ ___ ____ _______ ________	____ ___ ___ ____ _______ ______ ______ _____	uncoded	uncoded	uncoded	needs_human_decomposition
+AA341	17366	GUM_whow_quinoa	GUM	whow	explicit	1	7	2	but it's better to be safe	than sorry.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA052	3128	GUM_conversation_lambada	GUM	conversation	implicit	1	7	7	In fact I would have gone today,	if it wasn't for my back.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA038	2277	GUM_podcast_wrestling	GUM	podcast	explicit	1	9	12	no, not last week, not the week before that,	but the week before that, on March 25th was my 29th birthday.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA097	5004	GUM_academic_huh	GUM	academic	explicit	1	29	5	In support of the first claim, <*> that the similarities in form and function of an interjection with the specific function of repair initiation are very much greater across languages	than chance coincidence would admit.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA088	4361	GUM_textbook_union	GUM	textbook	explicit	1	9	5	Rather than coming to the aid of the Confederacy,	France used the Civil War	uncoded	uncoded	uncoded	needs_human_decomposition
+AA135	7134	GUM_conversation_vet	GUM	conversation	explicit	1	8	18	it would probably be even a hundred more	but, so it's it's that's about the — at this point the, the least expensive alternative	uncoded	uncoded	uncoded	needs_human_decomposition
+AA078	3972	GUM_podcast_bezos	GUM	podcast	explicit	1	14	11	But everyone in my neighborhood pays a higher percentage of their income in taxes	than he pays on the beyond exorbitant and exceedingly gratuitous wealth	uncoded	uncoded	uncoded	needs_human_decomposition
+AA058	3371	GUM_court_mitigation	GUM	court	explicit	1	14	17	by requesting the jury instruction for the mitigators on all of the applicable counts,	and he didn't request that the jury -- or concede to permit the jury to be discharged	uncoded	uncoded	uncoded	needs_human_decomposition
+AA205	10527	GUM_letter_conference	GUM	letter	explicit	1	6	8	The Conference seems much busier now	than it was a couple of weeks ago;	uncoded	uncoded	uncoded	needs_human_decomposition
+AA291	15397	GUM_vlog_hiking	GUM	vlog	implicit	1	7	10	hiking in Glacier, it's not muddy	it's just the dusty dirt paths are very dusty.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA187	9538	GUM_fiction_wedding	GUM	fiction	explicit	1	5	3	but my page was quicker	than I was	uncoded	uncoded	uncoded	needs_human_decomposition
+AA046	2632	GUM_textbook_labor	GUM	textbook	implicit	1	17	16	The ultimate result of workers <*> is that society as a whole can produce and consume far more	than if each person tried to produce all of his or her own goods and services.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA045	2617	GUM_textbook_labor	GUM	textbook	implicit	1	5	8	they will be more effective	than if they produce a combination of things,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA273	14279	GUM_textbook_alamo	GUM	textbook	explicit	1	15	4	delegates to the Consultation of 1835 at San Felipe de Austin voted against declaring independence,	instead drafting a statement,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA223	12063	GUM_podcast_blackholes	GUM	podcast	implicit	0	3	7	there might be --	You had only two on your list.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA298	15791	GUM_vlog_pregnant	GUM	vlog	implicit	0	6	3	and I didn't feel excited.	I felt worried.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA243	12848	GUM_reddit_card	GUM	reddit	explicit	1	6	3	__ ____ ___ ______ __ ______	___ ____ _______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA336	17190	GUM_whow_procrastinating	GUM	whow	explicit	1	11	6	For example, list “take the dog for a walk by 12:30”	rather than simply “walk the dog.”	uncoded	uncoded	uncoded	needs_human_decomposition
+AA124	6675	GUM_conversation_family	GUM	conversation	implicit	0	8	4	Well <*> they wouldn't come in for lunch.	They would just eat –	uncoded	uncoded	uncoded	needs_human_decomposition
+AA105	5326	GUM_academic_thrones	GUM	academic	implicit	0	17	8	that HBO’s Game of Thrones is more than just a television series or a successful brand:	it is a transmedia system in the sense	uncoded	uncoded	uncoded	needs_human_decomposition
+AA080	4039	GUM_podcast_multitasking	GUM	podcast	explicit	1	8	6	that sounds a little a little more pejorative	than I mean it to be,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA200	10274	GUM_interview_onion	GUM	interview	implicit	0	14	3	We weren’t going to touch on her dress, or who she was dating.	Just the fact	uncoded	uncoded	uncoded	needs_human_decomposition
+AA271	14211	GUM_speech_trump	GUM	speech	implicit	0	4	5	maybe two, maybe four?	2,300 sophisticated vehicles, they ran,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA155	8149	GUM_essay_dividends	GUM	essay	explicit	1	4	8	but no more so	than universal suffrage or Social Security once were.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA274	14312	GUM_textbook_anthropology	GUM	textbook	implicit	1	4	5	knowing how to blink;	nobody has to teach us.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA065	3510	GUM_essay_system	GUM	essay	implicit	1	8	5	you shouldn’t get angry with the gears—	you should fix the machine.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA324	16927	GUM_whow_flirt	GUM	whow	implicit	1	9	10	Don't pry into his or her personal life —	keep things light, fun, and focused on worry-free subjects.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA057	3339	GUM_court_insanity	GUM	court	explicit	1	2	3	as long	as the sentence	uncoded	uncoded	uncoded	needs_human_decomposition
+AA074	3841	GUM_letter_mandela	GUM	letter	implicit	0	11	16	We in South Africa, and the world outside expect an answer.	Silence at this time enables, Dr. Verwoerd to lead us onwards towards the brink of disaster.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA064	3507	GUM_essay_system	GUM	essay	explicit	1	16	8	And <*> it doesn’t make sense to just yell at the people in it—any more	than you’d try to fix a machine	uncoded	uncoded	uncoded	needs_human_decomposition
+AA203	10373	GUM_interview_peres	GUM	interview	implicit	1	6	5	It’s not a geographic endeavor,	it is an intellectual endeavor.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA184	9456	GUM_fiction_veronique	GUM	fiction	explicit	1	7	4	I waited for her to say more,	but she didn't .	uncoded	uncoded	uncoded	needs_human_decomposition
+AA306	16060	GUM_voyage_cuba	GUM	voyage	implicit	1	9	4	but these facilities are not as reliable in Cuba	as in other places.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA081	4045	GUM_podcast_multitasking	GUM	podcast	explicit	0	10	12	I’m going to get a lot more things done.”	But what happens is, a big chunk of our day is lost	uncoded	uncoded	uncoded	needs_human_decomposition
+AA214	11023	GUM_letter_sacco	GUM	letter	implicit	0	14	15	There was no inquiry as to my opinion about Sacco’s guilt or innocence.	(For your information I enclose the original of Mr. Russell’s Oct. 7, 1960 letter.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA310	16638	GUM_whow_arrogant	GUM	whow	implicit	1	4	4	Don't be aggressive	–– just skeptical and curious.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA321	16833	GUM_whow_basil	GUM	whow	explicit	1	9	7	Freezing the leaves whole doesn't work very well,	but <*> you can freeze it for months.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA066	3513	GUM_essay_system	GUM	essay	implicit	1	12	8	You don’t need to do every part of the process yourself—	you just need to set up the machine	uncoded	uncoded	uncoded	needs_human_decomposition
+AA305	15927	GUM_vlog_wine	GUM	vlog	implicit	1	3	2	He's driving,	not me.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA314	16722	GUM_whow_ballet	GUM	whow	implicit	0	6	4	The drawstring just completes the fit.	It isn't made	uncoded	uncoded	uncoded	needs_human_decomposition
+AA103	5188	GUM_academic_mutation	GUM	academic	explicit	0	12	5	In existing proposals, we can find both generic and specific mutation operators.	However, these are not adequate	uncoded	uncoded	uncoded	needs_human_decomposition
+AA212	10939	GUM_letter_roomers	GUM	letter	explicit	1	9	3	voices from the 4-room carry a lot farther	than you think	uncoded	uncoded	uncoded	needs_human_decomposition
+AA302	15904	GUM_vlog_wine	GUM	vlog	implicit	0	9	2	I actually spit it, all of it, in here.	Actually no.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA176	9177	GUM_fiction_oversite	GUM	fiction	implicit	1	6	4	and I had to kill her	before something worse happened.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA107	5432	GUM_bio_chao	GUM	bio	explicit	1	4	6	The ceremony was simple,	rather than the noisy traditional wedding,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA267	14068	GUM_speech_remarks	GUM	speech	explicit	1	10	7	and the revolutionary change of pace is even more rapid	than it has been in the past.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA249	13030	GUM_reddit_gender	GUM	reddit	explicit	1	12	5	____ ___ ____ ________ ____ ____ __ _ ___ ___ ____ ___	______ ____ __ _ _____	uncoded	uncoded	uncoded	needs_human_decomposition
+AA265	13891	GUM_speech_maiden	GUM	speech	explicit	1	4	6	not with timid solutions	but with boldness and with courage.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA161	8322	GUM_essay_ghost	GUM	essay	explicit	1	6	3	that this is not a person,	but an AI	uncoded	uncoded	uncoded	needs_human_decomposition
+AA264	13872	GUM_speech_maiden	GUM	speech	implicit	0	10	13	but theirs has not been the only swearing in today.	A few moments ago, the Senate welcomed three new Members to this Chamber.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA190	9682	GUM_interview_chomsky	GUM	interview	explicit	1	5	7	NATO had never rescinded it,	but they had and started some remilitarization.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA149	7787	GUM_court_nullification	GUM	court	implicit	0	15	5	What trial counsel says is I didn't talk to her about my opening specifically.	There's no other information.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA199	10114	GUM_interview_mcguire	GUM	interview	explicit	1	8	11	While Pride and Prejudice will attract many readers,	I don't know about O'Reilly's latest tome on XML ...	uncoded	uncoded	uncoded	needs_human_decomposition
+AA067	3525	GUM_essay_system	GUM	essay	explicit	1	9	8	You can keep beating yourself up for your forgetfulness,	or you can put a system in place.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA333	17097	GUM_whow_packing	GUM	whow	explicit	1	6	4	"Instead of writing ""Silver Service - Fragile"""	you should write something	uncoded	uncoded	uncoded	needs_human_decomposition
+AA282	14819	GUM_textbook_spacetime	GUM	textbook	explicit	1	8	7	the shortest distance is not a straight line	but the arc of a great circle.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA001	106	GENTLE_dictionary_school	GENTLE	dictionary	implicit	1	7	7	She took care to school her expression,	not giving away any of her feelings.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA060	3467	GUM_essay_system	GUM	essay	explicit	1	11	6	“They spent more time on grievances and on things like that	than they did on producing cars.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA229	12220	GUM_podcast_collaboration	GUM	podcast	explicit	1	12	4	and how do we make that come to the forefront even more	than it is now.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA160	8290	GUM_essay_fracking	GUM	essay	implicit	1	5	9	and convert it into plastic,	most of which is also going to become waste,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA260	13658	GUM_speech_destiny	GUM	speech	explicit	1	9	4	That future is not one of ease or resting	but of incessant striving	uncoded	uncoded	uncoded	needs_human_decomposition
+AA104	5316	GUM_academic_theropod	GUM	academic	explicit	1	9	9	that tail reduction had no effect on CoM displacement,	but that it was not the most important factor.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA148	7770	GUM_court_nullification	GUM	court	implicit	0	10	5	No, I'm not asking you to ignore the finding.	I'm saying the finding	uncoded	uncoded	uncoded	needs_human_decomposition
+AA096	4910	GUM_academic_epistemic	GUM	academic	explicit	1	14	19	the legitimacy of the published findings was not enhanced through their publication by Elsevier,	but rather the legitimacy of Elsevier’s publications <*> was diminished through their dissemination of deceptive and commercially interested research.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA055	3296	GUM_court_insanity	GUM	court	explicit	1	8	8	once he had been confined there for longer	than he could have been incarcerated upon conviction,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA156	8158	GUM_essay_food	GUM	essay	implicit	1	8	12	With a little forethought, it provides an alternative	to relying on distantly sourced, subpar produce in the bleak winter months.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA340	17277	GUM_whow_quidditch	GUM	whow	explicit	1	11	3	the winning seeker wins 30 points for his or her team,	unlike the books,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA299	15850	GUM_vlog_wine	GUM	vlog	implicit	0	13	7	So remember how yesterday <*> there were like very high waves in the lagoon?	Well, today is like the exact opposite.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA317	16798	GUM_whow_basil	GUM	whow	explicit	1	5	3	2 Keep the soil damp,	but not soaked.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA316	16766	GUM_whow_basil	GUM	whow	explicit	1	10	10	so it's often easiest to start the seeds indoors	instead of risking that they'll get damaged by frost.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA009	891	GENTLE_syllabus_opensource	GENTLE	syllabus	explicit	0	9	9	This course will not use the RPI Blackboard LMS.	Instead, we will use Submitty a course management tool	uncoded	uncoded	uncoded	needs_human_decomposition
+AA116	6300	GUM_conversation_atoms	GUM	conversation	implicit	0	1	1	Ocho.	Seis.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA328	16957	GUM_whow_flirt	GUM	whow	implicit	1	8	5	by giving him or her a great conversation,	not by stating it outright.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA294	15609	GUM_vlog_mermaid	GUM	vlog	implicit	0	4	4	Looks like a resort.	Those are the bathrooms.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA109	5712	GUM_bio_higuchi	GUM	bio	explicit	1	10	8	Her mentor did not return her passionate, <*> love for him,	and instead treated her as a younger sister.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA290	15258	GUM_vlog_exams	GUM	vlog	implicit	1	8	4	It was a really weird tiring semester, <*> relatively,	compared to last semester,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA248	13000	GUM_reddit_gender	GUM	reddit	explicit	1	9	3	___ __ ____ _______ ____ ____ __ ___	______ ____ _______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA263	13848	GUM_speech_maiden	GUM	speech	explicit	1	4	3	that isn’t broken	but simply unfinished	uncoded	uncoded	uncoded	needs_human_decomposition
+AA230	12284	GUM_podcast_library	GUM	podcast	implicit	1	9	8	we're supposed to be protecting and distributing content,	not ripping it off for our own websites.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA144	7597	GUM_court_mental	GUM	court	explicit	1	7	9	The district court persisted in that order,	despite T. W.'s objection and her unequivocal request	uncoded	uncoded	uncoded	needs_human_decomposition
+AA319	16825	GUM_whow_basil	GUM	whow	explicit	1	10	9	Don't pinch on the lower part of the stem,	or the basil plants will grow tall and reedy.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA278	14616	GUM_textbook_grit	GUM	textbook	explicit	1	8	5	It is not tied to talent or ability,	but is simply a tendency	uncoded	uncoded	uncoded	needs_human_decomposition
+AA139	7418	GUM_court_equality	GUM	court	implicit	0	13	6	because otherwise, do we then confine ourselves only to the Hindu Marriage Act?	What about the Parsi Marriage Act?	uncoded	uncoded	uncoded	needs_human_decomposition
+AA309	16624	GUM_whow_arrogant	GUM	whow	explicit	1	3	4	Don't eavesdrop,	but <*> listen to them.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA033	2055	GUM_letter_wiki	GUM	letter	explicit	1	19	14	The second reason <*> are in providing instructors and other administrative officials with more up--to--date and comprehensive feedback	than they would normally be able to receive through traditional methods such as surveys.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA262	13809	GUM_speech_humanitarian	GUM	speech	implicit	0	12	8	The recent attack on Saudi Arabia’s oil facilities was completely unacceptable.	In a context <*> we must do everything possible	uncoded	uncoded	uncoded	needs_human_decomposition
+AA085	4206	GUM_speech_austria	GUM	speech	explicit	1	4	10	We have no choice	but to return to direct negotiations between the two parties.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA047	2796	GUM_voyage_athens	GUM	voyage	explicit	1	15	7	With the onset of the automobile, public officials reduced the city's public transportation services	without foreseeing the traffic gridlock and smog	uncoded	uncoded	uncoded	needs_human_decomposition
+AA090	4607	GUM_whow_cactus	GUM	whow	explicit	1	9	6	that growing Beavertail cactus from seeds takes much longer	than growing one from a cutting.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA270	14162	GUM_speech_trump	GUM	speech	implicit	0	3	6	They kill us.	I beat China all the time.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA100	5055	GUM_academic_implicature	GUM	academic	explicit	1	21	5	that the use of a training session and then the format of the question would guide participants towards evaluating pragmatic felicity	over providing truth value judgments,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA327	16953	GUM_whow_flirt	GUM	whow	explicit	1	7	8	Instead of relying too heavily on compliments,	instead, focus on having an engaging, genuine conversation.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA072	3771	GUM_letter_attorney	GUM	letter	implicit	1	5	5	'til some reporter's warned him	that they were hot merchandise.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA018	1365	GUM_conversation_grounded	GUM	conversation	implicit	0	1	8	but —	You'll get a hold of her first.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA318	16823	GUM_whow_basil	GUM	whow	explicit	1	6	7	Cut close to those tiny leaves,	but be sure not to damage them.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA276	14389	GUM_textbook_artwork	GUM	textbook	implicit	1	8	6	40. “Beauty is no quality in things themselves:	it exists merely in the mind	uncoded	uncoded	uncoded	needs_human_decomposition
+AA300	15878	GUM_vlog_wine	GUM	vlog	implicit	1	10	4	and then the red wines, six years to seven years,	not more than that.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA019	1444	GUM_conversation_grounded	GUM	conversation	implicit	0	6	3	Not with your gloves or anything.	Find something else	uncoded	uncoded	uncoded	needs_human_decomposition
+AA201	10285	GUM_interview_onion	GUM	interview	implicit	1	5	4	It’s actually more businesslike	than you’d imagine.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA071	3737	GUM_interview_libertarian	GUM	interview	implicit	1	10	8	Compared to previous third party candidates at the gubernatorial level,	you have done exceptionally well in opinion polling.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA303	15907	GUM_vlog_wine	GUM	vlog	implicit	0	5	7	I drank all of them.	No you actually drank a few sips –	uncoded	uncoded	uncoded	needs_human_decomposition
+AA111	6084	GUM_bio_theodorus	GUM	bio	explicit	1	15	7	Having failed to prove his governing ability and once more in a position no higher	than when he had entered the monastery,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA147	7744	GUM_court_nullification	GUM	court	implicit	0	10	9	it's not just that the opening argued jury nullification.	It's that the opening foreclosed the only defense	uncoded	uncoded	uncoded	needs_human_decomposition
+AA007	654	GENTLE_poetry_raven	GENTLE	poetry	explicit	1	4	2	Till I scarcely more	than muttered	uncoded	uncoded	uncoded	needs_human_decomposition
+AA059	3436	GUM_essay_fear	GUM	essay	implicit	1	4	3	“It is not stupid,	it is illogical.”	uncoded	uncoded	uncoded	needs_human_decomposition
+AA240	12817	GUM_reddit_callout	GUM	reddit	implicit	0	9	8	____ ______ ____ ______ _____ ___ _______ _____	___ _______ _______ _____ __ ______ __________	uncoded	uncoded	uncoded	needs_human_decomposition
+AA297	15747	GUM_vlog_pizzeria	GUM	vlog	implicit	0	3	5	You got it!	Just don't drop it!	uncoded	uncoded	uncoded	needs_human_decomposition
+AA082	4128	GUM_reddit_monsters	GUM	reddit	implicit	1	26	6	_____ __ __ ___________ __ ____ ____ ___ _____ _______ ___ ____ ____ ___ _______ _____ ___ ____ __ __ ____ _____ ____ __ _______ _________	___ <*> ____ _____ ____ ________ ______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA235	12555	GUM_podcast_muskoka	GUM	podcast	explicit	1	5	8	because they released his salary	and I don't want my salary released	uncoded	uncoded	uncoded	needs_human_decomposition
+AA253	13222	GUM_reddit_ring	GUM	reddit	implicit	1	10	4	_____ __ _______ ________ __ __ ___ ____ __ ____ ___	___ __ _______ ______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA070	3672	GUM_interview_hill	GUM	interview	implicit	0	9	7	it was an Oath to ALL of our people.	Politicians profess an Oath to this nation	uncoded	uncoded	uncoded	needs_human_decomposition
+AA228	12217	GUM_podcast_collaboration	GUM	podcast	explicit	1	30	11	and it's more just like a focus on the discussion at the time and what can help move an idea forward or move a certain train of thought forward	rather than how can I say the funniest thing right now.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA337	17197	GUM_whow_procrastinating	GUM	whow	implicit	1	4	5	Don't do it,	put it on a list	uncoded	uncoded	uncoded	needs_human_decomposition
+AA006	607	GENTLE_poetry_death	GENTLE	poetry	explicit	1	4	3	and yet Feels shorter	than the Day	uncoded	uncoded	uncoded	needs_human_decomposition
+AA051	2997	GUM_academic_discrimination	GUM	academic	explicit	1	7	7	The p-value <*> is thus more accurate	(than the associated with the χ2 statistic)	uncoded	uncoded	uncoded	needs_human_decomposition
+AA171	8876	GUM_fiction_frankenstein	GUM	fiction	explicit	0	1	3	“Okay.	But no roughhousing.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA098	5011	GUM_academic_huh	GUM	academic	explicit	1	7	9	that this item is linguistic in nature	rather than being a mere grunt or non-lexical sound.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA322	16893	GUM_whow_elevator	GUM	whow	implicit	1	4	2	“Everyone <*> get off now!	No time	uncoded	uncoded	uncoded	needs_human_decomposition
+AA134	7048	GUM_conversation_toys	GUM	conversation	implicit	0	3	1	Was that Jack?	Zach.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA024	1641	GUM_court_negligence	GUM	court	implicit	0	8	11	but you have dived headlong into the weeds.	You have not told us what our task is here today.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA142	7515	GUM_court_fire	GUM	court	explicit	0	13	10	Well, <*> no, the the origin of the fire is not an electrical fire.	But in fact Debbie started the fire with a cigarette	uncoded	uncoded	uncoded	needs_human_decomposition
+AA308	16614	GUM_voyage_york	GUM	voyage	explicit	1	9	10	using a Park and Ride <*> costs a lot less	than trying to park in or near the city centre,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA330	16988	GUM_whow_glowstick	GUM	whow	implicit	0	11	12	It's important to use sanitary, clean tubes for your glowsticks.	The last thing you want is other substances interacting with the reactions	uncoded	uncoded	uncoded	needs_human_decomposition
+AA068	3621	GUM_fiction_teeth	GUM	fiction	explicit	1	3	21	or no weirder	than Andy showing us his Eastern-Block beer caps all laid out neatly on cork boards with little hand-written labels,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA254	13258	GUM_reddit_ring	GUM	reddit	implicit	1	5	4	__ ___ _____ ___ __________	_____ __ ______ _______	uncoded	uncoded	uncoded	needs_human_decomposition
+AA258	13528	GUM_reddit_stroke	GUM	reddit	explicit	1	7	2	___ ___ __ __ ___ _____ ______	____ __________	uncoded	uncoded	uncoded	needs_human_decomposition
+AA040	2422	GUM_reddit_pandas	GUM	reddit	implicit	0	7	20	____ _______ ___ ____ _______ _____ ______	___ __ ___ ____ __ ___ _____ ___ ___ _______ ____ __ ___ _____ ______ ______ ___ ____ __________ __________	uncoded	uncoded	uncoded	needs_human_decomposition
+AA272	14218	GUM_speech_trump	GUM	speech	implicit	0	11	5	And our real unemployment is anywhere from 18 to 20 percent.	Don't believe the 5.6.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA206	10650	GUM_letter_critique	GUM	letter	explicit	1	9	6	and they would sooner run the risk of death,	than live with an injured reputation.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA211	10850	GUM_letter_marcie	GUM	letter	implicit	0	7	7	and would have done something very creative.	I did the picture of the family	uncoded	uncoded	uncoded	needs_human_decomposition
+AA123	6660	GUM_conversation_family	GUM	conversation	implicit	0	2	3	Your Bill.	Not Bill Wilson.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA101	5085	GUM_academic_implicature	GUM	academic	explicit	0	14	19	The puppets <*> were picked specifically for this task with careful attention to their appearance.	Upon arrival at the school, however, it became clear that the children were not accustomed to playing with puppets	uncoded	uncoded	uncoded	needs_human_decomposition
+AA174	9034	GUM_fiction_honour	GUM	fiction	implicit	0	6	7	Is that all that's left?	A few months ago it was billions.	uncoded	uncoded	uncoded	needs_human_decomposition
+AA030	1795	GUM_fiction_beast	GUM	fiction	explicit	1	7	7	I did not go near my father	but kept my hand in my pocket,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA334	17101	GUM_whow_packing	GUM	whow	implicit	1	4	4	Mom's old dishes	"instead of ""Fine China"""	uncoded	uncoded	uncoded	needs_human_decomposition
+AA053	3132	GUM_conversation_lambada	GUM	conversation	implicit	0	6	5	if you're a guy, if —	If you're a woman,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA089	4439	GUM_vlog_london	GUM	vlog	explicit	1	7	9	your favorite radio station, some music, whatever,	"instead of that classic iPhone alarm, ""ba, ba, ba."""	uncoded	uncoded	uncoded	needs_human_decomposition
+AA002	220	GENTLE_esports_fifa	GENTLE	esports	explicit	1	9	14	This guy has scored overhead kicks from my field	and cannot finish a simple bicycle kick in the Box even a moment,	uncoded	uncoded	uncoded	needs_human_decomposition
+AA275	14382	GUM_textbook_artwork	GUM	textbook	explicit	1	8	6	that “beauty is no quality in things themselves,”	but a “sentiment” in “the mind	uncoded	uncoded	uncoded	needs_human_decomposition

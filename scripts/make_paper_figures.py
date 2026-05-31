@@ -85,9 +85,9 @@ def component_rows(robustness: pd.DataFrame) -> pd.DataFrame:
                     "target_label": TARGET_LABELS[target],
                     "component": component,
                     "component_label": COMPONENT_LABELS[component],
-                    "estimate": float(row["estimate"]),
-                    "low": float(row["cluster_ci_low"]),
-                    "high": float(row["cluster_ci_high"]),
+                    "estimate": 100 * float(row["estimate"]),
+                    "low": 100 * float(row["cluster_ci_low"]),
+                    "high": 100 * float(row["cluster_ci_high"]),
                 }
             )
     return pd.DataFrame(rows)
@@ -119,11 +119,23 @@ def plot_component_effects(robustness: pd.DataFrame) -> None:
             ecolor=COLORS[component],
             label=COMPONENT_LABELS[component],
         )
+        for point_x, point_y in zip(x, y, strict=True):
+            label_offset = 0.18 if point_x >= 0 else -0.18
+            ax.text(
+                point_x + label_offset,
+                point_y,
+                f"{point_x:.1f}",
+                va="center",
+                ha="left" if point_x >= 0 else "right",
+                fontsize=7.5,
+                color=COLORS[component],
+                bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.35, "alpha": 0.82},
+            )
 
     ax.set_yticks([target_positions[target] for target in reversed(targets)])
     ax.set_yticklabels([TARGET_LABELS[target] for target in reversed(targets)])
-    ax.set_xlabel("Adjusted effect in score units")
-    ax.set_xlim(-0.055, 0.135)
+    ax.set_xlabel("Score-point difference")
+    ax.set_xlim(-5.5, 13.5)
     ax.grid(axis="x", color="0.90", linewidth=0.8)
     ax.legend(frameon=False, ncol=2, loc="lower right", handletextpad=0.4, columnspacing=1.0)
     save_figure(fig, "paper_component_effects")
@@ -175,9 +187,9 @@ def robustness_rows(robustness: pd.DataFrame) -> pd.DataFrame:
         rows.append(
             {
                 "label": label,
-                "estimate": float(row["estimate"]),
-                "low": float(row["cluster_ci_low"]),
-                "high": float(row["cluster_ci_high"]),
+                "estimate": 100 * float(row["estimate"]),
+                "low": 100 * float(row["cluster_ci_low"]),
+                "high": 100 * float(row["cluster_ci_high"]),
             }
         )
     return pd.DataFrame(rows)
@@ -210,18 +222,28 @@ def plot_robustness_and_nulls(robustness: pd.DataFrame, nulls: pd.DataFrame) -> 
         capsize=2.5,
         linewidth=1.1,
     )
+    for x, y in zip(x1, y1, strict=True):
+        ax1.text(
+            x + 0.18,
+            y,
+            f"{x:.1f}",
+            va="center",
+            ha="left",
+            fontsize=8,
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4, "alpha": 0.85},
+        )
     ax1.set_yticks(y1)
     ax1.set_yticklabels(robust["label"])
-    ax1.set_xlabel("Adjusted effect")
+    ax1.set_xlabel("Score-point difference")
     ax1.set_title("A. Targeted comparisons")
-    ax1.set_xlim(-0.01, 0.10)
+    ax1.set_xlim(-1, 10.7)
     ax1.grid(axis="x", color="0.90", linewidth=0.8)
 
     y2 = np.arange(len(nulls))[::-1]
     for i, (_, row) in enumerate(nulls.iterrows()):
         y = y2[i]
         ax2.plot(
-            [row["null_q025"], row["null_q975"]],
+            [100 * row["null_q025"], 100 * row["null_q975"]],
             [y, y],
             color="0.55",
             linewidth=4.5,
@@ -229,7 +251,7 @@ def plot_robustness_and_nulls(robustness: pd.DataFrame, nulls: pd.DataFrame) -> 
             label="Null 95% interval" if i == 0 else None,
         )
         ax2.plot(
-            row["null_mean"],
+            100 * row["null_mean"],
             y,
             marker="|",
             markersize=11,
@@ -237,19 +259,28 @@ def plot_robustness_and_nulls(robustness: pd.DataFrame, nulls: pd.DataFrame) -> 
             label="Null mean" if i == 0 else None,
         )
         ax2.plot(
-            row["observed_estimate"],
+            100 * row["observed_estimate"],
             y,
             marker="o",
             markersize=4.8,
             color="#111111",
             label="Observed" if i == 0 else None,
         )
+        ax2.text(
+            100 * row["observed_estimate"] + 0.08,
+            y,
+            f"{100 * row['observed_estimate']:.1f}",
+            va="center",
+            ha="left",
+            fontsize=8,
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4, "alpha": 0.85},
+        )
     ax2.axvline(0, color="0.80", linewidth=0.8, zorder=0)
     ax2.set_yticks(y2)
     ax2.set_yticklabels(nulls["label"])
-    ax2.set_xlabel("Composite effect")
+    ax2.set_xlabel("Composite score-point difference")
     ax2.set_title("B. Stratified permutation nulls")
-    ax2.set_xlim(-0.005, 0.055)
+    ax2.set_xlim(-0.5, 5.8)
     ax2.grid(axis="x", color="0.90", linewidth=0.8)
     ax2.legend(
         frameon=False,

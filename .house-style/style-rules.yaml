@@ -88,6 +88,7 @@ prose:
   contractions:
     rule: "preferred"
     rationale: "Makes prose more natural and readable"
+    enforcement: "Use contractions for natural negative and pronoun-auxiliary forms. If a noun-phrase copula sounds stiff, recast with a direct verb instead of forcing an awkward contraction. Preserve source quotations, corpus examples, and object-language material exactly."
     examples:
       - "don't"
       - "won't"
@@ -139,6 +140,14 @@ prose:
         - "It bears mentioning that"
         - "A further limitation:"
       rule: "Never announce an observation before making it. Delete the frame; state the fact."
+    self_reference:
+      phrases:
+        - "the present paper"
+        - "the present study"
+        - "the present analysis"
+        - "the present evidence"
+        - "the present results"
+      rule: "Never use 'the present' to refer to Brett, Brett's paper, or Brett's analysis. Use 'this paper', 'this study', 'the analysis', 'the evidence', or a concrete noun."
     paragraph_headings:
       rule: "Never use \\paragraph{} headings"
       instead: "Use strong topic sentences and discourse markers"
@@ -258,6 +267,11 @@ comparanda:
     target: "semantic targets"
     role: "discourse/pragmatic roles"
     category: "lexical categories or phrasal projections"
+    lexical_category:
+      rule: "Use 'lexical category', not 'part of speech' or 'POS', in Brett's own prose."
+      allowed_fixed_uses:
+        - "literal corpus field names such as UPOS or XPOS"
+        - "quoted source terminology under discussion"
     class:
       rule: "Never use class as a synonym for category"
       use_for: "descriptive groupings whose mechanism-backed unity is unknown, mixed, or absent"

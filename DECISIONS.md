@@ -23,3 +23,7 @@
 2026-05-30 -- Estimate the isocolon length-balance component with mean-length control but without maximum-length control. Reason: mean and maximum length nearly determine the token length-balance formula, so including both controls mechanically suppresses the length-balance outcome. Composite, parison, and lexical models can retain the full structural control set.
 
 2026-05-30 -- Treat the current antithesis result as label-mismatch evidence, not a final semantic-antithesis test. Reason: the 80-row audit has only eight `adversative-antithesis` rows and no classical-antithesis field; a targeted hand-coded decomposition is needed to separate eRST label mismatch from a surface-measure blind spot for semantic opposition.
+
+2026-05-30 -- Run the antithesis decomposition only after coding the full 343-row `adversative-antithesis` worksheet. Reason: the eight audited rows are useful examples but too sparse for the reviewer-critical subset test; the decisive contrast is whether hand-marked classical antitheses inside the full eRST label set show elevated parison.
+
+2026-05-30 -- State the language scope explicitly as English-only. Reason: the corpus evidence comes from English GUM/eRST and GENTLE rows, and does not license claims about how isocolon, parison, prosody, segmentation, or rhetorical training behave in Ancient Greek, Modern Japanese, or other languages.

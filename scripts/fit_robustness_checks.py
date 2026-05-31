@@ -165,6 +165,76 @@ def add_row(
     )
 
 
+def continuous_spans(frame: pd.DataFrame) -> pd.DataFrame:
+    unit1_discontinuous = frame["unit1_toks"].astype(str).str.contains(",", regex=False)
+    unit2_discontinuous = frame["unit2_toks"].astype(str).str.contains(",", regex=False)
+    return frame[~(unit1_discontinuous | unit2_discontinuous)].copy()
+
+
+def add_target_suite(
+    rows: list[dict[str, object]],
+    frame: pd.DataFrame,
+    *,
+    check: str,
+    note: str,
+) -> None:
+    for target_name, labels in TARGETS.items():
+        for outcome in OUTCOMES:
+            add_row(
+                rows,
+                frame,
+                check=check,
+                target_name=target_name,
+                labels=labels,
+                outcome=outcome,
+                length_controls="mean_max",
+                note=note,
+            )
+
+
+def add_matched_suite(
+    rows: list[dict[str, object]],
+    frame: pd.DataFrame,
+    *,
+    check_prefix: str,
+    note_suffix: str,
+) -> None:
+    joint = frame[frame["orig_label"].str.startswith("joint-")].copy()
+    for target_name, labels in {
+        "joint_list_vs_other_joint": {"joint-list"},
+        "joint_disjunction_vs_other_joint": {"joint-disjunction"},
+        "joint_list_or_disjunction_vs_other_joint": {"joint-list", "joint-disjunction"},
+    }.items():
+        for outcome in OUTCOMES:
+            add_row(
+                rows,
+                joint,
+                check=f"{check_prefix}_coordination_matched",
+                target_name=target_name,
+                labels=labels,
+                outcome=outcome,
+                length_controls="mean_max",
+                note=f"Only joint-* relations; comparison rows are other joint relations. {note_suffix}",
+            )
+
+    adversative = frame[frame["orig_label"].str.startswith("adversative-")].copy()
+    for target_name, labels in {
+        "adversative_contrast_vs_other_adversative": {"adversative-contrast"},
+        "adversative_antithesis_vs_other_adversative": {"adversative-antithesis"},
+    }.items():
+        for outcome in OUTCOMES:
+            add_row(
+                rows,
+                adversative,
+                check=f"{check_prefix}_adversative_matched",
+                target_name=target_name,
+                labels=labels,
+                outcome=outcome,
+                length_controls="mean_max",
+                note=f"Only adversative relations; comparison rows are other adversative relations. {note_suffix}",
+            )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="data/derived/gum_erst_adjacent_isocolon_scores.tsv")
@@ -245,6 +315,33 @@ def main() -> None:
                 length_controls="mean_max",
                 note="Only adversative relations; comparison rows are other adversative relations.",
             )
+
+    add_target_suite(
+        rows,
+        frame[frame["collection"].eq("GUM")].copy(),
+        check="gum_only",
+        note="Only adjacent rows from the GUM collection.",
+    )
+    add_matched_suite(
+        rows,
+        frame[frame["collection"].eq("GUM")].copy(),
+        check_prefix="gum_only",
+        note_suffix="Only adjacent rows from the GUM collection.",
+    )
+
+    continuous = continuous_spans(frame)
+    add_target_suite(
+        rows,
+        continuous,
+        check="continuous_spans_only",
+        note="Rows with comma-separated token intervals excluded.",
+    )
+    add_matched_suite(
+        rows,
+        continuous,
+        check_prefix="continuous_spans_only",
+        note_suffix="Rows with comma-separated token intervals excluded.",
+    )
 
     write_tsv(Path(args.out), rows)
 

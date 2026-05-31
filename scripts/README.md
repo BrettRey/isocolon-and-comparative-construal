@@ -27,7 +27,9 @@ Current scripts:
 - `fit_robustness_checks.py`: runs document-clustered uncertainty checks, mean-only and no-length-control length-balance models, joint-only matched comparisons, and adversative-only matched comparisons.
 - `extraction_diagnostics.py`: summarizes interval-level extraction diagnostics, including valid rows, adjacent rows, non-adjacent exclusions, discontinuous spans, and duplicate adjacent span-pair keys.
 - `fit_stratified_nulls.py`: runs document/length/punctuation-stratified permutation nulls for broad, list/disjunction, and adversative-contrast target labels.
+- `fit_influence_checks.py`: runs leave-one-genre influence checks for broad, within-joint, and within-adversative target effects.
 - `make_paper_figures.py`: generates the manuscript coefficient plots from `robustness_checks.tsv` and `stratified_nulls.tsv`.
-- `prepare_antithesis_decomposition_audit.py`: extracts audited `adversative-antithesis` rows into a worksheet for hand-coding classical antithesis, semantic opposition, and parallel opposition.
+- `prepare_antithesis_decomposition_audit.py`: extracts audited and full `adversative-antithesis` rows into worksheets for hand-coding classical antithesis, semantic opposition, and parallel opposition.
+- `fit_antithesis_decomposition.py`: after those fields are coded, compares hand-marked antithesis subsets on formal balance, isocolon, parison, and lexical echo.
 - `sample_qualitative_audit.py`: creates the reproducible 40-row qualitative audit sample, including high broad-target cases, typical broad-target cases, narrow cases, high-scoring non-targets, restatement controls, and baseline non-targets.
 - `summarize_qualitative_audit.py`: validates four agent-review TSVs, combines ratings, and writes reviewer, consensus, and stratum-level summaries for the qualitative audit.
