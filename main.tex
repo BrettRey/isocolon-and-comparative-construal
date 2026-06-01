@@ -20,31 +20,37 @@ Humber Polytechnic \& University of Toronto}
 \maketitle
 
 \begin{abstract}
-Rhetorical theory often treats balanced form as more than ornament. A
-balanced pair of cola can present two units as candidates for
-comparison. A reader-side causal claim would need experimental evidence,
-but a production-side textual claim can be tested in corpus data. This
-paper tests whether adjacent discourse-relation pairs in the Georgetown
-University Multilayer corpus with enhanced Rhetorical Structure Theory
-annotations (GUM/eRST) show more \term{formal balance} when they construe two
-units as comparable co-members of a set. The analysis separates
-\term{isocolon}, measured as length balance, from \term{parison},
-measured as syntactic parallelism, and \term{lexical echo}. In 17,456 adjacent
-relation pairs from 299 documents across 24 genres, a broad target family
-of comparison and co-ordination relations shows a positive adjusted
-increase in the composite formal-balance score. The largest broad
-target-family effects come from lists and
-disjunctions, where co-ordination is a strong grammatical null; the
-cleaner non-enumerative signal comes from adversative contrast.
+Isocolon is usually discussed as a figure of balanced cola, but its
+rhetorical interest comes from a stronger idea: balanced form can help two
+units look comparable. A corpus can't test that reader-response claim
+directly. It can test a narrower textual claim: if writers use balanced
+form to present adjacent units as comparable co-members, then measurable
+formal balance should cluster in the discourse relations that invite that
+presentation.
 
-The composite increase comes mostly from the parison subscore. Mean-only
-length controls also show isocolonic length balance, but they contribute
-little to the main composite estimate. A matched co-ordination check shrinks the list/disjunction effect;
-an adversative-only check leaves contrast positive. Antithesis alone sits
-near zero, and concession is negative. The result supports
-a restrained textual claim: formal balance belongs to the profile of some
-comparable-set construals and varies across relations that could be called
-contrastive.
+This paper tests that claim in the Georgetown University Multilayer corpus
+(GUM) with enhanced Rhetorical Structure Theory (eRST) annotations. The
+analysis scores 17,456 adjacent relation pairs from 299 documents across
+24 genres. The composite formal-balance score combines three subscores:
+\term{isocolon}, length balance; \term{parison}, surface syntactic
+parallelism; and \term{lexical echo}, lemma-sequence similarity plus
+content-lemma overlap.
+
+The broad target family of comparison and co-ordination relations scores
+4.1 points higher than the non-target baseline on a 0--100 reporting
+scale, about 0.28 standard deviations. The largest effects come from
+\mention{joint-list} and \mention{joint-disjunction}, where co-ordination
+makes parallel form grammatically cheap. The cleaner non-enumerative
+evidence comes from \mention{adversative-contrast}, which remains positive
+inside an adversative-only comparison. The main controlled signal is
+parison.
+
+Length balance appears under mean-only conditioning, but it
+contributes little to the main composite estimate once maximum length is
+also controlled. The eRST antithesis label sits near zero, and concession
+is negative. The result supports a modest textual claim: formal balance,
+especially parison, belongs to the profile of some comparable-set
+relations, but relation names don't guarantee classical figures.
 \end{abstract}
 
 \section{Introduction}
@@ -52,7 +58,8 @@ contrastive.
 Rhetorical theory has long treated figures as patterned forms with
 argumentative force. In that tradition,
 \term{isocolon} joins two kinds of evidence that are easy to confuse:
-formal balance between adjacent units and a reader's sense that the units
+formal balance between adjacent cola, short rhetorical units in sequence,
+and a reader's sense that the units
 invite comparison. The motivating claim is simple. When writers place two
 clauses or phrases in balanced form, they may present the comparison
 between them as more explicit, pointed, or forceful.
@@ -65,31 +72,34 @@ can't show that. At the textual level, the claim turns distributional:
 writers may preferentially use balanced form where they construe two
 units as comparable. That claim is testable.
 
-The corpus test uses a narrow hypothesis. When a relation places two
-adjacent units in a shared comparison frame, the pair should show more
+The corpus test uses a narrow hypothesis. When a discourse relation presents two
+adjacent units as comparable co-members, the pair should show more
 formal balance than pairs expressing cause, condition, elaboration,
-sequence, or other non-comparative relations. The study uses the
+sequence, or other non-comparative relations. A discourse relation is the
+annotated link between two stretches of text: for example, one unit may
+contrast with another, explain it, elaborate it, or continue a sequence.
+The study uses the
 Georgetown University Multilayer (GUM) corpus and enhanced Rhetorical
 Structure Theory (eRST) annotations because they provide genre-diverse
 texts, discourse-relation labels, and signal annotation
 \citep{zeldes2017GUMCorpus,zeldesEtAl2025eRST}.
 
-The empirical object is therefore a constructed composite formal-balance
-score. For every adjacent pair, that composite asks how much the two units
-resemble each other
-in length, surface syntax, and lexical material. It's graded, not binary:
-high composite values mark strong formal resemblance, not confirmed rhetorical
-figures.
+I use a constructed composite formal-balance score to make that comparison.
+For every adjacent pair, the composite formal-balance score measures how
+much the two units resemble each other in length, surface syntax, and
+lexical material. It's graded, not binary: high values of the composite
+formal-balance score indicate strong formal resemblance, not confirmed
+rhetorical figures.
 
-The analysis uses the eRST relation export: mostly GUM, plus a smaller
-GENTLE challenge set included in the same export. Access to the
+The analysis uses the eRST relation export: mostly GUM, plus the smaller
+GENTLE challenge set. Access to the
 Rhetorical Structure Theory (RST) Signalling Corpus is still pending, so
 that corpus isn't part of this analysis. Once available, it can support later
 triangulation against a broader inventory of coherence-relation signals.
 
-The pattern refines the rhetorical claim. Broad target-family relations
-are more formally balanced than matched non-target relations, but the
-largest broad target-family effects occur exactly
+The pattern refines the rhetorical claim. Relations in the broad target
+family are more formally balanced than matched non-target relations, but
+the largest effects for that family occur exactly
 where a grammar-driven co-ordination account is strongest: lists and
 disjunctions. Ordinary adversative contrast is smaller but cleaner,
 because it survives inside an adversative-only comparison. Antithesis
@@ -179,8 +189,8 @@ ranking score in validation. It ranks adjacent relation pairs by how much
 measurable formal balance they display. The qualitative audit then asks whether
 top-ranked examples are plausible formal-balance candidates after
 excluding exact repetition, dialogue formulas, and other false-positive
-types. This more modest target than automatic figure recognition is the
-right target for a first rhetorical-function test.
+types. This narrower aim is the right target for a first rhetorical-function
+test; automatic figure recognition would be a different task.
 
 \section{Corpus and measurement}
 
@@ -191,54 +201,43 @@ with enhanced Rhetorical Structure Theory annotations (GUM/eRST). GUM
 provides genre-diverse, richly annotated English texts
 \citep{zeldes2017GUMCorpus}. eRST extends RST-style discourse annotation
 with graph structures and explicit signal annotation across spoken and
-written genres \citep{zeldesEtAl2025eRST}. The DISRPT shared-task export
-used here also includes a smaller GENTLE challenge set. The project needs
-discourse relations as well as adjacent sentences. It also needs enough
-genre variation to separate a rhetorical effect from a register-specific
-habit.
+written genres \citep{zeldesEtAl2025eRST}. The DISRPT discourse-parsing
+shared-task export used here is a standardized release prepared for
+computational discourse parsing. It also includes a smaller GENTLE challenge set.
+GENTLE is an out-of-domain test collection distributed with the same export,
+not a second main corpus.
+
+Sentence adjacency alone would be too coarse. Two neighbouring units can
+contrast, elaborate, narrate, repair, or list, and the hypothesis depends on
+which relation holds between them. The project also needs enough genre
+variation to separate a rhetorical effect from a register-specific habit.
 
 The analysis uses adjacent discourse-relation pairs. The dataset
 contains 17,456 such pairs from 299 documents across 24 genres.
 These discourse units serve as candidate cola-like spans, with no claim
 that they're classical cola in a strict prosodic sense.
 
+Adjacency matters because the rhetorical claim is local. The analysis asks
+whether two neighbouring units in a relation are formally balanced. It
+doesn't ask whether two distant units in the same document resemble each
+other.
+
 A relation enters the analysis if eRST marks it as explicit or implicit,
 both spans have token intervals, and the two intervals are adjacent in
-document order. Non-adjacent linked spans are excluded. Concurrent graph
+document order. A token interval is the start and end position of a unit in
+the document's token sequence. An explicit relation has a marked signal in the text, such
+as a connective or other cue; an implicit relation is inferred by the
+annotator without such a signal. Non-adjacent linked spans are excluded. Concurrent graph
 relations are kept as pairwise relation rows when their spans meet this
 adjacency criterion.
 
-The DISRPT shared-task relation export used here omits the full eRST graph-node
-inventory from the derived table. The diagnostics in
-Table~\ref{tab:extraction-diagnostics} are interval-level checks instead
-of a complete graph-theoretic audit. The extracted set contains 16,278
-rows with collection label GUM and 1,178 with collection label
-\mention{GENTLE}, the out-of-domain challenge set; the 24 genres are the
-document-genre labels in the extracted files.
-
-\begin{table}[H]
-\centering
-\scriptsize
-\begin{tabular}{lr}
-\toprule
-Extraction diagnostic & Count\\
-\midrule
-Valid explicit/implicit relation rows & 34,976\\
-Adjacent relation rows used in analysis & 17,456\\
-Non-adjacent relation rows excluded & 17,520\\
-\quad gapped rows excluded & 15,349\\
-\quad interleaved rows excluded & 2,171\\
-Adjacent rows with discontinuous token intervals & 1,963\\
-Exact duplicate adjacent span pairs & 0\\
-Adjacent explicit rows & 4,943\\
-Adjacent implicit rows & 12,513\\
-\bottomrule
-\end{tabular}
-\caption{Extraction diagnostics for the adjacent-pair analysis. Counts
-come from token intervals in the DISRPT shared-task relation export. Exact duplicate
-span pairs are counted by document, unit-1 tokens, and unit-2 tokens.}
-\label{tab:extraction-diagnostics}
-\end{table}
+The extracted set contains 16,278 rows with collection label GUM and 1,178
+with collection label \mention{GENTLE}; the 24 genres are the
+document-genre labels in the extracted files. The derived DISRPT relation
+table has relation rows and token intervals, not the full eRST discourse
+graph, so the extraction diagnostics are interval-level checks rather than
+a complete graph-theoretic audit. Appendix~\ref{app:extraction-diagnostics}
+reports the full extraction counts.
 
 \subsection{Three measures of formal balance}
 
@@ -248,32 +247,52 @@ and estimated syllable length. Second, \term{parison} measures
 similarity in dependency and lexical-category profiles. Third,
 \term{lexical echo} measures repeated or closely corresponding lexical
 material. The composite formal-balance score combines the three subscores
-as a graded measure of formal balance. That composite gives evidence about
-formal balance, not a figure label for the pair.
+as a graded measure of formal balance. The composite formal-balance score
+gives evidence about formal balance, not a figure label for the pair.
 
-The subscore calculations stay deliberately simple. For any two units with
-positive length, a component value is \(1 - |n_1 - n_2|/\max(n_1,n_2)\).
+A token is the corpus's word-like unit. For instance,
+\mention{Get your feet off of there} has six word tokens under ordinary
+tokenization. Token counts are useful for isocolon, but they aren't the
+whole measure because short units can match in length while differing
+sharply in structure.
+
+The subscore calculations stay deliberately simple. For any two positive
+values \(n_1\) and \(n_2\), the component-balance value \(B(n_1,n_2)\) is
+\begin{equation}
+\label{eq:component-balance}
+B(n_1,n_2) = 1 - \frac{|n_1 - n_2|}{\max(n_1,n_2)}.
+\end{equation}
 The value is 1 when the two units match exactly on that dimension and
 falls toward 0 as they diverge. Two units of 8 and 10 words, for instance,
-score \(1 - |8-10|/10 = 0.8\) on word length. Two units of equal length
+score \(1 - |8-10|/10 = 0.8\) under Equation~\ref{eq:component-balance}.
+Two units of equal length
 score 1. The isocolon subscore averages this quantity over word tokens,
 characters, and estimated syllables.
 
 The parison subscore compares the two units' grammatical make-up rather
 than their wording. It averages edit similarity over three sequences, each
 read in token order: the coarse Universal Dependencies lexical-category
-tags (\mention{UPOS}), the finer language-specific ones (\mention{XPOS}),
-and the dependency relations, which name the grammatical function
+field (\mention{UPOS}), the language-specific lexical-category field
+(\mention{XPOS}), and the dependency relations, which name the grammatical function
 (subject, object, modifier, and so on) that ties each word to the word it
 depends on.
 
 Edit similarity counts how few small changes, inserting, deleting, or
 swapping one item, turn one such sequence into the other, rescaled to lie
 between 0 and 1 \citep{levenshtein1966BinaryCodes}. Two units that run
-through the same categories in the same order therefore score near 1.
+through the same categories in the same order score near 1.
 Because the sequences are read flat, left to right, the measure registers
 shared category order but not the branching shape of the sentence; it's a
 surface profile, not a comparison of full parse trees.
+
+For a schematic example, compare \mention{The dog barked} with
+\mention{A cat slept}. Their wording differs, but their lexical-category
+sequence is the same: article, noun, verb. Their dependency-relation
+sequence also follows the same surface pattern. The parison subscore is
+high because the grammatical profile matches, even though the lexical-echo
+subscore is low. By contrast, a pair such as \mention{The dog barked} and
+\mention{After dinner} has little category or dependency alignment and
+gets a low parison value.
 
 The lexical-echo subscore applies the same comparison to the words
 themselves, in their lemma form, the dictionary form that counts
@@ -289,31 +308,42 @@ for Universal Dependencies (CoNLL-U), which records tokenization, lemmas,
 lexical-category tags, and dependency labels. Punctuation tokens are
 excluded from the word, syntax, and lexical sequences, while colon and
 semicolon position are kept as separate controls. Syllable counts are
-approximate vowel-group counts.
+approximate vowel-group counts. For discontinuous units, length is counted
+from the tokens assigned to the unit, not from the full interval width
+including intervening material.
 
-The composite formal-balance score equals
-\[
+The composite formal-balance score \(S_{\mathrm{formal}}\) is defined in
+Equation~\ref{eq:composite-formal-balance}.
+\begin{equation}
+\label{eq:composite-formal-balance}
+S_{\mathrm{formal}} =
 0.40 \times \text{isocolon} +
 0.45 \times \text{parison} +
 0.15 \times \text{lexical echo}.
-\]
+\end{equation}
 
-These weights define only that composite. The subscores are also reported
+These weights define only the composite formal-balance score. The subscores are also reported
 separately, so the analysis can distinguish
 isocolonic length balance from parison-like syntactic parallelism and
 lexical echo.
 
+The weights make syntax and length the main ingredients and keep lexical
+echo smaller, because repeated words can mark balance but can also mark
+plain repetition. A later robustness check repeats the analysis across many
+alternative weightings, so the argument doesn't depend on this exact
+\(0.40/0.45/0.15\) split.
+
 \subsection{Defining the target relations}
 
-At this point, the composite formal-balance score is only a property of each adjacent
+The composite formal-balance score is only a property of each adjacent
 pair. It says how closely the two units match in length, surface syntax,
 and lexical material. It doesn't say that the pair belongs to a target
 relation, and it doesn't by itself identify a rhetorical figure. The
 target definitions below do separate work: they say which eRST relation
-labels should, by hypothesis, tend to have higher composite formal-balance
-scores.
+labels should, by hypothesis, tend to have higher values of the composite
+formal-balance score.
 
-The next step is to sort the eRST relation labels into hypothesis groups.
+The analysis then sorts the eRST relation labels into hypothesis groups.
 Table~\ref{tab:label-mapping} gives the mapping. These groups are analysis
 groups, not new annotations: they say which existing eRST labels count as
 targets for this test. The broad target family includes
@@ -322,8 +352,15 @@ targets for this test. The broad target family includes
 whether formal balance rises in relations that place units in a
 comparable or co-ordinated frame. The narrow adversative family includes only
 \mention{adversative-antithesis} and \mention{adversative-contrast}.
-Individual-relation analyses separate the broad target-family effect into
+
+Individual-relation analyses separate the effect for the broad target family into
 its individual labels.
+
+The label prefixes matter. \mention{adversative-*} labels mark contrastive
+or concessive relations. \mention{joint-*} labels mark multinuclear
+relations, where the linked units have equal discourse status. The label
+\mention{adversative-antithesis} is an eRST relation name; it isn't already
+a hand annotation of the classical figure \term{antithesis}.
 
 \begin{table}[H]
 \centering
@@ -337,7 +374,7 @@ Broad target family &
 \mention{joint-disjunction}; \mention{joint-list}.
 Contrast, alternatives, and co-enumeration place units into a shared
 frame. The joint labels are co-ordination-rich and also the
-strongest grammar-driven null.\\
+strongest grammar-driven alternative explanation.\\
 Narrow adversative family &
 \mention{adversative-antithesis}; \mention{adversative-contrast}.
 Tests whether the broad result survives without list and disjunction
@@ -364,8 +401,8 @@ comparable-set construal remains future work.}
 \subsection{Estimating the effects}
 
 The primary comparisons ask a plain difference question: after removing
-obvious confounds, do target relations receive higher composite
-formal-balance scores than other relations? The controls remove
+background differences that could distort the comparison, do target relations receive higher values of the
+composite formal-balance score than other relations? The controls remove
 differences that can make the
 comparison too easy: document, explicit signalling, sentence adjacency,
 punctuation, mean length, and maximum length. Document controls mean that,
@@ -376,10 +413,12 @@ For readability, I report effects as score-point differences on a 0--100
 version of the composite formal-balance scale, where a pair sits near 0
 when its two units share little measurable form, with different lengths,
 structures, and words, and near 100 when they match closely on length,
-syntax, and wording.
+syntax, and wording. The underlying scores range from 0 to 1. Differences
+between two groups can range from \(-1\) to \(+1\) on the raw scale,
+or from \(-100\) to \(+100\) after the score-point rescaling.
 
 Figure~\ref{fig:score-distribution} shows the empirical range behind that
-scale and splits it by broad target status. The 0--100 scale is a
+scale and splits it by target status. The 0--100 scale is a
 readability transformation, not a claim that the observed data fill the
 whole interval evenly. In the 17,456 adjacent pairs, the median composite
 value is 32.8. The middle half runs from 22.3 to 41.9, and 95\% of pairs
@@ -392,7 +431,8 @@ but the two distributions overlap heavily.
 \centering
 \includegraphics[width=\linewidth]{outputs/figures/paper_score_distribution.pdf}
 \caption{Distribution of the composite formal-balance score after rescaling
-to 0--100, split by broad target status. Bars show percentages within each
+to 0--100, split by target status: broad target family versus non-target
+baseline. Bars show percentages within each
 group, not raw counts, so the larger non-target baseline doesn't dominate
 the display. Vertical lines mark group medians. The plot is descriptive;
 the 4.1-point effect reported below is adjusted for document, length,
@@ -413,50 +453,65 @@ non-target example near each anchor.
 \begin{table}[H]
 \centering
 \scriptsize
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}rlrp{0.29\linewidth}p{0.29\linewidth}@{}}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}rlr>{\raggedright\arraybackslash}p{0.26\linewidth}c>{\raggedright\arraybackslash}p{0.26\linewidth}@{}}
 \toprule
-Score & Status & Gap & Unit 1 & Unit 2\\
+Score & Status & Gap & Unit 1 & & Unit 2\\
 \midrule
-95.2 & Target & \(+63.5\) & \mention{You can use this on twist outs.} &
-\mention{You can use this on braid outs.}\\
 100.0 & Non-target & \(+68.3\) & \mention{Get your feet off of there.} &
+\(\parallel\) &
 \mention{Get your feet off of there.}\\
-59.9 & Target & \(+28.2\) & \mention{I worked with some great musicians} &
-\mention{and performed around the world.}\\
+95.2 & Target & \(+63.5\) & \mention{You can use this on twist outs.} &
+\(\parallel\) &
+\mention{You can use this on braid outs.}\\
 60.0 & Non-target & \(+28.3\) & \mention{I got to go out on the road.} &
+\(\parallel\) &
 \mention{I want to get my chops back up.}\\
-50.0 & Target & \(+18.3\) & \mention{the house festooned with flowers} &
-\mention{and stocked with coconut liquor.}\\
+59.9 & Target & \(+28.2\) & \mention{I worked with some great musicians} &
+\(\parallel\) &
+\mention{and performed around the world.}\\
 50.0 & Non-target & \(+18.3\) & \mention{it forces you to take action,} &
+\(\parallel\) &
 \mention{as you can't afford to waste any time.}\\
-40.0 & Target & \(+8.3\) & \mention{maybe I should vlog today} &
-\mention{and just see how my day turns around}\\
+50.0 & Target & \(+18.3\) & \mention{the house festooned with flowers} &
+\(\parallel\) &
+\mention{and stocked with coconut liquor.}\\
 40.0 & Non-target & \(+8.3\) & \mention{Steven measured and mixed the plaster of Paris} &
+\(\parallel\) &
 \mention{and prepared for the cast}\\
-30.0 & Target & \(-1.7\) & \mention{Shorts and sleeveless shirts are highly inappropriate,} &
-\mention{as are short skirts.}\\
+40.0 & Target & \(+8.3\) & \mention{maybe I should vlog today} &
+\(\parallel\) &
+\mention{and just see how my day turns around}\\
 30.0 & Non-target & \(-1.7\) & \mention{For your joke to be funny,} &
+\(\parallel\) &
 \mention{it has to surprise the audience in some way,}\\
-19.6 & Target & \(-12.1\) & \mention{We have no choice} &
-\mention{but to return to direct negotiations between the two parties.}\\
+30.0 & Target & \(-1.7\) & \mention{Shorts and sleeveless shirts are highly inappropriate,} &
+\(\parallel\) &
+\mention{as are short skirts.}\\
 20.0 & Non-target & \(-11.7\) & \mention{Yeah no.} &
+\(\parallel\) &
 \mention{Not a good look.}\\
+19.6 & Target & \(-12.1\) & \mention{We have no choice} &
+\(\parallel\) &
+\mention{but to return to direct negotiations between the two parties.}\\
 \bottomrule
 \end{tabular*}
 \caption{Example raw composite formal-balance scores. Gap is measured in
 score points against the non-target median of 31.7. \term{Target} means the
 pair belongs to the broad target family; \term{non-target} means it doesn't.
-These examples calibrate the raw scale; they aren't adjusted effects.}
+The \(\parallel\) symbol marks the boundary between the two units. These
+examples calibrate the raw scale; they aren't adjusted effects.}
 \label{tab:score-calibration}
 \end{table}
 
-The broad target-family gap is 4.1 points, about a fifth of that repetition
-gap. The empirical standard deviation of the composite formal-balance score
-is 14.8 points, so the broad target-family gap is about 0.28 standard
-deviations. The effect is therefore modest.
-
-What earns the 4.1-point gap a place in the paper isn't its size but its
-steadiness. The interval reported in Results stays well clear of zero.
+The gap between the broad target family and the non-target baseline is 4.1
+points, about a fifth of that repetition gap. The empirical standard
+deviation of the composite formal-balance score
+is 14.8 points, so the gap for the broad target family is about 0.28 standard
+deviations. The effect is a small distributional shift. It doesn't separate
+target from non-target pairs cleanly, as Figure~\ref{fig:score-distribution}
+already shows. It remains worth modelling because the estimate stays positive
+after accounting for related pairs within documents and under the robustness
+checks below.
 
 I estimate these differences with ordinary least squares regression. In
 plain terms, it reports the average gap in balance between target and
@@ -464,33 +519,42 @@ non-target pairs that are otherwise alike, holding the controls (document,
 length, punctuation, sentence adjacency, and explicitness) constant, so the
 gap isn't just a by-product of those background differences.
 
-For the composite formal-balance score, the controls matter because longer
-spans have more opportunities for structural mismatch. The length subscore
-needs gentler handling. A pair's token-length balance is almost fixed once
-its mean and maximum span length are known. It equals \(2\mu/m - 1\),
-where \(\mu\) is mean span length and \(m\) is maximum span length. Holding
-both lengths constant at once would therefore subtract away most of the
-quantity being measured. The isocolon subscore is reported with
-mean-length control and without maximum-length control.
+The estimates are descriptive adjusted differences. A positive value means
+that the target relation group has a higher composite formal-balance score
+than its comparison group after the controls. A negative value means the
+target group is lower.
 
-The main controls are an intercept, explicit relation status,
-same-sentence adjacency, colon punctuation, semicolon punctuation,
-standardized log mean length, standardized log maximum length, and
-document fixed effects. The two length terms enter logged and
-standardized: taking the logarithm keeps a few very long spans from
-dominating, and standardizing puts mean and maximum length on a common
-scale. Document-clustered intervals treat pairs from the
-same document as related observations rather than as wholly independent
-pieces of evidence \citep{cameronMiller2015ClusterRobust}.
+For the composite formal-balance score, longer spans have more chances for
+structural mismatch, so the main models control for both mean span length
+and maximum span length. The isocolon subscore needs different treatment
+because its token component is built from those same quantities. If
+\(m=\max(n_1,n_2)\) and \(\mu=(n_1+n_2)/2\), the token-length component
+in Equation~\ref{eq:component-balance} can also be written as
+\(2\mu/m - 1\). A model that controls for both \(\mu\) and \(m\) holds
+fixed the ingredients of the outcome and leaves little token-length balance
+to estimate. The same concern applies to the character and syllable
+components. For that reason, the isocolon models control for mean length but
+omit maximum length.
 
-A genre-varying analysis asks whether the effect belongs to only one or
+The models control for explicit relation status, same-sentence adjacency,
+colon punctuation, semicolon punctuation, standardized log mean length,
+standardized log maximum length, and document fixed effects. Document fixed
+effects are document-specific baselines; they compare target and non-target
+pairs inside the same text where the data allow it. The two length terms
+enter logged and standardized: taking the logarithm keeps a few very long
+spans from dominating, and standardizing puts mean and maximum length on a
+common scale. Document-clustered intervals treat pairs from the same
+document as related observations; these are the uncertainty ranges reported
+in the tables \citep{cameronMiller2015ClusterRobust}.
+
+A genre-varying analysis asks whether the effect comes from only one or
 two genres. It first estimates the same adjusted effect separately within
 each genre. Those single-genre figures are shaky wherever a genre
-contributes few pairs, so a second step (a normal empirical-Bayes model)
-pulls each one toward the overall average \citep{efronMorris1973SteinEmpiricalBayes},
-moving the estimates built on little data the most and the well-supported
-ones hardly at all. The same step reports how far the genres still spread
-around that shared average once the correction is made.
+contributes few pairs, so a second shrinkage step pulls each one toward the
+shared average \citep{efronMorris1973SteinEmpiricalBayes}. Estimates built
+on little data move the most; well-supported estimates hardly move. The
+same step reports how far the genres still spread around that shared
+average once the correction is made.
 
 Robustness checks add mean-only length models, joint-only and
 adversative-only comparisons, GUM-only and continuous-span-only subsets,
@@ -500,162 +564,22 @@ labels are shuffled inside matched strata. The question is whether effects
 this large appear when relation labels are randomly assigned within
 comparable document, length, punctuation, and explicitness groups.
 
-\section{Validation}
-
-The validation asks whether the composite formal-balance score ranks
-useful cases near the top. It doesn't ask whether the composite can label
-figures automatically. The eRST
-\mention{syn-prl} signal labels mark cases where annotators identified
-syntactic parallelism as a discourse signal. Those labels give a small
-check on formal parallelism, not on rhetorical force.
-
-I report the area under the receiver-operating characteristic curve (AUC)
-because it has a plain ranking interpretation that needs no statistical
-background \citep{hanleyMcNeil1982ROCArea}. Imagine drawing two pairs at
-random: one that annotators marked with a \mention{syn-prl} parallelism
-signal, and one they left unmarked. The AUC is the chance that the
-composite formal-balance score is higher for the marked pair than for the
-unmarked one.
-
-A ranking that sorted the two no better than a coin toss would give an AUC
-of 0.5; a ranking that always put the marked pair on top would give 1.0.
-So the AUC of 0.73 reported just below means that, in this head-to-head,
-the marked pair wins about 73 times in 100. The measure takes its name from
-a curve that plots recall against the false-positive rate at every cutoff,
-but the simple ranking reading is all that's needed here.
-
-On that scale, the composite formal-balance score has an AUC of 0.73, with an
-approximate Hanley--McNeil interval from 0.66 to 0.80. The parison
-subscore is slightly higher at 0.75 [0.69, 0.82], the lexical-echo
-subscore is 0.72 [0.65, 0.79], and the isocolon subscore is 0.65 [0.58,
-0.72] (Table~\ref{tab:score-validation}). The interval gives a rough
-uncertainty range for the AUC, not a new effect size.
-
-A second set of numbers asks a more practical question. If a researcher
-read only the top-ranked pairs, hunting for genuine parallelism to audit,
-how rewarding would that slice be? Take the top 5\% of pairs by the
-composite formal-balance score: everything at or above the 95th
-percentile.
-
-Three quantities describe that slice. \term{Precision} is the share of the
-slice that actually carries a \mention{syn-prl} label: here about 3 pairs
-in every 100. \term{Recall} is the share of all the labelled pairs in the
-corpus that the slice manages to gather up: here 37\%, so reading just the
-top 5\% already recovers more than a third of the parallelism signals.
-\term{Lift} compares that hit rate to how common the label is across the
-corpus as a whole.
-
-Because \mention{syn-prl} labels are rare, only 73 among 17,456 pairs,
-well under one in a hundred, a 3\% hit rate in the top slice works out to
-a lift of 7.4. The slice is roughly seven times richer in labelled pairs
-than a random handful would be. Tightening the cut to the top 2.5\% (the
-97.5th percentile) raises precision to 5.5\% and lift to 13.1, while recall
-settles at 33\%.
-
-Those numbers look poor for automatic labelling but adequate for ranking
-rare candidates for audit. The validation also stays narrow: the
-\mention{syn-prl} labels validate a surface parallelism signal. In this
-implementation, a pair is positive if either unit contains a token-level
-\mention{syn-prl} signal in the eRST export, so the validation uses
-span-level signal presence as a proxy for relation-level syntactic
-parallelism. It doesn't validate rhetorical function itself.
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{lrrr}
-\toprule
-Measure & AUC & Gold mean & Non-gold mean\\
-\midrule
-Composite formal balance & 0.73 [0.66, 0.80] & 0.50 & 0.33\\
-Isocolon & 0.65 [0.58, 0.72] & 0.68 & 0.56\\
-Parison & 0.75 [0.69, 0.82] & 0.44 & 0.21\\
-Lexical echo & 0.72 [0.65, 0.79] & 0.20 & 0.06\\
-\bottomrule
-\end{tabular}
-\caption{Validation against the 73 eRST \mention{syn-prl} signal
-labels in 17,456 adjacent relation pairs. AUC gives the chance that a
-random labelled pair receives a higher value than a random unlabelled
-pair. The gold-mean and non-gold-mean columns are the average values for
-pairs that do and don't carry the label, on the same 0--1 scale as the
-composite formal-balance score and the three subscores. Brackets give
-approximate Hanley--McNeil 95\% intervals for AUC.}
-\label{tab:score-validation}
-\end{table}
-
-The qualitative audit supplies a pilot rhetorical-function check. I coded
-80 candidate pairs in a single-author, non-blind audit; row strata and
-composite formal-balance values were visible. Automated reviews only
-flagged borderline cases after coding. The audit isn't
-interrater-reliability evidence. It identifies false-positive classes and
-illustrative examples.
-
-The pattern is the point: top-ranked broad target-family candidates usually survived
-the audit, while repetition controls didn't. Exact repetition gives
-strong surface balance, so it functions as a control rather than a target.
-
-The audit also clarified the boundary of the category. Bare identity,
-apposition, dialogue repair, and exact repetition can be rhetorically
-relevant apart from isocolon. Conversely, weak length balance can
-still matter when the two units share a frame strongly enough to invite
-slot substitution. The coding decisions treat isocolon as a
-component of a broader rhetorical-function judgment, with false-positive
-classes instead of a mechanically recoverable surface pattern.
-
-\begin{table}[H]
-\centering
-\scriptsize
-\begin{tabular}{lrrrrl}
-\toprule
-Sample stratum & \(n\) & Yes & No & Unc. & Main issue\\
-\midrule
-High broad target family & 16 & 14 & 2 & 0 & Slot substitution\\
-Mid broad target family & 12 & 7 & 4 & 1 & Weak frames\\
-Narrow adversative & 14 & 6 & 8 & 0 & Label mismatch\\
-High non-target/artifact & 19 & 4 & 12 & 3 & Dialogue/apposition\\
-Concession candidates & 5 & 1 & 4 & 0 & Asymmetry\\
-Repetition controls & 9 & 0 & 9 & 0 & Exact identity\\
-Baseline non-target & 5 & 1 & 4 & 0 & Weak or no frame\\
-\bottomrule
-\end{tabular}
-\caption{Human qualitative audit summary for 80 candidate pairs.}
-\label{tab:audit-summary}
-\end{table}
-
-\begin{table}[H]
-\centering
-\scriptsize
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{p{0.16\linewidth}p{0.29\linewidth}p{0.29\linewidth}p{0.08\linewidth}}
-\toprule
-Type & Unit 1 & Unit 2 & Judgment\\
-\midrule
-Slot substitution & \mention{You can use this on twist outs.} &
-\mention{You can use this on braid outs.} & Yes\\
-Adversative contrast & \mention{so that the broad sides of the cuttings face east and west} &
-\mention{while the slim sides face north and south.} & Yes\\
-Repetition & \mention{Get your feet off of there.} &
-\mention{Get your feet off of there.} & No\\
-Label mismatch & \mention{We are not setting out to turn them into programmers or data crunchers,} &
-\mention{but want to boost their knowledge level} & No\\
-\bottomrule
-\end{tabular}
-\caption{Illustrative audit examples. The final row is an
-\mention{adversative-antithesis} relation label. It lacks the balanced
-opposed cola of classical antithesis.}
-\label{tab:audit-examples}
-\end{table}
-
-\FloatBarrier
-
 \section{Results}
 
-The broad target family is more formally balanced than the non-target
-baseline. On a 0--100 version of the composite formal-balance score, target
-pairs are 4.1 points higher after controls. The empirical standard
+The score-scale discussion above and Figure~\ref{fig:score-distribution}
+showed the main descriptive pattern: target and non-target pairs overlap
+heavily, but the broad target-family distribution is shifted to the right.
+The adjusted model estimates that shift. On a 0--100 version of the
+composite formal-balance score, pairs in the broad target family are 4.1
+points higher than pairs outside that family after controls. That equals
+0.041 on the raw 0--1 scale. The empirical standard
 deviation of that score is 14.8 points, so the adjusted gap is about 0.28
-standard deviations. The document-clustered interval runs from 3.6 to 4.7
-points. The shift is modest but stable.
+standard deviations: a little more than a quarter of the ordinary spread in
+pair scores.
+
+The document-clustered uncertainty interval runs from 3.6 to 4.7 points.
+The shift is modest, but its estimated direction is stable: the uncertainty
+interval stays away from zero.
 
 The subscores show what kind of balance carries the effect. The parison
 subscore difference is 7.7 points, compared with 2.4 points for the
@@ -663,22 +587,16 @@ lexical-echo subscore. With mean-length control only, the broad isocolon
 subscore difference is 6.6 points. Table~\ref{tab:relation-effects}
 reports the composite formal-balance score and the three subscores separately.
 
-Two columns in that table both describe length balance, and the gap
-between them is worth a word. The \term{length} column applies the full
-control set, including both mean and maximum span length. The
-\term{isocolon} column reports the same length-balance outcome but drops
-the maximum-length control, for the reason given in the measurement
-section: with both length controls in place, almost none of the
-length-balance subscore is left to estimate. So the \term{length} column is a
-deflated, doubly conditioned figure (0.8 points for the broad target family),
-while the \term{isocolon} column shows the length-balance effect on its
-own terms (6.6 points).
+Two columns in that table estimate the same isocolon subscore. They differ
+only in the length controls. The full-controls isocolon column includes
+both mean and maximum span length, matching the composite model. That
+estimate is deflated, 0.8 points for the broad target family, because the
+model has mostly controlled away the ingredients of the isocolon subscore.
+The mean-only isocolon column drops the maximum-length control. Read that
+column as the substantive length-balance result: 6.6 points for the broad
+target family.
 
-Read the \term{isocolon} column as the substantive length-balance result,
-and the \term{length} column as a record of how little survives once length
-is held fixed twice over.
-
-The broad target-family result is an omnibus check. Its strongest labels are also
+The result for the broad target family is an omnibus check. Its strongest labels are also
 the labels where co-ordination makes parallel form easiest, so the cleaner
 rhetorical test comes from more focused comparisons. The narrow adversative
 family, \mention{adversative-antithesis} plus
@@ -691,35 +609,38 @@ The individual labels explain the difference.
 \mention{adversative-contrast} has the smaller but more diagnostic
 effect of 2.4 points.
 \mention{adversative-antithesis} is near zero at 0.4 points, with an
-interval that crosses zero. I read this as a mismatch between a
+interval that crosses zero, so the estimate is compatible with no adjusted
+difference. I read this as a mismatch between a
 discourse-relation label and the classical figure. It gives no evidence
 against antithesis as a rhetorical resource.
-\mention{adversative-concession} is negative at -1.3 points.
+\mention{adversative-concession} is negative at -1.3 points, meaning that
+these pairs are less formally balanced than their comparison baseline after
+controls.
 
 The relation-level scan also identifies an important positive control.
 \mention{restatement-repetition} has the strongest adjusted composite
 formal-balance effect, 19.0 points, with especially large lexical-echo and
 parison effects. That's exactly what the composite formal-balance score
 should find: exact identity is highly balanced, with lexical echo stronger
-than the parison effect. The human
-audit shows why it needs separate treatment.
+than the parison effect. The human audit reported in the next section shows
+why it needs separate treatment.
 Repetition can signal clarification, identity, repair, emphasis, or other
 rhetorical work; exact repetition remains distinct from balanced
 comparison. The analysis treats restatement/repetition as a control
 and diagnostic, separate from the target hypothesis.
 
-Genre-varying estimates point in the same direction. After this pooling,
-the broad target family's mean effect is 3.9 points across 20 genres. The
+Genre-varying estimates point in the same direction. After pooling, the mean
+effect for the broad target family is 3.9 points across 20 genres. The
 \mention{joint-list} estimate is 4.0 points across 17 genres, and
 \mention{adversative-contrast} is 2.9 points across the genres where
-there's enough evidence to estimate it. The narrow adversative-family
-estimate is 1.2 points.
+there's enough evidence to estimate it. The estimate for the narrow
+adversative family is 1.2 points.
 
 The genre-by-genre effects scatter only narrowly around those averages:
 their spread, one standard deviation, is about 1.1 points for the broad
 target family, 1.3 for \mention{joint-list}, 0.9 for the narrow adversative
 family, and 0.7 for \mention{adversative-contrast}. Because that scatter is
-small next to the effects themselves, the broad target-family effect isn't
+small next to the effects themselves, the effect for the broad target family isn't
 the work of one or two genres but recurs across many.
 
 \begin{table}[H]
@@ -727,7 +648,7 @@ the work of one or two genres but recurs across many.
 \scriptsize
 \begin{tabular}{lrrrrrrr}
 \toprule
-Target & Target \(n\) & Other \(n\) & Composite & Length & Isocolon & Parison & Lexical\\
+Target & Target \(n\) & Other \(n\) & \(\Delta\) composite & \shortstack{\(\Delta\) isocolon\\full controls} & \shortstack{\(\Delta\) isocolon\\mean-only controls} & \(\Delta\) parison & \(\Delta\) lexical\\
 \midrule
 Broad target family & 2,462 & 14,994 & 4.1 & 0.8 & 6.6 & 7.7 & 2.4\\
 Narrow adversative family & 605 & 16,851 & 1.3 & -0.1 & 4.7 & 2.4 & 1.7\\
@@ -739,20 +660,25 @@ Narrow adversative family & 605 & 16,851 & 1.3 & -0.1 & 4.7 & 2.4 & 1.7\\
 \mention{restatement-repetition} & 321 & 17,135 & 19.0 & 4.6 & 17.0 & 27.3 & 32.5\\
 \bottomrule
 \end{tabular}
-\caption{Selected adjusted score-point differences on the composite
-formal-balance score and its subscores, using a 0--100 rescaling of the
-outcome. Target \(n\) gives the number of target rows; other \(n\) gives the
-number of rows outside that target.
+\caption{Selected adjusted differences on the composite formal-balance
+score and its subscores, reported as score points. The \(\Delta\) symbol
+marks each numeric column as a target-minus-comparison difference, not a
+raw score. The underlying scores range from 0 to 1; the table multiplies
+differences by 100, so possible values run from -100 to +100. Positive
+values mean the target rows score higher than their comparison rows;
+negative values mean they score lower.
+Target \(n\) gives the number of target rows; other \(n\) gives the number of rows outside that target.
 \term{Isocolon} is length balance, \term{parison} is syntactic
 parallelism, and \term{lexical echo} is lemma-sequence similarity plus
-content-lemma overlap. Composite, length, parison, and lexical estimates use
-document fixed effects and controls for explicitness, sentence adjacency,
-punctuation, mean length, and maximum length. The \term{isocolon} column
-uses the same length-balance outcome but omits maximum length because mean
-and maximum length nearly determine the length-balance subscore. For that
-reason, the composite formal-balance score isn't the weighted sum of the displayed
-\term{isocolon}, \term{parison}, and \term{lexical echo} columns. The
-restatement row is a positive control, separate from the target
+content-lemma overlap. Composite, full-controls isocolon, parison, and
+lexical estimates use document fixed effects and controls for explicitness,
+sentence adjacency, punctuation, mean length, and maximum length. The
+mean-only isocolon column uses the same length-balance outcome but omits
+maximum length because mean and maximum length nearly determine the
+isocolon subscore. For that reason, the composite formal-balance score
+isn't the weighted sum of the displayed mean-only isocolon, parison, and
+lexical-echo columns.
+The restatement row is a positive control, separate from the target
 hypothesis.}
 \label{tab:relation-effects}
 \end{table}
@@ -772,113 +698,449 @@ length; the other estimates use the main control specification.}
 
 \subsection{Robustness checks}
 
-Each check below removes one easy explanation for the main result and asks
-whether the effect survives. The reasoning is the same throughout. If
-balance only looked elevated because of some background difference between
-target and non-target pairs, then matching or stripping out that
-difference should make the effect shrink toward zero. Where the effect
-holds up instead, that particular explanation can be set aside. The checks
-move from the broadest (how the uncertainty is estimated) to the most
-demanding (a permutation test that scrambles the relation labels
-altogether).
+The main pattern survives the checks that address the obvious alternative
+explanations. Document-clustered intervals leave the broad target family at
+4.1 points [3.6, 4.7]. Mean-only length models recover isocolonic length
+balance for the broad target family, 6.6 [5.6, 7.7], without conditioning
+on maximum length. A joint-only comparison shrinks the list/disjunction
+effect to 1.7 [0.6, 2.8], showing that co-ordination explains a
+substantial share of the broad result but not all of it.
 
-The primary composite formal-balance results survive document-clustered
-uncertainty estimates. With document clustering, the broad target-family effect is 4.1
-points, with an interval from 3.6 to 4.7. The \mention{joint-list} effect
-is 4.4 [3.7, 5.1], \mention{joint-disjunction} is 4.8 [3.0, 6.7], and
-\mention{adversative-contrast} is 2.4 [1.3, 3.5].
-\mention{adversative-antithesis} remains near zero, 0.4 [-0.7, 1.5].
+The adversative-only comparison removes the list/disjunction cases from
+the baseline and compares \mention{adversative-contrast} with other
+adversative relations. In that comparison, \mention{adversative-contrast}
+stays positive at 3.0 [1.4, 4.7] on the composite formal-balance score.
+GUM-only, continuous-span-only, and leave-one-genre checks give the same
+qualitative pattern. Stratified permutation checks place the observed
+effects for the broad family, list/disjunction, and adversative contrast
+beyond the shuffled-label nulls. A weight-sensitivity check also leaves the broad
+target-family result positive under all 66 alternative nonnegative
+weightings.
+Appendices~\ref{app:robustness-details} and
+\ref{app:permutation-details} report the full robustness table,
+permutation nulls, and weight-sensitivity details.
 
-The isocolon subscore needs a different control specification. Mean and
-maximum span length nearly determine it. Using both controls therefore
-suppresses the quantity being estimated. With mean-length control but no
-maximum-length control, the broad target-family effect is 6.6 [5.6, 7.7],
-and \mention{adversative-contrast} is 7.3 [5.0, 9.6]. The corresponding
-no-length-controls estimates are nearly identical: 6.7 points for the broad
-target family and 7.1 points for \mention{adversative-contrast}. The
-isocolon-subscore claim is reported under mean-length control.
+These checks address the stability of the estimated effects. The next
+section asks two different questions: whether the composite formal-balance
+score ranks annotated parallelism cases near the top, and whether
+top-ranked examples survive rhetorical inspection.
 
-The obvious objection is the right one. Lists and disjunctions are easy
-places to be parallel: they line up coordinated members built to the same
-template, repeat frames, and often carry explicit co-ordination such as
-\mention{and} or \mention{or}. The joint-only comparison asks whether
-\mention{joint-list} and \mention{joint-disjunction} survive against
-other multinuclear relations: relations that join two units of
-equal standing rather than a main unit and a subordinate one. They do, but
-the effect shrinks to
-1.7 points [0.6, 2.8]. The corresponding parison effect is 2.9 [1.0,
-4.8], while the isocolon effect is only 0.3 [-0.7, 1.3].
+\FloatBarrier
 
-The adversative-only comparison is cleaner. It compares
-\mention{adversative-contrast} against other adversative relations, where
-list syntax isn't the main explanation. Contrast remains positive at
-3.0 [1.4, 4.7] on the composite formal-balance score, again led by the
-parison subscore. The joint-only baseline
-consists of \mention{joint-sequence} and \mention{joint-other}; that
-baseline remains multinuclear and partly co-ordinative.
+\section{Score validation and rhetorical-function audit}
 
-Two data-scope checks give similar results. In the GUM-only subset, the
-broad target-family effect is 4.0 [3.4, 4.6], the within-joint
-list/disjunction effect is 1.7 [0.6, 2.9], and the within-adversative
-contrast effect is 3.4 [1.6, 5.1].
+The score validation asks whether the composite formal-balance score ranks
+useful cases near the top. It doesn't ask whether the composite formal-balance score can label
+figures automatically. The eRST
+\mention{syn-prl} signal labels mark cases where annotators identified
+syntactic parallelism as a discourse signal; the label name abbreviates
+\mention{syntactic parallelism}. Those labels give a small
+check on formal parallelism, not on rhetorical force.
 
-Excluding the 1,963 adjacent rows with discontinuous token intervals leaves
-the broad target-family effect at 4.5 [3.8, 5.1], the within-joint
-list/disjunction effect at 1.8 [0.6, 3.0], and the within-adversative
-contrast effect at 3.3 [1.4, 5.2]. A leave-one-genre check also stays
-stable: the broad target-family estimate ranges from 4.0 to 4.3, the
-within-joint estimate from 1.5 to 2.0, and the within-adversative contrast
-estimate from 2.8 to 3.2.
+I report the area under the receiver-operating characteristic curve (AUC)
+because it has a plain ranking interpretation that needs no statistical
+background \citep{hanleyMcNeil1982ROCArea}. Imagine drawing two pairs at
+random: one that annotators marked with a \mention{syn-prl} parallelism
+signal, and one they left unmarked. The AUC is the chance that the
+composite formal-balance score is higher for the marked pair than for the
+unmarked one.
 
-The last and most demanding check asks whether the effect could be an
-accident of which relations happen to wear the target label. It uses a
-permutation test, and the logic is worth spelling out. Hold the texts,
-lengths, punctuation, and explicitness fixed. Then peel the relation labels
-off the pairs and deal them out again at random, keeping the same number
-of target labels inside each matched group of pairs.
+A ranking that sorted the two no better than a coin toss would give an AUC
+of 0.5; a ranking that always put the marked pair on top would give 1.0.
+So the AUC of 0.73 reported here means that, in this head-to-head,
+the marked pair wins about 73 times in 100. The measure takes its name from
+a curve that plots recall against the false-positive rate at every cutoff,
+but the simple ranking reading is all that's needed here.
 
-Re-estimate the effect on this reshuffled data, where the labels now carry
-no real meaning. Repeat the whole procedure 500 times. The result is a
-picture of how large an effect can appear from label placement alone. If
-the real effect is no bigger than the shuffled ones, it could be an
-artifact of which pairs got the label; if it lands far beyond them, label
-placement alone can't account for it.
+On that scale, the composite formal-balance score has an AUC of 0.73, with an
+approximate Hanley--McNeil interval from 0.66 to 0.80. That interval is the
+standard large-sample uncertainty range for an AUC
+\citep{hanleyMcNeil1982ROCArea}, not a new effect size. The parison subscore
+is slightly higher at 0.75 [0.69, 0.82], the lexical-echo subscore is 0.72
+[0.65, 0.79], and the isocolon subscore is 0.65 [0.58, 0.72]
+(Table~\ref{tab:score-validation}).
 
-The shuffling respects strata defined by document, explicitness,
-same-sentence status, colon and semicolon punctuation, and quartile of
-mean word length, so labels are only ever swapped among genuinely
-comparable pairs. It doesn't hold local phrase type or root dependency
-category fixed, which is why it's a partial null rather than a complete
-one.
+The ranking also answers a practical audit question. At the 95th
+percentile of the composite formal-balance score, the inspected slice has
+876 rows; 27 carry \mention{syn-prl}. That's a 3.1\% hit rate, about seven
+times the corpus base rate of 0.4\%, and it recovers 37\% of all
+\mention{syn-prl} rows in the corpus. At the 97.5th percentile, tied
+scores included, 24 of 438 inspected rows carry \mention{syn-prl}. That's
+a 5.5\% hit rate and recovers 33\% of all \mention{syn-prl} rows.
 
-The observed broad target-family effect, the list/disjunction effect, and
-the adversative-contrast effect all land above the 97.5th percentile of
-their shuffled distributions (Table~\ref{tab:stratified-null}). Across 500
-shuffles, no random relabelling produced an effect as large as the one
-actually observed. Because 500 shuffles pin down the tail only to about
-0.002, I read this as a calibration check rather than a precise \(p\)
-value. The aim isn't formal significance testing but a demonstration that
-the effects sit well outside what label placement alone would produce.
+Those numbers look poor for automatic labelling but adequate for ranking
+rare candidates for audit. The validation also stays narrow: the
+\mention{syn-prl} labels validate a surface parallelism signal. In the
+eRST source, these are relation-level signals of
+parallel syntactic construction, with token ranges marking the signal
+material. Those ranges often cover material in both linked units, but some
+cover one span or several spans. In this implementation, a pair is
+positive if either unit contains a \mention{syn-prl} signal in the eRST
+export, so the validation is a proxy for relation-level syntactic
+parallelism rather than an exact test of cross-unit alignment. It doesn't
+validate rhetorical function itself.
+Appendix~\ref{app:validation-details} gives the full AUC table and
+precision/recall figure.
 
-A final check probes the composite weights themselves. The
-0.40 / 0.45 / 0.15 split across length, syntax, and lexical echo was set
-by hand, so a fair worry is that the headline result depends on that one
-choice. To test this, the effect was re-estimated under 66 alternative
-weightings laid out on a grid that sweeps across the full range of
-nonnegative combinations of the three subscores. The broad target-family effect
-stays positive, with an interval clear of zero, in every one of the 66.
-For \mention{adversative-contrast}, 65 of the 66 are positive and 59 have
-intervals clear of zero. The result doesn't hinge on the particular
-weights chosen.
+The qualitative audit supplies a pilot rhetorical-function check. I coded
+80 candidate pairs in a single-author, non-blind audit; row strata and
+composite formal-balance values were visible. Automated reviews only
+flagged borderline cases after coding. The audit isn't
+interrater-reliability evidence. It identifies false-positive classes and
+illustrative examples.
+
+The audit doesn't estimate corpus-wide precision. The rows
+were sampled to stress-test likely successes and likely failures: high
+target cases, repetition controls, adversative cases, and non-target
+artifacts. The question is whether the score's top-ranked cases include
+plausible rhetorical-function examples and what kinds of false positives it
+also finds.
+
+The audit pattern matters: top-ranked candidates from the broad target family usually survived
+the audit, while repetition controls didn't. Exact repetition gives
+strong surface balance, so it functions as the control case.
+
+The audit also clarified the boundary of the category. Bare identity,
+apposition, dialogue repair, and exact repetition can be rhetorically
+relevant apart from isocolon. Conversely, weak length balance can
+still matter when the two units share a frame strongly enough to invite
+slot substitution. The coding decisions treat isocolon as a
+component of a broader rhetorical-function judgment, with false-positive
+classes instead of a mechanically recoverable surface pattern.
+Appendix~\ref{app:audit-summary} reports the full stratum counts. Four
+examples show the main audit distinctions.
+
+The slot-substitution case in (\ref{ex:audit-slot}) is a clear true
+positive: the frame is repeated and the contrasting material fills the
+same slot.
+\ea\label{ex:audit-slot}
+\ea \mention{You can use this on twist outs.}
+\ex \mention{You can use this on braid outs.}
+\z
+\z
+
+The adversative-contrast case in (\ref{ex:audit-contrast}) gives the
+cleaner non-enumerative pattern: opposed orientations appear in matched
+phrasing.
+\ea\label{ex:audit-contrast}
+\ea \mention{so that the broad sides of the cuttings face east and west}
+\ex \mention{while the slim sides face north and south.}
+\z
+\z
+
+The repetition case in (\ref{ex:audit-repetition}) is the false-positive
+control. It's maximally balanced on the surface and was coded as exact
+repetition, not as isocolon.
+\ea\label{ex:audit-repetition}
+\ea \mention{Get your feet off of there.}
+\ex \mention{Get your feet off of there.}
+\z
+\z
+
+The label-mismatch case in (\ref{ex:audit-label-mismatch}) has an
+\mention{adversative-antithesis} relation label, but it lacks the balanced
+opposed cola of classical antithesis.
+\ea\label{ex:audit-label-mismatch}
+\ea \mention{We are not setting out to turn them into programmers or data crunchers,}
+\ex \mention{but want to boost their knowledge level}
+\z
+\z
+
+\FloatBarrier
+
+\section{Interpretation}
+
+The findings support a narrow version of the rhetorical-function claim.
+Balanced form can help present two units as comparable, but it isn't an
+obligatory marker of comparison. Many comparisons won't be balanced, and
+many balanced pairs won't be rhetorically interesting. That view predicts
+an uneven distribution: balance should cluster where matched presentation
+has rhetorical value and remain absent in many ordinary cases. The corpus
+result fits that prediction unevenly. Lists and disjunctions supply the
+largest effects for the broad target family; adversative contrast supplies
+the cleaner non-enumerative case.
+
+\term{Comparable set} names a broad descriptive pattern, not a single
+classical figure. Two discourse units can be presented as members of the
+same set as alternatives, contrastive counterparts, or items in a list. The
+weakest case is only co-enumeration: the units are listed together, and the
+list makes them co-members without forcing a stronger comparison.
+
+That distinction matters for the interpretation. The list and disjunction
+effects show that formal balance clusters in co-member structures, but they
+don't by themselves show that every list is a comparison for its own sake.
+The cleaner non-enumerative result is the \mention{adversative-contrast}
+effect, especially in the adversative-only comparison.
+
+The subscore results narrow the claim further. The strongest controlled
+signal is parison: similarity in the sequence of lexical categories,
+dependency relations, and related syntactic profiles. Isocolon, understood
+narrowly as length balance, appears most clearly in the mean-only length
+model. The effect is weaker for relation labels that look rhetorically
+relevant in the taxonomy but don't necessarily require balanced
+presentation in the text.
+
+In particular, \mention{adversative-antithesis} as an eRST relation label
+only partly overlaps with antithesis in the classical theory of figures.
+The label \mention{adversative-antithesis} keeps the name while losing
+the balance. The conservative conclusion leaves antithesis itself intact:
+the corpus label \mention{adversative-antithesis} serves as a poor direct
+proxy for the classical figure.
+
+That point remains a limitation as well as a finding. The 80-pair audit
+contains only eight rows with the \mention{adversative-antithesis} label.
+These rows support the label-mismatch interpretation, but they're too few
+to separate label mismatch from a second possibility: genuine semantic
+antitheses may be expressed through opposition instead of lexical
+overlap or surface parallelism.
+
+A targeted follow-up will code all 343 eRST
+\mention{adversative-antithesis} rows for three judgments: classical
+antithesis, semantic opposition, and parallel opposition. Until then, the
+near-zero \mention{adversative-antithesis} result is evidence about the
+corpus label, not a settled test of classical antithesis itself.
+
+The composite formal-balance score tracks matched presentation across
+several surface dimensions. That matched presentation can occur in
+contrast, co-ordination, lists, or alternatives. In the list-like cases, grammar and
+layout already encourage similar units, so the rhetorical interpretation
+is weaker. Some adversative relations go the other way: they have little
+balance because their function is concession, qualification, or discourse
+management instead of matched presentation.
+
+Corpus data record ordinary production, not an ideal of trained
+rhetorical practice. The evidence shows where balance appears in
+this corpus. It doesn't show where balanced form could improve a text.
+The language scope is also narrow. These are English corpus data, mostly
+from GUM, with English word order, English morphology, English punctuation,
+and English written and spoken segmentation. Nothing here licenses a
+claim about how isocolon or parison behave in Ancient Greek, Modern
+Japanese, or any other language whose prosody, morphology, discourse-unit
+segmentation, or rhetorical training traditions may differ.
+
+The co-ordination caveat matters. Lists and disjunctions place their units
+in similar syntactic slots, so parallel syntax is grammatically cheap
+there. The effect for the broad target family can't be read as a pure
+rhetorical choice. The joint-only robustness check shrinks the effect,
+which is what that objection predicts. The effect remains positive, and
+\mention{adversative-contrast} remains positive inside the adversative
+family and under a stratified shuffled-label baseline.
+
+Causal interpretation needs the same caution. Relation labels don't cause
+formal balance. They mark discourse contexts where several sources of
+balance can converge. In adversative contrast, a writer may choose matched
+form to present two units as counterparts. In lists and disjunctions,
+syntax and layout may make matched form easy before a separate rhetorical
+choice enters. In templatic cases, a local construction may supply both
+the relation and the balanced wording. The corpus result is compatible
+with all three stories.
+
+The safer interpretation says that comparable-set relations attract
+formal balance beyond genre, document, length, and punctuation
+differences, while much of that balance follows the syntax of
+co-ordination. Relation labels don't guarantee classical figures, and
+classical figures needn't appear where relation labels promise them.
+
+The pattern also clarifies the scope of the corpus study. The evidence
+stays textual and distributional. It concerns where balanced form occurs,
+not how readers experience those pairs. A high composite formal-balance
+score by itself still falls short of a rhetorical-figure label. The
+analysis shows that the composite formal-balance score is systematically
+higher in particular discourse-relation contexts. The human audit
+illustrates why many top-ranked cases are rhetorically relevant, but it
+remains pilot evidence. A stronger validation would require an independent
+annotation layer: a new set of human-coded rhetorical-function labels.
+
+The RST Signalling Corpus isn't part of the analysis yet because access is
+still pending. Once available, that corpus can add a later triangulation
+point.
+
+Work on discourse signalling has shown that coherence
+relations are often signalled by more than discourse markers, including
+lexical, syntactic, graphical, semantic, and genre-based cues. That point
+is developed in the original signalling annotation work and in later
+studies of RST signals and multiple signals
+\citep{taboadaDas2013AnnotationUponAnnotation,dasTaboada2018RSTSignallingCorpus,dasTaboada2018SignallingBeyondMarkers,dasTaboada2019MultipleSignals}.
+This literature gives the project a stronger comparative baseline. If
+formal balance behaves like a discourse signal, then it should be
+testable alongside other signal types in the discourse-signalling inventory.
+
+\section{Conclusion}
+
+A corpus study can't prove that isocolon makes readers perceive
+comparison as more forceful. It can test a cleaner textual claim: writers
+use formal balance unevenly across discourse relations, and the relations
+most associated with comparable-set construals should show more of it.
+These results support that claim for the broad target family of
+comparison-like and co-ordinative relations, with the largest effects in
+lists and disjunctions and the cleaner non-enumerative effect in
+adversative contrast.
+
+The analysis gives selective support to \term{antithesis} as an inherited
+figure label. The effect for the narrow adversative family stays small, and the
+discourse-relation label \mention{adversative-antithesis} sits close to
+zero. That finding sharpens the mapping between relation labels and
+classical figures. The strongest signal comes from parison-like
+parallelism. Isocolon narrowly understood as length balance contributes
+less to the main effect for the composite formal-balance score. Balanced
+form remains a rhetorical resource, and the
+corpus evidence supports a claim about comparable-set construals
+and formal balance more securely than a claim about equal cola alone.
+
+The robustness checks sharpen that conclusion. Length balance appears
+under mean-length conditioning without maximum length, while parison leads
+the main model for the composite formal-balance score. The joint-only
+comparison also shows that a large share of the effect for the broad target
+family comes from co-ordination itself. The stratified permutation check
+places the observed effects above document, length, punctuation, and
+explicitness-matched shuffled-label baselines. The result maps where
+measurable figural form becomes distributionally useful.
+
+\section*{Data and code availability}
+
+The analysis scripts, coding materials, and derived audit summaries are
+kept in the project repository:
+\url{https://github.com/BrettRey/isocolon-and-comparative-construal}.
+The raw GUM/eRST source files are excluded from the repository; the
+scripts expect a local corpus checkout under \path{data/raw/gum-erst}.
+The RST Signalling Corpus isn't included yet because access is still pending.
+
+\clearpage
+\markboth{Acknowledgements}{Acknowledgements}
+\section*{Acknowledgements}
+
+Drafting, coding, and revision benefited from generative-AI assistance. All
+content has been reviewed and revised by the author, who takes full
+responsibility for the final text.
+
+\clearpage
+\appendix
+
+\section{Extraction diagnostics}
+\label{app:extraction-diagnostics}
+
+The derived DISRPT relation table has relation rows and token intervals,
+not the full eRST graph-node inventory. The counts in
+Table~\ref{tab:extraction-diagnostics} are interval-level checks. Gapped
+rows have material between the two linked units. Interleaved rows have
+token intervals that overlap or cross in a way that prevents a clean
+left-unit/right-unit comparison. Discontinuous adjacent rows remain in the
+main analysis; the robustness checks include a continuous-span-only subset.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabular}{lr}
+\toprule
+Extraction diagnostic & Count\\
+\midrule
+Valid explicit/implicit relation rows & 34,976\\
+Adjacent relation rows used in analysis & 17,456\\
+Non-adjacent relation rows excluded & 17,520\\
+\quad gapped rows excluded & 15,349\\
+\quad interleaved rows excluded & 2,171\\
+Adjacent rows with discontinuous token intervals & 1,963\\
+Exact duplicate adjacent span pairs & 0\\
+Adjacent explicit rows & 4,943\\
+Adjacent implicit rows & 12,513\\
+\bottomrule
+\end{tabular}
+\caption{Extraction diagnostics for the adjacent-pair analysis. Counts
+come from token intervals in the DISRPT relation export. Exact duplicate
+span pairs are counted by document, unit-1 tokens, and unit-2 tokens.}
+\label{tab:extraction-diagnostics}
+\end{table}
+
+\clearpage
+\section{Validation details}
+\label{app:validation-details}
+
+Figure~\ref{fig:validation-enrichment} shows the precision/recall tradeoff
+for score-thresholded inspection slices. The two panels use the same
+numerator with different denominators. In Panel A, the 97.5th-percentile
+point divides 24 \mention{syn-prl} rows by 438 inspected rows. In Panel B,
+the same point divides those 24 rows by all 73 \mention{syn-prl} rows in
+the corpus.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{outputs/figures/paper_validation_enrichment.pdf}
+\caption{Validation enrichment for top-scored slices. Panel A shows
+precision: \mention{syn-prl} rows divided by inspected rows. The dashed
+line is the corpus base rate. Panel B shows recall: recovered
+\mention{syn-prl} rows divided by all 73 \mention{syn-prl} rows in the
+corpus. The dashed diagonal shows the recovery expected from reading a
+random slice of the same size. Labels mark the 95th- and 97.5th-percentile
+score cutoffs; tied scores at a cutoff are included. The figure checks
+ranking utility, not rhetorical function.}
+\label{fig:validation-enrichment}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Measure & AUC & Labelled mean & Unlabelled mean\\
+\midrule
+Composite formal balance & 0.73 [0.66, 0.80] & 0.50 & 0.33\\
+Isocolon & 0.65 [0.58, 0.72] & 0.68 & 0.56\\
+Parison & 0.75 [0.69, 0.82] & 0.44 & 0.21\\
+Lexical echo & 0.72 [0.65, 0.79] & 0.20 & 0.06\\
+\bottomrule
+\end{tabular}
+\caption{Validation against the 73 eRST \mention{syn-prl} signal
+labels in 17,456 adjacent relation pairs. AUC gives the chance that a
+random labelled pair receives a higher value than a random unlabelled
+pair. The labelled-mean and unlabelled-mean columns are the average values for
+pairs that do and don't carry the label, on the same 0--1 scale as the
+composite formal-balance score and the three subscores. Brackets give
+approximate Hanley--McNeil 95\% intervals for AUC.}
+\label{tab:score-validation}
+\end{table}
+
+\clearpage
+\section{Qualitative audit strata}
+\label{app:audit-summary}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrl}
+\toprule
+Sample stratum & \(n\) & Yes & No & Uncertain & Main issue\\
+\midrule
+High broad target family & 16 & 14 & 2 & 0 & Slot substitution\\
+Mid broad target family & 12 & 7 & 4 & 1 & Weak frames\\
+Narrow adversative family & 14 & 6 & 8 & 0 & Label mismatch\\
+High non-target/artifact & 19 & 4 & 12 & 3 & Dialogue/apposition\\
+Concession candidates & 5 & 1 & 4 & 0 & Asymmetry\\
+Repetition controls & 9 & 0 & 9 & 0 & Exact identity\\
+Baseline non-target & 5 & 1 & 4 & 0 & Weak or no frame\\
+\bottomrule
+\end{tabular}
+\caption{Human qualitative audit summary for 80 candidate pairs.}
+\label{tab:audit-summary}
+\end{table}
+
+\clearpage
+\section{Robustness details}
+\label{app:robustness-details}
+
+Each check removes one easy explanation for the main result and asks
+whether the effect survives. If balance only looked elevated because of
+some background difference between target and non-target pairs, then
+matching or stripping out that difference should make the effect shrink
+toward zero. Table~\ref{tab:robustness} gives selected checks.
 
 \begin{table}[H]
 \centering
 \scriptsize
 \begin{tabular}{llrr}
 \toprule
-Check & Target/outcome & Estimate (points) & Clustered 95\% interval\\
+Check & Target and outcome & Estimate (points) & Clustered 95\% interval\\
 \midrule
-Main & Broad target-family composite & 4.1 & [3.6, 4.7]\\
+Main & Broad target family, composite & 4.1 & [3.6, 4.7]\\
 Main & \mention{joint-list} composite & 4.4 & [3.7, 5.1]\\
 Main & \mention{adversative-contrast} composite & 2.4 & [1.3, 3.5]\\
 Mean-length only & Broad isocolon & 6.6 & [5.6, 7.7]\\
@@ -887,8 +1149,8 @@ Joint-only & List/disjunction composite & 1.7 & [0.6, 2.8]\\
 Joint-only & List/disjunction parison & 2.9 & [1.0, 4.8]\\
 Adversative-only & Contrast composite & 3.0 & [1.4, 4.7]\\
 Adversative-only & Contrast parison & 5.9 & [3.0, 8.8]\\
-GUM-only & Broad target-family composite & 4.0 & [3.4, 4.6]\\
-Continuous spans only & Broad target-family composite & 4.5 & [3.8, 5.1]\\
+GUM-only & Broad target family, composite & 4.0 & [3.4, 4.6]\\
+Continuous spans only & Broad target family, composite & 4.5 & [3.8, 5.1]\\
 \bottomrule
 \end{tabular}
 \caption{Selected robustness checks, reported as score-point differences
@@ -909,9 +1171,28 @@ unit has a comma-separated token interval.}
 reported as score-point differences on a 0--100 scale. Panel A shows
 adjusted differences with document-clustered 95\% intervals. Panel B
 compares observed composite effects with the null mean and central 95\%
-interval from stratified target-label shuffles.}
+interval from stratified target-label shuffles; here the null means the
+effect expected if target labels carried no relation-specific information
+inside the matched strata.}
 \label{fig:robustness-nulls}
 \end{figure}
+
+The composite weights were also varied across 66 nonnegative alternative
+weightings of the three subscores. The effect for the broad target family
+stays positive, with an uncertainty interval that excludes zero, in every
+one of the 66. For \mention{adversative-contrast}, 65 of the 66 are
+positive and 59 have uncertainty intervals that exclude zero.
+
+\clearpage
+\section{Stratified permutation nulls}
+\label{app:permutation-details}
+
+The permutation check asks whether the effect could be an accident of
+which relations happen to wear the target label. It holds the texts,
+lengths, punctuation, and explicitness fixed, then shuffles target labels
+inside matched strata. The strata are defined by document, explicitness,
+same-sentence status, colon and semicolon punctuation, and quartile of
+mean word length.
 
 \begin{table}[H]
 \centering
@@ -920,7 +1201,7 @@ interval from stratified target-label shuffles.}
 \toprule
 Target & Observed & Null mean & Null 95\% & Strata & Rows & Target rows & \(p\)\\
 \midrule
-Broad family & 4.1 & 1.2 & [0.8, 1.6] & 1,240 & 8,277 & 2,174 & 0.002\\
+Broad target family & 4.1 & 1.2 & [0.8, 1.6] & 1,240 & 8,277 & 2,174 & 0.002\\
 List/disjunction & 4.6 & 1.3 & [1.0, 1.7] & 1,033 & 7,047 & 1,659 & 0.002\\
 \mention{adversative-contrast} & 2.4 & 0.8 & [-0.1, 1.7] & 201 & 1,472 & 220 & 0.002\\
 \bottomrule
@@ -929,167 +1210,13 @@ List/disjunction & 4.6 & 1.3 & [1.0, 1.7] & 1,033 & 7,047 & 1,659 & 0.002\\
 effect, reported as score-point differences on a 0--100 scale. Target
 labels are shuffled within document, explicitness,
 same-sentence status, colon/semicolon status, and mean-length quartile
-strata. The strata, rows, and target-rows columns report the portions of
-the data that could actually move under the stratified shuffle. The \(p\)
+strata. The null mean is the average effect after that relabelling. The
+strata, rows, and target-rows columns report the portions of
+the data that could move under the stratified shuffle. The \(p\)
 values are two-sided empirical values from 500 permutations, with the
 standard plus-one correction, and should be read at that resolution.}
 \label{tab:stratified-null}
 \end{table}
-
-\FloatBarrier
-
-\section{Interpretation}
-
-The findings support a restricted version of the rhetorical-function
-claim. I treat balanced form as a selective way of presenting
-units as comparable. It's optional even when comparison is present. That
-view predicts an uneven distribution: balance should cluster where
-matched presentation has rhetorical value, while remaining absent in many ordinary
-cases. The corpus result fits that version, but unevenly. Lists and
-disjunctions supply the largest broad target-family effects; adversative
-contrast supplies the cleaner non-enumerative case.
-
-\term{Comparable set} works here as a descriptive cover term for co-membership
-relations, including bare co-enumeration. The term allows list structure
-without treating every list as comparison for its own sake. The cleanest
-non-enumerative signal in the analysis comes from
-\mention{adversative-contrast}.
-
-The subscore results then refine the claim. The dominant effect looks
-parison-like more than isocolonic in the narrow length-balance sense. The
-evidence weakens for labels that look rhetorically relevant in the
-taxonomy but don't necessarily require balanced presentation in the text.
-
-In particular, \mention{adversative-antithesis} as an eRST relation label
-only partly overlaps with antithesis in the classical theory of figures.
-The label \mention{adversative-antithesis} keeps the name while losing
-the balance.\footnote{The sentence is itself a small \term{isocolon} and
-\term{parison}, and it asserts an \term{antithesis}. Either the author is
-demonstrating the apparatus or the apparatus is demonstrating the
-author.} The conservative conclusion leaves antithesis itself intact:
-the corpus label \mention{adversative-antithesis} serves as a poor direct proxy
-for the classical figure.
-
-That point remains a limitation as well as a finding. The 80-pair audit
-contains only eight rows with the \mention{adversative-antithesis} label.
-These rows support the label-mismatch interpretation, but they're too few
-to separate label mismatch from a second possibility: genuine semantic
-antitheses may be expressed through opposition instead of lexical
-overlap or surface parallelism.
-
-The subset test is defined but not yet reported here. The follow-up
-worksheet covers all 343 eRST \mention{adversative-antithesis} rows and
-asks for three judgments: classical antithesis, semantic opposition, and
-parallel opposition. Once those fields are coded, the analysis compares
-yes and no rows on the composite formal-balance score and the three
-subscores.
-Until then, the near-zero \mention{adversative-antithesis} result is
-evidence about the corpus label, not a settled test of classical
-antithesis itself.
-
-The composite formal-balance score tracks a broader act of
-placing units into a shared frame. That
-frame can be contrastive, but it can also be co-ordinative, disjunctive,
-or list-like. In the latter cases, co-ordination itself favours matched
-daughters and weakens the rhetorical interpretation. Conversely, some
-adversative relations have little balance
-because their function is concession, qualification, or discourse
-management instead of matched presentation.
-
-Corpus data record ordinary production, not an ideal of trained
-rhetorical practice. The evidence shows where balance appears in
-this corpus. It doesn't show where balanced form could improve a text.
-The language scope is also narrow. These are English corpus data, mostly
-from GUM, with English word order, English morphology, English punctuation,
-and English written and spoken segmentation. Nothing here licenses a
-claim about how isocolon or parison behave in Ancient Greek, Modern
-Japanese, or any other language whose prosody, morphology, discourse-unit
-segmentation, or rhetorical training traditions may differ.
-
-The co-ordination caveat matters. Lists and disjunctions are
-places where parallel syntax is grammatically cheap, so the broad target-family effect
-can't be read as a pure rhetorical choice. The joint-only robustness
-check shrinks the effect, which is what that objection predicts. The
-effect remains positive, and \mention{adversative-contrast} remains
-positive inside the adversative family and under a stratified permutation
-null.
-
-The safer interpretation says that comparable-set relations attract
-formal balance beyond genre, document, length, and punctuation
-differences, while much of that balance follows the syntax of
-co-ordination. Relation labels don't guarantee classical figures, and
-classical figures needn't appear where relation labels promise them.
-
-The pattern also clarifies the scope of the corpus study. The evidence
-stays textual and distributional. It concerns where balanced form occurs, not
-how readers experience those pairs. A high composite formal-balance score by itself still falls
-short of a rhetorical-figure label. The analysis shows that the composite
-formal-balance score is systematically higher in particular
-discourse-relation contexts. The human audit
-illustrates why many top-ranked cases are rhetorically relevant and why
-this remains pilot evidence, pending an independently validated
-annotation layer.
-
-The RST Signalling Corpus isn't part of the analysis yet because access is
-still pending. Once available, that corpus can add a later triangulation
-point.
-
-Work on discourse signalling has shown that coherence
-relations are often signalled by more than discourse markers, including
-lexical, syntactic, graphical, semantic, and genre-based cues. That point
-is developed in the original signalling annotation work and in later
-studies of RST signals and multiple signals
-\citep{taboadaDas2013AnnotationUponAnnotation,dasTaboada2018RSTSignallingCorpus,dasTaboada2018SignallingBeyondMarkers,dasTaboada2019MultipleSignals}.
-This literature gives the project a stronger comparative baseline. If
-formal balance behaves like a discourse signal, then it should be
-testable alongside other signal types rather than only as an isolated
-figure cue.
-
-\section{Conclusion}
-
-A corpus study can't prove that isocolon makes readers perceive
-comparison as more forceful, and it leaves rhetorical pedagogy untested.
-It can test a cleaner textual claim: writers use formal balance unevenly
-across discourse relations, and the relations most associated with
-comparable-set construals should show more of it. These results
-support that claim for the broad target family of comparison-like and
-co-ordinative relations, with the largest effects in lists and
-disjunctions and the cleaner non-enumerative effect in adversative
-contrast.
-
-The analysis gives selective support to \term{antithesis} as an inherited
-figure label. The narrow adversative-family effect stays small, and the
-discourse-relation label \mention{adversative-antithesis} sits close to
-zero. That finding sharpens the mapping between relation labels and
-classical figures. The strongest signal comes from parison-like
-parallelism. Isocolon narrowly understood as length balance contributes
-less to the main composite formal-balance effect. Balanced form remains a rhetorical resource, and the
-corpus evidence supports a claim about comparable-set construals
-and formal balance more securely than a claim about equal cola alone.
-
-The robustness checks sharpen that conclusion. Length balance appears
-under mean-length conditioning without maximum length, while parison leads
-the main composite formal-balance model. The joint-only comparison also shows
-that a large share of the broad target-family effect comes from
-co-ordination itself. The
-stratified permutation check places the observed effects above document,
-length, punctuation, and explicitness-matched nulls. The result maps
-where figural form begins to do work.
-
-\section*{Data and code availability}
-
-The analysis scripts, coding materials, and derived audit summaries are
-kept in the project repository:
-\url{https://github.com/BrettRey/isocolon-and-comparative-construal}.
-The raw GUM/eRST source files are excluded from the repository; the
-scripts expect a local corpus checkout under \path{data/raw/gum-erst}.
-The RST Signalling Corpus isn't included yet because access is still pending.
-
-\section*{Acknowledgements}
-
-Drafting and revision benefited from OpenAI Codex (GPT-5.5 xhigh),
-GPT-5.5 Pro, and Claude Opus 4.8 max. All content has been reviewed and
-revised by the author, who takes full responsibility for the final text.
 
 \newpage
 \printbibliography

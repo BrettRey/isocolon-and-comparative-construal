@@ -198,6 +198,133 @@ def plot_component_effects(robustness: pd.DataFrame) -> None:
     save_figure(fig, "paper_component_effects")
 
 
+def validation_threshold_rows(scores: pd.DataFrame) -> pd.DataFrame:
+    frame = scores[["isocolon_score", "has_gold_syn_prl"]].copy()
+    frame["isocolon_score"] = frame["isocolon_score"].astype(float)
+    frame["has_gold_syn_prl"] = frame["has_gold_syn_prl"].astype(bool)
+    n = len(frame)
+    n_gold = int(frame["has_gold_syn_prl"].sum())
+    rows: list[dict[str, object]] = []
+
+    for percentile in [50, 60, 70, 80, 85, 90, 95, 97.5]:
+        threshold = float(frame["isocolon_score"].quantile(percentile / 100))
+        selected = frame[frame["isocolon_score"].ge(threshold)]
+        selected_n = len(selected)
+        selected_gold = int(selected["has_gold_syn_prl"].sum())
+        precision = selected_gold / selected_n if selected_n else 0.0
+        recall = selected_gold / n_gold if n_gold else 0.0
+        rows.append(
+            {
+                "percentile": percentile,
+                "inspected_pct": 100 * selected_n / n,
+                "selected_n": selected_n,
+                "selected_gold": selected_gold,
+                "n_gold": n_gold,
+                "precision_pct": 100 * precision,
+                "recall_pct": 100 * recall,
+                "base_rate_pct": 100 * n_gold / n,
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def plot_validation_enrichment(scores: pd.DataFrame) -> None:
+    frame = validation_threshold_rows(scores).sort_values("inspected_pct")
+    base_rate = float(frame["base_rate_pct"].iloc[0])
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.1, 3.35), sharex=True)
+
+    ax1.plot(
+        frame["inspected_pct"],
+        frame["precision_pct"],
+        marker="o",
+        markersize=4,
+        color="#111111",
+        linewidth=1.2,
+    )
+    ax1.axhline(base_rate, color="0.55", linewidth=1.0, linestyle="--")
+    ax1.set_ylabel("Precision: syn-prl rows / inspected rows (%)")
+    ax1.set_xlabel("Rows inspected (% of all pairs)")
+    ax1.set_title("A. Hit rate in the inspected slice")
+    ax1.grid(color="0.90", linewidth=0.8)
+
+    ax2.plot(
+        frame["inspected_pct"],
+        frame["recall_pct"],
+        marker="o",
+        markersize=4,
+        color="#111111",
+        linewidth=1.2,
+    )
+    ax2.plot([0, 52], [0, 52], color="0.55", linewidth=1.0, linestyle="--")
+    ax2.set_ylabel("Recall: syn-prl found / all 73 syn-prl rows (%)")
+    ax2.set_xlabel("Rows inspected (% of all pairs)")
+    ax2.set_title("B. Recovery of all labelled rows")
+    ax2.grid(color="0.90", linewidth=0.8)
+
+    cutoff_labels = {
+        5.0: "95th percentile",
+        2.5: "97.5th percentile",
+    }
+    for target_pct in [5.0, 2.5]:
+        row = frame.iloc[(frame["inspected_pct"] - target_pct).abs().argsort().iloc[0]]
+        cutoff_label = cutoff_labels[target_pct]
+        label = (
+            f"{cutoff_label}: {int(row['selected_gold'])}/{int(row['selected_n'])}"
+            f" = {row['precision_pct']:.1f}%"
+        )
+        ax1.text(
+            row["inspected_pct"] + 1.2,
+            row["precision_pct"],
+            label,
+            fontsize=7.5,
+            ha="left",
+            va="center",
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4, "alpha": 0.85},
+        )
+        recall_label = (
+            f"{cutoff_label}: {int(row['selected_gold'])}/{int(row['n_gold'])}"
+            f" = {row['recall_pct']:.0f}%"
+        )
+        ax2.text(
+            row["inspected_pct"] + 1.2,
+            row["recall_pct"],
+            recall_label,
+            fontsize=7.5,
+            ha="left",
+            va="center",
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4, "alpha": 0.85},
+        )
+
+    for ax in [ax1, ax2]:
+        ax.set_xlim(0, 52)
+    ax1.set_ylim(0, max(6.4, frame["precision_pct"].max() * 1.2))
+    ax2.set_ylim(0, max(82, frame["recall_pct"].max() * 1.1))
+
+    ax1.text(
+        16,
+        base_rate,
+        f"base rate = {base_rate:.1f}%",
+        ha="center",
+        va="center",
+        fontsize=8,
+        color="0.35",
+        bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4, "alpha": 0.88},
+    )
+    ax2.text(
+        25,
+        20,
+        "random reading",
+        ha="left",
+        va="center",
+        fontsize=8,
+        color="0.35",
+        bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.4, "alpha": 0.88},
+    )
+    fig.tight_layout(w_pad=1.6)
+    save_figure(fig, "paper_validation_enrichment")
+
+
 def robustness_rows(robustness: pd.DataFrame) -> pd.DataFrame:
     specs = [
         (
@@ -359,6 +486,7 @@ def main() -> None:
     nulls = pd.read_csv(NULLS_PATH, sep="\t")
     plot_score_distribution(scores)
     plot_component_effects(robustness)
+    plot_validation_enrichment(scores)
     plot_robustness_and_nulls(robustness, nulls)
 
 

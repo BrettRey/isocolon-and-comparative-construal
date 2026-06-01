@@ -31,3 +31,21 @@
 2026-05-30 -- Target venue: Language and Literature (SAGE) first. Reason: it covers corpus and computational stylistics of literary and non-literary language, which matches the paper's rhetorical-figure-plus-corpus shape.
 
 2026-05-30 -- Easify the four densest spots for a stylistics (non-statistical) audience. Reason: the prose was carrying too much statistical load per sentence for Language and Literature readers. Split Corpus and measurement into four subsections; added a worked balance-formula example and inline glosses for edit similarity, Jaccard, AUC, and precision/recall/lift (one worked example per metric); added a plain-language Length-vs-Isocolon paragraph at Table 6; reframed each robustness check as "one explanation removed." Easify not shorten (877 to 952 lines), no aphoristic phrasing, all statistics unchanged.
+
+2026-05-31 -- Write methods and results for a Language and Literature reader who knows stylistics but may not know discourse annotation or regression diagnostics. Reason: the target journal invites corpus/computational stylistics, but readers should not need background in eRST, DISRPT exports, fixed effects, clustered intervals, or permutation nulls. Added local glosses for discourse-relation pairs, GENTLE, explicit/implicit relations, adjacency exclusions, target-label prefixes, document controls, positive/negative adjusted differences, null distributions, and annotation-layer limitations.
+
+2026-05-31 -- Anchor the 4.1-point headline effect against the 19-point restatement-repetition control rather than against the 0--100 scale, and call it "small but steady." Reason: an earlier gloss explained 4.1 by restating it ("about four points higher") and by noting it is 4% of 100, neither of which tells a reader whether the effect is large; the repetition control gives a concrete in-paper yardstick (the comparison families shift the score about a fifth as far as verbatim repetition does), and the size verdict is consistent with "modest but stable" already in Results. Open question flagged to Brett: whether the size judgment belongs in methods or only in Results.
+
+2026-05-31 -- Ban pseudo-glossing throughout: no defining jargon with jargon and no house-style filler verbs (captures, reflects, underlies) standing in for a mechanism. Reason: the easification pass introduced several glosses that produced "explanatory sound" without explaining (empirical-Bayes "borrow strength", "a regression method for average differences", "not a tree-alignment measure"); each was rewritten to say what the operation does in the reader's own vocabulary.
+
+2026-05-31 -- Treat the late-stage editorial pass as a rhetoric/stylistics crossover calibration, while leaving the venue choice open against the earlier Language and Literature target. Reason: the current paper leans toward rhetoric history/theory with corpus evidence, so it needs enough methodological scaffolding for rhetoricians without expanding every computational detail as if for a general audience.
+
+2026-05-31 -- Keep the pending RST Signalling Corpus out of the abstract and frame it only as later triangulation. Reason: mentioning unavailable corpus data in the abstract makes the paper sound unfinished; the current GUM/eRST analysis stands on its own.
+
+2026-05-31 -- Treat eRST `syn-prl` validation as a proxy for relation-level syntactic parallelism, not an exact cross-unit validation. Reason: local eRST signal spans are relation-level `parallel_syntactic_construction` annotations, but their token ranges can cover both linked units, one span, or several spans.
+
+2026-05-31 -- Use displayed examples rather than a cramped table for the qualitative audit illustrations. Reason: the paper is about paired formal structure, so readers need to see the two units as paired units rather than compressed table text.
+
+2026-05-31 -- Stop adding rhetorical jokes and keep only the earned, argument-bearing figure deployment. Reason: the prose now has enough self-aware figural play; adding more would distract from the empirical limitation around antithesis.
+
+2026-05-31 -- Use a generic AI-assistance acknowledgement rather than listing model-version names. Reason: model names go stale quickly, and the acknowledgement only needs to disclose assistance plus author responsibility unless a journal asks for exact tool/version metadata.

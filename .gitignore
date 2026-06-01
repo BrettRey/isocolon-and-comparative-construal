@@ -25,5 +25,7 @@ data/derived/*
 !data/derived/README.md
 outputs/figures/*
 !outputs/figures/README.md
+!outputs/figures/paper_*.pdf
+!outputs/figures/paper_*.png
 outputs/tables/*
 !outputs/tables/README.md
