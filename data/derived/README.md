@@ -102,3 +102,43 @@ Generated local inventories:
   - Command: `scripts/fit_stratified_nulls.py`
   - Source: `data/derived/gum_erst_adjacent_isocolon_scores.tsv`.
   - Contents: document/length/punctuation-stratified permutation nulls for broad, list/disjunction, and adversative-contrast target labels.
+- `rst_sc_manifest.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: aggregate path/status metadata and split-level file counts only; no raw text or row-level records.
+- `rst_sc_file_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: counts by annotation split and file extension.
+- `rst_sc_xml_tag_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: counts by annotation split and XML tag name.
+- `rst_sc_xml_attribute_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: counts by annotation split, XML tag name, and attribute name.
+- `rst_sc_category_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: counts for whitelisted label-like XML attributes such as relation, signal type, subtype, status, and nuclearity; long or non-label-like values are redacted.
+- `rst_sc_relation_signal_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: aggregate cross-tabulation of relation-like and signal-like XML attributes where both are available in the annotation structure.
+- `rst_sc_feature_vector_length_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: counts of semicolon-delimited annotation-feature vector lengths by annotation split.
+- `rst_sc_feature_slot_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: aggregate counts for label-like values in each semicolon-delimited annotation-feature slot; long or non-label-like values are redacted.
+- `rst_sc_feature_schema_inventory.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: aggregate schema counts for annotation feature names and state names; no segment text or row-level records.
+- `rst_sc_formal_signal_candidate_summary.tsv`
+  - Command: `scripts/inspect_rst_signalling.py`
+  - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
+  - Contents: aggregate counts for annotation labels whose names suggest formal, parallelism-relevant signal families or subtypes; these are candidate labels for human/Rency interpretation, not automatic isocolon judgments.

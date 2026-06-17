@@ -77,6 +77,20 @@ This project uses Brett Reynolds house style (see `.house-style/style-rules.yaml
 - Every citation must be confirmed against an authoritative source
 - If you cannot verify a citation, say so. Do not guess. Do not fabricate.
 
+### Restricted LDC Data
+
+Linguistic Data Consortium materials available through the University of
+Toronto are UofT-only and may be used only for non-commercial research or
+education. Raw LDC data, row-level text exports, prompts containing LDC text,
+and AI outputs quoting LDC text must not be committed, uploaded, pasted into
+AI tools, or shared with non-UofT parties.
+
+Do not paste, upload, summarize, transform, or analyze raw LDC data with AI
+tools. If analysis requires LDC material, use local scripts run by an
+authorized UofT user and pass only aggregate, non-reconstructive results or
+explicitly publication-cleared excerpts to agents. Run `make policy-check`
+before committing or sending project files to any AI tool.
+
 ### Writing Style
 
 **Preferred:**

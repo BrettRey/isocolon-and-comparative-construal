@@ -17,10 +17,14 @@
 # Local agent/runtime scratch
 .antigravitycli/
 *.pid
+.env
+.ldc-root
+.restricted-data.json
 
 # Corpus and analysis outputs
 data/raw/*
 !data/raw/README.md
+data/ldc/*
 data/derived/*
 !data/derived/README.md
 outputs/figures/*
@@ -29,3 +33,7 @@ outputs/figures/*
 !outputs/figures/paper_*.png
 outputs/tables/*
 !outputs/tables/README.md
+outputs/restricted/*
+restricted/
+ldc/
+LDC*/

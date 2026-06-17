@@ -49,3 +49,15 @@
 2026-05-31 -- Stop adding rhetorical jokes and keep only the earned, argument-bearing figure deployment. Reason: the prose now has enough self-aware figural play; adding more would distract from the empirical limitation around antithesis.
 
 2026-05-31 -- Use a generic AI-assistance acknowledgement rather than listing model-version names. Reason: model names go stale quickly, and the acknowledgement only needs to disclose assistance plus author responsibility unless a journal asks for exact tool/version metadata.
+
+2026-06-01 -- Send Rency Luan the full draft before the exploratory call. Reason: Rency replied that the project sounds intriguing and asked to read the draft before meeting, so the collaboration track has moved from initial invitation to informed discussion. Brett explicitly flagged that self-deprecating footnotes should be removed if she joins as co-author, asked about possible RST Signalling Corpus (`LDC2015T10`) access, and offered Thursday 2026-06-04 for a call.
+
+2026-06-04 -- Make rhetorical-theory and rubric refinement the first Rency collaboration step, before bulk coding the 343 `adversative-antithesis` rows. Reason: in the exploratory call, Rency's strongest recommendation was to read the antithesis/isocolon/parison theory first, especially Harris, Fahnestock, and other figure-theory sources, then use that literature to revise the coding categories. This keeps the empirical coding from prematurely freezing Brett's provisional categories.
+
+2026-06-04 -- Treat additional human coders/collaborators as possible but not yet committed. Reason: Rency may contact Cathal in Ireland, who she described as strong on rhetorical figures, isocolon, and parison, and Zoya, who works on construction grammar and figures. Their roles should remain open until they express interest and scope is clear.
+
+2026-06-17 -- Treat LDC corpus data as protected out-of-band material and enforce that boundary with repo policy, ignored quarantine paths, a restricted-data scanner, and a pre-commit hook. Reason: the U of T LDC General License permits non-commercial research/education use but prohibits distribution, web posting, third-party platform ingestion, and AI-chatbot ingestion of the data.
+
+2026-06-17 -- Keep `LDC2015T10` as the target LDC corpus for RST Signalling work; do not substitute nearby SharePoint items merely because they are visible. Reason: `LDC2015T10` is the RST Signalling Corpus requested for this project, while the currently downloaded `LDC99T42`/`LDC2015T08` materials are only protected provisional resources and `LDC2005T01` is Chinese Treebank material outside the current English RST path.
+
+2026-06-17 -- Use deterministic local Python aggregation, not LLM judgment, for the first RST Signalling Corpus pass. Reason: the LDC license forbids third-party/AI-chatbot ingestion of the data, and the immediate need is mechanical inventory and aggregate signal counts; any interpretive mapping from signal labels to isocolon, parison, or antithesis categories should remain a Brett/Rency/human judgment.

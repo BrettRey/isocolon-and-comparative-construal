@@ -1,0 +1,76 @@
+#!/bin/bash
+set -e
+
+# Block likely restricted corpus data before any other hook edits staged files.
+python3 scripts/check_restricted_data.py --staged
+
+# Keep CLAUDE.md, AGENTS.md, and GEMINI.md synchronized.
+FILES=("CLAUDE.md" "AGENTS.md" "GEMINI.md")
+
+STAGED_FILES=$(git diff --cached --name-only | grep -E "(CLAUDE|AGENTS|GEMINI)\.md" || true)
+
+if [ -z "$STAGED_FILES" ]; then
+    exit 0
+fi
+
+ALL_EXIST=true
+for file in "${FILES[@]}"; do
+    if [ ! -f "$file" ]; then
+        ALL_EXIST=false
+        break
+    fi
+done
+
+if [ "$ALL_EXIST" = false ]; then
+    echo "[SYNC] Not all doc files exist yet, skipping sync"
+    exit 0
+fi
+
+if cmp -s CLAUDE.md AGENTS.md && cmp -s CLAUDE.md GEMINI.md; then
+    echo "[SYNC] All files already identical, skipping"
+    exit 0
+fi
+
+NEWEST_FILE=""
+NEWEST_TIME=0
+
+for file in "${FILES[@]}"; do
+    MOD_TIME=$(stat -f %m "$file" 2>/dev/null || stat -c %Y "$file" 2>/dev/null)
+    if [ "$MOD_TIME" -gt "$NEWEST_TIME" ]; then
+        NEWEST_TIME=$MOD_TIME
+        NEWEST_FILE=$file
+    fi
+done
+
+if [ -z "$NEWEST_FILE" ]; then
+    echo "[SYNC] Could not determine newest file, skipping sync"
+    exit 0
+fi
+
+CURRENT_TIME=$(date +%s)
+SECONDS_AGO=$((CURRENT_TIME - NEWEST_TIME))
+MINUTES_AGO=$((SECONDS_AGO / 60))
+
+if [ $MINUTES_AGO -eq 0 ]; then
+    TIME_STR="just now"
+elif [ $MINUTES_AGO -eq 1 ]; then
+    TIME_STR="1 minute ago"
+else
+    TIME_STR="$MINUTES_AGO minutes ago"
+fi
+
+echo "[SYNC] $NEWEST_FILE is newest (modified $TIME_STR)"
+
+SYNCED_FILES=()
+for file in "${FILES[@]}"; do
+    if [ "$file" != "$NEWEST_FILE" ]; then
+        cp "$NEWEST_FILE" "$file"
+        SYNCED_FILES+=("$file")
+    fi
+done
+
+if [ ${#SYNCED_FILES[@]} -gt 0 ]; then
+    echo "[SYNC] Copied to: ${SYNCED_FILES[*]}"
+    git add "${FILES[@]}"
+    echo "[SYNC] Files synchronized and staged"
+fi

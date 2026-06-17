@@ -8,7 +8,7 @@ MAIN = main
 OUTDIR = .
 
 # Targets
-.PHONY: all clean distclean view help
+.PHONY: all clean distclean view policy-check install-hooks help
 
 # Default target: build the PDF
 all: $(MAIN).pdf
@@ -53,6 +53,19 @@ view: $(MAIN).pdf
 	@echo "==> Opening PDF..."
 	open $(MAIN).pdf
 
+# Check that tracked and unignored files do not contain likely restricted data
+policy-check:
+	@echo "==> Checking restricted-data policy..."
+	python3 scripts/check_restricted_data.py
+
+# Install local git hooks for this checkout
+install-hooks:
+	@echo "==> Installing git hooks..."
+	mkdir -p .git/hooks
+	cp .githooks/pre-commit .git/hooks/pre-commit
+	chmod +x .git/hooks/pre-commit
+	@echo "==> Hooks installed"
+
 # Show available targets
 help:
 	@echo "Available targets:"
@@ -62,4 +75,6 @@ help:
 	@echo "  make clean    - Remove build artifacts (keep PDF)"
 	@echo "  make distclean- Remove everything including PDF"
 	@echo "  make view     - Open PDF (macOS only)"
+	@echo "  make policy-check - Check for restricted-data leakage"
+	@echo "  make install-hooks - Install local git hooks"
 	@echo "  make help     - Show this help message"

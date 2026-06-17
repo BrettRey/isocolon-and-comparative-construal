@@ -20,11 +20,13 @@ The project should test a production-side textual-function claim, not a reader-s
 
 ## Immediate Next Actions
 
-- Wait for library/LDC access to the RST Signalling Corpus data (`LDC2015T10`); all other high-priority library articles/books have been copied into the shared literature folder.
-- Code `outputs/audit/adversative_antithesis_full_classical_coding.tsv` for classical antithesis, semantic opposition, and parallel opposition; then run `scripts/fit_antithesis_decomposition.py` to test whether hand-marked classical antitheses show elevated parison.
-- Decide final venue posture: Language and Literature first, Rhetorica first, or keep the paper as a rhetoric/stylistics crossover draft until external feedback.
+- Send Rency Luan a follow-up email with the GitHub link, the `outputs/audit/adversative_antithesis_full_classical_coding.tsv` worksheet, the `outputs/audit/adversative_antithesis_decomposition_codebook.md` codebook, and the RST/signalling papers now in the shared literature folder.
+- Treat Rency's first contribution as rhetorical-theory and rubric work, not bulk coding: she wants to read antithesis/isocolon/parison theory first, especially Fahnestock, Harris, and other figure-theory sources, then help revise the coding categories.
+- Use `scripts/inspect_rst_signalling.py` as the first local-only `LDC2015T10` RST Signalling Corpus pass. It reads the protected corpus copy at `/Users/brettreynolds/RestrictedCorpora/LDC/LDC2015T10/RST_Signalling_Corpus` and writes aggregate-only inventories to ignored `data/derived/`; do not move raw data, row-level text, prompts, or quoted outputs into the repo or AI tools.
+- Revise the 343-row `adversative-antithesis` coding rubric before full coding. The current categories are classical antithesis, semantic opposition, and parallel opposition, but the 2026-06-04 Rency call made clear that the rhetorical-theory pass should come first.
+- Decide final venue posture with Rency's input: Language and Literature first, Rhetorica first, another rhetoric journal, or keep the paper as a rhetoric/stylistics crossover draft until external feedback.
 - Next manuscript pass: decide whether the genre-varying summary needs a table or figure, or whether the prose summary is enough.
-- Decide whether to seek a second blind human coder. The manuscript now treats the 80-row audit as single-author, non-blind qualitative validation rather than interrater reliability evidence.
+- Decide whether to seek additional human coders. Rency may contact Cathal in Ireland, who she described as strong on rhetorical figures, isocolon, and parison, and Zoya, who works on construction grammar and figures. Confirm roles before recording them as collaborators.
 - Add the RST Signalling Corpus data comparison when library/LDC access comes through.
 
 ## Design Guardrails
@@ -36,6 +38,36 @@ The project should test a production-side textual-function claim, not a reader-s
 - Main inference: textual evidence for rhetorical function, not psychological effect.
 
 ## Session Notes
+
+### 2026-06-17
+
+- Recorded the U of T LDC General License as a project policy: UofT-only access, non-commercial research/education use, citation/acknowledgment required, and no external distribution, web posting, third-party platform ingestion, AI-chatbot ingestion, commercial use, or internship/co-op/professional-context use.
+- Created and reviewed `.agent/ldc-enforcement-plan.md` in Roughdraft, then implemented enforcement: `DATA_POLICY.md`, `scripts/check_restricted_data.py`, `.githooks/pre-commit`, `make policy-check`, `make install-hooks`, `.gitignore` quarantine paths, and synchronized restricted-data instructions in `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md`.
+- Installed the local pre-commit hook. Verification passed: `python3 -m py_compile scripts/check_restricted_data.py`, `make policy-check`, staged-file scan, installed hook run, and a synthetic LDC-marker probe that the scanner blocked and then removed.
+- Initially confirmed `LDC2015T10` was not visible in the SharePoint folder despite Nick Field's email; Brett then obtained `/Users/brettreynolds/Downloads/RST_Signalling_Corpus_LDC2015T10.tgz`.
+- Moved and extracted `RST_Signalling_Corpus_LDC2015T10.tgz` to `/Users/brettreynolds/RestrictedCorpora/LDC/LDC2015T10/` with private permissions. Inspected only the archive path, size, and top-level directory names; no corpus text was printed or sent to an AI tool.
+- Inspected only filenames, sizes, and archive top-level names from the earlier downloaded OneDrive folders. Moved the potentially relevant English-side set (`LDC99T42`, `LDC2015T08`, and the WSJ mapping archive) out of Downloads to `/Users/brettreynolds/RestrictedCorpora/LDC/OneDrive_1_2026-06-17` with private permissions. Left the Chinese Treebank downloads in `Downloads/OneDrive_2_2026-06-17` because they are probably not relevant unless the project deliberately adds a Mandarin comparison.
+- Added `scripts/inspect_rst_signalling.py`, a schema-tolerant aggregate inventory script for `LDC2015T10`. It resolves `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`, reads local XML annotations, and writes only aggregate counts: manifest, file inventory, XML tag/attribute counts, feature-vector lengths, feature-slot label counts, schema counts, and candidate formal-signal summaries.
+- Ran the RST-SC inventory locally. Outputs are ignored under `data/derived/` and include no raw text or row-level records. The full annotation split has 385 text files and 772 XML files; the train/test splits have 347/38 text files and 696/78 XML files. Candidate aggregate labels include syntactic-family signals and `parallel_syntactic_constructions`, but these are only candidates for human/Rency interpretation.
+- Decided not to use a local LLM for this stage. A local model would avoid some third-party-ingestion problems only if fully offline and non-logging, but deterministic Python plus human judgment is enough for the current work.
+- Added an ignored local `.ldc-root` pointer to `/Users/brettreynolds/RestrictedCorpora/LDC`; no restricted LDC data or symlink was moved into the project repo.
+
+### 2026-06-04
+
+- Brett met with Rency Luan from 08:59 to 09:18 about the isocolon paper. Rency said the project looks interesting and that there is "lots of room for rhetorical interpretation."
+- Rency's proposed first move is to read the rhetorical-theory literature on antithesis, isocolon, and parison, including Harris and Fahnestock, before settling the coding categories. This supports treating the next step as rubric refinement rather than immediate full-batch coding.
+- Brett clarified that the planned "coding" means row-level rhetorical judgment rather than programming. Rency is open to LLM use but hasn't previously used LLMs much and isn't a programmer. She has prior corpus experience with AntConc, DocuScope, and COCA.
+- Rency is checking with Waterloo administrators about access to the RST Signalling Corpus (`LDC2015T10`); Waterloo apparently doesn't currently have LDC membership set up. Brett is still waiting on the U of T library route.
+- Rency may invite two additional people: Cathal in Ireland, described as strong on rhetorical figures, isocolon, and parison, and Zoya, who works on construction grammar and figures. Rency will contact them directly and cc Brett if appropriate.
+- Timeline is flexible. Rency's dissertation is her summer priority, with this project as a secondary summer project and potentially more active in the fall. She also offered to scope possible rhetoric venues.
+- Added two missing RST/signalling PDFs to the shared literature folder: `das_2019_nuclearity_rst_signals_coherence_relations.pdf` and `zeldes_liu_2020_neural_discourse_relation_signal_detection.pdf`. The folder already contained Das and Taboada 2019, Liu 2019, Taboada and Das 2013, and the two core Das and Taboada 2018 signalling papers.
+
+### 2026-06-01
+
+- Brett sent Rency Luan a follow-up collaboration email after meeting her at Rhetoricon on 2026-05-29. The invitation frames the project as statistically far along but rhetorically open, with a possible collaboration focused on the antithesis distinction, the ~343 `adversative-antithesis` cases, and the figure-theory and interpretation sections.
+- Added a durable PM people page for Rency at `Project-Management/people/luan.md`, including contact, open thread, possible collaboration scope, and tone/context notes.
+- Rency replied positively the same morning. She said the project sounds intriguing, called `adversative-antithesis` curious, and asked to read a draft before a call.
+- Brett sent the draft, noted that self-deprecating footnotes would obviously be removed if she joined as co-author, asked whether she has access to the RST Signalling Corpus (`LDC2015T10`), and said he is free basically all day Thursday 2026-06-04.
 
 ### 2026-05-30
 

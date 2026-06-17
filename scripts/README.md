@@ -33,3 +33,4 @@ Current scripts:
 - `fit_antithesis_decomposition.py`: after those fields are coded, compares hand-marked antithesis subsets on formal balance, isocolon, parison, and lexical echo.
 - `sample_qualitative_audit.py`: creates the reproducible 40-row qualitative audit sample, including high broad-target cases, typical broad-target cases, narrow cases, high-scoring non-targets, restatement controls, and baseline non-targets.
 - `summarize_qualitative_audit.py`: validates four agent-review TSVs, combines ratings, and writes reviewer, consensus, and stratum-level summaries for the qualitative audit.
+- `inspect_rst_signalling.py`: reads the protected local RST Signalling Corpus (`RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`) and writes aggregate-only inventories to `data/derived/`; it does not export raw text, examples, prompts, or row-level records.
