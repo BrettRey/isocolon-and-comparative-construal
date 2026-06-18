@@ -22,12 +22,12 @@ The project should test a production-side textual-function claim, not a reader-s
 
 - Send Rency Luan a follow-up email with the GitHub link, the `outputs/audit/adversative_antithesis_full_classical_coding.tsv` worksheet, the `outputs/audit/adversative_antithesis_decomposition_codebook.md` codebook, and the RST/signalling papers now in the shared literature folder.
 - Treat Rency's first contribution as rhetorical-theory and rubric work, not bulk coding: she wants to read antithesis/isocolon/parison theory first, especially Fahnestock, Harris, and other figure-theory sources, then help revise the coding categories.
-- Use `scripts/inspect_rst_signalling.py` as the first local-only `LDC2015T10` RST Signalling Corpus pass. It reads the protected corpus copy at `/Users/brettreynolds/RestrictedCorpora/LDC/LDC2015T10/RST_Signalling_Corpus` and writes aggregate-only inventories to ignored `data/derived/`; do not move raw data, row-level text, prompts, or quoted outputs into the repo or AI tools.
+- Use `rater_app/rst_signal_crosswalk.html` for the next `LDC2015T10` step: code the 19 aggregate signal labels into paper-facing roles, use levels, confidence, and follow-up flags, then ingest returned JSON with `make rst-signal-judgments`.
 - Revise the 343-row `adversative-antithesis` coding rubric before full coding. The current categories are classical antithesis, semantic opposition, and parallel opposition, but the 2026-06-04 Rency call made clear that the rhetorical-theory pass should come first.
 - Decide final venue posture with Rency's input: Language and Literature first, Rhetorica first, another rhetoric journal, or keep the paper as a rhetoric/stylistics crossover draft until external feedback.
 - Next manuscript pass: decide whether the genre-varying summary needs a table or figure, or whether the prose summary is enough.
 - Decide whether to seek additional human coders. Rency may contact Cathal in Ireland, who she described as strong on rhetorical figures, isocolon, and parison, and Zoya, who works on construction grammar and figures. Confirm roles before recording them as collaborators.
-- Add the RST Signalling Corpus data comparison when library/LDC access comes through.
+- Add any RST Signalling Corpus comparison only after the aggregate signal-label crosswalk has been human-coded. Until then, keep RST-SC as annotation context rather than manuscript evidence.
 
 ## Design Guardrails
 
@@ -45,6 +45,7 @@ The project should test a production-side textual-function claim, not a reader-s
 
 ### 2026-06-17
 
+- Shipped `5d9fa4a` with the aggregate RST-SC summary and offline signal-crosswalk app, then shipped `df57928` updating the manuscript and rebuilt PDF so RST-SC is described as locally available under restricted license but outside the reported quantitative results until human label-crosswalk judgment is complete.
 - Recorded the U of T LDC General License as a project policy: UofT-only access, non-commercial research/education use, citation/acknowledgment required, and no external distribution, web posting, third-party platform ingestion, AI-chatbot ingestion, commercial use, or internship/co-op/professional-context use.
 - Created and reviewed `.agent/ldc-enforcement-plan.md` in Roughdraft, then implemented enforcement: `DATA_POLICY.md`, `scripts/check_restricted_data.py`, `.githooks/pre-commit`, `make policy-check`, `make install-hooks`, `.gitignore` quarantine paths, and synchronized restricted-data instructions in `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md`.
 - Installed the local pre-commit hook. Verification passed: `python3 -m py_compile scripts/check_restricted_data.py`, `make policy-check`, staged-file scan, installed hook run, and a synthetic LDC-marker probe that the scanner blocked and then removed.
