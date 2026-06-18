@@ -142,3 +142,31 @@ Generated local inventories:
   - Command: `scripts/inspect_rst_signalling.py`
   - Source: protected local RST Signalling Corpus path resolved from `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`.
   - Contents: aggregate counts for annotation labels whose names suggest formal, parallelism-relevant signal families or subtypes; these are candidate labels for human/Rency interpretation, not automatic isocolon judgments.
+- `rst_sc_split_summary.tsv`
+  - Command: `scripts/summarize_rst_signalling.py`
+  - Source: aggregate TSVs from `scripts/inspect_rst_signalling.py`.
+  - Contents: split-level text/XML counts and annotation-feature vector counts.
+- `rst_sc_signal_family_summary.tsv`
+  - Command: `scripts/summarize_rst_signalling.py`
+  - Source: `data/derived/rst_sc_formal_signal_candidate_summary.tsv` and feature-slot totals.
+  - Contents: aggregate slot-3 signal-family membership counts and percentages; combined labels can contribute to more than one family.
+- `rst_sc_signal_subtype_summary.tsv`
+  - Command: `scripts/summarize_rst_signalling.py`
+  - Source: `data/derived/rst_sc_formal_signal_candidate_summary.tsv` and feature-slot totals.
+  - Contents: aggregate slot-4 candidate subtype membership counts and percentages.
+- `rst_sc_project_bridge_summary.tsv`
+  - Command: `scripts/summarize_rst_signalling.py`
+  - Source: aggregate candidate subtype counts.
+  - Contents: non-disjoint candidate bridges for human/Rency interpretation: parison-like syntactic parallelism, lexical echo, comparison reference, and semantic opposition.
+- `rst_sc_top_formal_signal_values.tsv`
+  - Command: `scripts/summarize_rst_signalling.py`
+  - Source: `data/derived/rst_sc_formal_signal_candidate_summary.tsv` and feature-slot totals.
+  - Contents: top formal-signal candidate label memberships by split.
+- `rst_signal_crosswalk_judgments.tsv`
+  - Command: `scripts/ingest_rst_signal_judgments.py`
+  - Source: downloaded local JSON responses from `rater_app/rst_signal_crosswalk.html` and the aggregate item manifest `rater_app/rst_signal_crosswalk_items.tsv`.
+  - Contents: human/Rency label-crosswalk judgments over aggregate RST-SC signal labels, including role, use level, confidence, flags, and label-level notes; no raw corpus text should be entered.
+- `rst_signal_crosswalk_judgment_summary.tsv`
+  - Command: `scripts/ingest_rst_signal_judgments.py`
+  - Source: `data/derived/rst_signal_crosswalk_judgments.tsv`.
+  - Contents: aggregate coder counts by signal label, role, use level, confidence, and follow-up flags.

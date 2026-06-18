@@ -20,6 +20,8 @@
 .env
 .ldc-root
 .restricted-data.json
+rater_app/responses/*
+!rater_app/responses/.gitkeep
 
 # Corpus and analysis outputs
 data/raw/*

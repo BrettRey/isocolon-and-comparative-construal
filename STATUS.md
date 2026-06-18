@@ -39,6 +39,10 @@ The project should test a production-side textual-function claim, not a reader-s
 
 ## Session Notes
 
+### 2026-06-18
+
+- Added an offline RST-SC signal-crosswalk interface modeled on the diagnostic-validity rater app. `scripts/build_rst_signal_judgment_app.py` reads only aggregate TSVs and writes `rater_app/rst_signal_crosswalk.html` plus `rater_app/rst_signal_crosswalk_items.tsv`; the app asks human coders to map 19 aggregate slot-4 labels to paper-facing roles, use levels, confidence, and follow-up flags. Downloaded JSON responses go in ignored `rater_app/responses/` and can be merged locally with `scripts/ingest_rst_signal_judgments.py`.
+
 ### 2026-06-17
 
 - Recorded the U of T LDC General License as a project policy: UofT-only access, non-commercial research/education use, citation/acknowledgment required, and no external distribution, web posting, third-party platform ingestion, AI-chatbot ingestion, commercial use, or internship/co-op/professional-context use.
@@ -50,6 +54,8 @@ The project should test a production-side textual-function claim, not a reader-s
 - Added `scripts/inspect_rst_signalling.py`, a schema-tolerant aggregate inventory script for `LDC2015T10`. It resolves `RST_SC_ROOT`, `LDC_ROOT`, or ignored `.ldc-root`, reads local XML annotations, and writes only aggregate counts: manifest, file inventory, XML tag/attribute counts, feature-vector lengths, feature-slot label counts, schema counts, and candidate formal-signal summaries.
 - Ran the RST-SC inventory locally. Outputs are ignored under `data/derived/` and include no raw text or row-level records. The full annotation split has 385 text files and 772 XML files; the train/test splits have 347/38 text files and 696/78 XML files. Candidate aggregate labels include syntactic-family signals and `parallel_syntactic_constructions`, but these are only candidates for human/Rency interpretation.
 - Decided not to use a local LLM for this stage. A local model would avoid some third-party-ingestion problems only if fully offline and non-logging, but deterministic Python plus human judgment is enough for the current work.
+- Added `scripts/summarize_rst_signalling.py`, which reads only aggregate RST-SC inventory TSVs and writes aggregate summary TSVs plus `notes/rst-signalling-aggregate-summary.md`. The full split summary gives 29,300 annotation-feature vectors; candidate bridge memberships are lexical echo 9,588 (34.58% of slot-4 labels), parison-like syntactic parallelism 558 (2.01%), comparison reference 183 (0.66%), and semantic opposition 37 (0.13%). Counts are non-disjoint label memberships, not automatic isocolon judgments.
+- Cross-checked the DiD methods-paper guardrails for relevance. Apply them here only as methodological hygiene: name the target quantity, separate linguistic/measurement/aggregation units, assign each textual feature one job, treat composition and measurement as possible artifacts, and pre-specify what would downgrade a claim. Do not import DiD's causal shock/counterfactual machinery.
 - Added an ignored local `.ldc-root` pointer to `/Users/brettreynolds/RestrictedCorpora/LDC`; no restricted LDC data or symlink was moved into the project repo.
 
 ### 2026-06-04
