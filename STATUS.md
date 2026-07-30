@@ -1,3 +1,33 @@
+---
+slug: isocolon-and-comparative-construal
+kind: paper
+title: 'Isocolon, parison, and comparable-set construal: A corpus test of formal balance'
+stage: draft
+external: none
+blocked_on: []
+updated: 2026-06-18
+source:
+- STATUS.md
+notes: 'No PORTFOLIO.md row exists (searched ''isocolon'', ''Rhetoricon'', ''Fahnestock'', ''Rency'',
+  ''Waterloo'' -- genuinely unlisted). Title taken from main.tex \title{}; STATUS.md''s own ''## Project''
+  heading uses an older working title (''Isocolon and comparative construal: A corpus test of rhetorical
+  balance''), an internal discrepancy, not a source conflict. Full manuscript built at 24pp, clean XeLaTeX/Biber
+  build, multiple polish/ship passes completed. CHANGED by ADJUDICATION 2026-07-30: stage complete ->
+  draft, accepting the independent Codex pass. STATUS.md:9 does say "Full manuscript draft built and ready
+  for human review", but its "Immediate Next Actions" carry substantive empirical work rather than polish:
+  revise the 343-row adversative-antithesis coding rubric before full coding, code the 19 aggregate RST
+  signal labels into paper-facing roles and ingest the returned JSON, add any RST Signalling Corpus comparison
+  only after that crosswalk is human-coded, and decide whether to seek additional human coders. Schema
+  v2 is explicit that a manuscript whose next actions include substantive empirical work is draft. Final
+  venue is undecided among candidates (Language and Literature, Rhetorica, or another rhetoric journal)
+  pending input from Rency Luan, a prospective (not yet confirmed) collaborator on rhetorical-theory framing
+  and coding-rubric revision -- ''Confirm roles before recording them as collaborators'' in STATUS.md
+  shows this is not yet formalized, so blocked_on is ''none'' rather than ''collaborator:luan''; venue
+  omitted rather than guessed since it is explicitly undecided among a shortlist. Restricted LDC2015T10
+  (RST Signalling Corpus) data is handled under a documented enforcement policy (DATA_POLICY.md, pre-commit
+  hooks) and is kept out of reported quantitative results pending human label-crosswalk judgment.'
+---
+
 # STATUS
 
 ## Project
