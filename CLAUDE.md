@@ -145,25 +145,16 @@ make clean        # Clean up
 
 ## Multi-Agent Dispatch (MANDATORY)
 
-**Before dispatching multiple agents, ALWAYS ask Brett:**
+**Before dispatching multiple agents, ALWAYS ask Brett which model(s) to use
+and whether redundant outputs are wanted.**
 
-1. **Which model(s)?** Options: Claude, Codex, Gemini, Copilot
-   - Codex is often best for Brett's work
-   - Claude and Gemini both have 1M token context windows
-   - Different models have different strengths
-
-2. **Redundant outputs?** Should multiple models tackle the same task?
-   - Useful for judgment calls (e.g., "Should I add this figure?")
-   - Not needed for factual tasks
-
-### CLI Command Patterns
-
-| CLI | Command | Notes |
-|-----|---------|-------|
-| **Codex** | `codex -p 'prompt' > output.txt &` | Include "Read [PATH] first" in prompt |
-| **Gemini** | `cat file.tex \| gemini --yolo -o text 'prompt'` | Must pipe content (file reading broken in YOLO) |
-| **Copilot** | `copilot -p 'prompt' > output.txt &` | Fast; add `--allow-all-tools` for file ops |
-
-**Token limits:** Claude 1M = Gemini 1M+ > Codex
+The invocations are deliberately not copied here. They live in
+`../../../.claude/rules/multi-model-dispatch.md`
+and change faster than a copy can track. This section used to carry them,
+and every copy in the portfolio was still routing agents to the deprecated
+Gemini CLI and passing codex its prompt through a flag that selects a
+config profile, months after both were superseded. In a Claude Code
+session opened anywhere inside the portfolio the portfolio rules load
+automatically, and you do not need to read them by hand.
 
 See portfolio `CLAUDE.md` or `HPC book/.agent/workflows/multi-agent-review.md` for full patterns.
