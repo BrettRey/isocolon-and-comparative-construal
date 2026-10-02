@@ -39,3 +39,6 @@ outputs/restricted/*
 restricted/
 ldc/
 LDC*/
+
+# Correspondence drafts (collaborator addresses, unsent drafts)
+correspondence/

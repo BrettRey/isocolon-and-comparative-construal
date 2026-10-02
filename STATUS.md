@@ -26,6 +26,18 @@ notes: 'No PORTFOLIO.md row exists (searched ''isocolon'', ''Rhetoricon'', ''Fah
   omitted rather than guessed since it is explicitly undecided among a shortlist. Restricted LDC2015T10
   (RST Signalling Corpus) data is handled under a documented enforcement policy (DATA_POLICY.md, pre-commit
   hooks) and is kept out of reported quantitative results pending human label-crosswalk judgment.'
+claim:
+  argues: >-
+    If writers use balanced form to present adjacent units as comparable co-members,
+    measurable formal balance should cluster in the discourse relations that invite that
+    presentation. In the GUM corpus with eRST annotations (17,912 adjacent relation pairs,
+    301 documents, 24 genres), the comparison and coordination relations score 4.2 points
+    higher on a 0-100 formal-balance scale than the non-target baseline, about 0.28
+    standard deviations.
+  predicts:
+    - "formal balance (isocolon, parison, lexical echo) concentrates in comparison and coordination relations rather than being evenly distributed across discourse relations"
+  provenance: drafted-from-abstract
+  claim_updated: 2026-10-02
 ---
 
 # STATUS
@@ -50,6 +62,9 @@ The project should test a production-side textual-function claim, not a reader-s
 
 ## Immediate Next Actions
 
+- (2026-10-02) Reddit text restored, pipeline rerun with a fixed `.rels` parser, and `main.tex` renumbered (see DECISIONS). A read-only Codex audit (`analysis/rerun-2026-10-02/codex-number-audit.md`) found no numerical mismatches; three wording fixes it raised are applied. Permutation p-values removed; weight sensitivity reported as ranges. Nothing committed yet: commit `main.tex`, `main.pdf`, the regenerated `outputs/figures/paper_*`, the two parser fixes, and `analysis/rerun-2026-10-02/` together, and push before sending the collaborator email so the linked PDF is the corrected one.
+- (2026-10-02) Anything that joins audits or worksheets to the scores file must now join on `(doc, unit1_toks, unit2_toks)`, not `source_row`: the scores file grew from 17,456 to 17,912 rows, so old row indexes in `outputs/audit/*` and the antithesis worksheets no longer point at the right pairs. Affects `fit_antithesis_decomposition.py`, `summarize_qualitative_validation.py`, and `build_antithesis_coding_app.py` (whose `doc` assertion will fail on rebuild). The fixed parse finds 358 `adversative-antithesis` pairs, not 343; keep the existing AA### code_ids stable and add the 15 new pairs with new ids.
+- (2026-10-02) The antithesis coding page (https://claude.ai/artifact/1cQ9rfxGTQjfjumdKSrQ8D) is shared by public link; check it opens in a private window, then send `correspondence/2026-10-02-antithesis-directions.md` to Cathal, Zoya, and Rency. Returns requested by Friday 2026-10-16; save each pasted return in `rater_app/responses/antithesis/` and run `make antithesis-codes`.
 - Send Rency Luan a follow-up email with the GitHub link, the `outputs/audit/adversative_antithesis_full_classical_coding.tsv` worksheet, the `outputs/audit/adversative_antithesis_decomposition_codebook.md` codebook, and the RST/signalling papers now in the shared literature folder.
 - Treat Rency's first contribution as rhetorical-theory and rubric work, not bulk coding: she wants to read antithesis/isocolon/parison theory first, especially Fahnestock, Harris, and other figure-theory sources, then help revise the coding categories.
 - Use `rater_app/rst_signal_crosswalk.html` for the next `LDC2015T10` step: code the 19 aggregate signal labels into paper-facing roles, use levels, confidence, and follow-up flags, then ingest returned JSON with `make rst-signal-judgments`.
@@ -68,6 +83,14 @@ The project should test a production-side textual-function claim, not a reader-s
 - Main inference: textual evidence for rhetorical function, not psychological effect.
 
 ## Session Notes
+
+### 2026-10-02
+
+- Brett asked for a simple judgment interface and an email giving the collaborators specific first tasks.
+- Built `scripts/build_antithesis_coding_app.py` and `rater_app/antithesis_coding_template.html` -> `rater_app/antithesis_coding.html`: 40 calibration items (first 40 non-reddit rows of the randomized worksheet), each with the surrounding sentences recovered from the public GUM/GENTLE `.conllu`/`.rels` files (context found for 40/40; units highlighted for 39/40, one source tokenization mismatch). 26 reddit rows excluded as redacted. No sign-in; codes stay in the coder's browser and come back as clipboard TSV pasted into email.
+- Built `scripts/ingest_antithesis_codes.py` (pairwise agreement, Fleiss' kappa, per-item disagreements, general comments) and tested it on synthetic returns in the session scratchpad. Added `make antithesis-app` / `make antithesis-codes`.
+- Published the page as a private claude.ai artifact; Brett has to share it. Drafted `correspondence/2026-10-02-antithesis-directions.md` (status: draft).
+- Fahnestock 2004 "Figures of Argument" and "Preserving the Figure" (Cathal's suggestions) are already in `literature/isocolon-rhetoric/` and the bib, but `main.tex` cites neither.
 
 ### 2026-06-18
 

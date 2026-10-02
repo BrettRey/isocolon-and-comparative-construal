@@ -1,0 +1,20 @@
+# Rerun after reddit restore and .rels parser fix, 2026-10-02
+run: rerun-2026-10-02
+decision_owner: Brett Reynolds
+executed_by: Claude Opus 5.5 (Claude Code)
+corpus: GUM V12.1.0 checkout at corpora/gum-erst (commit 22fdf87), reddit text restored with GUM get_text.py from gucorpling.org proxy
+parser_fix: csv.QUOTE_NONE in scripts/extract_gum_erst_relation_pairs.py and scripts/inspect_gum_erst.py
+files:
+  before_after.md: {sha256: 2f0b1f4e183bea17e4d71954629dfc30da93ea8a92ecdee2a66fc91de3ff5cc1, note: old (bug + underscores) vs new (fixed + restored)}
+  compare_before_after.py: {sha256: 93501092b7cdb8778c805892b7f2ed6e1be3afe933e8a554a2214825d8b8557f}
+  renumber_main_tex.py: {sha256: ca8a7da2316d203728c2848a0236f994daedd69278b32d5bc9d7d516fc2ee000, note: 79 exact-once replacements applied to main.tex}
+number_audit:
+  model: gpt-6.1-sol
+  provider: openai
+  route: tools/codex/bin/codex-readonly (codex-cli 0.159.2), read-only
+  input: main.tex plus text-free copies of 11 data/derived TSVs (unit text and sentence columns removed; no reddit post text sent)
+  audited_main_tex_sha256: 93a73088380a97418d97ae559860ca0dc723b4ce65a6091576a93b013f73775c
+  prompt: {path: codex-number-audit-prompt.md, sha256: 12bb565506cc10b0f44568bfeeef33de3657356f367ebff5ecee0b6feaaf96f1}
+  output: {path: codex-number-audit.md, sha256: efe9a20316c0a881fd33527a5346328c098a7e3d0aa57ded0d4d7754ff54becc, saved_by: parent session, verbatim}
+  result: no numerical mismatches; 4 description issues, 3 fixed in main.tex after the audit (AUC ties, genre-spread wording, coefficient bounds), 1 checked and retained (repetition strongest across 30-label scan)
+dependence_cluster: Claude Opus 5.5 produced the numbers and the edits; the Codex audit is an independent model family recomputing from the outputs

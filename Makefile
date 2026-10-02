@@ -8,7 +8,7 @@ MAIN = main
 OUTDIR = .
 
 # Targets
-.PHONY: all clean distclean view rst-signal-app rst-signal-judgments policy-check install-hooks help
+.PHONY: all clean distclean view rst-signal-app rst-signal-judgments antithesis-app antithesis-codes policy-check install-hooks help
 
 # Default target: build the PDF
 all: $(MAIN).pdf
@@ -63,6 +63,16 @@ rst-signal-judgments:
 	@echo "==> Ingesting RST-SC signal-crosswalk responses..."
 	python3 scripts/ingest_rst_signal_judgments.py
 
+# Build the antithesis calibration coding page from the public GUM/GENTLE release
+antithesis-app:
+	@echo "==> Building antithesis coding page..."
+	python3 scripts/build_antithesis_coding_app.py
+
+# Merge pasted antithesis coding returns saved in rater_app/responses/antithesis/
+antithesis-codes:
+	@echo "==> Ingesting antithesis coding returns..."
+	python3 scripts/ingest_antithesis_codes.py
+
 # Check that tracked and unignored files do not contain likely restricted data
 policy-check:
 	@echo "==> Checking restricted-data policy..."
@@ -87,6 +97,8 @@ help:
 	@echo "  make view     - Open PDF (macOS only)"
 	@echo "  make rst-signal-app - Build offline RST-SC signal-crosswalk app"
 	@echo "  make rst-signal-judgments - Merge downloaded signal-crosswalk responses"
+	@echo "  make antithesis-app - Build antithesis calibration coding page"
+	@echo "  make antithesis-codes - Merge pasted antithesis coding returns"
 	@echo "  make policy-check - Check for restricted-data leakage"
 	@echo "  make install-hooks - Install local git hooks"
 	@echo "  make help     - Show this help message"

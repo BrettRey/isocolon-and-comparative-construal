@@ -1,0 +1,41 @@
+code_id	batch	source_row	doc	collection	genre	rel_type	doc_order	word_len_1	word_len_2	unit1_text	unit2_text	context_found	highlight_found
+AA044	calibration	2613	GUM_textbook_labor	GUM	textbook	implicit	1_before_2	9	4	but easier to run a tourist hotel in Florida	than in North Dakota.	1	1
+AA329	calibration	16986	GUM_whow_glowstick	GUM	whow	implicit	1_before_2	5	9	Don't use your hands --	use a metal or plastic utensil of some sort.	1	1
+AA188	calibration	9630	GUM_interview_brotherhood	GUM	interview	explicit	1_before_2	14	6	The magician behind the counter was wise enough not to sell it to me,	but instead sold me two books	1	1
+AA163	calibration	8369	GUM_essay_ghost	GUM	essay	explicit	1_before_2	7	3	these trends don’t cause more problems	than they resolve,	1	1
+AA220	calibration	11909	GUM_news_warming	GUM	news	explicit	1_before_2	13	12	dicot species, such as soybean, cotton, and peanut, lose more yield from ozone	than do monocot species such as sorghum, field corn, and winter wheat.	1	1
+AA036	calibration	2096	GUM_news_homeopathic	GUM	news	explicit	1_before_2	5	6	and giving her homeopathic drops	instead of using the prescription creams	1	1
+AA198	calibration	10043	GUM_interview_licen	GUM	interview	explicit	1_before_2	16	3	So showing the Paralympics live on United States television might turn out to be less glamorous	than it appears.	1	1
+AA113	calibration	6173	GUM_conversation_artist	GUM	conversation	implicit	1_before_2	4	1	there was a connection.	No.	1	1
+AA077	calibration	3963	GUM_podcast_bezos	GUM	podcast	explicit	1_before_2	8	9	you're talking about welfare and everything else.	Yet at the same token, you ignore these stances	1	1
+AA311	calibration	16656	GUM_whow_arrogant	GUM	whow	explicit	1_before_2	10	10	They may also give themselves undue credit for positive achievements	instead of acknowledging the input of others or of circumstances.	1	1
+AA192	calibration	9849	GUM_interview_dungeon	GUM	interview	implicit	1_before_2	7	5	I do wear a lot of black.	It's anything but that.	1	1
+AA140	calibration	7457	GUM_court_equality	GUM	court	implicit	1_before_2	13	8	And by the way, our universities don't consist of only urban kids;	they also come from the smaller, smaller areas.	1	1
+AA157	calibration	8165	GUM_essay_food	GUM	essay	explicit	1_before_2	5	3	not widgets or knick knacks,	but the stuff	1	1
+AA102	calibration	5147	GUM_academic_mutation	GUM	academic	explicit	1_before_2	10	2	that, in most cases, will lead to a behaviour different	than expected.	1	1
+AA234	calibration	12536	GUM_podcast_movie	GUM	podcast	explicit	1_before_2	8	4	so that they can go out the door	instead of releasing one	1	1
+AA151	calibration	7941	GUM_court_property	GUM	court	implicit	1_before_2	11	10	Because <*> on whether any ofthe cases <*> actually draws that distinction .	They seem to be primarily based on occupation <*> or occupation	1	0
+AA091	calibration	4636	GUM_whow_cactus	GUM	whow	explicit	1_before_2	5	9	but wait before harvesting them	or you might affect the size of future harvests.	1	1
+AA182	calibration	9403	GUM_fiction_time	GUM	fiction	implicit	1_before_2	7	3	for the sun had ceased to set	—it simply rose	1	1
+AA117	calibration	6328	GUM_conversation_blacksmithing	GUM	conversation	implicit	1_before_2	9	11	We're not gonna do the feet today,	I'm gonna wait till like, early in the morning,	1	1
+AA189	calibration	9663	GUM_interview_chomsky	GUM	interview	explicit	1_before_2	8	6	the obvious question is why should NATO exist?	In fact you can ask questions	1	1
+AA138	calibration	7417	GUM_court_equality	GUM	court	explicit	1_before_2	11	13	in also going about our interpretative task in an incremental manner	because otherwise, do we then confine ourselves only to the Hindu Marriage Act?	1	1
+AA283	calibration	14845	GUM_textbook_spacetime	GUM	textbook	explicit	1_before_2	15	9	A white dwarf, with its stronger surface gravity, produces more distortion just above its surface	than does a red giant with the same mass.	1	1
+AA209	calibration	10722	GUM_letter_flood	GUM	letter	implicit	1_before_2	11	7	that to have done this would have simply raised false hopes	where real help is what is needed.	1	1
+AA217	calibration	11201	GUM_letter_travel	GUM	letter	explicit	1_before_2	11	5	so I prefer to write of the play as a reader,	rather than as a spectator.	1	1
+AA041	calibration	2532	GUM_speech_inauguration	GUM	speech	implicit	1_before_2	12	4	In this present crisis, government is not the solution to our problem;	government is the problem.	1	1
+AA216	calibration	11127	GUM_letter_trade	GUM	letter	explicit	1_before_2	8	6	This authority is not intended for major negotiations,	but rather to permit minor adjustments,	1	1
+AA215	calibration	11063	GUM_letter_srilanka	GUM	letter	explicit	1_before_2	7	5	and suggests a greater care about civilians	than is common in countries	1	1
+AA094	calibration	4747	GUM_academic_census	GUM	academic	explicit	1_before_2	12	19	Most fields, on the other hand, <*> lack a single all-encompassing organization	and membership information is instead distributed across many disjoint lists, such as web-based faculty directories for individual departments.	1	1
+AA132	calibration	6987	GUM_conversation_toys	GUM	conversation	implicit	1_before_2	7	9	You're just a swinging kid Steve.	Yeah, you don't know the half of it.	1	1
+AA280	calibration	14798	GUM_textbook_sociology	GUM	textbook	explicit	1_before_2	13	2	Trying hard and working together, two nonmaterial values, were indeed much more important	than winning.	1	1
+AA079	calibration	4026	GUM_podcast_multitasking	GUM	podcast	explicit	1_before_2	17	2	Do you know anything, or think much about, multitasking and multitasking failures in other high-stakes settings	beyond driving,	1	1
+AA326	calibration	16944	GUM_whow_flirt	GUM	whow	implicit	1_before_2	15	4	For instance, you'll want to avoid making lots of jokes at your own expense.	Just one is plenty —	1	1
+AA154	calibration	8145	GUM_essay_dividends	GUM	essay	explicit	1_before_2	6	10	Instead of plutocracy and climate change,	our market economy would generate widely-shared, earth-friendly prosperity.	1	1
+AA331	calibration	17064	GUM_whow_languages	GUM	whow	implicit	1_before_2	12	10	Try not to make your words sound like utter and complete gibberish	just add a little extra than our regular English language.	1	1
+AA175	calibration	9167	GUM_fiction_oversite	GUM	fiction	implicit	1_before_2	11	6	The last two nights I have dreamed of dogs in trouble.	I don’t dream about Renata,	1	1
+AA112	calibration	6098	GUM_bio_theodorus	GUM	bio	explicit	1_before_2	7	6	naming the brother Petronios as his successor	rather than the clearly qualified Theodorus.	1	1
+AA168	calibration	8571	GUM_essay_sexlife	GUM	essay	implicit	1_before_2	7	17	that aging is responsible for this difference?	What if instead the apparent age difference is because people <*> have different attitudes toward sex than people	1	1
+AA197	calibration	10032	GUM_interview_licen	GUM	interview	explicit	1_before_2	8	3	Even though legislative support may be less strong	than the one	1	1
+AA012	calibration	1044	GENTLE_threat_bolin	GENTLE	threat	implicit	1_before_2	6	2	you got 1500 for the truck	not 1300	1	1
+AA013	calibration	1061	GENTLE_threat_bolin	GENTLE	threat	explicit	1_before_2	11	8	Your game playing is eventually going to get you in more	than a poo butt game player can handle.	1	1

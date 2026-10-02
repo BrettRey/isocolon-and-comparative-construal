@@ -1,0 +1,485 @@
+<title>Antithesis Calibration Batch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+/* Layout: a working desk. Header strip with coder + export; item rail on the left, one pair at a time on the right; the two cola set as A ∥ B. */
+:root {
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --ink: #1b1f27;
+  --muted: #5a6271;
+  --rule: #dce0e7;
+  --a: #2c5aa0;
+  --a-tint: #e2ebf8;
+  --b: #7d5c00;
+  --b-tint: #f6ecd0;
+  --yes: #2d7a4c;
+  --no: #a23838;
+  --unc: #645591;
+  --focus: #2c5aa0;
+  --font-text: "Literata", "Charis SIL", Georgia, serif;
+  --font-ui: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12151b; --surface: #1a1f27; --ink: #e6e8ec; --muted: #9aa3b2; --rule: #2c333f;
+    --a: #93b5ee; --a-tint: #1f2e48; --b: #e2bb55; --b-tint: #3a3117;
+    --yes: #6cc08e; --no: #e88b8b; --unc: #b5a6e2; --focus: #93b5ee;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12151b; --surface: #1a1f27; --ink: #e6e8ec; --muted: #9aa3b2; --rule: #2c333f;
+  --a: #93b5ee; --a-tint: #1f2e48; --b: #e2bb55; --b-tint: #3a3117;
+  --yes: #6cc08e; --no: #e88b8b; --unc: #b5a6e2; --focus: #93b5ee;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-ui); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: grid; gap: 20px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+h1 { font-family: var(--font-text); font-weight: 600; font-size: 1.6rem; line-height: 1.2; }
+h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+p { margin: 0; }
+a { color: var(--a); }
+button, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.top { display: grid; gap: 14px; }
+.top .lede { max-width: 68ch; color: var(--muted); }
+.bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; padding: 14px 16px; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field label { font-size: 0.8rem; color: var(--muted); }
+.field input[type=text] { padding: 7px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); width: 16rem; max-width: 100%; }
+.progress { margin-left: auto; display: grid; gap: 4px; min-width: 10rem; }
+.progress .count { font-variant-numeric: tabular-nums; font-size: 0.9rem; }
+.meter { height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.meter span { display: block; height: 100%; background: var(--yes); width: 0; }
+.btn { padding: 8px 14px; border-radius: 6px; border: 1px solid var(--ink); background: var(--ink); color: var(--surface); cursor: pointer; font-weight: 500; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+
+details.howto { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 16px; }
+details.howto summary { cursor: pointer; font-weight: 600; }
+details.howto .body { display: grid; gap: 10px; margin-top: 10px; max-width: 72ch; }
+details.howto ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
+
+.desk { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 20px; align-items: start; }
+.rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); display: grid; gap: 10px; }
+.chips { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.chip { font-family: var(--font-mono); font-size: 0.72rem; padding: 6px 0; text-align: center; border: 1px solid var(--rule); border-radius: 5px; background: var(--surface); cursor: pointer; font-variant-numeric: tabular-nums; }
+.chip.done { background: var(--a-tint); border-color: var(--a); }
+.chip.partial { border-style: dashed; border-color: var(--a); }
+.chip.current { outline: 2px solid var(--ink); outline-offset: 1px; }
+.legend { font-size: 0.75rem; color: var(--muted); display: grid; gap: 2px; }
+
+.item { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 20px; display: grid; gap: 18px; min-width: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 0.82rem; color: var(--muted); align-items: baseline; }
+.meta .id { font-family: var(--font-mono); color: var(--ink); font-weight: 500; }
+.meta .doc { font-family: var(--font-mono); overflow-wrap: anywhere; }
+.context { font-family: var(--font-text); font-size: 1.04rem; line-height: 1.7; max-width: 70ch; }
+.context .dim { color: var(--muted); }
+.context mark { color: inherit; padding: 0.05em 0.15em; border-radius: 3px; }
+.context mark.a { background: var(--a-tint); box-shadow: inset 0 -2px 0 var(--a); }
+.context mark.b { background: var(--b-tint); box-shadow: inset 0 -2px 0 var(--b); }
+.note-ctx { font-size: 0.8rem; color: var(--muted); font-style: italic; }
+
+.cola { display: grid; gap: 4px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: 12px; }
+.colon { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr) auto; gap: 10px; align-items: baseline; }
+.colon .tag { font-family: var(--font-mono); font-weight: 500; }
+.colon.a .tag { color: var(--a); }
+.colon.b .tag { color: var(--b); }
+.colon .txt { font-family: var(--font-text); font-size: 1.04rem; overflow-wrap: anywhere; }
+.colon .len { font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sep { font-family: var(--font-text); color: var(--muted); padding-left: 0.3rem; line-height: 1; }
+
+.judgments { display: grid; gap: 14px; }
+.judg { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+.judg:last-child { border-bottom: 0; padding-bottom: 0; }
+.judg .q { font-weight: 600; }
+.judg .def { grid-column: 1; font-size: 0.85rem; color: var(--muted); max-width: 62ch; }
+.seg { grid-column: 2; grid-row: 1 / span 2; display: inline-flex; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.seg button { padding: 7px 12px; cursor: pointer; font-size: 0.88rem; border: 0; border-left: 1px solid var(--rule); background: transparent; user-select: none; }
+.seg button:first-child { border-left: 0; }
+.seg button:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+.seg button[data-v=yes][aria-pressed=true] { background: var(--yes); color: var(--surface); }
+.seg button[data-v=no][aria-pressed=true] { background: var(--no); color: var(--surface); }
+.seg button[data-v=uncertain][aria-pressed=true] { background: var(--unc); color: var(--surface); }
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag-t { font-family: var(--font-mono); font-size: 0.75rem; padding: 4px 9px; border: 1px solid var(--rule); border-radius: 999px; background: var(--bg); cursor: pointer; }
+.tag-t[aria-pressed=true] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.free { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.free .field input, .free .field textarea, .panel textarea { width: 100%; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); }
+.free textarea { min-height: 4.5rem; resize: vertical; }
+.nav { display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.nav .hint { font-size: 0.78rem; color: var(--muted); }
+
+.panels { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.panel textarea { min-height: 7rem; resize: vertical; }
+.panel textarea.code { font-family: var(--font-mono); font-size: 0.75rem; white-space: pre; overflow: auto; }
+.status { font-size: 0.82rem; color: var(--muted); min-height: 1.2em; }
+.status.ok { color: var(--yes); }
+.status.err { color: var(--no); }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+footer { font-size: 0.78rem; color: var(--muted); max-width: 90ch; }
+
+@media (max-width: 760px) {
+  .desk { grid-template-columns: minmax(0, 1fr); }
+  .rail { position: static; }
+  .chips { grid-template-columns: repeat(8, 1fr); }
+  .free, .panels { grid-template-columns: minmax(0, 1fr); }
+  .judg { grid-template-columns: minmax(0, 1fr); }
+  .seg { grid-column: 1; grid-row: auto; justify-self: start; }
+  .progress { margin-left: 0; }
+}
+@media (prefers-reduced-motion: no-preference) { .meter span { transition: width 0.25s ease; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h2>Isocolon and comparable-set construal · antithesis decomposition</h2>
+    <h1>Antithesis calibration batch</h1>
+    <p class="lede">Forty adjacent pairs from the GUM corpus, each labelled <i>adversative-antithesis</i> by the eRST annotators. The question is which of them are antitheses in the rhetorical sense, what the others are, and where the three categories below break.</p>
+  </header>
+
+  <section class="bar" aria-label="Coder and progress">
+    <div class="field">
+      <label for="coder">Your name or initials</label>
+      <input type="text" id="coder" autocomplete="name" placeholder="e.g. CT">
+    </div>
+    <div class="progress">
+      <span class="count" id="count">0 of 40 fully coded</span>
+      <div class="meter" aria-hidden="true"><span id="meter"></span></div>
+    </div>
+    <button class="btn" id="copy-top" type="button">Copy my codes</button>
+  </section>
+
+  <details class="howto" id="howto">
+    <summary>How this works</summary>
+    <div class="body">
+      <p>The paper (<a href="https://github.com/BrettRey/isocolon-and-comparative-construal/blob/main/main.pdf" target="_blank" rel="noopener">PDF</a>, §7) finds that the eRST label <i>adversative-antithesis</i> barely tracks formal balance. The 80-pair audit had only eight such rows, too few to tell two explanations apart: either the label is loose, or real antitheses carry their opposition in meaning rather than in balanced form. These 40 pairs start that test.</p>
+      <ol>
+        <li>Read the context. Unit A is highlighted in blue, unit B in amber. The sentence before and after are greyed.</li>
+        <li>Answer the three questions. Each is yes, no, or uncertain. The definitions under each question are the current codebook, which is what we're testing.</li>
+        <li>Where the categories don't fit the item, say so. "What would you call it?" and "Where does the rubric fail?" are the fields that matter most at this stage. A short phrase is enough.</li>
+        <li>Code independently. Everyone gets the same 40 so we can see where coders agree and where the categories cause disagreement.</li>
+        <li>When you're done (or want to send a partial batch), press <b>Copy my codes</b> and paste the result into an email reply.</li>
+      </ol>
+      <p>Your codes are saved in this browser as you go. They don't leave your machine until you copy them. If you switch browsers or devices, paste your last copied codes into "Restore" below.</p>
+    </div>
+  </details>
+
+  <main class="desk">
+    <nav class="rail" aria-label="Items">
+      <h2>Items</h2>
+      <div class="chips" id="chips"></div>
+      <div class="legend">
+        <span>Filled: all three judged</span>
+        <span>Dashed: started</span>
+      </div>
+    </nav>
+
+    <article class="item" id="item" aria-live="polite">
+      <div class="meta">
+        <span class="id" id="m-id"></span>
+        <span id="m-genre"></span>
+        <span class="doc" id="m-doc"></span>
+        <span id="m-pos"></span>
+      </div>
+
+      <div class="context" id="context"></div>
+
+      <div class="cola" aria-label="The two units">
+        <div class="colon a"><span class="tag">A</span><span class="txt" id="u1"></span><span class="len" id="w1"></span></div>
+        <div class="sep" aria-hidden="true">∥</div>
+        <div class="colon b"><span class="tag">B</span><span class="txt" id="u2"></span><span class="len" id="w2"></span></div>
+      </div>
+
+      <div class="judgments">
+        <div class="judg">
+          <span class="q" id="q-classical">Classical antithesis?</span>
+          <span class="def">Opposed meanings presented in comparable cola or comparable syntactic slots. Code no for scalar comparison alone, ordinary <i>instead of</i> / <i>rather than</i> alternatives, concession, dialogue repair, or negation without balanced opposed presentation.</span>
+          <div class="seg" role="group" aria-labelledby="q-classical" data-field="classical_antithesis"></div>
+        </div>
+        <div class="judg">
+          <span class="q" id="q-semantic">Semantic opposition?</span>
+          <span class="def">The units encode opposed alternatives, properties, states, choices, or scalar contrasts, even if the form isn't balanced. Code no when the units don't clearly oppose each other.</span>
+          <div class="seg" role="group" aria-labelledby="q-semantic" data-field="semantic_opposition"></div>
+        </div>
+        <div class="judg">
+          <span class="q" id="q-parallel">Parallel opposition?</span>
+          <span class="def">The opposition is carried by matched grammatical frames, slot substitution, or a clear paired construction. Code no when only a contrast marker connects structurally unlike spans.</span>
+          <div class="seg" role="group" aria-labelledby="q-parallel" data-field="parallel_opposition"></div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Quick notes (optional)</label>
+        <div class="tags" id="tags"></div>
+      </div>
+
+      <div class="free">
+        <div class="field">
+          <label for="figure">What would you call it? (optional)</label>
+          <input type="text" id="figure" placeholder="e.g. correctio, concessio, plain contrast">
+        </div>
+        <div class="field">
+          <label for="rubric">Where does the rubric fail on this item? (optional)</label>
+          <textarea id="rubric" placeholder="e.g. opposition is real but carried by negation; none of the three questions captures that"></textarea>
+        </div>
+      </div>
+
+      <div class="nav">
+        <button class="btn ghost" id="prev" type="button">← Previous</button>
+        <span class="hint">Arrow keys move between items when you're not typing.</span>
+        <button class="btn" id="next" type="button">Next →</button>
+      </div>
+    </article>
+  </main>
+
+  <section class="panels">
+    <div class="panel">
+      <h2>On the categories themselves</h2>
+      <label for="general" class="status" style="color:var(--muted)">Anything about the three questions, missing categories, or the figure theory behind them. This travels with your codes.</label>
+      <textarea id="general" placeholder="e.g. 'classical antithesis' conflates two things for me..."></textarea>
+    </div>
+    <div class="panel">
+      <h2>Send your codes</h2>
+      <p class="status" style="color:var(--muted)">Press copy, then paste into an email reply. If copying is blocked, click in the box, select all, and copy by hand.</p>
+      <textarea id="export" class="code" readonly aria-label="Your codes as tab-separated text"></textarea>
+      <div class="row">
+        <button class="btn" id="copy" type="button">Copy my codes</button>
+        <span class="status" id="copy-status"></span>
+      </div>
+      <details>
+        <summary class="status" style="cursor:pointer">Restore from codes you copied earlier</summary>
+        <div style="display:grid;gap:8px;margin-top:8px">
+          <textarea id="restore" class="code" aria-label="Paste earlier codes here"></textarea>
+          <div class="row"><button class="btn ghost" id="restore-btn" type="button">Restore</button><span class="status" id="restore-status"></span></div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <footer>Texts from the Georgetown University Multilayer Corpus (GUM) and GENTLE, eRST release, used for non-commercial research coding. Text licences vary by document (CC BY, CC BY-SA, CC BY-NC-SA); annotations CC BY 4.0. Reddit documents are excluded because the corpus distributes them redacted.</footer>
+</div>
+
+<script>
+(function () {
+  const DATA = {"batch": "calibration", "items": [{"id": "AA044", "doc": "GUM_textbook_labor", "genre": "textbook", "collection": "GUM", "order": "1_before_2", "u1": "but easier to run a tourist hotel in Florida", "u2": "than in North Dakota.", "w1": 9, "w2": 4, "before": "For some goods, geography affects specialization.", "core": [{"t": "For example, it is easier to be a wheat farmer in North Dakota than in Florida, ", "k": ""}, {"t": "but easier to run a tourist hotel in Florida", "k": "a"}, {"t": " ", "k": ""}, {"t": "than in North Dakota.", "k": "b"}], "after": "If you live in or near a big city, it is easier to attract enough customers to operate a successful dry cleaning business or movie theater than if you live in a sparsely populated rural area."}, {"id": "AA329", "doc": "GUM_whow_glowstick", "genre": "whow", "collection": "GUM", "order": "1_before_2", "u1": "Don't use your hands --", "u2": "use a metal or plastic utensil of some sort.", "w1": 5, "w2": 9, "before": "Mix everything well.", "core": [{"t": "Don't use your hands --", "k": "a"}, {"t": " ", "k": ""}, {"t": "use a metal or plastic utensil of some sort.", "k": "b"}], "after": "Clean the containers and dry them thoroughly."}, {"id": "AA188", "doc": "GUM_interview_brotherhood", "genre": "interview", "collection": "GUM", "order": "1_before_2", "u1": "The magician behind the counter was wise enough not to sell it to me,", "u2": "but instead sold me two books", "w1": 14, "w2": 6, "before": "WilliamEvans: I remember going into Hollywood Magic and wanting that big red box with the dragons on it and I didn't even know what it did.", "core": [{"t": "WilliamEvans: ", "k": ""}, {"t": "The magician behind the counter was wise enough not to sell it to me,", "k": "a"}, {"t": " ", "k": ""}, {"t": "but instead sold me two books", "k": "b"}, {"t": " which I still own today - \"Scarne on Card Tricks\" and \"Scarne on Magic Tricks\".", "k": ""}], "after": "WilliamEvans: That started me out on books and I have amassed quite a few since then."}, {"id": "AA163", "doc": "GUM_essay_ghost", "genre": "essay", "collection": "GUM", "order": "1_before_2", "u1": "these trends don’t cause more problems", "u2": "than they resolve,", "w1": 7, "w2": 3, "before": "And isn’t limited to Ghost — in Films from the Future, I draw on films as diverse as Never Let Me Go and Minority Report, to Ex Machina, to tease out insights into the moral and ethical challenges and opportunities that increasingly powerful technologies present.", "core": [{"t": "Having immersed myself in these movies and the technologies that inspire them, it’s clear that, if we want to ensure ", "k": ""}, {"t": "these trends don’t cause more problems", "k": "a"}, {"t": " ", "k": ""}, {"t": "than they resolve,", "k": "b"}, {"t": " we desperately need the perspectives that movies like Ghost in the Shell and others reveal.", "k": ""}], "after": "The alternative is risking losing our own “ghosts” in the drive to innovate bigger and better, without thinking about the consequences."}, {"id": "AA220", "doc": "GUM_news_warming", "genre": "news", "collection": "GUM", "order": "1_before_2", "u1": "dicot species, such as soybean, cotton, and peanut, lose more yield from ozone", "u2": "than do monocot species such as sorghum, field corn, and winter wheat.", "w1": 13, "w2": 12, "before": "The U.S. Department of Agriculture notes, \"Ground-level ozone causes more damage to plants than all other air pollutants combined\", highlighting the importance of air quality for agriculture.", "core": [{"t": "Results of NCLAN studies, published in a paper by AS Heagle in 1989, show ", "k": ""}, {"t": "dicot species, such as soybean, cotton, and peanut, lose more yield from ozone", "k": "a"}, {"t": " ", "k": ""}, {"t": "than do monocot species such as sorghum, field corn, and winter wheat.", "k": "b"}], "after": "The researchers found that ozone pollution caused 46 percent of previously heat-attributed damage to soybean crops."}, {"id": "AA036", "doc": "GUM_news_homeopathic", "genre": "news", "collection": "GUM", "order": "1_before_2", "u1": "and giving her homeopathic drops", "u2": "instead of using the prescription creams", "w1": 5, "w2": 6, "before": "Allegedly, Thomas' sister pleaded with him to send Gloria to a conventional medical doctor, but he replied \"I am not able to do that\".", "core": [{"t": "The parents are also accused of putting their social life ahead of their child, taking her on a trip to India and leaving her to servants while embarking on a busy social schedule, ", "k": ""}, {"t": "and giving her homeopathic drops", "k": "a"}, {"t": " ", "k": ""}, {"t": "instead of using the prescription creams", "k": "b"}, {"t": " they had been given.", "k": ""}], "after": "Gloria was finally taken to the emergency department shortly before her death."}, {"id": "AA198", "doc": "GUM_interview_licen", "genre": "interview", "collection": "GUM", "order": "1_before_2", "u1": "So showing the Paralympics live on United States television might turn out to be less glamorous", "u2": "than it appears.", "w1": 16, "w2": 3, "before": "Simon: So daytime events will be shown live in the United States in the middle of the night, and evening prime-time events will be shown — indeed live — in the morning U.S. time.", "core": [{"t": "Simon: ", "k": ""}, {"t": "So showing the Paralympics live on United States television might turn out to be less glamorous", "k": "a"}, {"t": " ", "k": ""}, {"t": "than it appears.", "k": "b"}], "after": "Simon: A third important factor is the way the event will be mediated: will NBC have its best sports broadcasters following the event after having worked the Winter Olympics?"}, {"id": "AA113", "doc": "GUM_conversation_artist", "genre": "conversation", "collection": "GUM", "order": "1_before_2", "u1": "there was a connection.", "u2": "No.", "w1": 4, "w2": 1, "before": "Alan: I've forgotten his name.", "core": [{"t": "Jon: Oh I thought ", "k": ""}, {"t": "there was a connection.", "k": "a"}, {"t": " Alan: ", "k": ""}, {"t": "No.", "k": "b"}], "after": "Alan: No connection."}, {"id": "AA077", "doc": "GUM_podcast_bezos", "genre": "podcast", "collection": "GUM", "order": "1_before_2", "u1": "you're talking about welfare and everything else.", "u2": "Yet at the same token, you ignore these stances", "w1": 8, "w2": 9, "before": "John: How is -- how is that putting these billions into space instead of improving the conditions of the workers that make these people the richest men on Earth?", "core": [{"t": "John: You know, I'd like a better understanding on, you know, ", "k": ""}, {"t": "you're talking about welfare and everything else.", "k": "a"}, {"t": " John: ", "k": ""}, {"t": "Yet at the same token, you ignore these stances", "k": "b"}, {"t": " where these billionaires are pouring money into -- all this money into space.", "k": ""}], "after": "John: The only people who are able to fly with them are also billionaires and millionaires."}, {"id": "AA311", "doc": "GUM_whow_arrogant", "genre": "whow", "collection": "GUM", "order": "1_before_2", "u1": "They may also give themselves undue credit for positive achievements", "u2": "instead of acknowledging the input of others or of circumstances.", "w1": 10, "w2": 10, "before": "Reality hurts when it intrudes; as such, an arrogant person is less likely than other people to self-reflect or analyse, thereby not seeing their own imperfections.", "core": [{"t": "They may also give themselves undue credit for positive achievements", "k": "a"}, {"t": " ", "k": ""}, {"t": "instead of acknowledging the input of others or of circumstances.", "k": "b"}], "after": "Learn the quality of their friendships."}, {"id": "AA192", "doc": "GUM_interview_dungeon", "genre": "interview", "collection": "GUM", "order": "1_before_2", "u1": "I do wear a lot of black.", "u2": "It's anything but that.", "w1": 7, "w2": 5, "before": "Bill: What's up?", "core": [{"t": "Rebecca: ", "k": ""}, {"t": "I do wear a lot of black.", "k": "a"}, {"t": " Bill: ", "k": ""}, {"t": "It's anything but that.", "k": "b"}], "after": "Bill: If you look at the rooms, there's all the accouterments you'd find in these types of places -- but more than anything, there's a lot of good feeling around here."}, {"id": "AA140", "doc": "GUM_court_equality", "genre": "court", "collection": "GUM", "order": "1_before_2", "u1": "And by the way, our universities don't consist of only urban kids;", "u2": "they also come from the smaller, smaller areas.", "w1": 13, "w2": 8, "before": "DYChandrachud: And that's very positive because, you know, you find that there is a greater acceptance and acceptance in our universities.", "core": [{"t": "DYChandrachud: ", "k": ""}, {"t": "And by the way, our universities don't consist of only urban kids;", "k": "a"}, {"t": " ", "k": ""}, {"t": "they also come from the smaller, smaller areas.", "k": "b"}], "after": "DYChandrachud: Yes, but there is this acceptance which is evolving."}, {"id": "AA157", "doc": "GUM_essay_food", "genre": "essay", "collection": "GUM", "order": "1_before_2", "u1": "not widgets or knick knacks,", "u2": "but the stuff", "w1": 5, "w2": 3, "before": "What’s more, close to half of that waste occurs before it even reaches the distributor, let alone the end-consumer.", "core": [{"t": "These are wild numbers when you consider what is lost: ", "k": ""}, {"t": "not widgets or knick knacks,", "k": "a"}, {"t": " ", "k": ""}, {"t": "but the stuff", "k": "b"}, {"t": " that sustains human life and health.", "k": ""}], "after": "The first logical front to attack this waste problem on is pre-season crop planning."}, {"id": "AA102", "doc": "GUM_academic_mutation", "genre": "academic", "collection": "GUM", "order": "1_before_2", "u1": "that, in most cases, will lead to a behaviour different", "u2": "than expected.", "w1": 10, "w2": 2, "before": "Mutation-based testing [1] is a test technique that involves artificially introducing errors into a System Under Test (SUT).", "core": [{"t": "A mutant is a copy of the system in which a change has been done ", "k": ""}, {"t": "that, in most cases, will lead to a behaviour different", "k": "a"}, {"t": " ", "k": ""}, {"t": "than expected.", "k": "b"}], "after": "The different mutants are generated automatically by the application of mutation operators."}, {"id": "AA234", "doc": "GUM_podcast_movie", "genre": "podcast", "collection": "GUM", "order": "1_before_2", "u1": "so that they can go out the door", "u2": "instead of releasing one", "w1": 8, "w2": 4, "before": "BenjaminGerber: Yeah.", "core": [{"t": "JenPage: And um, premiering that, we want to line up a few episodes ", "k": ""}, {"t": "so that they can go out the door", "k": "a"}, {"t": " ", "k": ""}, {"t": "instead of releasing one", "k": "b"}, {"t": " and going, oh, uh, and, uh, ChopSockyBoom as well, uh, just wrapped on Gamers3.", "k": ""}], "after": "BenjaminGerber: Mhm."}, {"id": "AA151", "doc": "GUM_court_property", "genre": "court", "collection": "GUM", "order": "1_before_2", "u1": "Because <*> on whether any ofthe cases <*> actually draws that distinction .", "u2": "They seem to be primarily based on occupation <*> or occupation", "w1": 11, "w2": 10, "before": "JamesSKawashima: Is there any specific case that you can point to, though, that distinguishes or sets some boundary as to placement and when it becomes occupation subject to eviction?", "core": [{"t": "JamesSKawashima: Because if you are going to separate property right in the race itself from the location of it, then I'm not clear on whether any of the cases cited actually draws that distinction. JamesSKawashima: They seem to be primarily based on occupation that amounts to trespass or occupation using the property in effect as a proxy for trespass.", "k": ""}], "after": "JamesSKawashima: So where does that separation flow from?"}, {"id": "AA091", "doc": "GUM_whow_cactus", "genre": "whow", "collection": "GUM", "order": "1_before_2", "u1": "but wait before harvesting them", "u2": "or you might affect the size of future harvests.", "w1": 5, "w2": 9, "before": "From the first pad, many more will form.", "core": [{"t": "The second or third pad will bear some flowers, ", "k": ""}, {"t": "but wait before harvesting them", "k": "a"}, {"t": " ", "k": ""}, {"t": "or you might affect the size of future harvests.", "k": "b"}], "after": ""}, {"id": "AA182", "doc": "GUM_fiction_time", "genre": "fiction", "collection": "GUM", "order": "1_before_2", "u1": "for the sun had ceased to set", "u2": "—it simply rose", "w1": 7, "w2": 3, "before": "At last a steady twilight brooded over the earth, a twilight only broken now and then when a comet glared across the darkling sky.", "core": [{"t": "The band of light that had indicated the sun had long since disappeared; ", "k": ""}, {"t": "for the sun had ceased to set", "k": "a"}, {"t": "—it simply rose", "k": "b"}, {"t": " and fell in the west, and grew ever broader and more red.", "k": ""}], "after": "All trace of the moon had vanished."}, {"id": "AA117", "doc": "GUM_conversation_blacksmithing", "genre": "conversation", "collection": "GUM", "order": "1_before_2", "u1": "We're not gonna do the feet today,", "u2": "I'm gonna wait till like, early in the morning,", "w1": 9, "w2": 11, "before": "Doris: Mae Lynne", "core": [{"t": "MaeLynne: ", "k": ""}, {"t": "We're not gonna do the feet today,", "k": "a"}, {"t": " ", "k": ""}, {"t": "I'm gonna wait till like, early in the morning,", "k": "b"}, {"t": " to do those, cause y- I mean you get so tired.", "k": ""}], "after": "MaeLynne: N- you just, it takes well, it takes me longer than most people, cause you know, I'm not as strong and, and I'm not as good, as like somebody that would do it all the time."}, {"id": "AA189", "doc": "GUM_interview_chomsky", "genre": "interview", "collection": "GUM", "order": "1_before_2", "u1": "the obvious question is why should NATO exist?", "u2": "In fact you can ask questions", "w1": 8, "w2": 6, "before": "NoamChomsky: Could be I give so many talks I can’t remember.", "core": [{"t": "NoamChomsky: On the NATO conference, well I mean ", "k": ""}, {"t": "the obvious question is why should NATO exist?", "k": "a"}, {"t": " NoamChomsky: ", "k": ""}, {"t": "In fact you can ask questions", "k": "b"}, {"t": " about why it should ever have existed, but now why should it exist.", "k": ""}], "after": "NoamChomsky: I mean the theory was, whether you believe it or not, that it would be a defensive alliance against potential Soviet aggression, that’s the basic doctrine."}, {"id": "AA138", "doc": "GUM_court_equality", "genre": "court", "collection": "GUM", "order": "1_before_2", "u1": "in also going about our interpretative task in an incremental manner", "u2": "because otherwise, do we then confine ourselves only to the Hindu Marriage Act?", "w1": 11, "w2": 13, "before": "ManekaGuruswamy: So, my Lords, to that extent and that extent only in the context of statutory law and making statutory law workable, because my Lords will know, my Lords, that the origin of the Hindu Marriage Act, the Hindu Code, did something that was not permitted in sacramental Hindu law, which is inter-caste marriage, in -- sagotra marriage, divorce, inheritance ...", "core": [{"t": "DYChandrachud: Dr. Guruswamy, but there's also … there may be some amount of sage wisdom ", "k": ""}, {"t": "in also going about our interpretative task in an incremental manner", "k": "a"}, {"t": " ", "k": ""}, {"t": "because otherwise, do we then confine ourselves only to the Hindu Marriage Act?", "k": "b"}], "after": "DYChandrachud: What about the Parsi Marriage Act?"}, {"id": "AA283", "doc": "GUM_textbook_spacetime", "genre": "textbook", "collection": "GUM", "order": "1_before_2", "u1": "A white dwarf, with its stronger surface gravity, produces more distortion just above its surface", "u2": "than does a red giant with the same mass.", "w1": 15, "w2": 9, "before": "Unlike a book or your roommate, stars produce measurable distortions in spacetime.", "core": [{"t": "A white dwarf, with its stronger surface gravity, produces more distortion just above its surface", "k": "a"}, {"t": " ", "k": ""}, {"t": "than does a red giant with the same mass.", "k": "b"}], "after": "So, you see, we are eventually going to talk about collapsing stars again, but not before discussing Einstein’s ideas (and the evidence for them) in more detail."}, {"id": "AA209", "doc": "GUM_letter_flood", "genre": "letter", "collection": "GUM", "order": "1_before_2", "u1": "that to have done this would have simply raised false hopes", "u2": "where real help is what is needed.", "w1": 11, "w2": 7, "before": "I investigated this possibility carefully and found the unanimous feeling that legislation to give flat cash grants could never pass the Congress.", "core": [{"t": "I could have introduced a bill to provide grants even though it could not have passed, but I feel very strongly ", "k": ""}, {"t": "that to have done this would have simply raised false hopes", "k": "a"}, {"t": " ", "k": ""}, {"t": "where real help is what is needed.", "k": "b"}], "after": "For this reason I decided to introduce legislation that would lower interest rates on rebuilding loans and provide that a major portion of these loans would not have to be repaid."}, {"id": "AA217", "doc": "GUM_letter_travel", "genre": "letter", "collection": "GUM", "order": "1_before_2", "u1": "so I prefer to write of the play as a reader,", "u2": "rather than as a spectator.", "w1": 11, "w2": 5, "before": "You said you wished my impression of it—but was it from the standpoint of the stage or of the “closet”?", "core": [{"t": "On the former I should hardly be an authority; ", "k": ""}, {"t": "so I prefer to write of the play as a reader,", "k": "a"}, {"t": " ", "k": ""}, {"t": "rather than as a spectator.", "k": "b"}], "after": "—It is exquisite, and so completely the kind of fanciful poetical thing that I long to see done, that I have only one objection to make to it: namely, its greater fitness for narrative than for dramatic treatment."}, {"id": "AA041", "doc": "GUM_speech_inauguration", "genre": "speech", "collection": "GUM", "order": "1_before_2", "u1": "In this present crisis, government is not the solution to our problem;", "u2": "government is the problem.", "w1": 12, "w2": 4, "before": "RonaldReagan: They will go away because we as Americans have the capacity now, as we've had in the past, to do whatever needs to be done to preserve this last and greatest bastion of freedom.", "core": [{"t": "RonaldReagan: ", "k": ""}, {"t": "In this present crisis, government is not the solution to our problem;", "k": "a"}, {"t": " ", "k": ""}, {"t": "government is the problem.", "k": "b"}], "after": "RonaldReagan: From time to time we've been tempted to believe that society has become too complex to be managed by self-rule, that government by an elite group is superior to government for, by, and of the people."}, {"id": "AA216", "doc": "GUM_letter_trade", "genre": "letter", "collection": "GUM", "order": "1_before_2", "u1": "This authority is not intended for major negotiations,", "u2": "but rather to permit minor adjustments,", "w1": 8, "w2": 6, "before": "--Restore the authority needed by the President to make limited tariff reductions.", "core": [{"t": "This authority is not intended for major negotiations,", "k": "a"}, {"t": " ", "k": ""}, {"t": "but rather to permit minor adjustments,", "k": "b"}, {"t": " such as would be required to extend compensation to other countries hurt by U.S. escape clause actions - thereby avoiding retaliation against U.S. exports.", "k": ""}], "after": "--Recognize the very real plight of particular industries, companies and workers faced with import competition, by providing for a readier escape clause and adjustment assistance relief where justified."}, {"id": "AA215", "doc": "GUM_letter_srilanka", "genre": "letter", "collection": "GUM", "order": "1_before_2", "u1": "and suggests a greater care about civilians", "u2": "than is common in countries", "w1": 7, "w2": 5, "before": "Again, the claim of indiscriminate attacks is strange given that the report only records one, as to which the government had explained at the time that its radar showed that mortars had been launched from a refugee camp, ie it was not indiscriminate at all.", "core": [{"t": "Of course I cannot claim for certain that the government was correct, but one such incident in a campaign in which very few civilian lives were lost does not justify Ms Hogg’s extravagant claims, ", "k": ""}, {"t": "and suggests a greater care about civilians", "k": "a"}, {"t": " ", "k": ""}, {"t": "than is common in countries", "k": "b"}, {"t": " to which Ms Hogg owes allegiance.", "k": ""}], "after": "I would have more respect for her if similar language were used about much greater assaults on individual lives and liberties by other countries engaged in wars against terrorism."}, {"id": "AA094", "doc": "GUM_academic_census", "genre": "academic", "collection": "GUM", "order": "1_before_2", "u1": "Most fields, on the other hand, <*> lack a single all-encompassing organization", "u2": "and membership information is instead distributed across many disjoint lists, such as web-based faculty directories for individual departments.", "w1": 12, "w2": 19, "before": "Some disciplines, like political science, are organized around a single professional society, whose membership roll approximates a full census [7].", "core": [{"t": "Most fields, on the other hand,", "k": "a"}, {"t": " including computer science, ", "k": ""}, {"t": "lack a single all-encompassing organization", "k": "a"}, {"t": " ", "k": ""}, {"t": "and membership information is instead distributed across many disjoint lists, such as web-based faculty directories for individual departments.", "k": "b"}], "after": "Because assembling such a full census is difficult, past studies have tended to avoid this task and have instead used samples of researchers [8 – 11], usually specific to a particular field [12 – 16], and often focused on the scientific elite [17, 18]."}, {"id": "AA132", "doc": "GUM_conversation_toys", "genre": "conversation", "collection": "GUM", "order": "1_before_2", "u1": "You're just a swinging kid Steve.", "u2": "Yeah, you don't know the half of it.", "w1": 7, "w2": 9, "before": "Steven: The swinging barn.", "core": [{"t": "Sheri: ", "k": ""}, {"t": "You're just a swinging kid Steve.", "k": "a"}, {"t": " Steven: ", "k": ""}, {"t": "Yeah, you don't know the half of it.", "k": "b"}], "after": "Sheri: I don't know the half of it, do I?"}, {"id": "AA280", "doc": "GUM_textbook_sociology", "genre": "textbook", "collection": "GUM", "order": "1_before_2", "u1": "Trying hard and working together, two nonmaterial values, were indeed much more important", "u2": "than winning.", "w1": 13, "w2": 2, "before": "Over the course of his stay, Barger participated in caribou hunts, learned how to take shelter in winter storms, and sometimes went days with little or no food to share among tribal members.", "core": [{"t": "Trying hard and working together, two nonmaterial values, were indeed much more important", "k": "a"}, {"t": " ", "k": ""}, {"t": "than winning.", "k": "b"}], "after": "During his time with the Inuit tribe, Barger learned to engage in cultural relativism."}, {"id": "AA079", "doc": "GUM_podcast_multitasking", "genre": "podcast", "collection": "GUM", "order": "1_before_2", "u1": "Do you know anything, or think much about, multitasking and multitasking failures in other high-stakes settings", "u2": "beyond driving,", "w1": 17, "w2": 2, "before": "DavidStrayer: You have to engage the prefrontal executive attentional networks.", "core": [{"t": "StephenDubner: ", "k": ""}, {"t": "Do you know anything, or think much about, multitasking and multitasking failures in other high-stakes settings", "k": "a"}, {"t": " ", "k": ""}, {"t": "beyond driving,", "k": "b"}, {"t": " whether it’s military decisions or political decisions, business decisions?", "k": ""}], "after": "DavidStrayer: So we’ve looked in the medical domain, medical human factors: you can see it in terms of, say, delivery of medicine at a pharmacy."}, {"id": "AA326", "doc": "GUM_whow_flirt", "genre": "whow", "collection": "GUM", "order": "1_before_2", "u1": "For instance, you'll want to avoid making lots of jokes at your own expense.", "u2": "Just one is plenty —", "w1": 15, "w2": 4, "before": "This is more true for real-life situations than it is online, but this mantra has some truth in the world of IM flirting as well.", "core": [{"t": "For instance, you'll want to avoid making lots of jokes at your own expense.", "k": "a"}, {"t": " ", "k": ""}, {"t": "Just one is plenty —", "k": "b"}, {"t": " it shouldn't be a recurring theme throughout your conversation.", "k": ""}], "after": "Doing this too often can quickly turn an otherwise flirtatious conversation into one in which you appear needy and self-loathing."}, {"id": "AA154", "doc": "GUM_essay_dividends", "genre": "essay", "collection": "GUM", "order": "1_before_2", "u1": "Instead of plutocracy and climate change,", "u2": "our market economy would generate widely-shared, earth-friendly prosperity.", "w1": 6, "w2": 10, "before": "The current tendencies of capitalism to widen inequality and devour nature would be self-corrected.", "core": [{"t": "Instead of plutocracy and climate change,", "k": "a"}, {"t": " ", "k": ""}, {"t": "our market economy would generate widely-shared, earth-friendly prosperity.", "k": "b"}], "after": "And it would achieve these goals automatically, without much need for government intervention."}, {"id": "AA331", "doc": "GUM_whow_languages", "genre": "whow", "collection": "GUM", "order": "1_before_2", "u1": "Try not to make your words sound like utter and complete gibberish", "u2": "just add a little extra than our regular English language.", "w1": 12, "w2": 10, "before": "Then, even if you forget your own words without the help of your dictionary, you could still make a good guess based on the composition of the letters.", "core": [{"t": "Try not to make your words sound like utter and complete gibberish", "k": "a"}, {"t": " ", "k": ""}, {"t": "just add a little extra than our regular English language.", "k": "b"}], "after": "We don't want a knot in your tongue after speaking to your friends."}, {"id": "AA175", "doc": "GUM_fiction_oversite", "genre": "fiction", "collection": "GUM", "order": "1_before_2", "u1": "The last two nights I have dreamed of dogs in trouble.", "u2": "I don’t dream about Renata,", "w1": 11, "w2": 6, "before": "In the background, shining, is Renata, who is young and healthy and good, raising her arm to show her grandmother that the chip is nothing, nothing at all.", "core": [{"t": "The last two nights I have dreamed of dogs in trouble.", "k": "a"}, {"t": " ", "k": ""}, {"t": "I don’t dream about Renata,", "k": "b"}, {"t": " although when the dreams wake me up, it’s thinking about Renata that keeps me awake.", "k": ""}], "after": "The first night I dreamed of seeing a stray dog and not stopping to pick it up although it was wandering in an empty parking lot near a busy road."}, {"id": "AA112", "doc": "GUM_bio_theodorus", "genre": "bio", "collection": "GUM", "order": "1_before_2", "u1": "naming the brother Petronios as his successor", "u2": "rather than the clearly qualified Theodorus.", "w1": 7, "w2": 6, "before": "Normalcy returned, though never again would Pachomius fully trust his former protégé.", "core": [{"t": "In 348 Pachomius died, ", "k": ""}, {"t": "naming the brother Petronios as his successor", "k": "a"}, {"t": " ", "k": ""}, {"t": "rather than the clearly qualified Theodorus.", "k": "b"}], "after": "The death of Petronios later that year would leave Apa Horsiesios in charge, and the popular Theodorus would retreat to the distant monastery of Phnoum."}, {"id": "AA168", "doc": "GUM_essay_sexlife", "genre": "essay", "collection": "GUM", "order": "1_before_2", "u1": "that aging is responsible for this difference?", "u2": "What if instead the apparent age difference is because people <*> have different attitudes toward sex than people", "w1": 7, "w2": 17, "before": "There is a key element missing from nearly all studies of sex and aging: studying change over time.", "core": [{"t": "If we ask a group of people how satisfied they are with their sex life, and the younger people are more satisfied than the older people, does that mean ", "k": ""}, {"t": "that aging is responsible for this difference?", "k": "a"}, {"t": " ", "k": ""}, {"t": "What if instead the apparent age difference is because people", "k": "b"}, {"t": " born in the 1930s ", "k": ""}, {"t": "have different attitudes toward sex than people", "k": "b"}, {"t": " who grew up after the sexual revolution of the '60's and '70's?", "k": ""}], "after": "To get to the bottom of how aging affects sexual quality of life, we analyzed patterns in longitudinal data collected from over 6,000 individuals followed over a period of 18 years, spanning ages 20-93."}, {"id": "AA197", "doc": "GUM_interview_licen", "genre": "interview", "collection": "GUM", "order": "1_before_2", "u1": "Even though legislative support may be less strong", "u2": "than the one", "w1": 8, "w2": 3, "before": "Simon: Other countries, including the ones you mention, have stronger social orientations in all aspects of society.", "core": [{"t": "Simon: ", "k": ""}, {"t": "Even though legislative support may be less strong", "k": "a"}, {"t": " ", "k": ""}, {"t": "than the one", "k": "b"}, {"t": " provided by the Americans with Disabilities Act, many social institutions including the media are more receptive to this form of diversity.", "k": ""}], "after": "Wikinews: What do you think the impact will be for the Paralympic movement will be with the Games being televised live in the United States for first time?"}, {"id": "AA012", "doc": "GENTLE_threat_bolin", "genre": "threat", "collection": "GENTLE", "order": "1_before_2", "u1": "you got 1500 for the truck", "u2": "not 1300", "w1": 6, "w2": 2, "before": "You better thank your lucky stars you Ashley's father or youd already have your fucking legs broke.", "core": [{"t": "I found out what happend to most of the money from the van, and I also found out ", "k": ""}, {"t": "you got 1500 for the truck", "k": "a"}, {"t": " ", "k": ""}, {"t": "not 1300", "k": "b"}, {"t": " like you said.", "k": ""}], "after": "I'm still going to find out how much you got for the Buick and if it's 1 ¢ over 1000 you can kiss your ass goodbye."}, {"id": "AA013", "doc": "GENTLE_threat_bolin", "genre": "threat", "collection": "GENTLE", "order": "1_before_2", "u1": "Your game playing is eventually going to get you in more", "u2": "than a poo butt game player can handle.", "w1": 11, "w2": 8, "before": "I hope you get the fucking message.", "core": [{"t": "Your game playing is eventually going to get you in more", "k": "a"}, {"t": " ", "k": ""}, {"t": "than a poo butt game player can handle.", "k": "b"}], "after": "1 week asshole."}]};
+  const ITEMS = DATA.items;
+  const BATCH = DATA.batch;
+  const KEY = "antithesis-coding-" + BATCH + "-v1";
+  const FIELDS = ["classical_antithesis", "semantic_opposition", "parallel_opposition"];
+  const VALUES = ["yes", "no", "uncertain"];
+  const TAGS = ["not_x_but_y", "instead_of_alternative", "scalar_only", "concession", "dialogue_repair", "balanced_slots", "needs_context", "fragment"];
+
+  let state = { coder: "", general: "", codes: {}, current: 0 };
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (raw) state = Object.assign(state, JSON.parse(raw));
+  } catch (e) { /* storage unavailable: work in memory */ }
+  if (!(state.current >= 0 && state.current < ITEMS.length)) state.current = 0;
+
+  const $ = (id) => document.getElementById(id);
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+  }
+  function codeFor(id) {
+    if (!state.codes[id]) state.codes[id] = { classical_antithesis: "", semantic_opposition: "", parallel_opposition: "", tags: [], figure: "", rubric: "", at: "" };
+    return state.codes[id];
+  }
+  function status(id) {
+    const c = state.codes[id];
+    if (!c) return "";
+    const n = FIELDS.filter((f) => c[f]).length;
+    if (n === FIELDS.length) return "done";
+    if (n > 0 || c.tags.length || c.figure || c.rubric) return "partial";
+    return "";
+  }
+
+  // Build static controls once
+  document.querySelectorAll(".seg").forEach((seg) => {
+    const field = seg.dataset.field;
+    VALUES.forEach((v) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.id = field + "-" + v; b.dataset.v = v; b.textContent = v;
+      b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", () => {
+        const c = codeFor(ITEMS[state.current].id);
+        c[field] = c[field] === v ? "" : v; c.at = new Date().toISOString();
+        VALUES.forEach((w) => $(field + "-" + w).setAttribute("aria-pressed", String(c[field] === w)));
+        save(); refreshChrome();
+      });
+      seg.append(b);
+    });
+  });
+  TAGS.forEach((t) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "tag-t"; b.textContent = t; b.dataset.tag = t;
+    b.setAttribute("aria-pressed", "false");
+    b.addEventListener("click", () => {
+      const c = codeFor(ITEMS[state.current].id);
+      const i = c.tags.indexOf(t);
+      if (i >= 0) c.tags.splice(i, 1); else c.tags.push(t);
+      c.at = new Date().toISOString();
+      b.setAttribute("aria-pressed", String(i < 0));
+      save(); refreshChrome();
+    });
+    $("tags").append(b);
+  });
+  ITEMS.forEach((it, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.textContent = String(i + 1);
+    b.title = it.id + " · " + it.genre;
+    b.addEventListener("click", () => go(i));
+    $("chips").append(b);
+  });
+
+  function renderItem() {
+    const it = ITEMS[state.current];
+    $("m-id").textContent = it.id;
+    $("m-genre").textContent = it.genre + (it.collection === "GENTLE" ? " (GENTLE)" : "");
+    $("m-doc").textContent = it.doc;
+    $("m-pos").textContent = "item " + (state.current + 1) + " of " + ITEMS.length;
+
+    const ctx = $("context");
+    ctx.textContent = "";
+    if (it.before) { const s = document.createElement("span"); s.className = "dim"; s.textContent = it.before + " "; ctx.append(s); }
+    it.core.forEach((run) => {
+      if (run.k) { const m = document.createElement("mark"); m.className = run.k; m.textContent = run.t; ctx.append(m); }
+      else ctx.append(document.createTextNode(run.t));
+    });
+    if (it.after) { const s = document.createElement("span"); s.className = "dim"; s.textContent = " " + it.after; ctx.append(s); }
+    if (it.core.length === 1 && !it.core[0].k) {
+      const n = document.createElement("p"); n.className = "note-ctx";
+      n.textContent = "The units couldn't be located in this context automatically; use A and B below.";
+      ctx.append(n);
+    }
+
+    $("u1").textContent = it.u1.replace(/\s*<\*>\s*/g, " … ");
+    $("u2").textContent = it.u2.replace(/\s*<\*>\s*/g, " … ");
+    $("w1").textContent = it.w1 + (it.w1 === 1 ? " word" : " words");
+    $("w2").textContent = it.w2 + (it.w2 === 1 ? " word" : " words");
+
+    const c = state.codes[it.id] || { tags: [], figure: "", rubric: "" };
+    FIELDS.forEach((f) => {
+      VALUES.forEach((v) => { $(f + "-" + v).setAttribute("aria-pressed", String(c[f] === v)); });
+    });
+    document.querySelectorAll(".tag-t").forEach((b) => b.setAttribute("aria-pressed", String((c.tags || []).includes(b.dataset.tag))));
+    $("figure").value = c.figure || "";
+    $("rubric").value = c.rubric || "";
+    $("prev").disabled = state.current === 0;
+    $("next").textContent = state.current === ITEMS.length - 1 ? "Done: go to export ↓" : "Next →";
+    refreshChrome();
+  }
+
+  function refreshChrome() {
+    const chips = $("chips").children;
+    let done = 0;
+    ITEMS.forEach((it, i) => {
+      const s = status(it.id);
+      if (s === "done") done++;
+      chips[i].className = "chip" + (s ? " " + s : "") + (i === state.current ? " current" : "");
+      chips[i].setAttribute("aria-current", i === state.current ? "true" : "false");
+    });
+    $("count").textContent = done + " of " + ITEMS.length + " fully coded";
+    $("meter").style.width = (100 * done / ITEMS.length) + "%";
+    $("export").value = buildExport();
+  }
+
+  function go(i) {
+    state.current = Math.max(0, Math.min(ITEMS.length - 1, i));
+    save(); renderItem();
+    $("item").scrollIntoView({ block: "start", behavior: "auto" });
+  }
+
+  function clean(s) { return String(s || "").replace(/[\t\r\n]+/g, " ").trim(); }
+  function buildExport() {
+    const cols = ["coder", "batch", "code_id", "classical_antithesis", "semantic_opposition", "parallel_opposition", "antithesis_notes", "figure_label", "rubric_note", "coded_at"];
+    const lines = [cols.join("\t")];
+    ITEMS.forEach((it) => {
+      const c = state.codes[it.id];
+      if (!c || !status(it.id)) return;
+      lines.push([clean(state.coder), BATCH, it.id, c.classical_antithesis || "uncoded", c.semantic_opposition || "uncoded", c.parallel_opposition || "uncoded", (c.tags || []).join(";"), clean(c.figure), clean(c.rubric), c.at || ""].join("\t"));
+    });
+    if (clean(state.general)) lines.push("# general_comment\t" + clean(state.general));
+    return lines.join("\n");
+  }
+
+  function copyCodes(statusEl) {
+    if (!clean(state.coder)) {
+      statusEl.className = "status err"; statusEl.textContent = "Add your name or initials at the top first.";
+      $("coder").focus(); return;
+    }
+    const text = buildExport();
+    const n = text.split("\n").filter((l) => l && !l.startsWith("#")).length - 1;
+    const fallback = () => {
+      const ta = $("export"); ta.focus(); ta.select();
+      statusEl.className = "status err"; statusEl.textContent = "Copying was blocked here. The box is selected: copy it by hand.";
+    };
+    try {
+      navigator.clipboard.writeText(text).then(() => {
+        statusEl.className = "status ok"; statusEl.textContent = "Copied " + n + " coded items. Paste them into your email reply.";
+      }, fallback);
+    } catch (e) { fallback(); }
+  }
+  $("copy").addEventListener("click", () => copyCodes($("copy-status")));
+  $("copy-top").addEventListener("click", () => {
+    copyCodes($("copy-status"));
+    $("copy-status").scrollIntoView({ block: "center", behavior: "auto" });
+  });
+
+  $("coder").value = state.coder || "";
+  $("coder").addEventListener("input", (e) => { state.coder = e.target.value; save(); refreshChrome(); });
+  $("general").value = state.general || "";
+  $("general").addEventListener("input", (e) => { state.general = e.target.value; save(); refreshChrome(); });
+  $("figure").addEventListener("input", (e) => { const c = codeFor(ITEMS[state.current].id); c.figure = e.target.value; c.at = new Date().toISOString(); save(); refreshChrome(); });
+  $("rubric").addEventListener("input", (e) => { const c = codeFor(ITEMS[state.current].id); c.rubric = e.target.value; c.at = new Date().toISOString(); save(); refreshChrome(); });
+  $("prev").addEventListener("click", () => go(state.current - 1));
+  $("next").addEventListener("click", () => {
+    if (state.current === ITEMS.length - 1) { $("export").scrollIntoView({ block: "center", behavior: "auto" }); return; }
+    go(state.current + 1);
+  });
+  document.addEventListener("keydown", (e) => {
+    const tag = (e.target && e.target.tagName) || "";
+    if (tag === "INPUT" || tag === "TEXTAREA" || e.altKey || e.metaKey || e.ctrlKey) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); go(state.current + 1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); go(state.current - 1); }
+  });
+
+  $("restore-btn").addEventListener("click", () => {
+    const st = $("restore-status");
+    const lines = $("restore").value.split(/\r?\n/).filter((l) => l.trim());
+    if (lines.length < 2 || !lines[0].startsWith("coder\t")) { st.className = "status err"; st.textContent = "That doesn't look like copied codes (the first line should start with 'coder')."; return; }
+    const cols = lines[0].split("\t");
+    const idx = (name) => cols.indexOf(name);
+    const known = new Set(ITEMS.map((it) => it.id));
+    let n = 0;
+    lines.slice(1).forEach((line) => {
+      const p = line.split("\t");
+      if (line.startsWith("# general_comment")) { state.general = p.slice(1).join(" "); return; }
+      const id = p[idx("code_id")];
+      if (!known.has(id)) return;
+      const val = (f) => { const v = p[idx(f)]; return VALUES.includes(v) ? v : ""; };
+      state.codes[id] = {
+        classical_antithesis: val("classical_antithesis"), semantic_opposition: val("semantic_opposition"), parallel_opposition: val("parallel_opposition"),
+        tags: (p[idx("antithesis_notes")] || "").split(";").filter((t) => TAGS.includes(t)),
+        figure: p[idx("figure_label")] || "", rubric: p[idx("rubric_note")] || "", at: p[idx("coded_at")] || "",
+      };
+      if (!state.coder && p[idx("coder")]) state.coder = p[idx("coder")];
+      n++;
+    });
+    $("coder").value = state.coder || ""; $("general").value = state.general || "";
+    save(); renderItem();
+    st.className = "status ok"; st.textContent = "Restored " + n + " items.";
+  });
+
+  try { if (localStorage.getItem(KEY)) $("howto").open = false; else $("howto").open = true; } catch (e) { $("howto").open = true; }
+  renderItem();
+})();
+</script>

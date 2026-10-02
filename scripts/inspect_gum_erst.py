@@ -57,7 +57,7 @@ def relation_inventory(corpus_root: Path) -> list[dict[str, object]]:
     for rels_path in sorted((corpus_root / "rst" / "disrpt").glob("*.rels")):
         framework, partition = split_file_parts(rels_path)
         with rels_path.open(encoding="utf-8", newline="") as handle:
-            reader = csv.DictReader(handle, delimiter="\t")
+            reader = csv.DictReader(handle, delimiter="\t", quoting=csv.QUOTE_NONE)  # DISRPT .rels is plain TSV; quote chars are text
             for row in reader:
                 rel_type = cell(row, "rel_type")
                 if rel_type not in VALID_REL_TYPES:
@@ -90,7 +90,7 @@ def disrpt_row_counts(corpus_root: Path) -> tuple[int, int]:
     skipped = 0
     for rels_path in sorted((corpus_root / "rst" / "disrpt").glob("*.rels")):
         with rels_path.open(encoding="utf-8", newline="") as handle:
-            reader = csv.DictReader(handle, delimiter="\t")
+            reader = csv.DictReader(handle, delimiter="\t", quoting=csv.QUOTE_NONE)  # DISRPT .rels is plain TSV; quote chars are text
             for row in reader:
                 if cell(row, "rel_type") in VALID_REL_TYPES:
                     valid += 1

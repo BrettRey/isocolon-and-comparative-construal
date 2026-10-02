@@ -30,14 +30,14 @@ presentation.
 
 This paper tests that claim in the Georgetown University Multilayer corpus
 (GUM) with enhanced Rhetorical Structure Theory (eRST) annotations. The
-analysis scores 17,456 adjacent relation pairs from 299 documents across
+analysis scores 17,912 adjacent relation pairs from 301 documents across
 24 genres. The composite formal-balance score combines three subscores:
 \term{isocolon}, length balance; \term{parison}, surface syntactic
 parallelism; and \term{lexical echo}, lemma-sequence similarity plus
 content-lemma overlap.
 
 The broad target family of comparison and co-ordination relations scores
-4.1 points higher than the non-target baseline on a 0--100 reporting
+4.2 points higher than the non-target baseline on a 0--100 reporting
 scale, about 0.28 standard deviations. The largest effects come from
 \mention{joint-list} and \mention{joint-disjunction}, where co-ordination
 makes parallel form grammatically cheap. The cleaner non-enumerative
@@ -214,7 +214,7 @@ which relation holds between them. The project also needs enough genre
 variation to separate a rhetorical effect from a register-specific habit.
 
 The analysis uses adjacent discourse-relation pairs. The dataset
-contains 17,456 such pairs from 299 documents across 24 genres.
+contains 17,912 such pairs from 301 documents across 24 genres.
 These discourse units serve as candidate cola-like spans, with no claim
 that they're classical cola in a strict prosodic sense.
 
@@ -232,7 +232,7 @@ annotator without such a signal. Non-adjacent linked spans are excluded. Concurr
 relations are kept as pairwise relation rows when their spans meet this
 adjacency criterion.
 
-The extracted set contains 16,278 rows with collection label GUM and 1,178
+The extracted set contains 16,723 rows with collection label GUM and 1,189
 with collection label \mention{GENTLE}; the 24 genres are the
 document-genre labels in the extracted files. The derived DISRPT relation
 table has relation rows and token intervals, not the full eRST discourse
@@ -421,9 +421,9 @@ or from \(-100\) to \(+100\) after the score-point rescaling.
 Figure~\ref{fig:score-distribution} shows the empirical range behind that
 scale and splits it by target status. The 0--100 scale is a
 readability transformation, not a claim that the observed data fill the
-whole interval evenly. In the 17,456 adjacent pairs, the median composite
-value is 32.8. The middle half runs from 22.3 to 41.9, and 95\% of pairs
-fall below 55.9. A few exact or near-exact matches reach the upper tail,
+whole interval evenly. In the 17,912 adjacent pairs, the median composite
+value is 33.3. The middle half runs from 22.6 to 42.2, and 95\% of pairs
+fall below 56.1. A few exact or near-exact matches reach the upper tail,
 but most of the empirical scale is the lower and middle part of the
 formal-balance range. The broad target family is visibly shifted right,
 but the two distributions overlap heavily.
@@ -436,18 +436,18 @@ to 0--100, split by target status: broad target family versus non-target
 baseline. Bars show percentages within each
 group, not raw counts, so the larger non-target baseline doesn't dominate
 the display. Vertical lines mark group medians. The plot is descriptive;
-the 4.1-point effect reported below is adjusted for document, length,
+the 4.2-point effect reported below is adjusted for document, length,
 punctuation, and other controls.}
 \label{fig:score-distribution}
 \end{figure}
 
 For scale, the most extreme comparison isn't a target relation at all. It
-is simple restatement or repetition: after controls, repeated pairs sit 19.0
+is simple restatement or repetition: after controls, repeated pairs sit 18.9
 points above other pairs. One such pair,
 \mention{Get your feet off of there.} followed by
 \mention{Get your feet off of there.}, receives a composite
-formal-balance score of 100.0. That's 68.3 points above the non-target
-median of 31.7. Table~\ref{tab:score-calibration} gives additional
+formal-balance score of 100.0. That's 67.9 points above the non-target
+median of 32.1. Table~\ref{tab:score-calibration} gives additional
 anchors for the raw per-pair score scale, with one target example and one
 non-target example near each anchor.
 
@@ -458,53 +458,53 @@ non-target example near each anchor.
 \toprule
 Score & Status & Gap & Unit 1 & & Unit 2\\
 \midrule
-100.0 & Non-target & \(+68.3\) & \mention{Get your feet off of there.} &
+100.0 & Non-target & \(+67.9\) & \mention{Get your feet off of there.} &
 \(\parallel\) &
 \mention{Get your feet off of there.}\\
-95.2 & Target & \(+63.5\) & \mention{You can use this on twist outs.} &
+95.2 & Target & \(+63.1\) & \mention{You can use this on twist outs.} &
 \(\parallel\) &
 \mention{You can use this on braid outs.}\\
-60.0 & Non-target & \(+28.3\) & \mention{I got to go out on the road.} &
+60.0 & Non-target & \(+27.9\) & \mention{I got to go out on the road.} &
 \(\parallel\) &
 \mention{I want to get my chops back up.}\\
-59.9 & Target & \(+28.2\) & \mention{I worked with some great musicians} &
+59.9 & Target & \(+27.8\) & \mention{I worked with some great musicians} &
 \(\parallel\) &
 \mention{and performed around the world.}\\
-50.0 & Non-target & \(+18.3\) & \mention{it forces you to take action,} &
+50.0 & Non-target & \(+17.9\) & \mention{it forces you to take action,} &
 \(\parallel\) &
 \mention{as you can't afford to waste any time.}\\
-50.0 & Target & \(+18.3\) & \mention{the house festooned with flowers} &
+50.0 & Target & \(+17.9\) & \mention{the house festooned with flowers} &
 \(\parallel\) &
 \mention{and stocked with coconut liquor.}\\
-40.0 & Non-target & \(+8.3\) & \mention{Steven measured and mixed the plaster of Paris} &
+40.0 & Non-target & \(+7.9\) & \mention{Steven measured and mixed the plaster of Paris} &
 \(\parallel\) &
 \mention{and prepared for the cast}\\
-40.0 & Target & \(+8.3\) & \mention{maybe I should vlog today} &
+40.0 & Target & \(+7.9\) & \mention{maybe I should vlog today} &
 \(\parallel\) &
 \mention{and just see how my day turns around}\\
-30.0 & Non-target & \(-1.7\) & \mention{For your joke to be funny,} &
+30.0 & Non-target & \(-2.1\) & \mention{For your joke to be funny,} &
 \(\parallel\) &
 \mention{it has to surprise the audience in some way,}\\
-30.0 & Target & \(-1.7\) & \mention{Shorts and sleeveless shirts are highly inappropriate,} &
+30.0 & Target & \(-2.1\) & \mention{Shorts and sleeveless shirts are highly inappropriate,} &
 \(\parallel\) &
 \mention{as are short skirts.}\\
-20.0 & Non-target & \(-11.7\) & \mention{Yeah no.} &
+20.0 & Non-target & \(-12.1\) & \mention{Yeah no.} &
 \(\parallel\) &
 \mention{Not a good look.}\\
-19.6 & Target & \(-12.1\) & \mention{We have no choice} &
+19.6 & Target & \(-12.5\) & \mention{We have no choice} &
 \(\parallel\) &
 \mention{but to return to direct negotiations between the two parties.}\\
 \bottomrule
 \end{tabular*}
 \caption{Example raw composite formal-balance scores. Gap is measured in
-score points against the non-target median of 31.7. \term{Target} means the
+score points against the non-target median of 32.1. \term{Target} means the
 pair belongs to the broad target family; \term{non-target} means it doesn't.
 The \(\parallel\) symbol marks the boundary between the two units. These
 examples calibrate the raw scale; they aren't adjusted effects.}
 \label{tab:score-calibration}
 \end{table}
 
-The gap between the broad target family and the non-target baseline is 4.1
+The gap between the broad target family and the non-target baseline is 4.2
 points, about a fifth of that repetition gap. The empirical standard
 deviation of the composite formal-balance score
 is 14.8 points, so the gap for the broad target family is about 0.28 standard
@@ -571,21 +571,21 @@ The score-scale discussion above and Figure~\ref{fig:score-distribution}
 showed the main descriptive pattern: target and non-target pairs overlap
 heavily, but the broad target-family distribution is shifted to the right.
 The adjusted model estimates that shift. On a 0--100 version of the
-composite formal-balance score, pairs in the broad target family are 4.1
+composite formal-balance score, pairs in the broad target family are 4.2
 points higher than pairs outside that family after controls. That equals
-0.041 on the raw 0--1 scale. The empirical standard
+0.042 on the raw 0--1 scale. The empirical standard
 deviation of that score is 14.8 points, so the adjusted gap is about 0.28
 standard deviations: a little more than a quarter of the ordinary spread in
 pair scores.
 
-The document-clustered uncertainty interval runs from 3.6 to 4.7 points.
+The document-clustered uncertainty interval runs from 3.6 to 4.8 points.
 The shift is modest, but its estimated direction is stable: the uncertainty
 interval stays away from zero.
 
 The subscores show what kind of balance carries the effect. The parison
-subscore difference is 7.7 points, compared with 2.4 points for the
+subscore difference is 7.7 points, compared with 2.6 points for the
 lexical-echo subscore. With mean-length control only, the broad isocolon
-subscore difference is 6.6 points. Table~\ref{tab:relation-effects}
+subscore difference is 6.7 points. Table~\ref{tab:relation-effects}
 reports the composite formal-balance score and the three subscores separately.
 
 Two columns in that table estimate the same isocolon subscore. They differ
@@ -594,7 +594,7 @@ both mean and maximum span length, matching the composite model. That
 estimate is deflated, 0.8 points for the broad target family, because the
 model has mostly controlled away the ingredients of the isocolon subscore.
 The mean-only isocolon column drops the maximum-length control. Read that
-column as the substantive length-balance result: 6.6 points for the broad
+column as the substantive length-balance result: 6.7 points for the broad
 target family.
 
 The result for the broad target family is an omnibus check. Its strongest labels are also
@@ -606,7 +606,7 @@ difference, with an interval from 0.5 to 2.1 points.
 
 The individual labels explain the difference.
 \mention{joint-disjunction} has an adjusted composite formal-balance effect of
-4.8 points, \mention{joint-list} has an adjusted effect of 4.4 points, and
+4.7 points, \mention{joint-list} has an adjusted effect of 4.4 points, and
 \mention{adversative-contrast} has the smaller but more diagnostic
 effect of 2.4 points.
 \mention{adversative-antithesis} is near zero at 0.4 points, with an
@@ -614,13 +614,13 @@ interval that crosses zero, so the estimate is compatible with no adjusted
 difference. I read this as a mismatch between a
 discourse-relation label and the classical figure. It gives no evidence
 against antithesis as a rhetorical resource.
-\mention{adversative-concession} is negative at -1.3 points, meaning that
+\mention{adversative-concession} is negative at -1.4 points, meaning that
 these pairs are less formally balanced than their comparison baseline after
 controls.
 
 The relation-level scan also identifies an important positive control.
 \mention{restatement-repetition} has the strongest adjusted composite
-formal-balance effect, 19.0 points, with especially large lexical-echo and
+formal-balance effect, 18.9 points, with especially large lexical-echo and
 parison effects. That's exactly what the composite formal-balance score
 should find: exact identity is highly balanced, with lexical echo stronger
 than the parison effect. The human audit reported in the next section shows
@@ -632,15 +632,15 @@ and diagnostic, separate from the target hypothesis.
 
 Genre-varying estimates point in the same direction. After pooling, the mean
 effect for the broad target family is 3.9 points across 20 genres. The
-\mention{joint-list} estimate is 4.0 points across 17 genres, and
+\mention{joint-list} estimate is 4.1 points across 17 genres, and
 \mention{adversative-contrast} is 2.9 points across the genres where
 there's enough evidence to estimate it. The estimate for the narrow
-adversative family is 1.2 points.
+adversative family is 1.1 points.
 
 The genre-by-genre effects scatter only narrowly around those averages:
-their spread, one standard deviation, is about 1.1 points for the broad
-target family, 1.3 for \mention{joint-list}, 0.9 for the narrow adversative
-family, and 0.7 for \mention{adversative-contrast}. Because that scatter is
+the model puts their spread, as one standard deviation, at about 1.0 points for the broad
+target family, 1.2 for \mention{joint-list}, 0.9 for the narrow adversative
+family, and 0.5 for \mention{adversative-contrast}. Because that scatter is
 small next to the effects themselves, the effect for the broad target family isn't
 the work of one or two genres but recurs across many.
 
@@ -651,21 +651,21 @@ the work of one or two genres but recurs across many.
 \toprule
 Target & Target \(n\) & Other \(n\) & \(\Delta\) composite & \shortstack{\(\Delta\) isocolon\\full controls} & \shortstack{\(\Delta\) isocolon\\mean-only controls} & \(\Delta\) parison & \(\Delta\) lexical\\
 \midrule
-Broad target family & 2,462 & 14,994 & 4.1 & 0.8 & 6.6 & 7.7 & 2.4\\
-Narrow adversative family & 605 & 16,851 & 1.3 & -0.1 & 4.7 & 2.4 & 1.7\\
-\mention{joint-list} & 1,690 & 15,766 & 4.4 & 1.0 & 6.5 & 8.2 & 2.0\\
-\mention{joint-disjunction} & 167 & 17,289 & 4.8 & 0.9 & 3.6 & 8.6 & 4.0\\
-\mention{adversative-contrast} & 262 & 17,194 & 2.4 & -0.0 & 7.3 & 4.5 & 2.8\\
-\mention{adversative-antithesis} & 343 & 17,113 & 0.4 & -0.2 & 2.5 & 0.8 & 0.9\\
-\mention{adversative-concession} & 679 & 16,777 & -1.3 & 0.1 & 1.1 & -2.7 & -0.7\\
-\mention{restatement-repetition} & 321 & 17,135 & 19.0 & 4.6 & 17.0 & 27.3 & 32.5\\
+Broad target family & 2,514 & 15,398 & 4.2 & 0.8 & 6.7 & 7.7 & 2.6\\
+Narrow adversative family & 626 & 17,286 & 1.3 & -0.1 & 4.8 & 2.4 & 1.7\\
+\mention{joint-list} & 1,713 & 16,199 & 4.4 & 0.9 & 6.5 & 8.3 & 2.2\\
+\mention{joint-disjunction} & 175 & 17,737 & 4.7 & 1.0 & 3.8 & 8.2 & 4.2\\
+\mention{adversative-contrast} & 268 & 17,644 & 2.4 & 0.1 & 7.4 & 4.4 & 2.7\\
+\mention{adversative-antithesis} & 358 & 17,554 & 0.4 & -0.2 & 2.7 & 0.8 & 1.0\\
+\mention{adversative-concession} & 702 & 17,210 & -1.4 & 0.0 & 1.0 & -2.8 & -0.9\\
+\mention{restatement-repetition} & 325 & 17,587 & 18.9 & 4.4 & 17.1 & 27.2 & 32.9\\
 \bottomrule
 \end{tabular}
 \caption{Selected adjusted differences on the composite formal-balance
 score and its subscores, reported as score points. The \(\Delta\) symbol
 marks each numeric column as a target-minus-comparison difference, not a
 raw score. The underlying scores range from 0 to 1; the table multiplies
-differences by 100, so possible values run from -100 to +100. Positive
+differences by 100. Positive
 values mean the target rows score higher than their comparison rows;
 negative values mean they score lower.
 Target \(n\) gives the number of target rows; other \(n\) gives the number of rows outside that target.
@@ -701,16 +701,16 @@ length; the other estimates use the main control specification.}
 
 The main pattern survives the checks that address the obvious alternative
 explanations. Document-clustered intervals leave the broad target family at
-4.1 points [3.6, 4.7]. Mean-only length models recover isocolonic length
-balance for the broad target family, 6.6 [5.6, 7.7], without conditioning
+4.2 points [3.6, 4.8]. Mean-only length models recover isocolonic length
+balance for the broad target family, 6.7 [5.6, 7.8], without conditioning
 on maximum length. A joint-only comparison shrinks the list/disjunction
-effect to 1.7 [0.6, 2.8], showing that co-ordination explains a
+effect to 1.8 [0.7, 2.9], showing that co-ordination explains a
 substantial share of the broad result but not all of it.
 
 The adversative-only comparison removes the list/disjunction cases from
 the baseline and compares \mention{adversative-contrast} with other
 adversative relations. In that comparison, \mention{adversative-contrast}
-stays positive at 3.0 [1.4, 4.7] on the composite formal-balance score.
+stays positive at 2.9 [1.2, 4.5] on the composite formal-balance score.
 GUM-only, continuous-span-only, and leave-one-genre checks give the same
 qualitative pattern. Stratified permutation checks place the observed
 effects for the broad family, list/disjunction, and adversative contrast
@@ -744,30 +744,30 @@ background \citep{hanleyMcNeil1982ROCArea}. Imagine drawing two pairs at
 random: one that annotators marked with a \mention{syn-prl} parallelism
 signal, and one they left unmarked. The AUC is the chance that the
 composite formal-balance score is higher for the marked pair than for the
-unmarked one.
+unmarked one, with ties counted as half.
 
 A ranking that sorted the two no better than a coin toss would give an AUC
 of 0.5; a ranking that always put the marked pair on top would give 1.0.
-So the AUC of 0.73 reported here means that, in this head-to-head,
-the marked pair wins about 73 times in 100. The measure takes its name from
+So the AUC of 0.72 reported here means that, in this head-to-head,
+the marked pair wins about 72 times in 100. The measure takes its name from
 a curve that plots recall against the false-positive rate at every cutoff,
 but the simple ranking reading is all that's needed here.
 
-On that scale, the composite formal-balance score has an AUC of 0.73, with an
-approximate Hanley--McNeil interval from 0.66 to 0.80. That interval is the
+On that scale, the composite formal-balance score has an AUC of 0.72, with an
+approximate Hanley--McNeil interval from 0.65 to 0.78. That interval is the
 standard large-sample uncertainty range for an AUC
-\citep{hanleyMcNeil1982ROCArea}, not a new effect size. The parison subscore
-is slightly higher at 0.75 [0.69, 0.82], the lexical-echo subscore is 0.72
-[0.65, 0.79], and the isocolon subscore is 0.65 [0.58, 0.72]
+\citep{hanleyMcNeil1982ROCArea}, not a new effect size. The parison and
+lexical-echo subscores are slightly higher, both at 0.74 [0.68, 0.80], and
+the isocolon subscore is 0.63 [0.56, 0.69]
 (Table~\ref{tab:score-validation}).
 
 The ranking also answers a practical audit question. At the 95th
 percentile of the composite formal-balance score, the inspected slice has
-876 rows; 27 carry \mention{syn-prl}. That's a 3.1\% hit rate, about seven
-times the corpus base rate of 0.4\%, and it recovers 37\% of all
+896 rows; 27 carry \mention{syn-prl}. That's a 3.0\% hit rate, about seven
+times the corpus base rate of 0.4\%, and it recovers 34\% of all
 \mention{syn-prl} rows in the corpus. At the 97.5th percentile, tied
-scores included, 24 of 438 inspected rows carry \mention{syn-prl}. That's
-a 5.5\% hit rate and recovers 33\% of all \mention{syn-prl} rows.
+scores included, 24 of 448 inspected rows carry \mention{syn-prl}. That's
+a 5.4\% hit rate and recovers 30\% of all \mention{syn-prl} rows.
 
 Those numbers look poor for automatic labelling but adequate for ranking
 rare candidates for audit. The validation also stays narrow: the
@@ -895,7 +895,7 @@ to separate label mismatch from a second possibility: genuine semantic
 antitheses may be expressed through opposition instead of lexical
 overlap or surface parallelism.
 
-A targeted follow-up will code all 343 eRST
+A targeted follow-up will code all 358 eRST
 \mention{adversative-antithesis} rows for three judgments: classical
 antithesis, semantic opposition, and parallel opposition. Until then, the
 near-zero \mention{adversative-antithesis} result is evidence about the
@@ -1004,6 +1004,8 @@ kept in the project repository:
 \url{https://github.com/BrettRey/isocolon-and-comparative-construal}.
 The raw GUM/eRST source files are excluded from the repository; the
 scripts expect a local corpus checkout under \path{data/raw/gum-erst}.
+GUM distributes its Reddit documents without their text, so the text was
+restored with the corpus's own \path{get_text.py} script before extraction.
 The RST Signalling Corpus is also excluded under its restricted license; any
 use in this project is limited to local aggregate summaries and human
 label-crosswalk judgments.
@@ -1037,15 +1039,15 @@ main analysis; the robustness checks include a continuous-span-only subset.
 \toprule
 Extraction diagnostic & Count\\
 \midrule
-Valid explicit/implicit relation rows & 34,976\\
-Adjacent relation rows used in analysis & 17,456\\
-Non-adjacent relation rows excluded & 17,520\\
-\quad gapped rows excluded & 15,349\\
-\quad interleaved rows excluded & 2,171\\
-Adjacent rows with discontinuous token intervals & 1,963\\
+Valid explicit/implicit relation rows & 35,943\\
+Adjacent relation rows used in analysis & 17,912\\
+Non-adjacent relation rows excluded & 18,031\\
+\quad gapped rows excluded & 15,817\\
+\quad interleaved rows excluded & 2,214\\
+Adjacent rows with discontinuous token intervals & 2,011\\
 Exact duplicate adjacent span pairs & 0\\
-Adjacent explicit rows & 4,943\\
-Adjacent implicit rows & 12,513\\
+Adjacent explicit rows & 5,077\\
+Adjacent implicit rows & 12,835\\
 \bottomrule
 \end{tabular}
 \caption{Extraction diagnostics for the adjacent-pair analysis. Counts
@@ -1061,8 +1063,8 @@ span pairs are counted by document, unit-1 tokens, and unit-2 tokens.}
 Figure~\ref{fig:validation-enrichment} shows the precision/recall tradeoff
 for score-thresholded inspection slices. The two panels use the same
 numerator with different denominators. In Panel A, the 97.5th-percentile
-point divides 24 \mention{syn-prl} rows by 438 inspected rows. In Panel B,
-the same point divides those 24 rows by all 73 \mention{syn-prl} rows in
+point divides 24 \mention{syn-prl} rows by 448 inspected rows. In Panel B,
+the same point divides those 24 rows by all 79 \mention{syn-prl} rows in
 the corpus.
 
 \begin{figure}[H]
@@ -1071,7 +1073,7 @@ the corpus.
 \caption{Validation enrichment for top-scored slices. Panel A shows
 precision: \mention{syn-prl} rows divided by inspected rows. The dashed
 line is the corpus base rate. Panel B shows recall: recovered
-\mention{syn-prl} rows divided by all 73 \mention{syn-prl} rows in the
+\mention{syn-prl} rows divided by all 79 \mention{syn-prl} rows in the
 corpus. The dashed diagonal shows the recovery expected from reading a
 random slice of the same size. Labels mark the 95th- and 97.5th-percentile
 score cutoffs; tied scores at a cutoff are included. The figure checks
@@ -1086,16 +1088,16 @@ ranking utility, not rhetorical function.}
 \toprule
 Measure & AUC & Labelled mean & Unlabelled mean\\
 \midrule
-Composite formal balance & 0.73 [0.66, 0.80] & 0.50 & 0.33\\
-Isocolon & 0.65 [0.58, 0.72] & 0.68 & 0.56\\
-Parison & 0.75 [0.69, 0.82] & 0.44 & 0.21\\
-Lexical echo & 0.72 [0.65, 0.79] & 0.20 & 0.06\\
+Composite formal balance & 0.72 [0.65, 0.78] & 0.49 & 0.33\\
+Isocolon & 0.63 [0.56, 0.69] & 0.68 & 0.57\\
+Parison & 0.74 [0.68, 0.80] & 0.42 & 0.21\\
+Lexical echo & 0.74 [0.68, 0.80] & 0.20 & 0.05\\
 \bottomrule
 \end{tabular}
-\caption{Validation against the 73 eRST \mention{syn-prl} signal
-labels in 17,456 adjacent relation pairs. AUC gives the chance that a
+\caption{Validation against the 79 eRST \mention{syn-prl} signal
+labels in 17,912 adjacent relation pairs. AUC gives the chance that a
 random labelled pair receives a higher value than a random unlabelled
-pair. The labelled-mean and unlabelled-mean columns are the average values for
+pair, with ties counted as half. The labelled-mean and unlabelled-mean columns are the average values for
 pairs that do and don't carry the label, on the same 0--1 scale as the
 composite formal-balance score and the three subscores. Brackets give
 approximate Hanley--McNeil 95\% intervals for AUC.}
@@ -1143,15 +1145,15 @@ toward zero. Table~\ref{tab:robustness} gives selected checks.
 \toprule
 Check & Target and outcome & Estimate (points) & Clustered 95\% interval\\
 \midrule
-Main & Broad target family, composite & 4.1 & [3.6, 4.7]\\
+Main & Broad target family, composite & 4.2 & [3.6, 4.8]\\
 Main & \mention{joint-list} composite & 4.4 & [3.7, 5.1]\\
 Main & \mention{adversative-contrast} composite & 2.4 & [1.3, 3.5]\\
-Mean-length only & Broad isocolon & 6.6 & [5.6, 7.7]\\
-Mean-length only & \mention{adversative-contrast} isocolon & 7.3 & [5.0, 9.6]\\
-Joint-only & List/disjunction composite & 1.7 & [0.6, 2.8]\\
-Joint-only & List/disjunction parison & 2.9 & [1.0, 4.8]\\
-Adversative-only & Contrast composite & 3.0 & [1.4, 4.7]\\
-Adversative-only & Contrast parison & 5.9 & [3.0, 8.8]\\
+Mean-length only & Broad isocolon & 6.7 & [5.6, 7.8]\\
+Mean-length only & \mention{adversative-contrast} isocolon & 7.4 & [5.1, 9.8]\\
+Joint-only & List/disjunction composite & 1.8 & [0.7, 2.9]\\
+Joint-only & List/disjunction parison & 2.9 & [1.1, 4.8]\\
+Adversative-only & Contrast composite & 2.9 & [1.2, 4.5]\\
+Adversative-only & Contrast parison & 5.6 & [2.8, 8.4]\\
 GUM-only & Broad target family, composite & 4.0 & [3.4, 4.6]\\
 Continuous spans only & Broad target family, composite & 4.5 & [3.8, 5.1]\\
 \bottomrule
@@ -1182,9 +1184,9 @@ inside the matched strata.}
 
 The composite weights were also varied across 66 nonnegative alternative
 weightings of the three subscores. The effect for the broad target family
-stays positive, with an uncertainty interval that excludes zero, in every
-one of the 66. For \mention{adversative-contrast}, 65 of the 66 are
-positive and 59 have uncertainty intervals that exclude zero.
+is positive under every one of the 66, ranging from 0.8 to 7.7 points. For
+\mention{adversative-contrast}, all 66 are positive, ranging from 0.1 to
+4.4 points.
 
 \clearpage
 \section{Stratified permutation nulls}
@@ -1200,13 +1202,13 @@ mean word length.
 \begin{table}[H]
 \centering
 \scriptsize
-\begin{tabular}{lrrrrrrr}
+\begin{tabular}{lrrrrrr}
 \toprule
-Target & Observed & Null mean & Null 95\% & Strata & Rows & Target rows & \(p\)\\
+Target & Observed & Null mean & Null 95\% & Strata & Rows & Target rows\\
 \midrule
-Broad target family & 4.1 & 1.2 & [0.8, 1.6] & 1,240 & 8,277 & 2,174 & 0.002\\
-List/disjunction & 4.6 & 1.3 & [1.0, 1.7] & 1,033 & 7,047 & 1,659 & 0.002\\
-\mention{adversative-contrast} & 2.4 & 0.8 & [-0.1, 1.7] & 201 & 1,472 & 220 & 0.002\\
+Broad target family & 4.2 & 1.2 & [0.8, 1.5] & 1,264 & 8,516 & 2,230\\
+List/disjunction & 4.7 & 1.3 & [0.9, 1.7] & 1,052 & 7,260 & 1,693\\
+\mention{adversative-contrast} & 2.4 & 0.7 & [-0.1, 1.6] & 208 & 1,517 & 228\\
 \bottomrule
 \end{tabular}
 \caption{Stratified permutation nulls for the composite formal-balance
@@ -1215,9 +1217,8 @@ labels are shuffled within document, explicitness,
 same-sentence status, colon/semicolon status, and mean-length quartile
 strata. The null mean is the average effect after that relabelling. The
 strata, rows, and target-rows columns report the portions of
-the data that could move under the stratified shuffle. The \(p\)
-values are two-sided empirical values from 500 permutations, with the
-standard plus-one correction, and should be read at that resolution.}
+the data that could move under the stratified shuffle. The null
+summaries come from 500 shuffles.}
 \label{tab:stratified-null}
 \end{table}
 
